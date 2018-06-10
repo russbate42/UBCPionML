@@ -22,13 +22,13 @@ def preprocess(clusters, branches, flatten = False, label = 0):
   # one image for each layer of the calorimeter
   data = {
      # EM barrel
-    'EMB1': np.zeros((ncl, 4, 128, 1)),
-    'EMB2': np.zeros((ncl, 16, 16, 1)),
-    'EMB3': np.zeros((ncl, 16, 8, 1)),
+    'EMB1': np.zeros((ncl, 128, 4)),
+    'EMB2': np.zeros((ncl, 16, 16)),
+    'EMB3': np.zeros((ncl, 8, 16)),
     # TileCal barrel
-    'TileBar0': np.zeros((ncl, 4, 4, 1)),
-    'TileBar1': np.zeros((ncl, 4, 4, 1)),
-    'TileBar2': np.zeros((ncl, 4, 2, 1))
+    'TileBar0': np.zeros((ncl, 4, 4)),
+    'TileBar1': np.zeros((ncl, 4, 4)),
+    'TileBar2': np.zeros((ncl, 2, 4))
   }
 
   # supplemental info about clusters and cells (clusE, clusPt, nCells,...)
@@ -38,8 +38,8 @@ def preprocess(clusters, branches, flatten = False, label = 0):
   # fill the image arrays and the supplemental info
   for i in xrange(ncl):
     for j in xrange(nbr):
-      data[branches[j]][i] = np.array([clusters[i][j]]).transpose()
-      if flatten: data[branches[j]][i].flatten()
+      data[branches[j]][i] = clusters[i][j]
+      if flatten: data[branches[j]][i] = data[branches[j]][i].flatten()
 
   # add a vector of labels
   data['label'] = np.full((ncl, 1), label)
@@ -47,12 +47,12 @@ def preprocess(clusters, branches, flatten = False, label = 0):
   return data
 
 """ Export data to file """
-def export(data, output, gzip):
+def export(data, output, compress):
 
-  if gzip:
-    np.savez_compressed(output, data)
+  if compress:
+    np.savez_compressed(output, **data)
   else:
-    np.save(output, data)
+    np.save(output, **data)
 
 if __name__ == "__main__":
 
@@ -66,7 +66,7 @@ if __name__ == "__main__":
   parser.add_argument('--nclusters', '-n', required=False, type=int, help='Number of clusters to process', default=-1)
   parser.add_argument('--tree', required=False, type=str, help='Name of input TTree.', default='ClusterTree')
   parser.add_argument('--branches', required=False, type=str, nargs='+', help='ROOT files containing the outputs from the MLTree package.', default = default_branches)
-  parser.add_argument('--gzip', required=False, action='store_true', help='Compress output arrays with gzip.', default=False)
+  parser.add_argument('--compress', '-c', required=False, action='store_true', help='Compress output arrays.', default=False)
   parser.add_argument('--flatten', required=False, action='store_true', help='Flatten output arrays', default=False)
   args = parser.parse_args()
 
@@ -75,6 +75,6 @@ if __name__ == "__main__":
   print("pre-processing data...")
   data = preprocess(clusters, args.branches, args.flatten, args.label)
   print("saving data...")
-  export(data, args.output, args.gzip)
+  export(data, args.output, args.compress)
   print("\nall done!")
 

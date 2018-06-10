@@ -12,6 +12,12 @@ Images are created from ESD (Event Summary Data) files using the [MLTree](https:
 
 The outputs from [MLTree](https://github.com/jmrolsson/MLTree) can be converted into numpy arrays with [mltree2array.py](util/mltree2array.py)
 
-## Training using keras
+## Topo-cluster classification
+- Training with flattened images using simple fully-connected Neural Networks; [SimpleNN.ipynb](classifier/SimpleNN.ipynb)
+- Training with 2D images using deeper Convolutional Neural Networks; [ConvNet.ipynb](classifier/ConvNet.ipynb)
+
+Also try logistic regression, SVD, Naive Bias, Gaussians, etc. 
+
+## Energy regression
 
 Coming soon...

@@ -2,7 +2,7 @@
 import numpy as np
 
 def load_tree(files, tree, branches, nmax = -1):
-""" Load specified branches from the input TTrees into memory"""
+  """ Load specified branches from the input TTrees into memory"""
 
   import ROOT
   ROOT.PyConfig.IgnoreCommandLineOptions = True
@@ -14,7 +14,7 @@ def load_tree(files, tree, branches, nmax = -1):
   return tree2array(chain, branches = branches, start = 0, stop = nmax)
 
 def preprocess(clusters, branches, flatten = False, label = 0):
-""" Pre-processing of the CaloML image dataset """
+  """ Pre-processing of the CaloML image dataset """
 
   ncl = len(clusters)
   nbr = len(branches)
@@ -47,7 +47,7 @@ def preprocess(clusters, branches, flatten = False, label = 0):
   return data
 
 def export(data, output, compress):
-""" Export data to file """
+  """ Export data to file """
 
   if compress:
     np.savez_compressed(output, **data)

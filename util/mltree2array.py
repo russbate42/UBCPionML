@@ -1,8 +1,8 @@
 #! /usr/bin/env python
 import numpy as np
 
-""" Load specified branches from the input TTrees into memory"""
 def load_tree(files, tree, branches, nmax = -1):
+""" Load specified branches from the input TTrees into memory"""
 
   import ROOT
   ROOT.PyConfig.IgnoreCommandLineOptions = True
@@ -13,8 +13,8 @@ def load_tree(files, tree, branches, nmax = -1):
   from root_numpy import tree2array
   return tree2array(chain, branches = branches, start = 0, stop = nmax)
 
-""" Pre-processing of the CaloML image dataset """
 def preprocess(clusters, branches, flatten = False, label = 0):
+""" Pre-processing of the CaloML image dataset """
 
   ncl = len(clusters)
   nbr = len(branches)
@@ -46,8 +46,8 @@ def preprocess(clusters, branches, flatten = False, label = 0):
 
   return data
 
-""" Export data to file """
 def export(data, output, compress):
+""" Export data to file """
 
   if compress:
     np.savez_compressed(output, **data)

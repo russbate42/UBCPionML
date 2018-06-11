@@ -14,13 +14,23 @@ The outputs from [MLTree](https://github.com/jmrolsson/MLTree) can be converted 
 
 ## Topo-cluster classification
 
-The performance of the following Machine Learning techniques are compared:
-- Simple fully-connected Neural Network (flattening the images and only using the 512 pixels in the EMB1 layer).
-- Using all 2D images with a deeper Convolutional Neural Network.
+### The task
+
+Train a classifier to determine which type of particle generated the parton showers in the cluster (e.g. electrons vs. charged pions or charged pions vs. neutral pions).
+
+### Implementation
+
+The following models are implemented:
+
+1. Simple fully-connected Neural Network (flattening the images and only using the 512 pixels in the EMB1 layer).
+2. Convolutional Neural Networks using only one layer (preserving the shape of the 2D images).
+3. A network with multiple images as inputs, and one output (first couple of ConvNets are trained separately, then flattened and concatenated).
 
 Everything is in the [TopoClusterClassifier.ipynb](classifier/TopoClusterClassifier.ipynb) notebook, so it is easy to modify and play around with! 
 
-Also want to compare with other ML methods: logistic regression, SVD, Naive Bias, Gaussians, etc. 
+TODO
+- Implement a network of concatenated ConvNets taking all calorimeter layer images into account.
+- Also compare the performance with other ML algorithms; logistic regression, SVD, Naive Bias, Gaussians, etc.
 
 ## Energy regression
 

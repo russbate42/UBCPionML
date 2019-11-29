@@ -1,7 +1,7 @@
 #! /usr/bin/env python
 import numpy as np
 
-def load_tree(files, tree, branches, nmax = -1):
+def load_tree(files, tree, branches, nmax = -1, selection=''):
   """ Load specified branches from the input TTrees into memory"""
 
   import ROOT
@@ -11,7 +11,7 @@ def load_tree(files, tree, branches, nmax = -1):
   for f in files: chain.Add(f)
 
   from root_numpy import tree2array
-  return tree2array(chain, branches = branches, start = 0, stop = nmax)
+  return tree2array(chain, branches = branches, selection = selection, start = 0, stop = nmax)
 
 def preprocess(clusters, branches, flatten = False, label = 0):
   """ Pre-processing of the CaloML image dataset """
@@ -56,7 +56,9 @@ def export(data, output, compress):
 
 if __name__ == "__main__":
 
-  default_branches = ['EMB1', 'EMB2', 'EMB3', 'TileBar0', 'TileBar1', 'TileBar2', 'clusterE', 'clusterPt', 'clusterEta', 'clusterPhi', 'cluster_nCells', 'cluster_sumCellE']
+  default_branches = ['EMB1', 'EMB2', 'EMB3', 'TileBar0', 'TileBar1', 'TileBar2', 'clusterE', 'clusterPt', 'clusterEta', 'clusterPhi', 'cluster_nCells', 'cluster_sumCellE', 'cluster_emProb']
+#  default_branches = ['EMB1', 'EMB2', 'EMB3', 'TileBar0', 'TileBar1', 'TileBar2', 'clusterE', 'clusterEta', 'clusterPhi', 'cluster_nCells', 'cluster_sumCellE', 'cluster_emProb']
+ # default_branches = ['EMB1', 'EMB2', 'EMB3', 'TileBar0', 'TileBar1', 'TileBar2', 'clusterE', 'clusterEta', 'clusterPhi', 'cluster_nCells', 'cluster_emProb']
 
   import argparse
   parser = argparse.ArgumentParser(add_help=True, description='Convert root image arrays from the MLTree package to numpy arrays.')
@@ -71,10 +73,9 @@ if __name__ == "__main__":
   args = parser.parse_args()
 
   print("loading data from tree...")
-  clusters = load_tree(args.files, args.tree, args.branches, args.nclusters)
+  clusters = load_tree(args.files, args.tree, args.branches, args.nclusters, 'clusterE > 100')
   print("pre-processing data...")
   data = preprocess(clusters, args.branches, args.flatten, args.label)
   print("saving data...")
   export(data, args.output, args.compress)
   print("\nall done!")
-

@@ -3,3 +3,8 @@ datasets
 .DS_Store
 .root
 .npz
+.vscode/settings.json
+classifier/.vscode/settings.json
+classifier/Plots
+classifier/Models
+._*

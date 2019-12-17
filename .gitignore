@@ -5,6 +5,6 @@ datasets
 .npz
 .vscode/settings.json
 classifier/.vscode/settings.json
-classifier/Plots
-classifier/Models
+classifier/Plots*
+classifier/Models*
 ._*

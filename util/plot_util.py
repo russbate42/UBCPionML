@@ -13,7 +13,7 @@ params = {'legend.fontsize': 13,
           'axes.labelsize': 18}
 plt.rcParams.update(params)
 
-ampl.set_color_cycle('Paper')
+ampl.set_color_cycle('Oceanic',8)
 
 def histogramOverlay(frames, data, labels, xlabel, ylabel, figfile = '', 
                         x_min = 0, x_max = 2200, xbins = 22, normed = True, y_log = False,

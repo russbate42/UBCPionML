@@ -11,6 +11,7 @@ from . import plot_util as pu
 
 
 def responsePlot(x, y, figfile='', statistic='median',
+                 xlabel='Cluster Calib Hits', ylabel='Cluster Energy / Calib Hits',
                  atlas_x=-1, atlas_y=-1, simulation=False,
                  textlist=[]):
     xbin = [10**exp for exp in np.arange(-1.0, 3.1, 0.1)]
@@ -28,8 +29,8 @@ def responsePlot(x, y, figfile='', statistic='median',
     plt.plot(xcenter, profileXMed, color='red')
     plt.xscale('log')
     plt.ylim(0, 3)
-    pu.ampl.set_xlabel('Cluster Calib Hits')
-    pu.ampl.set_ylabel('Cluster Energy / Calib Hits')
+    pu.ampl.set_xlabel(xlabel)
+    pu.ampl.set_ylabel(ylabel)
     # ampl.set_zlabel('Clusters')
     cb = plt.colorbar()
     cb.ax.set_ylabel('Clusters')

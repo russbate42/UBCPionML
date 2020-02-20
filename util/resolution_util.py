@@ -59,6 +59,7 @@ def iqrOverMed(x):
     return iqr / med
 
 def resolutionPlot(x, y, figfile='', statistic='std',
+                   xlabel='Cluster Calib Hits', ylabel='Energy IQR over Median',
                    atlas_x=-1, atlas_y=-1, simulation=False,
                    textlist=[]):
     xbin = [10**exp for exp in  np.arange(-1.0, 3.1, 0.1)]
@@ -77,8 +78,8 @@ def resolutionPlot(x, y, figfile='', statistic='std',
     plt.xscale('log')
     plt.xlim(0.1, 1000)
     plt.ylim(0,2)
-    pu.ampl.set_xlabel('Cluster Calib Hits')
-    pu.ampl.set_ylabel('Cluster Energy IQR over Median')
+    pu.ampl.set_xlabel(xlabel)
+    pu.ampl.set_ylabel(ylabel)
 
     pu.drawLabels(fig, atlas_x, atlas_y, simulation, textlist)
 

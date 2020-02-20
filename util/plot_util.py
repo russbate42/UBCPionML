@@ -51,6 +51,7 @@ def histogramOverlay(frames, data, labels, xlabel, ylabel, figfile = '',
 
 def lineOverlay(xcenter, lines, labels, xlabel, ylabel, figfile = '',
                     x_min = 0.1, x_max = 1000, x_log = True, y_min = 0, y_max = 2, y_log = False,
+                    linestyles=[], colorgrouping=-1,
                     extra_lines = [],
                     atlas_x=-1, atlas_y=-1, simulation=False,
                     textlist=[]):
@@ -62,8 +63,18 @@ def lineOverlay(xcenter, lines, labels, xlabel, ylabel, figfile = '',
     for extra_line in extra_lines:
         plt.plot(extra_line[0], extra_line[1], linestyle='--', color='black')
 
+    colors = plt.rcParams["axes.prop_cycle"].by_key()["color"]
+
     for i, line in enumerate(lines):
-        plt.plot(xcenter, line, label = labels[i])
+        if len(linestyles) > 0:
+            linestyle = linestyles[i]
+        else:
+            linestyle = 'solid'
+        if colorgrouping > 0:
+            color = colors[int(np.floor(i / colorgrouping))]
+        else:
+            color = colors[i]
+        plt.plot(xcenter, line, label = labels[i], linestyle=linestyle,color=color)
 
     if x_log:
         plt.xscale('log')

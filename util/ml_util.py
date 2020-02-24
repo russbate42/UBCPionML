@@ -82,7 +82,14 @@ def standardCells(array, layer, nrows = -1):
         working_array = array
 
     scaler = StandardScaler()
-    num_pixels = cell_meta[layer]['len_phi'] * cell_meta[layer]['len_eta']
+    if type(layer) == str:
+        num_pixels = cell_meta[layer]['len_phi'] * cell_meta[layer]['len_eta']
+    elif type(layer) == list:
+        num_pixels = 0
+        for l in layer:
+            num_pixels += cell_meta[l]['len_phi'] * cell_meta[l]['len_eta']
+    else:
+        print('you should not be here')
 
     num_clusters = len(working_array)
 

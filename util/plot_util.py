@@ -28,7 +28,7 @@ def histogramOverlay(frames, data, labels, xlabel, ylabel, figfile = '',
 
     zorder_start = -1 * len(data) # hack to get axes on top
     for i, datum in enumerate(data):
-        plt.hist(frames[i][datum], bins = xbin, normed = normed, 
+        plt.hist(frames[i][datum], bins = xbin, density = normed, 
             alpha = 0.5, label=labels[i], zorder=zorder_start + i)
     
     plt.xlim(x_min, x_max)
@@ -93,7 +93,54 @@ def lineOverlay(xcenter, lines, labels, xlabel, ylabel, figfile = '',
         plt.savefig(figfile)
     plt.show()
 
-
+def roc_plot(xlist, ylist, figfile = '',
+             xlabel='False positive rate',
+             ylabel='True positive rate',
+             x_min = 0, x_max = 1.1, x_log = False,
+             y_min = 0, y_max = 1.1, y_log = False,
+             linestyles=[], colorgrouping=-1,
+             extra_lines=[], labels=[],
+             atlas_x=-1, atlas_y=-1, simulation=False,
+             textlist=[], title=''):
+    plt.cla()
+    plt.clf()
+    
+    fig = plt.figure()
+    fig.patch.set_facecolor('white')
+    for extra_line in extra_lines:
+        plt.plot(extra_line[0], extra_line[1], linestyle='--', color='black')
+        
+    colors = plt.rcParams["axes.prop_cycle"].by_key()["color"]
+    for i, (x,y) in enumerate(zip(xlist,ylist)):
+        if len(linestyles) > 0:
+            linestyle = linestyles[i]
+        else:
+            linestyle = 'solid'
+        if colorgrouping > 0:
+            color = colors[int(np.floor(i / colorgrouping))]
+        else:
+            color = colors[i]
+        label = None
+        if len(labels) > 0:
+            label = labels[i]
+        plt.plot(x, y, label = label, linestyle=linestyle, color=color)
+        
+    if x_log:
+        plt.xscale('log')
+    if y_log:
+        plt.yscale('log')
+        
+    plt.title(title)
+    plt.xlim(x_min, x_max)
+    plt.ylim(y_min, y_max)
+    ampl.set_xlabel(xlabel)
+    ampl.set_ylabel(ylabel)
+    
+    plt.legend()
+    if figfile != '':
+        plt.savefig(figfile)
+    plt.show()
+    
 def drawLabels(fig, atlas_x=-1, atlas_y=-1, simulation=False,
                textlist=[]):
     if atlas_x >= 0 and atlas_y >= 0:

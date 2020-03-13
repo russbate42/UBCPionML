@@ -13,7 +13,7 @@ params = {'legend.fontsize': 13,
           'axes.labelsize': 18}
 plt.rcParams.update(params)
 
-ampl.set_color_cycle('Oceanic',8)
+ampl.set_color_cycle('Oceanic',10)
 
 def histogramOverlay(frames, data, labels, xlabel, ylabel, figfile = '', 
                         x_min = 0, x_max = 2200, xbins = 22, normed = True, y_log = False,
@@ -119,7 +119,7 @@ def roc_plot(xlist, ylist, figfile = '',
         if colorgrouping > 0:
             color = colors[int(np.floor(i / colorgrouping))]
         else:
-            color = colors[i]
+            color = colors[i%(len(colors)-1)]
         label = None
         if len(labels) > 0:
             label = labels[i]

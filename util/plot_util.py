@@ -141,6 +141,36 @@ def roc_plot(xlist, ylist, figfile = '',
         plt.savefig(figfile)
     plt.show()
     
+def make_plot(items, figfile = '',
+              xlabel = '', ylabel = '',
+              x_log = False, y_log = False,
+              labels = [], title = '',
+             ):
+    plt.cla()
+    plt.clf()
+    
+    fig = plt.figure()
+    fig.patch.set_facecolor('white')
+    for i, item in enumerate(items):
+        label = None
+        if len(labels) >= i:
+            label = labels[i]
+        plt.plot(item, label=label)
+        
+    if x_log:
+        plt.xscale('log')
+    if y_log:
+        plt.yscale('log')
+    
+    plt.title(title)
+    ampl.set_xlabel(xlabel)
+    ampl.set_ylabel(ylabel)
+    
+    plt.legend()
+    if figfile != '':
+        plt.savefig(figfile)
+    plt.show()
+    
 def drawLabels(fig, atlas_x=-1, atlas_y=-1, simulation=False,
                textlist=[]):
     if atlas_x >= 0 and atlas_y >= 0:

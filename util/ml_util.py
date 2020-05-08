@@ -8,6 +8,7 @@ import pandas as pd
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 import atlas_mpl_style as ampl
+import scipy.ndimage as ndi
 ampl.use_atlas_style()
 
 #define a dict for cell meta data
@@ -226,3 +227,25 @@ def rocScan(varlist, scan_targets, labels, plotpath, ylabels, data):
             plt.legend()
             plt.savefig(plotpath+'roc_scan_'+target_label+'_'+v.name+'.pdf')
             plt.show()
+
+#rescale our images to a common size
+#data should be a dictionary of numpy arrays
+#numpy arrays are indexed in cluster, eta, phi
+#target should be a tuple of the targeted dimensions
+#if layers isn't provided, loop over all the layers in the dict
+#otherwise we just go over the ones provided
+def rescaleImages(data, target, layers = []):
+    if len(layers) == 0:
+        layers = data.keys()
+    out = {}
+    for layer in layers:
+        out[layer] = ndi.zoom(data[layer], (1, target[0] / data[layer].shape[1], target[1] / data[layer].shape[2]))
+
+    return out
+
+#just a quick thing to stack things along axis 1, channels = first standard for CNN
+def setupChannelImages(data,last=False):
+    axis = 1
+    if last:
+        axis = 3
+    return np.stack([data[layer] for layer in data], axis=axis)

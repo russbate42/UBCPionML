@@ -7,4 +7,7 @@ datasets
 classifier/.vscode/settings.json
 classifier/Plots*
 classifier/Models*
+regression/Plots*
+regression/Models*
 ._*
+.venv*

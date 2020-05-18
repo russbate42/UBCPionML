@@ -151,6 +151,27 @@ def standardCells(array, layer, nrows = -1):
     reshaped = scaled.reshape(num_clusters, num_pixels)
     return reshaped, scaler
 
+def standardCellsGeneral(array, nrows = -1):
+    if nrows > 0:
+        working_array = array[:nrows]
+    else:
+        working_array = array
+
+    scaler = StandardScaler()
+
+    shape = working_array.shape
+
+    total = 1
+    for val in shape:
+        total*=val
+
+    flat_array = np.array(working_array.reshape(total, 1))
+
+    scaled = scaler.fit_transform(flat_array)
+
+    reshaped = scaled.reshape(shape)
+    return reshaped, scaler
+
 
 display_digits = 2
 

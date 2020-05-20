@@ -137,6 +137,9 @@ def roc_plot(xlist, ylist, figfile = '',
     ampl.set_ylabel(ylabel)
     
     plt.legend()
+
+    drawLabels(fig, atlas_x, atlas_y, simulation, textlist)
+    
     if figfile != '':
         plt.savefig(figfile)
     plt.show()

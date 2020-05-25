@@ -151,6 +151,27 @@ def standardCells(array, layer, nrows = -1):
     reshaped = scaled.reshape(num_clusters, num_pixels)
     return reshaped, scaler
 
+def standardCellsGeneral(array, nrows = -1):
+    if nrows > 0:
+        working_array = array[:nrows]
+    else:
+        working_array = array
+
+    scaler = StandardScaler()
+
+    shape = working_array.shape
+
+    total = 1
+    for val in shape:
+        total*=val
+
+    flat_array = np.array(working_array.reshape(total, 1))
+
+    scaled = scaler.fit_transform(flat_array)
+
+    reshaped = scaled.reshape(shape)
+    return reshaped, scaler
+
 
 display_digits = 2
 
@@ -249,3 +270,124 @@ def setupChannelImages(data,last=False):
     if last:
         axis = 3
     return np.stack([data[layer] for layer in data], axis=axis)
+
+
+def rebinImages(data, target, layers = []):
+    '''
+    Rebin images up or down to target size
+  
+    :param data: A dictionary of numpy arrays, numpy arrays are indexed in cluster, eta, phi
+    :param target: A tuple of the targeted dimensions
+    :param layers: A list of the layers to be rebinned, otherwise loop over all layers
+    :out: Dictionary of arrays whose layers have been rebinned to the target size
+    '''
+    if len(layers) == 0:
+        layers = data.keys()
+    out = {}
+    for layer in layers:
+        shape = data[layer].shape
+        # First rebin eta up or down as needed
+        if target[0] <= shape[1]:
+            out[layer] = [rebinDown(cluster, target[0], shape[1]) for cluster in data[layer]]
+        elif target[0] > shape[1]:
+            out[layer] = [rebinUp(cluster, target[0], shape[1]) for cluster in data[layer]]  
+            
+        # Next rebin phi up or down as needed
+        if target[1] <= shape[2]:
+            out[layer] = [rebinDown(cluster, target[0], target[1]) for cluster in out[layer]]
+        elif target[1] > shape[2]:
+            out[layer] = [rebinUp(cluster, target[0], target[1]) for cluster in out[layer]]
+
+    return out
+
+def rebinDown(a, targetEta, targetPhi):
+    '''
+    Decrease the size of a to the dimensions given by targetEta and targetPhi. Target dimensions must be factors of dimensions of a. Rebinning is done by summing sets of n cells where n is factor in each dimension.
+    
+    :param a: Array to be rebinned
+    :param targetEta: End size of eta dimension
+    :param targetPhi: End size of phi dimension
+    :out: Array rebinned to target size
+    '''
+    # Get shape of existing array
+    shape = a.shape
+    
+    # Calcuate factors by which we're reducing each dimension and check that they're integers
+    etaFactor = shape[0] / targetEta
+    if etaFactor != int(etaFactor):
+        raise ValueError('Target eta dimension must be integer multiple of current dimension')
+    phiFactor = shape[1] / targetPhi
+    if phiFactor != int(phiFactor):
+        raise ValueError('Target phi dimension must be integer multiple of current dimension')
+        
+    # Perform the reshaping and summing to get to target shape
+    a = a.reshape(targetEta, int(etaFactor), targetPhi, int(phiFactor),).sum(1).sum(2)
+    
+    return a
+
+def rebinUp(a, targetEta, targetPhi):
+    '''
+    Increase the size of a to the dimensions given by targetEta and targetPhi. Target dimensions must be integer multiples of dimensions of a. The value of a cell is divided equally amongst the new cells taking its place.
+    
+    :param a: Array to be rebinned
+    :param targetEta: End size of eta dimension
+    :param targetPhi: End size of phi dimension
+    :out: Array rebinned to target size
+    '''
+    # Get shape of existing array
+    shape = a.shape
+    
+    # Calculate factors by which we're expanding each dimension and check that they're integers
+    etaFactor = targetEta / shape[0]
+    if etaFactor != int(etaFactor):
+        raise ValueError('Target eta dimension must be integer multiple of current dimension')
+    phiFactor = targetPhi / shape[1]
+    if phiFactor != int(phiFactor):
+        raise ValueError('Target phi dimension must be integer multiple of current dimension')
+        
+    # Apply upscaling
+    a = upscaleEta(a, int(etaFactor))
+    a = upscalePhi(a, int(phiFactor))
+    
+    return a
+
+def upscalePhi(array, scale):
+    '''
+    Upscale an array along the phi axis (index 1) by calling upscaleList on row
+    
+    :param array: 2D array to be upscaled
+    :param scale: Positive integer, the factor by which to increase the size of array in the phi direction
+    :out: Upscaled array
+    '''
+    out_array = np.array([upscaleList(row, scale) for row in array])
+    return out_array
+    
+def upscaleEta(array, scale):
+    '''
+    Upscale an array along the eta axis (index 0) by flipping eta and phi, calling upscalePhi on each row, and flipping back
+    
+    :param array: 2D array to be upscaled
+    :param scale: Positive integer, the factor by which to increase the size of array in the eta direction
+    :out: Upscaled array
+    '''
+    transpose_array = array.T
+    out_array = upscalePhi(transpose_array, scale)
+    out_array = out_array.T
+    return out_array
+    
+def upscaleList(val_list, scale):
+    '''
+    Expand val_list by the scale multiplier. Each element of val_list is replaced by scale copies of that element divided by scale.
+    E.g. upscaleList([3, 3], 3) = [1, 1, 1, 1, 1, 1]
+    
+    :param val_list: List to be upscaled
+    :param scale: Positive integer, the factor by which to increase the size of val_list
+    :out: Upscaled list
+    '''
+    if scale >= 1:
+        if scale != int(scale):
+            raise ValueError('Scale must be an integer')
+        out_list = [val / scale for val in val_list for _ in range(scale)]
+    else:
+         raise ValueError('Scale must be greater than or equal to one')
+    return out_list

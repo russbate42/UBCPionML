@@ -4,6 +4,7 @@ import numpy as np
 import matplotlib as mpl
 import matplotlib.pyplot as plt
 from matplotlib.colors import LogNorm
+from sklearn.metrics import roc_curve, auc
 
 import atlas_mpl_style as ampl
 ampl.use_atlas_style()
@@ -137,6 +138,9 @@ def roc_plot(xlist, ylist, figfile = '',
     ampl.set_ylabel(ylabel)
     
     plt.legend()
+
+    drawLabels(fig, atlas_x, atlas_y, simulation, textlist)
+    
     if figfile != '':
         plt.savefig(figfile)
     plt.show()
@@ -180,3 +184,116 @@ def drawLabels(fig, atlas_x=-1, atlas_y=-1, simulation=False,
         fig.axes[0].text(
             textdict['x'], textdict['y'], textdict['text'], 
             transform=fig.axes[0].transAxes, fontsize=18)
+
+
+display_digits = 2
+
+
+class rocVar:
+    def __init__(self,
+                 name,  # name of variable as it appears in the root file
+                 bins,  # endpoints of bins as a list
+                 df,   # dataframe to construct subsets from
+                 latex='',  # optional latex to display variable name with
+                 vlist=None,  # optional list to append class instance to
+                 ):
+        self.name = name
+        self.bins = bins
+
+        if(latex == ''):
+            self.latex = name
+        else:
+            self.latex = latex
+
+        self.selections = []
+        self.labels = []
+        for i, point in enumerate(self.bins):
+            if(i == 0):
+                self.selections.append(df[name] < point)
+                self.labels.append(
+                    self.latex+'<'+str(round(point, display_digits)))
+            else:
+                self.selections.append(
+                    (df[name] > self.bins[i-1]) & (df[name] < self.bins[i]))
+                self.labels.append(str(round(
+                    self.bins[i-1], display_digits))+'<'+self.latex+'<'+str(round(point, display_digits)))
+                if(i == len(bins)-1):
+                    self.selections.append(df[name] > point)
+                    self.labels.append(
+                        self.latex+'>'+str(round(point, display_digits)))
+
+        if(vlist != None):
+            vlist.append(self)
+
+
+def rocScan(varlist, scan_targets, labels, ylabels, data, plotpath='',
+            x_min=0., x_max=1.0, y_min=0.0, y_max=1.0, x_log = False, y_log = False, rejection = False,
+            x_label = 'False positive rate', y_label = 'True positive rate',
+            linestyles=[], colorgrouping=-1,
+            extra_lines=[],
+            atlas_x=-1, atlas_y=-1, simulation=False,
+            textlist=[]):
+    '''
+    Creates a set of ROC curve plots by scanning over the specified variables.
+    One set is created for each target (neural net score dataset).
+    
+    varlist: a list of rocVar instances to scan over
+    scan_targets: a list of neural net score datasets to use
+    labels: a list of target names (strings); must be the same length as scan_targets
+    '''
+
+    rocs = buildRocs(varlist, scan_targets, labels, ylabels, data)
+
+    for target_label in labels:
+        for v in varlist:
+            # prepare matplotlib figure
+            plt.cla()
+            plt.clf()
+            fig = plt.figure()
+            fig.patch.set_facecolor('white')
+            plt.plot([0, 1], [0, 1], 'k--')
+
+            for label in v.labels:
+                # first generate ROC curve
+                x = rocs[target_label+label]['x']
+                y = rocs[target_label+label]['y']
+                var_auc = auc(x, y)
+                if not rejection:
+                    plt.plot(x, y, label=label+' (area = {:.3f})'.format(var_auc))
+                else:
+                    plt.plot(y, 1. / x, label=label +
+                             ' (area = {:.3f})'.format(var_auc))
+
+            # plt.title('ROC Scan of '+target_label+' over '+v.latex)
+            if x_log:
+                plt.xscale('log')
+            if y_log:
+                plt.yscale('log')
+            plt.xlim(x_min, x_max)
+            plt.ylim(y_min, y_max)
+            ampl.set_xlabel(x_label)
+            ampl.set_ylabel(y_label)
+            plt.legend()
+
+            drawLabels(fig, atlas_x, atlas_y, simulation, textlist)
+
+            if plotpath != '':
+                plt.savefig(plotpath+'roc_scan_' +
+                            target_label+'_'+v.name+'.pdf')
+            plt.show()
+
+def buildRocs(varlist, scan_targets, labels, ylabels, data):
+    rocs = {}
+    for target, target_label in zip(scan_targets, labels):
+        for v in varlist:
+            for binning, label in zip(v.selections, v.labels):
+                # first generate ROC curve
+                x, y, t = roc_curve(
+                    ylabels[data.test & binning][:, 1],
+                    target[data.test & binning],
+                    drop_intermediate=False,
+                )
+
+                rocs[target_label + label] = {'x': x, 'y': y}
+
+    return rocs

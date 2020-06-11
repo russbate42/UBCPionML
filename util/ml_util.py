@@ -212,9 +212,9 @@ def rebinImages(data, target, layers = []):
         shape = data[layer].shape
         # First rebin eta up or down as needed
         if target[0] <= shape[1]:
-            out[layer] = [rebinDown(cluster, target[0], shape[1]) for cluster in data[layer]]
+            out[layer] = [rebinDown(cluster, target[0], shape[2]) for cluster in data[layer]]
         elif target[0] > shape[1]:
-            out[layer] = [rebinUp(cluster, target[0], shape[1]) for cluster in data[layer]]  
+            out[layer] = [rebinUp(cluster, target[0], shape[2]) for cluster in data[layer]]  
             
         # Next rebin phi up or down as needed
         if target[1] <= shape[2]:

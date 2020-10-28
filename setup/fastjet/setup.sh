@@ -9,7 +9,7 @@ popd () {
     command popd "$@" > /dev/null
 }
 
-# Setup for (external) fastjet and fj-contrib.
+# Setup for (external) fastjet and fj-contrib. We don't necessarily need fj-contrib but it might be useful in the future.
 
 # Get the current directory (and save it)
 dir0=$PWD

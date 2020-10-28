@@ -29,14 +29,14 @@ tfile2="fjcontrib-1.045.tar.gz"
 dir1="fastjet-src"
 dir2="fj-contrib-src"
 
-#curl -O "http://fastjet.fr/repo/$tfile1"
-#wget "http://fastjet.hepforge.org/contrib/downloads/$tfile2"
+curl -O "http://fastjet.fr/repo/$tfile1"
+wget "http://fastjet.hepforge.org/contrib/downloads/$tfile2"
 
 mkdir -p $dir1
 mkdir -p $dir2
 
-#tar zxvf $tfile1 -C $dir1 --strip-components=1
-#tar zxvf $tfile2 -C $dir2 --strip-components=1
+tar zxvf $tfile1 -C $dir1 --strip-components=1
+tar zxvf $tfile2 -C $dir2 --strip-components=1
 
 #Now we have to install fastjet.
 
@@ -56,9 +56,17 @@ pushd $dir1
     [[ "$?" != 0 ]] && popd; 
 popd
 
-# Add to the library path and Python path.
+# Add to the library path and Python path. Not sure if Python path is really necessary here.
 export LD_LIBRARY_PATH=${dir0}/${fj_install}/lib:$LD_LIBRARY_PATH
 export PYTHONPATH=${dir0}/${fj_install}/lib/python3.8/site-packages:$PYTHONPATH
+
+# To ensure that our conda env always sees the fastjet Python library, we add a .pth file.
+# See https://stackoverflow.com/questions/37006114/anaconda-permanently-include-external-packages-like-in-pythonpath
+#conda-develop ${dir0}/${fj_install}/lib/python3.8/site-packages # alternative if we have conda-buildar
+path_file='fastjet.pth'
+cat > ${conda_str1}/envs/ml4p/lib/python3.8/site-packages/${path_file} << EOF1
+${dir0}/${fj_install}/lib/python3.8/site-packages
+EOF1
 
 # Install fj-contrib.
 fjc_install="fjcontrib-install"

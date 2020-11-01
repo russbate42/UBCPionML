@@ -1,7 +1,7 @@
 # Just some simple, quality-of-life functions. Nothing very fancy.
 
 # Print iterations progress.
-# Taken from https://stackoverflow.com/a/34325723.
+# Adapted from https://stackoverflow.com/a/34325723.
 def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, length = 100, fill = '█', printEnd = "\r"):
     """
     Call in a loop to create terminal progress bar
@@ -22,3 +22,14 @@ def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, 
     # Print New Line on Complete
     if iteration == total: 
         print()
+        
+# Progress bar with color.
+def printProgressBarColor (iteration, total, prefix = '', suffix = '', decimals = 1, length = 100, fill = '█', printEnd = "\r"):
+    fill_prefix = '\33[31m'
+    fill_suffix = '\033[0m'
+    prog = iteration/total
+    if(prog > 0.33 and prog <= 0.67): fill_prefix = '\33[33m'
+    elif(prog > 0.67): fill_prefix = '\33[32m'
+    fill = fill_prefix + fill + fill_suffix
+    printProgressBar(iteration, total, prefix = prefix, suffix = suffix, decimals = decimals, length = length, fill = fill, printEnd = printEnd)
+    return

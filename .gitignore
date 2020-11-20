@@ -12,4 +12,15 @@ regression/Models*
 ._*
 .venv*
 util/__pycache__/*.pyc
+
+# don't copy local setup stuff
+setup/**/*.gz
+setup/fastjet/fastjet_src/*
+setup/fastjet/fj_contrib_src/*
+setup/fastjet/fj_install/*
+setup/fastjet/fjc_install/*
+
+# don't copy data
 data/*.root
+data/**/*.root
+

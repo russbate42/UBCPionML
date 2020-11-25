@@ -5,10 +5,12 @@ type=$1 #this will indicate the kind of dataset we want to download
 
 if [[ "$type" == "jet" ]]
 then
-    scp -r ${user}@lxplus.cern.ch:/eos/user/j/jaofferm/atlas-calo-ml/data/jet/* ./
+    mkdir jet
+    scp -r ${user}@lxplus.cern.ch:/eos/user/j/jaofferm/atlas-calo-ml/data/jet/*/*.root ./jet/
 elif [[ "$type" == "pion" ]]
 then
-    scp ${user}@lxplus.cern.ch:/eos/user/m/mswiatlo/images/v7/*.root ./
+    mkdir pion
+    scp ${user}@lxplus.cern.ch:/eos/user/m/mswiatlo/images/v7/*.root ./pion/
 else
     echo "Type ${type} not understood."
 fi

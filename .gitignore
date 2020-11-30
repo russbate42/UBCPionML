@@ -8,7 +8,7 @@ classifier/.vscode/settings.json
 #classifier/Plots*
 #classifier/Models*
 regression/Plots*
-regression/Models*
+#regression/Models*
 ._*
 .venv*
 util/__pycache__/*.pyc

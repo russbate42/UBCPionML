@@ -23,4 +23,5 @@ setup/fastjet/fjc_install/
 # don't copy data
 data/*.root
 data/**/*.root
+jets/data/*
 

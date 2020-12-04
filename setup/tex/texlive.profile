@@ -1,7 +1,7 @@
-# texlive.profile written on Wed Oct 28 01:14:22 2020 UTC
+# texlive.profile written on Fri Dec  4 16:48:51 2020 UTC
 # It will NOT be updated and reflects only the
 # installation profile at installation time.
-selected_scheme scheme-small
+selected_scheme scheme-tetex
 TEXDIR /usr/local/texlive/2020
 TEXMFCONFIG ~/.texlive2020/texmf-config
 TEXMFHOME ~/texmf

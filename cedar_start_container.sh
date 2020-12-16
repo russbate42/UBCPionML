@@ -1,0 +1,1 @@
+singularity exec --bind /project baseml_tf_v0.1.24.sif /bin/bash

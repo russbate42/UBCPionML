@@ -36,6 +36,11 @@ def printProgressBarColor (iteration, total, prefix = '', suffix = '', decimals 
     printProgressBar(iteration, total, prefix = prefix, suffix = suffix, decimals = decimals, length = length, fill = fill, printEnd = printEnd)
     return
 
+# Setting a histogram's line and fill color in one go
+def SetColor(hist, color, alpha = 0.5):
+    hist.SetLineColor(color)
+    hist.SetFillColorAlpha(color, alpha)
+
 
 # Some ROOT/numpy stuff
 # Converting from ROOT type names to leaflist decorators.

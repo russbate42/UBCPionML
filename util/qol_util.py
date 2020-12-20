@@ -1,6 +1,8 @@
 # Just some simple, quality-of-life functions. Nothing very fancy.
 
 import numpy as np
+import ROOT as rt
+import uuid
 
 # Print iterations progress.
 # Adapted from https://stackoverflow.com/a/34325723.
@@ -41,6 +43,26 @@ def SetColor(hist, color, alpha = 0.5):
     hist.SetLineColor(color)
     hist.SetFillColorAlpha(color, alpha)
 
+# Plotting groups of histograms together, in separate tiles.
+def DrawSet(hists, logx=False, logy=True, cut_pave = 0):
+    nx = 2
+    l = len(hists.keys())
+    ny = int(np.ceil(l / nx))
+    canvas = rt.TCanvas(str(uuid.uuid4()), str(uuid.uuid4()), 600 * nx, 450 * ny)
+    canvas.Divide(nx, ny)
+    for i, hist in enumerate(hists.values()):
+        canvas.cd(i+1)
+        hist.Draw('HIST')
+        if(logx):
+            rt.gPad.SetLogx()
+            hist.GetXaxis().SetRangeUser(1.0e-0, hist.GetXaxis().GetBinUpEdge(hist.GetXaxis().GetLast()))
+        if(logy): 
+            rt.gPad.SetLogy()
+            hist.SetMinimum(5.0e-1)
+        else:
+            hist.SetMinimum(0.)
+        if(cut_pave != 0): cut_pave.Draw()  
+    return canvas
 
 # Some ROOT/numpy stuff
 # Converting from ROOT type names to leaflist decorators.

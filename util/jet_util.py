@@ -1,11 +1,12 @@
 # Utilities for jet clustering, plotting jet kinematics et cetera. These are functions used in our jet-clustering workflow,
 # so some many not have to do *explicitly* with jets (e.g. there might be some stuff for plotting topo-cluster predicted energies).
 # Note that functions that are purely for convenience will be placed in qol_util.py.
-import sys
+import sys, uuid
 import ROOT as rt
 import uproot as ur
 import numpy as np
 from numba import jit
+from util import qol_util as qu
 
 # Perform jet clustering. The "energy" parameter determines
 # the name of the branch used for topo-cluster energies. If
@@ -88,9 +89,8 @@ def ClusterJets(ur_trees, jet_name, R, pt_min, eta_max, fj_dir, classification_t
                 # Make a fastjet PseudoJet object from this 4-vector, add it to the PseudoJet list that will be handed off to jet clustering.
                 pseudojets.append(fj.PseudoJet(vec_polar.Px(), vec_polar.Py(), vec_polar.Pz(), vec_polar.E())) # fastjet uses Cartesian input
         
-            # Perform jet clustering.
+            # Perform jet clustering. Suppressing fastjet printout.
             jets = jet_def(pseudojets)
-        
             # Apply optional minimum jet pT cut.
             jet_pt = np.array([jet.pt() for jet in jets])
             jet_indices = np.linspace(0,len(jets)-1,len(jets),dtype=np.dtype('i8'))[jet_pt >= pt_min]
@@ -272,3 +272,147 @@ def MatchRecoJets(ur_trees, jet_defs, R, eta_max, truth_e_min, tree_name = 'JetM
         t.Write(tree_name,rt.TObject.kOverwrite)
         f.Close()
     return
+
+def PlotEnergyRatio(ur_trees, reco_jet_defs, colors, truth_jet_def='AntiKt4TruthJets',match_key='jet_match', min_ratio = 0., max_ratio = 5., nbins = 50, paves = [], plot_dir = ''):
+    
+    hists = {key: rt.TH1F(str(uuid.uuid4()), key + ';E_{reco}/E_{true};Count',nbins,min_ratio,max_ratio) for key in reco_jet_defs.keys()}
+    hists_zoomed = {key: rt.TH1F(str(uuid.uuid4()), key + ' (zoomed axis);E_{reco}/E_{true};Count',10 * nbins,min_ratio,max_ratio) for key in reco_jet_defs.keys()}
+
+    for key in reco_jet_defs.keys():
+        qu.SetColor(hists[key],colors[key])
+        qu.SetColor(hists_zoomed[key],colors[key])
+
+    # now loop through our files and fill the trees
+    for dfile, tree in ur_trees.items():
+        truth_energy = tree['event'].array(truth_jet_def + 'E')
+    
+        # make a histogram for each reco jet definition
+        for key, rdef in reco_jet_defs.items():
+            reco_energy = tree[rdef[0]].array(rdef[1] + 'E')
+            reco_match  = tree['jet_match'].array(rdef[1] + 'Match')
+        
+            # looping through events in this file (these are jagged arrays)
+            for i in range(len(reco_match)):
+                # looping through truth jets, plot match for each one that has a match
+                for j in range(len(reco_match[i])):
+                    if(reco_match[i][j] > -1): 
+                        hists[key].Fill(reco_energy[i][j] / truth_energy[i][reco_match[i][j]])
+                        hists_zoomed[key].Fill(reco_energy[i][j] / truth_energy[i][reco_match[i][j]])
+
+    # draw the histograms we just made
+    c = rt.TCanvas(str(uuid.uuid4()),'c_energy_ratio',800, 1200)
+    rt.gStyle.SetOptStat(0)
+
+    legend = rt.TLegend(0.7,0.7,0.9,0.9)
+    for key in hists.keys(): legend.AddEntry(hists[key],key,'f')
+
+    c.Divide(1,2)
+    c.cd(1)
+    stack1 = rt.THStack(str(uuid.uuid4()),'s1')
+    stack1.SetTitle('Jet energy ratio;E_{reco}/E_{true};Count')
+    for hist in hists.values(): stack1.Add(hist)
+    stack1.Draw('NOSTACK HIST')
+    rt.gPad.SetLogy()
+    legend.Draw()
+    for pave in paves: pave.Draw()
+
+
+    c.cd(2)
+    stack2 = rt.THStack(str(uuid.uuid4()),'s1')
+    stack2.SetTitle('Jet energy ratio (zoomed axis);E_{reco}/E_{true};Count')
+    for hist in hists_zoomed.values(): stack2.Add(hist)
+    stack2.Draw('NOSTACK HIST')
+    rt.gPad.SetLogx()
+    rt.gPad.SetLogy()
+    legend.Draw()
+    for pave in paves: pave.Draw()
+
+    c.SaveAs(plot_dir + '/' + 'jet_energy_ratio.png')
+    c.Draw()
+    
+    # return the ROOT objects, so that things display on the canvas
+    results = {}
+    results['canvas'] = c
+    results['stacks'] = [stack1, stack2]
+    results['legend'] = legend
+    results['hists'] = [hists,hists_zoomed]
+    return results
+
+def PlotJetKinematics(ur_trees, jet_defs, colors, plot_dir, eta_max, truth_e_min, paves = [], logx = [], input_GeV=True):
+    
+    scale_factor = 0.001 # jet info is in MeV, we want to plot it all in GeV
+    unit = 'GeV'
+    if(not input_GeV): 
+        scale_factor = 1. # if not GeV, assume MeV
+        unit = 'MeV'
+
+    energy_hists = {key:rt.TH1F(str(uuid.uuid4()), key + ' Jets;Energy [{val}];Count'.format(val=unit), 80, 0., 400.) for key in jet_defs.keys()}
+    pt_hists     = {key:rt.TH1F(str(uuid.uuid4()), key + ' Jets;p_{T}' + ' [{val}];Count'.format(val=unit), 80, 0., 400.) for key in jet_defs.keys()}
+    eta_hists    = {key:rt.TH1F(str(uuid.uuid4()), key + ' Jets;#eta;Count', 50, -1., 1.) for key in jet_defs.keys()}
+    m_hists      = {key:rt.TH1F(str(uuid.uuid4()), key + ' Jets;m [{val}];Count'.format(val=unit), 55, -10., 100.) for key in jet_defs.keys()}
+    ep_hists     = {key:rt.TH1F(str(uuid.uuid4()), key + ' Jets;Energy / p_{T};Count', 90, 0.9, 1.2) for key in jet_defs.keys()}
+    n_hists      = {key:rt.TH1I(str(uuid.uuid4()), key + ' Jets;N_{jets};Count', 10, 0, 10) for key in jet_defs.keys()}
+
+    vec = rt.Math.PtEtaPhiEVector()
+    for dfile, tree in ur_trees.items():
+        for key, jet_def in jet_defs.items():
+            tkey  = jet_def[0]
+            jname = jet_def[1]
+        
+            # Truth jets -- apply global jet cuts, and truth-specific jet cuts.
+            if(key == 'Truth'):
+                eta = tree[tkey].array(jname + 'Eta')
+                energy = tree[tkey].array(jname + 'E')
+                # Truth jet energy cut & jet eta cut.
+                jet_indices = (np.abs(eta) <= eta_max) * (scale_factor * energy  >= truth_e_min)
+        
+            # Reco jets -- apply jet-matching cut (global jet cuts are built-in). No further reco-specific jet cuts for now.
+            else:
+                matching = tree['jet_match'].array(jname + 'Match')
+                jet_indices = (matching > -1)
+            
+            # Now get all jets that passed the cuts.
+            # First do a bit of manipulation with eta, to also get the number of jets per event.
+            eta = tree[tkey].array(jname + 'Eta')[jet_indices]
+            n   = [len(x) for x in eta]
+            eta = eta.flatten()
+            energy = scale_factor * tree[tkey].array(jname + 'E')[jet_indices].flatten()
+            pt     = scale_factor * tree[tkey].array(jname + 'Pt')[jet_indices].flatten()
+            ep     = energy / pt
+        
+            for i in range(len(n)): n_hists[key].Fill(n[i])
+            
+            for i in range(len(ep)):
+                energy_hists[key].Fill(energy[i])
+                pt_hists[key].Fill(pt[i])
+                eta_hists[key].Fill(eta[i])
+                ep_hists[key].Fill(ep[i])
+            
+                # Compute the jet mass and plot it too.
+                vec.SetCoordinates(pt[i],eta[i],0.,energy[i])
+                m_hists[key].Fill(vec.M())
+
+    hist_lists = [energy_hists, pt_hists, eta_hists, ep_hists, m_hists, n_hists]
+    names      = ['energy',     'pt',     'eta',      'ep',    'm',     'n']
+    for key in jet_defs.keys():
+        for hist_list in hist_lists:
+            alpha = 0.5
+            if(key == 'Truth'): alpha = 0.75
+            qu.SetColor(hist_list[key],colors[key],alpha = alpha)            
+            
+    rt.gStyle.SetOptStat(0)
+    canvases = []
+
+    for i in range(len(hist_lists)):
+        hist_list = hist_lists[i]
+        use_logx = False
+        if(names[i] in logx): use_logx = True
+        c = qu.DrawSet(hist_list, logx=use_logx, paves = paves)
+        canvases.append(c)
+        c.Draw()
+        c.SaveAs(plot_dir + '/' + names[i] + '.png')
+        
+    results = {}
+    results['canvas'] = canvases
+    results['hists'] = hist_lists
+    return results

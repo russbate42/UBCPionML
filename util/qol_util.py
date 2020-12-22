@@ -2,7 +2,7 @@
 
 import numpy as np
 import ROOT as rt
-import uuid
+import sys, os, uuid
 
 # Print iterations progress.
 # Adapted from https://stackoverflow.com/a/34325723.
@@ -44,7 +44,7 @@ def SetColor(hist, color, alpha = 0.5):
     hist.SetFillColorAlpha(color, alpha)
 
 # Plotting groups of histograms together, in separate tiles.
-def DrawSet(hists, logx=False, logy=True, cut_pave = 0):
+def DrawSet(hists, logx=False, logy=True, paves = 0):
     nx = 2
     l = len(hists.keys())
     ny = int(np.ceil(l / nx))
@@ -61,8 +61,21 @@ def DrawSet(hists, logx=False, logy=True, cut_pave = 0):
             hist.SetMinimum(5.0e-1)
         else:
             hist.SetMinimum(0.)
-        if(cut_pave != 0): cut_pave.Draw()  
+        if(paves != 0):
+            for pave in paves: pave.Draw()
     return canvas
+
+# For hiding print statements. TODO: Not working for suppressing fastjet printouts.
+class HiddenPrints:
+    def __enter__(self):
+        self._original_stdout = sys.stdout
+        sys.stdout = open(os.devnull, 'w')
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        sys.stdout.close()
+        sys.stdout = self._original_stdout
+
+# -- Unused functions / funcs for deprecated workflows below --
 
 # Some ROOT/numpy stuff
 # Converting from ROOT type names to leaflist decorators.
@@ -92,3 +105,5 @@ def RType2NType(type_string):
     elif(type_string == 'F'): return np.dtype('f4')
     elif(type_string == 'D'): return np.dtype('f8')
     else: raise ValueError('Input not understood.')
+
+        

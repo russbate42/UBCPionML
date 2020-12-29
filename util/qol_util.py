@@ -4,6 +4,8 @@ import numpy as np
 import ROOT as rt
 import sys, os, uuid
 
+# 1) Progress bars.
+
 # Print iterations progress.
 # Adapted from https://stackoverflow.com/a/34325723.
 def printProgressBar (iteration, total, prefix = '', suffix = '', decimals = 1, length = 100, fill = '█', printEnd = "\r"):
@@ -38,6 +40,38 @@ def printProgressBarColor (iteration, total, prefix = '', suffix = '', decimals 
     printProgressBar(iteration, total, prefix = prefix, suffix = suffix, decimals = decimals, length = length, fill = fill, printEnd = printEnd)
     return
 
+#2) Plot display/adjustments.
+class PlotStyle:
+    def __init__(self, mode = 'dark'):
+        if(mode != 'dark'): mode = 'light'
+            
+        if(mode == 'light'):
+            self.main = rt.kBlack
+            self.canv = rt.kWhite
+            self.text = rt.kBlack
+        
+        elif(mode == 'dark'):
+            self.main = rt.TColor.GetColor(52,165,218)
+            self.canv = rt.TColor.GetColor(34,34,34)
+            self.text = rt.kWhite
+        
+    def SetStyle(self):
+        rt.gStyle.SetAxisColor(self.main,'xyz')
+        rt.gStyle.SetGridColor(self.main)
+        rt.gStyle.SetLineColor(self.main)
+        rt.gStyle.SetFrameLineColor(self.main)
+        
+        rt.gStyle.SetPadColor(self.canv)
+        rt.gStyle.SetCanvasColor(self.canv)
+        rt.gStyle.SetLegendFillColor(self.canv)
+        
+        rt.gStyle.SetTitleTextColor(self.text)
+        rt.gStyle.SetTitleColor(self.text, 'xyz')
+        rt.gStyle.SetLabelColor(self.text, 'xyz')
+        rt.gStyle.SetStatTextColor(self.text)
+        rt.gStyle.SetTextColor(self.text)
+
+
 # Setting a histogram's line and fill color in one go
 def SetColor(hist, color, alpha = 0.5):
     hist.SetLineColor(color)
@@ -65,6 +99,7 @@ def DrawSet(hists, logx=False, logy=True, paves = 0):
             for pave in paves: pave.Draw()
     return canvas
 
+# 3) Hiding print statements.
 # For hiding print statements. TODO: Not working for suppressing fastjet printouts.
 class HiddenPrints:
     def __enter__(self):

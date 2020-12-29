@@ -304,6 +304,7 @@ def PlotEnergyRatio(ur_trees, reco_jet_defs, colors, truth_jet_def='AntiKt4Truth
     rt.gStyle.SetOptStat(0)
 
     legend = rt.TLegend(0.7,0.7,0.9,0.9)
+    legend.SetTextColor(rt.gStyle.GetTextColor())
     for key in hists.keys(): legend.AddEntry(hists[key],key,'f')
 
     c.Divide(1,2)
@@ -346,8 +347,8 @@ def PlotJetKinematics(ur_trees, jet_defs, colors, plot_dir, eta_max, truth_e_min
         scale_factor = 1. # if not GeV, assume MeV
         unit = 'MeV'
 
-    energy_hists = {key:rt.TH1F(str(uuid.uuid4()), key + ' Jets;Energy [{val}];Count'.format(val=unit), 80, 0., 400.) for key in jet_defs.keys()}
-    pt_hists     = {key:rt.TH1F(str(uuid.uuid4()), key + ' Jets;p_{T}' + ' [{val}];Count'.format(val=unit), 80, 0., 400.) for key in jet_defs.keys()}
+    energy_hists = {key:rt.TH1F(str(uuid.uuid4()), key + ' Jets;Energy [{val}];Count'.format(val=unit), 60, 0., 300.) for key in jet_defs.keys()}
+    pt_hists     = {key:rt.TH1F(str(uuid.uuid4()), key + ' Jets;p_{T}' + ' [{val}];Count'.format(val=unit), 60, 0., 300.) for key in jet_defs.keys()}
     eta_hists    = {key:rt.TH1F(str(uuid.uuid4()), key + ' Jets;#eta;Count', 50, -1., 1.) for key in jet_defs.keys()}
     m_hists      = {key:rt.TH1F(str(uuid.uuid4()), key + ' Jets;m [{val}];Count'.format(val=unit), 55, -10., 100.) for key in jet_defs.keys()}
     ep_hists     = {key:rt.TH1F(str(uuid.uuid4()), key + ' Jets;Energy / p_{T};Count', 90, 0.9, 1.2) for key in jet_defs.keys()}

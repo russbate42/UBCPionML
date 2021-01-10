@@ -183,7 +183,6 @@ def MatchRecoJets(ur_trees, jet_defs, R, eta_max, truth_e_min, tree_name = 'JetM
     for dfile, tree in ur_trees.items():   
         # tree for saving jet matching info
         f = rt.TFile(dfile, 'UPDATE')
-        tree_name = tree_name
         t = rt.TTree(tree_name, tree_name)
         branches = {}
         for key,val in branch_buffer.items():

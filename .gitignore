@@ -15,11 +15,9 @@ util/__pycache__/*.pyc
 
 # don't copy local setup stuff
 setup/**/*.gz
-setup/fastjet/fastjet_src/**
-setup/fastjet/fj_contrib_src/**
-setup/fastjet/fastjet_install/**
-setup/fastjet/fj_install/**
-setup/fastjet/fjc_install/**
+setup/fastjet/fastjet-src/
+setup/fastjet/fj-contrib-src/
+setup/fastjet/fastjet-install/
 
 # don't copy data
 data/*.root

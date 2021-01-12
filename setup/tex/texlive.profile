@@ -1,13 +1,13 @@
 # texlive.profile written on Fri Dec  4 16:48:51 2020 UTC
 # It will NOT be updated and reflects only the
 # installation profile at installation time.
-selected_scheme scheme-tetex
-TEXDIR /usr/local/texlive/2020
+selected_scheme scheme-full
+TEXDIR /local/home/jano/texlive/2020
 TEXMFCONFIG ~/.texlive2020/texmf-config
 TEXMFHOME ~/texmf
-TEXMFLOCAL /usr/local/texlive/texmf-local
-TEXMFSYSCONFIG /usr/local/texlive/2020/texmf-config
-TEXMFSYSVAR /usr/local/texlive/2020/texmf-var
+TEXMFLOCAL /local/home/jano/texlive/texmf-local
+TEXMFSYSCONFIG /local/home/jano/texlive/2020/texmf-config
+TEXMFSYSVAR /local/home/jano/texlive/2020/texmf-var
 TEXMFVAR ~/.texlive2020/texmf-var
 binary_x86_64-linux 1
 instopt_adjustpath 0

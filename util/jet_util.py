@@ -8,10 +8,18 @@ import numpy as np
 from numba import jit
 from util import qol_util as qu
 
+# Polar to Cartesian, for circumventing TLorentzVector (etc) usage.
+@jit
+def Polar2Cartesian(pt,eta,phi,e):
+    px = pt * np.cos(phi)
+    py = pt * np.sin(phi)
+    pz = pt * np.sinh(eta)
+    return np.array([px,py,pz,e],dtype=np.dtype('f8'))
+
 # Perform jet clustering. The "energy" parameter determines
 # the name of the branch used for topo-cluster energies. If
 # it is set to None (default), we use our ML energy regression.
-def ClusterJets(ur_trees, jet_name, R, pt_min, eta_max, fj_dir, classification_threshold = 0.5, energy_tree_key=None, energy_branch=None, tree_name = 'JetTree', input_GeV = True):
+def ClusterJets(ur_trees, jet_name, R, pt_min, eta_max, fj_dir, classification_threshold = 0.5, energy_tree_key=None, energy_branch=None, tree_name = 'JetTree', input_GeV = True, debug=False):
     
     energy_scaling = 1.
     if(input_GeV): energy_scaling = 1.0e3 # jet info saved in MeV by convention
@@ -50,22 +58,25 @@ def ClusterJets(ur_trees, jet_name, R, pt_min, eta_max, fj_dir, classification_t
         else: cluster_energies = trees[energy_tree_key].array(energy_branch)
 
         # ROOT access to the file -- we are making a new tree to save the jet information.
-        f = rt.TFile(dfile, 'UPDATE')
+        df = dfile.replace('.root','_new.root')
+        f = rt.TFile(df, 'RECREATE')
         t = rt.TTree(tree_name, tree_name)
         branches = {}
         for key,val in branch_buffer.items(): branches[key] = t.Branch(key, val)
     
-        vec_polar = rt.Math.PtEtaPhiEVector() # for performing polar/Cartesian conversions for fastjet
+        #vec_polar = rt.Math.PtEtaPhiEVector() # for performing polar/Cartesian conversions for fastjet
         
         # loop over events
         nevents = trees['event'].numentries
+        
+        if(debug):
+            print('File:',dfile)
+            print('\tPerforming jet clustering for {val} events.'.format(val=nevents))
         for i in range(nevents):
-
-            # Explicit list of cluster indices we're working with -- these are indices in ClusterTree, corresponding to event i.
-            cluster_idxs = np.linspace(cluster_min[i], cluster_max[i], cluster_max[i] - cluster_min[i] + 1, dtype=np.dtype('i8'))        
-                
-            pseudojets = []
-            for idx in cluster_idxs:
+            # Explicit list of cluster indices we're working with -- these are indices in ClusterTree, corresponding to event i.                
+            cluster_idxs = np.array(range(cluster_min[i], cluster_max[i] + 1),dtype=np.dtype('i8'))            
+            cartesian_coords = np.zeros((len(cluster_idxs),4),dtype=np.dtype('f8'))
+            for j, idx in enumerate(cluster_idxs):
                 
                 # Energy assignment for each topo-cluster. By default, we use the cluster classifications and energy regressions
                 # to assign energies, but the "energy" parameter to this function can be used to explictly pick a branch to access.
@@ -84,13 +95,21 @@ def ClusterJets(ur_trees, jet_name, R, pt_min, eta_max, fj_dir, classification_t
                 pt = cluster_vec[idx,0] * energy_ratio
             
                 # Create 4-vector representing the topo-cluster.
-                vec_polar.SetCoordinates(pt,cluster_vec[idx,1],cluster_vec[idx,2],energy)
-            
-                # Make a fastjet PseudoJet object from this 4-vector, add it to the PseudoJet list that will be handed off to jet clustering.
-                pseudojets.append(fj.PseudoJet(vec_polar.Px(), vec_polar.Py(), vec_polar.Pz(), vec_polar.E())) # fastjet uses Cartesian input
-        
-            # Perform jet clustering. Suppressing fastjet printout.
+                #vec_polar.SetCoordinates(pt,cluster_vec[idx,1],cluster_vec[idx,2],energy)
+                #cartesian_coords[j,:] = [vec_polar.Px(), vec_polar.Py(), vec_polar.Pz(), vec_polar.E()]
+                cartesian_coords[j,:] = Polar2Cartesian(pt,cluster_vec[idx,1],cluster_vec[idx,2],energy)
+
+            # Perform jet clustering.
+            if(debug):
+                lcc = cartesian_coords.shape[0]
+                for j, x in enumerate(cartesian_coords):
+                    m2 = x[3] * x[3] - (x[0] * x[0] + x[1] * x[1] + x[2] * x[2])
+                    print(x, m2, '{v1}/{v2}'.format(v1=j+1,v2=lcc))
+                
+            pseudojets = [fj.PseudoJet(x[0],x[1],x[2],x[3]) for x in cartesian_coords]
+            if(debug): print('Made pseudojets.')
             jets = jet_def(pseudojets)
+            if(debug): print('Clustered jets.')
             # Apply optional minimum jet pT cut.
             jet_pt = np.array([jet.pt() for jet in jets])
             jet_indices = np.linspace(0,len(jets)-1,len(jets),dtype=np.dtype('i8'))[jet_pt >= pt_min]

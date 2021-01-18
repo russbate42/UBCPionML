@@ -77,12 +77,15 @@ def SetColor(hist, color, alpha = 0.5):
     hist.SetLineColor(color)
     hist.SetFillColorAlpha(color, alpha)
 
+def RN():
+    return str(uuid.uuid4())
+    
 # Plotting groups of histograms together, in separate tiles.
 def DrawSet(hists, logx=False, logy=True, paves = 0):
     nx = 2
     l = len(hists.keys())
     ny = int(np.ceil(l / nx))
-    canvas = rt.TCanvas(str(uuid.uuid4()), str(uuid.uuid4()), 600 * nx, 450 * ny)
+    canvas = rt.TCanvas(RN(), RN(), 600 * nx, 450 * ny)
     canvas.Divide(nx, ny)
     for i, hist in enumerate(hists.values()):
         canvas.cd(i+1)

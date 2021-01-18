@@ -58,21 +58,19 @@ def ClusterJets(ur_trees, jet_name, R, pt_min, eta_max, fj_dir, classification_t
         else: cluster_energies = trees[energy_tree_key].array(energy_branch)
 
         # ROOT access to the file -- we are making a new tree to save the jet information.
-        df = dfile.replace('.root','_new.root')
-        f = rt.TFile(df, 'RECREATE')
+        f = rt.TFile(dfile, 'UPDATE')
         t = rt.TTree(tree_name, tree_name)
         branches = {}
         for key,val in branch_buffer.items(): branches[key] = t.Branch(key, val)
-    
-        #vec_polar = rt.Math.PtEtaPhiEVector() # for performing polar/Cartesian conversions for fastjet
+        vec_polar = rt.Math.PtEtaPhiEVector() # for performing polar/Cartesian conversions for fastjet
         
         # loop over events
         nevents = trees['event'].numentries
-        
         if(debug):
             print('File:',dfile)
             print('\tPerforming jet clustering for {val} events.'.format(val=nevents))
         for i in range(nevents):
+              
             # Explicit list of cluster indices we're working with -- these are indices in ClusterTree, corresponding to event i.                
             cluster_idxs = np.array(range(cluster_min[i], cluster_max[i] + 1),dtype=np.dtype('i8'))            
             cartesian_coords = np.zeros((len(cluster_idxs),4),dtype=np.dtype('f8'))
@@ -87,29 +85,27 @@ def ClusterJets(ur_trees, jet_name, R, pt_min, eta_max, fj_dir, classification_t
                     # Switch to neutral energy regression if dictated by classification.
                     if cluster_classification[idx] < classification_threshold: energy = cluster_energies[idx,1]
                 else: energy = cluster_energies[idx]
+                    
+                # If the regressed energy is infinite or nan, switch back to the reco energy.
+                if(np.isinf(energy) or np.isnan(energy)): 
+                    energy = cluster_vec[idx,3]
+                    pt = cluster_vec[idx,0]
+                    
+                else:
+                    # Get the ratio of the regressed energy to the original reco energy.
+                    energy_ratio = energy / cluster_vec[idx,3]
             
-                # Get the ratio of the regressed energy to the original reco energy.
-                energy_ratio = energy / cluster_vec[idx,3]
-            
-                # Rescale the pT according to how we've changed the topo-cluster energy (don't modify eta, phi).
-                pt = cluster_vec[idx,0] * energy_ratio
-            
-                # Create 4-vector representing the topo-cluster.
-                #vec_polar.SetCoordinates(pt,cluster_vec[idx,1],cluster_vec[idx,2],energy)
-                #cartesian_coords[j,:] = [vec_polar.Px(), vec_polar.Py(), vec_polar.Pz(), vec_polar.E()]
-                cartesian_coords[j,:] = Polar2Cartesian(pt,cluster_vec[idx,1],cluster_vec[idx,2],energy)
+                    # Rescale the pT according to how we've changed the topo-cluster energy (don't modify eta, phi).
+                    pt = cluster_vec[idx,0] * energy_ratio
 
-            # Perform jet clustering.
-            if(debug):
-                lcc = cartesian_coords.shape[0]
-                for j, x in enumerate(cartesian_coords):
-                    m2 = x[3] * x[3] - (x[0] * x[0] + x[1] * x[1] + x[2] * x[2])
-                    print(x, m2, '{v1}/{v2}'.format(v1=j+1,v2=lcc))
-                
+                # Create 4-vector representing the topo-cluster.
+                vec_polar.SetCoordinates(pt,cluster_vec[idx,1],cluster_vec[idx,2],energy)
+                cartesian_coords[j,:] = [vec_polar.Px(), vec_polar.Py(), vec_polar.Pz(), vec_polar.E()]
+                #cartesian_coords[j,:] = Polar2Cartesian(pt,cluster_vec[idx,1],cluster_vec[idx,2],energy)
+
+            # Perform jet clustering.            
             pseudojets = [fj.PseudoJet(x[0],x[1],x[2],x[3]) for x in cartesian_coords]
-            if(debug): print('Made pseudojets.')
             jets = jet_def(pseudojets)
-            if(debug): print('Clustered jets.')
             # Apply optional minimum jet pT cut.
             jet_pt = np.array([jet.pt() for jet in jets])
             jet_indices = np.linspace(0,len(jets)-1,len(jets),dtype=np.dtype('i8'))[jet_pt >= pt_min]

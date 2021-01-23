@@ -46,14 +46,16 @@ class PlotStyle:
         if(mode != 'dark'): mode = 'light'
             
         if(mode == 'light'):
-            self.main = rt.kBlack
-            self.canv = rt.kWhite
-            self.text = rt.kBlack
+            self.main  = rt.kBlack
+            self.canv  = rt.kWhite
+            self.text  = rt.kBlack
+            self.curve = rt.kBlue
         
         elif(mode == 'dark'):
-            self.main = rt.TColor.GetColor(52,165,218)
-            self.canv = rt.TColor.GetColor(34,34,34)
-            self.text = rt.kWhite
+            self.main  = rt.TColor.GetColor(52,165,218)
+            self.canv  = rt.TColor.GetColor(34,34,34)
+            self.text  = rt.kWhite
+            self.curve = rt.TColor.GetColor(231,114,61) 
         
     def SetStyle(self):
         rt.gStyle.SetAxisColor(self.main,'xyz')

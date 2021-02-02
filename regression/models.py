@@ -7,6 +7,13 @@ from tensorflow.keras.layers import LeakyReLU
 from tensorflow.keras.layers import Input, Dense, Dropout, BatchNormalization
 from keras.wrappers.scikit_learn import KerasRegressor
 
+# Custom layers.
+from layers import *
+
+# A simple, fully-connected network architecture.
+# Inputs correspond with the pixels of all the images,
+# plus the reco energy (possibly transformed by a logarithm),
+# and the eta of the cluster. (This is our baseline model).
 def baseline_nn_All_model(strategy, lr=1e-4, decay=1e-6, dropout=-1.):
     number_pixels = 512 + 256 + 128 + 16 + 16 + 8
     # create model
@@ -29,3 +36,4 @@ def baseline_nn_All_model(strategy, lr=1e-4, decay=1e-6, dropout=-1.):
             model.compile(optimizer=opt, loss='mse',metrics=['mae','mse'])
         return model
     return mod
+

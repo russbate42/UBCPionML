@@ -11,7 +11,7 @@ regression/Plots*
 #regression/Models*
 ._*
 .venv*
-util/__pycache__/*.pyc
+#util/__pycache__/*.pyc
 
 # don't copy local setup stuff
 setup/**/*.gz
@@ -22,6 +22,12 @@ setup/fastjet/fastjet-install/
 # don't copy data
 data/*.root
 data/**/*.root
-jets/data/*
-jets/training/*
+jets/data
+jets/training
+jets/cluster_data
+classifier_u/data
+regression_u/data
+
+# don't copy pycaches
+**/__pycache__
 

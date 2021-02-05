@@ -115,10 +115,12 @@ def splitFrameTVT(frame, trainlabel='train', trainfrac = 0.8, testlabel='test', 
     frame[testlabel]  = frame.index.isin(test_index)
     frame[vallabel]   = frame.index.isin(val_index)
 
-def setupCells(tree, layer, nrows = -1, flatten=True):
+def setupCells(tree, layer, nrows = -1, indices = [], flatten=True):
     array = tree.array(layer)
     if nrows > 0:
         array = array[:nrows]
+    elif len(indices) > 0:
+        array = array[indices]
     num_pixels = cell_meta[layer]['len_phi'] * cell_meta[layer]['len_eta']
     if flatten:
         array = array.reshape(len(array), num_pixels)

@@ -89,7 +89,7 @@ def setupPionData(inputpath, rootfiles, branches = []):
         for rfile in rootfiles
     }
     pdata = {
-        ifile: itree.pandas.df(branches, flatten=False)
+        ifile: pd.DataFrame(itree.arrays(expressions=branches, library='np'))
         for ifile, itree in trees.items()
     }
 
@@ -110,13 +110,13 @@ def splitFrameTVT(frame, trainlabel='train', trainfrac = 0.8, testlabel='test', 
     else:
         test_index = testval_index
         val_index = []
-
+        
     frame[trainlabel] = frame.index.isin(train_index)
     frame[testlabel]  = frame.index.isin(test_index)
     frame[vallabel]   = frame.index.isin(val_index)
 
 def setupCells(tree, layer, nrows = -1, indices = [], flatten=True):
-    array = tree.array(layer)
+    array = tree.arrays([layer])[layer]
     if nrows > 0:
         array = array[:nrows]
     elif len(indices) > 0:

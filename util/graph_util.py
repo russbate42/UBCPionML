@@ -45,7 +45,8 @@ def loadGraphDictionary(tree):
         
         #make a saftey for 0
         branchDict[0] = 0
-
+        branchDict[4308257264] = 0 # another magic safetey number? CONFIRM
+        
         globalDict[key] = branchDict
 
     return globalDict

@@ -3,18 +3,23 @@ import awkward as ak
 import numpy as np
 from glob import glob
 
+from tensorflow.keras.utils import to_categorical
+
 import sys
 sys.path.append('/Users/swiatlow/Code/ML4P/LCStudies')
 sys.path.append('/home/mswiatlowski/start_tf/LCStudies')
 from  util import graph_util as gu
 
 data_path = '/Users/swiatlow/Data/caloml/graph_data/'
+data_path = '/fast_scratch/atlas_images/v01-45/'
 
 data_path_pipm = data_path + 'pipm/'
 data_path_pi0  = data_path + 'pi0/'
 
 pipm_list = glob(data_path_pipm+'*root')
 pi0_list =  glob(data_path_pi0 + '*root')
+
+#pipm_list = ['/fast_scratch/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000421.root']
 
 def convertFile(filename, label):
     print('Working on {}'.format(filename))
@@ -65,12 +70,12 @@ def convertFile(filename, label):
                     cell_phi[selection]),
                     axis = 2)
 
-    Y_label = np.ones(len(X)) * label
+    Y_label = to_categorical(np.ones(len(X)) * label)
     Y_target = np.log(clus_targetE)
 
     #Now we save. prepare output filename.
     outname = filename.replace('root', 'npz')
-    np.savez(outname, (X, Y_label, Y_target), ('X', 'Y_label', 'Y_target'))
+    np.savez(outname, X=X, Y_label=Y_label, Y_target=Y_target)
     print('Done! {}'.format(outname))
 
 

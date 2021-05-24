@@ -44,10 +44,16 @@ def loadGraphDictionary(tree):
         for iter, ID in enumerate(arrays['cell_geo_ID'][0]):
             #the key is the ID, the value is whatever we iter over
             branchDict[ID] = arrays[key][0][iter] 
-        
-        #make a saftey for 0
-        branchDict[0] = None
-        branchDict[4308257264] = None # another magic safetey number? CHECKME
+       
+
+        if key == 'cell_geo_sampling':
+            mask = 0
+        else:
+            mask = None
+
+        branchDict[0] = mask
+        branchDict[4308257264] = mask # another magic safetey number? CHECKM
+            
         
         globalDict[key] = branchDict
 
@@ -59,4 +65,4 @@ def loadGraphDictionary(tree):
 # return a conversion of the cell IDs to whatever is requested
 def convertIDToGeo(cellID, geoString, globalDict):
     # MAGIC https://stackoverflow.com/questions/16992713/translate-every-element-in-numpy-array-according-to-key
-    return np.vectorize(globalDict[geoString].get)(cellID)
+    return np.vectorize(globalDict[geoString].get)(np.nan_to_num(cellID))

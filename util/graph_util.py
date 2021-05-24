@@ -3,15 +3,17 @@ import awkward as ak
 import numpy as np
 
 
+def loadVectorBranchFlat(branchName, tree):
+    return np.copy(ak.flatten(tree[branchName].array()).to_numpy())
+
 #given a branchname, a tree from uproot, and a padLength...
 #return a flattened numpy array that flattens away the event index and pads cels to padLength
 #if there's no cell, add a 0 value
-def loadBranchFlat(branchName, tree, padLength):
+def loadArrayBranchFlat(branchName, tree, padLength):
     branchInfo = tree[branchName].array()
 
-    # we flatten the 0 index, the event index, to clear a listof clusters
-    # we flatten the final 2 index, which is a dummy uproot index
-    branchFlat = ak.flatten(ak.flatten(branchInfo, axis = 0), axis = 2)
+    # we flatten the event index, to generate a list of clusters
+    branchFlat = ak.flatten(branchInfo)
 
     # pad the cell axis to the specified length
     branchFlatPad = ak.pad_none(branchFlat, padLength, axis=1)
@@ -45,7 +47,7 @@ def loadGraphDictionary(tree):
         
         #make a saftey for 0
         branchDict[0] = 0
-        branchDict[4308257264] = 0 # another magic safetey number? CONFIRM
+        branchDict[4308257264] = 0 # another magic safetey number? CHECKME
         
         globalDict[key] = branchDict
 

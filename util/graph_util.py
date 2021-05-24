@@ -22,7 +22,7 @@ def loadArrayBranchFlat(branchName, tree, padLength):
     branchFlatNumpy = np.copy(branchFlatPad.to_numpy())
 
     # #replace the padding 'None' with 0's
-    branchFlatNumpy[-1] = 0
+    # branchFlatNumpy[-1] = 0 # Actually better to turn this off and mask later, so norms are easier
 
     return branchFlatNumpy
 
@@ -46,8 +46,8 @@ def loadGraphDictionary(tree):
             branchDict[ID] = arrays[key][0][iter] 
         
         #make a saftey for 0
-        branchDict[0] = 0
-        branchDict[4308257264] = 0 # another magic safetey number? CHECKME
+        branchDict[0] = None
+        branchDict[4308257264] = None # another magic safetey number? CHECKME
         
         globalDict[key] = branchDict
 

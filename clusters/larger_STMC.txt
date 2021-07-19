@@ -1,0 +1,3633 @@
+Awkward version: 1.2.2
+Uproot version: 4.0.7
+
+Working on File: user.angerami.24559744.OutputStream._000001.root - 1/502
+Array dimension: (3039, 1037, 6)
+Time to construct index array: 0.7556173801422119
+Time to populate elements: 3.8682968616485596
+Time to concatenate arrays: 0.08294057846069336
+Time for this file: 4.706854820251465
+Total events: 3039
+Current size: (3039, 1037, 6)
+Total time: 4.706854820251465
+
+
+Working on File: user.angerami.24559744.OutputStream._000002.root - 2/502
+Array dimension: (3095, 1086, 6)
+Time to construct index array: 0.6101183891296387
+Time to populate elements: 3.919469118118286
+Time to concatenate arrays: 0.36202549934387207
+Time for this file: 4.891613006591797
+Total events: 6134
+Current size: (6134, 1086, 6)
+Total time: 9.598467826843262
+
+
+Working on File: user.angerami.24559744.OutputStream._000003.root - 3/502
+Array dimension: (3048, 844, 6)
+Time to construct index array: 0.5899174213409424
+Time to populate elements: 3.960658550262451
+Time to concatenate arrays: 0.44492387771606445
+Time for this file: 4.995499849319458
+Total events: 9182
+Current size: (9182, 1086, 6)
+Total time: 14.59396767616272
+
+
+Working on File: user.angerami.24559744.OutputStream._000004.root - 4/502
+Array dimension: (3031, 1010, 6)
+Time to construct index array: 0.9453551769256592
+Time to populate elements: 4.256442070007324
+Time to concatenate arrays: 0.3782658576965332
+Time for this file: 5.580063104629517
+Total events: 12213
+Current size: (12213, 1086, 6)
+Total time: 20.174030780792236
+
+
+Working on File: user.angerami.24559744.OutputStream._000005.root - 5/502
+Array dimension: (3066, 884, 6)
+Time to construct index array: 0.6082987785339355
+Time to populate elements: 3.7914559841156006
+Time to concatenate arrays: 0.46650123596191406
+Time for this file: 4.86625599861145
+Total events: 15279
+Current size: (15279, 1086, 6)
+Total time: 25.040286779403687
+
+
+Working on File: user.angerami.24559744.OutputStream._000006.root - 6/502
+Array dimension: (3093, 779, 6)
+Time to construct index array: 0.7590479850769043
+Time to populate elements: 4.010969877243042
+Time to concatenate arrays: 0.46817851066589355
+Time for this file: 5.23819637298584
+Total events: 18372
+Current size: (18372, 1086, 6)
+Total time: 30.278483152389526
+
+
+Working on File: user.angerami.24559744.OutputStream._000007.root - 7/502
+Array dimension: (3030, 839, 6)
+Time to construct index array: 0.716437816619873
+Time to populate elements: 3.683785915374756
+Time to concatenate arrays: 0.5358705520629883
+Time for this file: 4.936094284057617
+Total events: 21402
+Current size: (21402, 1086, 6)
+Total time: 35.214577436447144
+
+
+Working on File: user.angerami.24559744.OutputStream._000008.root - 8/502
+Array dimension: (3104, 758, 6)
+Time to construct index array: 0.6538593769073486
+Time to populate elements: 4.286099672317505
+Time to concatenate arrays: 0.5809974670410156
+Time for this file: 5.520956516265869
+Total events: 24506
+Current size: (24506, 1086, 6)
+Total time: 40.73553395271301
+
+
+Working on File: user.angerami.24559744.OutputStream._000009.root - 9/502
+Array dimension: (3079, 822, 6)
+Time to construct index array: 0.6459653377532959
+Time to populate elements: 3.5289669036865234
+Time to concatenate arrays: 0.6227071285247803
+Time for this file: 4.7976393699646
+Total events: 27585
+Current size: (27585, 1086, 6)
+Total time: 45.53317332267761
+
+
+Working on File: user.angerami.24559744.OutputStream._000010.root - 10/502
+Array dimension: (3063, 767, 6)
+Time to construct index array: 0.6323115825653076
+Time to populate elements: 3.6500613689422607
+Time to concatenate arrays: 0.680372953414917
+Time for this file: 4.962745904922485
+Total events: 30648
+Current size: (30648, 1086, 6)
+Total time: 50.4959192276001
+
+
+Working on File: user.angerami.24559744.OutputStream._000011.root - 11/502
+Array dimension: (3106, 844, 6)
+Time to construct index array: 0.7770843505859375
+Time to populate elements: 3.6416707038879395
+Time to concatenate arrays: 0.786029577255249
+Time for this file: 5.204784631729126
+Total events: 33754
+Current size: (33754, 1086, 6)
+Total time: 55.700703859329224
+
+
+Working on File: user.angerami.24559744.OutputStream._000012.root - 12/502
+Array dimension: (3054, 790, 6)
+Time to construct index array: 0.8227224349975586
+Time to populate elements: 4.019195318222046
+Time to concatenate arrays: 0.8661627769470215
+Time for this file: 5.708080530166626
+Total events: 36808
+Current size: (36808, 1086, 6)
+Total time: 61.40878438949585
+
+
+Working on File: user.angerami.24559744.OutputStream._000013.root - 13/502
+Array dimension: (2994, 852, 6)
+Time to construct index array: 0.654569149017334
+Time to populate elements: 3.567829132080078
+Time to concatenate arrays: 0.913811206817627
+Time for this file: 5.136209487915039
+Total events: 39802
+Current size: (39802, 1086, 6)
+Total time: 66.54499387741089
+
+
+Working on File: user.angerami.24559744.OutputStream._000014.root - 14/502
+Array dimension: (3060, 874, 6)
+Time to construct index array: 0.6249303817749023
+Time to populate elements: 3.6193032264709473
+Time to concatenate arrays: 0.9585845470428467
+Time for this file: 5.202818155288696
+Total events: 42862
+Current size: (42862, 1086, 6)
+Total time: 71.74781203269958
+
+
+Working on File: user.angerami.24559744.OutputStream._000015.root - 15/502
+Array dimension: (3026, 789, 6)
+Time to construct index array: 0.661719799041748
+Time to populate elements: 3.490720510482788
+Time to concatenate arrays: 0.9949982166290283
+Time for this file: 5.1474385261535645
+Total events: 45888
+Current size: (45888, 1086, 6)
+Total time: 76.89525055885315
+
+
+Working on File: user.angerami.24559744.OutputStream._000016.root - 16/502
+Array dimension: (3029, 833, 6)
+Time to construct index array: 0.6699490547180176
+Time to populate elements: 3.7864911556243896
+Time to concatenate arrays: 1.03810715675354
+Time for this file: 5.494547367095947
+Total events: 48917
+Current size: (48917, 1086, 6)
+Total time: 82.3897979259491
+
+
+Working on File: user.angerami.24559744.OutputStream._000017.root - 17/502
+Array dimension: (3054, 773, 6)
+Time to construct index array: 0.605518102645874
+Time to populate elements: 3.5998823642730713
+Time to concatenate arrays: 1.1573350429534912
+Time for this file: 5.3627355098724365
+Total events: 51971
+Current size: (51971, 1086, 6)
+Total time: 87.75253343582153
+
+
+Working on File: user.angerami.24559744.OutputStream._000018.root - 18/502
+Array dimension: (3097, 742, 6)
+Time to construct index array: 0.6446535587310791
+Time to populate elements: 3.775736093521118
+Time to concatenate arrays: 1.1765329837799072
+Time for this file: 5.5969226360321045
+Total events: 55068
+Current size: (55068, 1086, 6)
+Total time: 93.34945607185364
+
+
+Working on File: user.angerami.24559744.OutputStream._000019.root - 19/502
+Array dimension: (3043, 766, 6)
+Time to construct index array: 0.611309289932251
+Time to populate elements: 3.9505882263183594
+Time to concatenate arrays: 1.2532742023468018
+Time for this file: 5.815171718597412
+Total events: 58111
+Current size: (58111, 1086, 6)
+Total time: 99.16462779045105
+
+
+Working on File: user.angerami.24559744.OutputStream._000020.root - 20/502
+Array dimension: (3159, 862, 6)
+Time to construct index array: 1.2718017101287842
+Time to populate elements: 6.7471513748168945
+Time to concatenate arrays: 1.2684173583984375
+Time for this file: 9.287370443344116
+Total events: 61270
+Current size: (61270, 1086, 6)
+Total time: 108.45199823379517
+
+
+Working on File: user.angerami.24559744.OutputStream._000021.root - 21/502
+Array dimension: (3098, 802, 6)
+Time to construct index array: 0.6570284366607666
+Time to populate elements: 3.620584011077881
+Time to concatenate arrays: 1.4207923412322998
+Time for this file: 5.698404788970947
+Total events: 64368
+Current size: (64368, 1086, 6)
+Total time: 114.15040302276611
+
+
+Working on File: user.angerami.24559744.OutputStream._000022.root - 22/502
+Array dimension: (3115, 761, 6)
+Time to construct index array: 0.73738694190979
+Time to populate elements: 4.0585620403289795
+Time to concatenate arrays: 1.386476755142212
+Time for this file: 6.1824257373809814
+Total events: 67483
+Current size: (67483, 1086, 6)
+Total time: 120.3328287601471
+
+
+Working on File: user.angerami.24559744.OutputStream._000023.root - 23/502
+Array dimension: (3051, 813, 6)
+Time to construct index array: 0.8955714702606201
+Time to populate elements: 3.9391653537750244
+Time to concatenate arrays: 1.4950437545776367
+Time for this file: 6.329780578613281
+Total events: 70534
+Current size: (70534, 1086, 6)
+Total time: 126.66260933876038
+
+
+Working on File: user.angerami.24559744.OutputStream._000024.root - 24/502
+Array dimension: (3066, 789, 6)
+Time to construct index array: 0.7091579437255859
+Time to populate elements: 5.586823463439941
+Time to concatenate arrays: 1.601762294769287
+Time for this file: 7.8977437019348145
+Total events: 73600
+Current size: (73600, 1086, 6)
+Total time: 134.5603530406952
+
+
+Working on File: user.angerami.24559744.OutputStream._000025.root - 25/502
+Array dimension: (3144, 765, 6)
+Time to construct index array: 0.6246082782745361
+Time to populate elements: 4.682202100753784
+Time to concatenate arrays: 1.5623393058776855
+Time for this file: 6.869149684906006
+Total events: 76744
+Current size: (76744, 1086, 6)
+Total time: 141.4295027256012
+
+
+Working on File: user.angerami.24559744.OutputStream._000026.root - 26/502
+Array dimension: (3054, 782, 6)
+Time to construct index array: 0.6107876300811768
+Time to populate elements: 3.92152738571167
+Time to concatenate arrays: 1.6228725910186768
+Time for this file: 6.155187606811523
+Total events: 79798
+Current size: (79798, 1086, 6)
+Total time: 147.58469033241272
+
+
+Working on File: user.angerami.24559744.OutputStream._000027.root - 27/502
+Array dimension: (3026, 892, 6)
+Time to construct index array: 0.5887477397918701
+Time to populate elements: 4.51965856552124
+Time to concatenate arrays: 3.5808565616607666
+Time for this file: 8.689262866973877
+Total events: 82824
+Current size: (82824, 1086, 6)
+Total time: 156.2739531993866
+
+
+Working on File: user.angerami.24559744.OutputStream._000028.root - 28/502
+Array dimension: (3039, 788, 6)
+Time to construct index array: 0.6131935119628906
+Time to populate elements: 4.431743144989014
+Time to concatenate arrays: 3.2353458404541016
+Time for this file: 8.280282497406006
+Total events: 85863
+Current size: (85863, 1086, 6)
+Total time: 164.5542356967926
+
+
+Working on File: user.angerami.24559744.OutputStream._000029.root - 29/502
+Array dimension: (2948, 799, 6)
+Time to construct index array: 0.6141977310180664
+Time to populate elements: 4.430231094360352
+Time to concatenate arrays: 5.6595680713653564
+Time for this file: 10.703996896743774
+Total events: 88811
+Current size: (88811, 1086, 6)
+Total time: 175.25823259353638
+
+
+Working on File: user.angerami.24559744.OutputStream._000030.root - 30/502
+Array dimension: (3031, 806, 6)
+Time to construct index array: 0.6495988368988037
+Time to populate elements: 3.7785871028900146
+Time to concatenate arrays: 10.165294647216797
+Time for this file: 14.593480587005615
+Total events: 91842
+Current size: (91842, 1086, 6)
+Total time: 189.851713180542
+
+
+Working on File: user.angerami.24559744.OutputStream._000031.root - 31/502
+Array dimension: (2979, 904, 6)
+Time to construct index array: 0.7645742893218994
+Time to populate elements: 3.63613224029541
+Time to concatenate arrays: 5.070523738861084
+Time for this file: 9.471230268478394
+Total events: 94821
+Current size: (94821, 1086, 6)
+Total time: 199.32294344902039
+
+
+Working on File: user.angerami.24559744.OutputStream._000032.root - 32/502
+Array dimension: (3031, 750, 6)
+Time to construct index array: 1.7705025672912598
+Time to populate elements: 3.6280617713928223
+Time to concatenate arrays: 8.257242441177368
+Time for this file: 13.65580677986145
+Total events: 97852
+Current size: (97852, 1086, 6)
+Total time: 212.97875022888184
+
+
+Working on File: user.angerami.24559744.OutputStream._000033.root - 33/502
+Array dimension: (3137, 909, 6)
+Time to construct index array: 0.6199095249176025
+Time to populate elements: 3.564229726791382
+Time to concatenate arrays: 5.9922075271606445
+Time for this file: 10.176346778869629
+Total events: 100989
+Current size: (100989, 1086, 6)
+Total time: 223.15509700775146
+
+
+Working on File: user.angerami.24559744.OutputStream._000034.root - 34/502
+Array dimension: (3059, 730, 6)
+Time to construct index array: 0.6538190841674805
+Time to populate elements: 3.9476795196533203
+Time to concatenate arrays: 11.073680400848389
+Time for this file: 15.67517900466919
+Total events: 104048
+Current size: (104048, 1086, 6)
+Total time: 238.83027601242065
+
+
+Working on File: user.angerami.24559744.OutputStream._000035.root - 35/502
+Array dimension: (3080, 978, 6)
+Time to construct index array: 0.8071238994598389
+Time to populate elements: 3.6021668910980225
+Time to concatenate arrays: 7.0490639209747314
+Time for this file: 11.458354711532593
+Total events: 107128
+Current size: (107128, 1086, 6)
+Total time: 250.28863072395325
+
+
+Working on File: user.angerami.24559744.OutputStream._000036.root - 36/502
+Array dimension: (3064, 893, 6)
+Time to construct index array: 0.6448101997375488
+Time to populate elements: 3.879199743270874
+Time to concatenate arrays: 3.6017959117889404
+Time for this file: 8.125805854797363
+Total events: 110192
+Current size: (110192, 1086, 6)
+Total time: 258.4144365787506
+
+
+Working on File: user.angerami.24559744.OutputStream._000037.root - 37/502
+Array dimension: (3095, 817, 6)
+Time to construct index array: 0.6353278160095215
+Time to populate elements: 3.7757067680358887
+Time to concatenate arrays: 3.5357666015625
+Time for this file: 7.94680118560791
+Total events: 113287
+Current size: (113287, 1086, 6)
+Total time: 266.3612377643585
+
+
+Working on File: user.angerami.24559744.OutputStream._000038.root - 38/502
+Array dimension: (3120, 784, 6)
+Time to construct index array: 0.6553995609283447
+Time to populate elements: 4.252536058425903
+Time to concatenate arrays: 3.5885958671569824
+Time for this file: 8.49653148651123
+Total events: 116407
+Current size: (116407, 1086, 6)
+Total time: 274.85776925086975
+
+
+Working on File: user.angerami.24559744.OutputStream._000039.root - 39/502
+Array dimension: (3091, 811, 6)
+Time to construct index array: 0.8403451442718506
+Time to populate elements: 3.627605676651001
+Time to concatenate arrays: 3.569396495819092
+Time for this file: 8.037347316741943
+Total events: 119498
+Current size: (119498, 1086, 6)
+Total time: 282.8951165676117
+
+
+Working on File: user.angerami.24559744.OutputStream._000040.root - 40/502
+Array dimension: (3061, 857, 6)
+Time to construct index array: 0.7967729568481445
+Time to populate elements: 3.7844903469085693
+Time to concatenate arrays: 4.1752870082855225
+Time for this file: 8.756550312042236
+Total events: 122559
+Current size: (122559, 1086, 6)
+Total time: 291.65166687965393
+
+
+Working on File: user.angerami.24559744.OutputStream._000041.root - 41/502
+Array dimension: (3092, 988, 6)
+Time to construct index array: 1.0006225109100342
+Time to populate elements: 3.7207741737365723
+Time to concatenate arrays: 11.829788446426392
+Time for this file: 16.551185131072998
+Total events: 125651
+Current size: (125651, 1086, 6)
+Total time: 308.20285201072693
+
+
+Working on File: user.angerami.24559744.OutputStream._000042.root - 42/502
+Array dimension: (3213, 891, 6)
+Time to construct index array: 0.6805527210235596
+Time to populate elements: 4.075462579727173
+Time to concatenate arrays: 6.5501909255981445
+Time for this file: 11.306206226348877
+Total events: 128864
+Current size: (128864, 1086, 6)
+Total time: 319.5090582370758
+
+
+Working on File: user.angerami.24559744.OutputStream._000043.root - 43/502
+Array dimension: (3145, 715, 6)
+Time to construct index array: 0.6215054988861084
+Time to populate elements: 4.45206618309021
+Time to concatenate arrays: 3.7538254261016846
+Time for this file: 8.827397108078003
+Total events: 132009
+Current size: (132009, 1086, 6)
+Total time: 328.3364553451538
+
+
+Working on File: user.angerami.24559744.OutputStream._000044.root - 44/502
+Array dimension: (2949, 811, 6)
+Time to construct index array: 0.9465296268463135
+Time to populate elements: 3.453582525253296
+Time to concatenate arrays: 4.946211814880371
+Time for this file: 9.34632396697998
+Total events: 134958
+Current size: (134958, 1086, 6)
+Total time: 337.6827793121338
+
+
+Working on File: user.angerami.24559744.OutputStream._000045.root - 45/502
+Array dimension: (3005, 897, 6)
+Time to construct index array: 0.5987591743469238
+Time to populate elements: 3.459655523300171
+Time to concatenate arrays: 3.532801628112793
+Time for this file: 7.591216325759888
+Total events: 137963
+Current size: (137963, 1086, 6)
+Total time: 345.2739956378937
+
+
+Working on File: user.angerami.24559744.OutputStream._000046.root - 46/502
+Array dimension: (3103, 814, 6)
+Time to construct index array: 0.6308412551879883
+Time to populate elements: 3.8272061347961426
+Time to concatenate arrays: 3.3701674938201904
+Time for this file: 7.828214883804321
+Total events: 141066
+Current size: (141066, 1086, 6)
+Total time: 353.102210521698
+
+
+Working on File: user.angerami.24559744.OutputStream._000047.root - 47/502
+Array dimension: (3025, 817, 6)
+Time to construct index array: 1.0898168087005615
+Time to populate elements: 3.7617716789245605
+Time to concatenate arrays: 5.280674695968628
+Time for this file: 10.13226318359375
+Total events: 144091
+Current size: (144091, 1086, 6)
+Total time: 363.23447370529175
+
+
+Working on File: user.angerami.24559744.OutputStream._000048.root - 48/502
+Array dimension: (3047, 806, 6)
+Time to construct index array: 0.6574187278747559
+Time to populate elements: 3.550339937210083
+Time to concatenate arrays: 6.050840139389038
+Time for this file: 10.258598804473877
+Total events: 147138
+Current size: (147138, 1086, 6)
+Total time: 373.4930725097656
+
+
+Working on File: user.angerami.24559744.OutputStream._000049.root - 49/502
+Array dimension: (3130, 924, 6)
+Time to construct index array: 0.6690301895141602
+Time to populate elements: 3.938854217529297
+Time to concatenate arrays: 3.8676066398620605
+Time for this file: 8.475491046905518
+Total events: 150268
+Current size: (150268, 1086, 6)
+Total time: 381.96856355667114
+
+
+Working on File: user.angerami.24559744.OutputStream._000050.root - 50/502
+Array dimension: (3040, 746, 6)
+Time to construct index array: 0.6915946006774902
+Time to populate elements: 4.1081883907318115
+Time to concatenate arrays: 4.7153520584106445
+Time for this file: 9.515135049819946
+Total events: 153308
+Current size: (153308, 1086, 6)
+Total time: 391.4836986064911
+
+
+Working on File: user.angerami.24559744.OutputStream._000051.root - 51/502
+Array dimension: (3104, 753, 6)
+Time to construct index array: 0.6418876647949219
+Time to populate elements: 3.97314715385437
+Time to concatenate arrays: 11.777567863464355
+Time for this file: 16.392602682113647
+Total events: 156412
+Current size: (156412, 1086, 6)
+Total time: 407.87630128860474
+
+
+Working on File: user.angerami.24559744.OutputStream._000052.root - 52/502
+Array dimension: (3070, 817, 6)
+Time to construct index array: 0.6580348014831543
+Time to populate elements: 3.6747515201568604
+Time to concatenate arrays: 8.643107891082764
+Time for this file: 12.975894212722778
+Total events: 159482
+Current size: (159482, 1086, 6)
+Total time: 420.8521955013275
+
+
+Working on File: user.angerami.24559744.OutputStream._000053.root - 53/502
+Array dimension: (3105, 869, 6)
+Time to construct index array: 0.6499841213226318
+Time to populate elements: 4.042179584503174
+Time to concatenate arrays: 8.351969718933105
+Time for this file: 13.044133424758911
+Total events: 162587
+Current size: (162587, 1086, 6)
+Total time: 433.8963289260864
+
+
+Working on File: user.angerami.24559744.OutputStream._000054.root - 54/502
+Array dimension: (3058, 847, 6)
+Time to construct index array: 0.6037390232086182
+Time to populate elements: 3.8617970943450928
+Time to concatenate arrays: 11.289250135421753
+Time for this file: 15.754786252975464
+Total events: 165645
+Current size: (165645, 1086, 6)
+Total time: 449.6511151790619
+
+
+Working on File: user.angerami.24559744.OutputStream._000055.root - 55/502
+Array dimension: (3011, 735, 6)
+Time to construct index array: 0.6021344661712646
+Time to populate elements: 3.702622652053833
+Time to concatenate arrays: 14.479714632034302
+Time for this file: 18.7844717502594
+Total events: 168656
+Current size: (168656, 1086, 6)
+Total time: 468.4355869293213
+
+
+Working on File: user.angerami.24559744.OutputStream._000056.root - 56/502
+Array dimension: (3059, 1043, 6)
+Time to construct index array: 0.6270813941955566
+Time to populate elements: 3.7488036155700684
+Time to concatenate arrays: 14.713926076889038
+Time for this file: 19.089811086654663
+Total events: 171715
+Current size: (171715, 1086, 6)
+Total time: 487.52539801597595
+
+
+Working on File: user.angerami.24559744.OutputStream._000057.root - 57/502
+Array dimension: (3096, 825, 6)
+Time to construct index array: 0.7880423069000244
+Time to populate elements: 3.717759609222412
+Time to concatenate arrays: 12.793162822723389
+Time for this file: 17.298964738845825
+Total events: 174811
+Current size: (174811, 1086, 6)
+Total time: 504.8243627548218
+
+
+Working on File: user.angerami.24559744.OutputStream._000058.root - 58/502
+Array dimension: (3130, 918, 6)
+Time to construct index array: 0.6434369087219238
+Time to populate elements: 3.5965471267700195
+Time to concatenate arrays: 18.731650590896606
+Time for this file: 22.97163462638855
+Total events: 177941
+Current size: (177941, 1086, 6)
+Total time: 527.7959973812103
+
+
+Working on File: user.angerami.24559744.OutputStream._000059.root - 59/502
+Array dimension: (3047, 935, 6)
+Time to construct index array: 0.9167921543121338
+Time to populate elements: 3.7037572860717773
+Time to concatenate arrays: 21.74722695350647
+Time for this file: 26.36777639389038
+Total events: 180988
+Current size: (180988, 1086, 6)
+Total time: 554.1637737751007
+
+
+Working on File: user.angerami.24559744.OutputStream._000060.root - 60/502
+Array dimension: (3057, 1044, 6)
+Time to construct index array: 0.8666625022888184
+Time to populate elements: 3.8691964149475098
+Time to concatenate arrays: 20.40412187576294
+Time for this file: 25.139980792999268
+Total events: 184045
+Current size: (184045, 1086, 6)
+Total time: 579.3037545681
+
+
+Working on File: user.angerami.24559744.OutputStream._000061.root - 61/502
+Array dimension: (3054, 854, 6)
+Time to construct index array: 0.6737301349639893
+Time to populate elements: 3.9180212020874023
+Time to concatenate arrays: 33.341269731521606
+Time for this file: 37.933021068573
+Total events: 187099
+Current size: (187099, 1086, 6)
+Total time: 617.236775636673
+
+
+Working on File: user.angerami.24559744.OutputStream._000062.root - 62/502
+Array dimension: (3113, 930, 6)
+Time to construct index array: 0.6331350803375244
+Time to populate elements: 4.093402862548828
+Time to concatenate arrays: 24.89613151550293
+Time for this file: 29.622669458389282
+Total events: 190212
+Current size: (190212, 1086, 6)
+Total time: 646.8594450950623
+
+
+Working on File: user.angerami.24559744.OutputStream._000063.root - 63/502
+Array dimension: (3034, 853, 6)
+Time to construct index array: 0.6784160137176514
+Time to populate elements: 3.4577252864837646
+Time to concatenate arrays: 21.906819581985474
+Time for this file: 26.04296088218689
+Total events: 193246
+Current size: (193246, 1086, 6)
+Total time: 672.9024059772491
+
+
+Working on File: user.angerami.24559744.OutputStream._000064.root - 64/502
+Array dimension: (3058, 753, 6)
+Time to construct index array: 0.6351089477539062
+Time to populate elements: 3.81087327003479
+Time to concatenate arrays: 25.53988814353943
+Time for this file: 29.985870361328125
+Total events: 196304
+Current size: (196304, 1086, 6)
+Total time: 702.8882763385773
+
+
+Working on File: user.angerami.24559744.OutputStream._000065.root - 65/502
+Array dimension: (2993, 895, 6)
+Time to construct index array: 0.6024153232574463
+Time to populate elements: 4.181196451187134
+Time to concatenate arrays: 19.68098783493042
+Time for this file: 24.464599609375
+Total events: 199297
+Current size: (199297, 1086, 6)
+Total time: 727.3528759479523
+
+
+Working on File: user.angerami.24559744.OutputStream._000066.root - 66/502
+Array dimension: (3127, 801, 6)
+Time to construct index array: 0.8030052185058594
+Time to populate elements: 3.636683225631714
+Time to concatenate arrays: 28.938069343566895
+Time for this file: 33.37775778770447
+Total events: 202424
+Current size: (202424, 1086, 6)
+Total time: 760.7306337356567
+
+
+Working on File: user.angerami.24559744.OutputStream._000067.root - 67/502
+Array dimension: (3074, 817, 6)
+Time to construct index array: 0.60561203956604
+Time to populate elements: 4.1215174198150635
+Time to concatenate arrays: 22.860037565231323
+Time for this file: 27.587167024612427
+Total events: 205498
+Current size: (205498, 1086, 6)
+Total time: 788.3178007602692
+
+
+Working on File: user.angerami.24559744.OutputStream._000068.root - 68/502
+Array dimension: (3026, 929, 6)
+Time to construct index array: 0.6540923118591309
+Time to populate elements: 3.6524462699890137
+Time to concatenate arrays: 25.613734245300293
+Time for this file: 29.920272827148438
+Total events: 208524
+Current size: (208524, 1086, 6)
+Total time: 818.2380735874176
+
+
+Working on File: user.angerami.24559744.OutputStream._000069.root - 69/502
+Array dimension: (3124, 797, 6)
+Time to construct index array: 0.8044290542602539
+Time to populate elements: 4.012323379516602
+Time to concatenate arrays: 9.518245935440063
+Time for this file: 14.334998369216919
+Total events: 211648
+Current size: (211648, 1086, 6)
+Total time: 832.5730719566345
+
+
+Working on File: user.angerami.24559744.OutputStream._000070.root - 70/502
+Array dimension: (3028, 825, 6)
+Time to construct index array: 0.7414908409118652
+Time to populate elements: 4.109561204910278
+Time to concatenate arrays: 9.322438716888428
+Time for this file: 14.173490762710571
+Total events: 214676
+Current size: (214676, 1086, 6)
+Total time: 846.7465627193451
+
+
+Working on File: user.angerami.24559744.OutputStream._000071.root - 71/502
+Array dimension: (3065, 839, 6)
+Time to construct index array: 0.8493683338165283
+Time to populate elements: 3.918459177017212
+Time to concatenate arrays: 6.693753957748413
+Time for this file: 11.461581468582153
+Total events: 217741
+Current size: (217741, 1086, 6)
+Total time: 858.2081441879272
+
+
+Working on File: user.angerami.24559744.OutputStream._000072.root - 72/502
+Array dimension: (3041, 891, 6)
+Time to construct index array: 0.7228648662567139
+Time to populate elements: 3.542487859725952
+Time to concatenate arrays: 11.572732210159302
+Time for this file: 15.838084936141968
+Total events: 220782
+Current size: (220782, 1086, 6)
+Total time: 874.0462291240692
+
+
+Working on File: user.angerami.24559744.OutputStream._000073.root - 73/502
+Array dimension: (3068, 809, 6)
+Time to construct index array: 0.871126651763916
+Time to populate elements: 3.834251880645752
+Time to concatenate arrays: 10.229277610778809
+Time for this file: 14.934656143188477
+Total events: 223850
+Current size: (223850, 1086, 6)
+Total time: 888.9808852672577
+
+
+Working on File: user.angerami.24559744.OutputStream._000074.root - 74/502
+Array dimension: (3061, 783, 6)
+Time to construct index array: 0.6613180637359619
+Time to populate elements: 3.6863467693328857
+Time to concatenate arrays: 6.400620698928833
+Time for this file: 10.74828553199768
+Total events: 226911
+Current size: (226911, 1086, 6)
+Total time: 899.7291707992554
+
+
+Working on File: user.angerami.24559744.OutputStream._000075.root - 75/502
+Array dimension: (3046, 745, 6)
+Time to construct index array: 0.5917994976043701
+Time to populate elements: 3.6468605995178223
+Time to concatenate arrays: 7.490485668182373
+Time for this file: 11.729145765304565
+Total events: 229957
+Current size: (229957, 1086, 6)
+Total time: 911.4583165645599
+
+
+Working on File: user.angerami.24559744.OutputStream._000076.root - 76/502
+Array dimension: (3127, 808, 6)
+Time to construct index array: 0.9079945087432861
+Time to populate elements: 3.743319034576416
+Time to concatenate arrays: 7.471163988113403
+Time for this file: 12.122477531433105
+Total events: 233084
+Current size: (233084, 1086, 6)
+Total time: 923.580794095993
+
+
+Working on File: user.angerami.24559744.OutputStream._000077.root - 77/502
+Array dimension: (3092, 758, 6)
+Time to construct index array: 0.6388649940490723
+Time to populate elements: 4.146241188049316
+Time to concatenate arrays: 9.40548586845398
+Time for this file: 14.190592050552368
+Total events: 236176
+Current size: (236176, 1086, 6)
+Total time: 937.7713861465454
+
+
+Working on File: user.angerami.24559744.OutputStream._000078.root - 78/502
+Array dimension: (3122, 788, 6)
+Time to construct index array: 0.6195969581604004
+Time to populate elements: 4.955424785614014
+Time to concatenate arrays: 7.100179433822632
+Time for this file: 12.675201177597046
+Total events: 239298
+Current size: (239298, 1086, 6)
+Total time: 950.4465873241425
+
+
+Working on File: user.angerami.24559744.OutputStream._000079.root - 79/502
+Array dimension: (2987, 931, 6)
+Time to construct index array: 0.7505934238433838
+Time to populate elements: 3.7472352981567383
+Time to concatenate arrays: 6.610679626464844
+Time for this file: 11.108508348464966
+Total events: 242285
+Current size: (242285, 1086, 6)
+Total time: 961.5550956726074
+
+
+Working on File: user.angerami.24559744.OutputStream._000080.root - 80/502
+Array dimension: (3074, 876, 6)
+Time to construct index array: 0.7221064567565918
+Time to populate elements: 3.8752903938293457
+Time to concatenate arrays: 7.329285621643066
+Time for this file: 11.926682472229004
+Total events: 245359
+Current size: (245359, 1086, 6)
+Total time: 973.4817781448364
+
+
+Working on File: user.angerami.24559744.OutputStream._000081.root - 81/502
+Array dimension: (3022, 863, 6)
+Time to construct index array: 0.5958077907562256
+Time to populate elements: 4.027031421661377
+Time to concatenate arrays: 8.910239458084106
+Time for this file: 13.533078670501709
+Total events: 248381
+Current size: (248381, 1086, 6)
+Total time: 987.0148568153381
+
+
+Working on File: user.angerami.24559744.OutputStream._000082.root - 82/502
+Array dimension: (3106, 722, 6)
+Time to construct index array: 0.6399259567260742
+Time to populate elements: 4.033159255981445
+Time to concatenate arrays: 7.457482099533081
+Time for this file: 12.1305673122406
+Total events: 251487
+Current size: (251487, 1086, 6)
+Total time: 999.1454241275787
+
+
+Working on File: user.angerami.24559744.OutputStream._000083.root - 83/502
+Array dimension: (3011, 923, 6)
+Time to construct index array: 0.6172482967376709
+Time to populate elements: 4.112957954406738
+Time to concatenate arrays: 8.815073013305664
+Time for this file: 13.545279264450073
+Total events: 254498
+Current size: (254498, 1086, 6)
+Total time: 1012.6907033920288
+
+
+Working on File: user.angerami.24559744.OutputStream._000084.root - 84/502
+Array dimension: (2958, 763, 6)
+Time to construct index array: 0.8815844058990479
+Time to populate elements: 3.3844213485717773
+Time to concatenate arrays: 8.242644548416138
+Time for this file: 12.508650302886963
+Total events: 257456
+Current size: (257456, 1086, 6)
+Total time: 1025.1993536949158
+
+
+Working on File: user.angerami.24559744.OutputStream._000085.root - 85/502
+Array dimension: (2977, 846, 6)
+Time to construct index array: 0.6052191257476807
+Time to populate elements: 3.8210301399230957
+Time to concatenate arrays: 5.523486614227295
+Time for this file: 9.949735879898071
+Total events: 260433
+Current size: (260433, 1086, 6)
+Total time: 1035.1490895748138
+
+
+Working on File: user.angerami.24559744.OutputStream._000086.root - 86/502
+Array dimension: (3035, 797, 6)
+Time to construct index array: 0.786224365234375
+Time to populate elements: 3.5630581378936768
+Time to concatenate arrays: 10.666822910308838
+Time for this file: 15.01610541343689
+Total events: 263468
+Current size: (263468, 1086, 6)
+Total time: 1050.1651949882507
+
+
+Working on File: user.angerami.24559744.OutputStream._000087.root - 87/502
+Array dimension: (3046, 877, 6)
+Time to construct index array: 0.6092596054077148
+Time to populate elements: 3.5098206996917725
+Time to concatenate arrays: 7.136265277862549
+Time for this file: 11.255345582962036
+Total events: 266514
+Current size: (266514, 1086, 6)
+Total time: 1061.4205405712128
+
+
+Working on File: user.angerami.24559744.OutputStream._000088.root - 88/502
+Array dimension: (3059, 888, 6)
+Time to construct index array: 0.6544451713562012
+Time to populate elements: 4.034481525421143
+Time to concatenate arrays: 14.852569103240967
+Time for this file: 19.54149580001831
+Total events: 269573
+Current size: (269573, 1086, 6)
+Total time: 1080.962036371231
+
+
+Working on File: user.angerami.24559744.OutputStream._000089.root - 89/502
+Array dimension: (3000, 814, 6)
+Time to construct index array: 0.6028625965118408
+Time to populate elements: 3.3955461978912354
+Time to concatenate arrays: 9.583064556121826
+Time for this file: 13.581473350524902
+Total events: 272573
+Current size: (272573, 1086, 6)
+Total time: 1094.543509721756
+
+
+Working on File: user.angerami.24559744.OutputStream._000090.root - 90/502
+Array dimension: (3077, 959, 6)
+Time to construct index array: 0.6102550029754639
+Time to populate elements: 4.9294188022613525
+Time to concatenate arrays: 14.71203899383545
+Time for this file: 20.251712799072266
+Total events: 275650
+Current size: (275650, 1086, 6)
+Total time: 1114.7952225208282
+
+
+Working on File: user.angerami.24559744.OutputStream._000091.root - 91/502
+Array dimension: (2999, 816, 6)
+Time to construct index array: 0.6196610927581787
+Time to populate elements: 3.9376745223999023
+Time to concatenate arrays: 15.546281576156616
+Time for this file: 20.103617191314697
+Total events: 278649
+Current size: (278649, 1086, 6)
+Total time: 1134.898839712143
+
+
+Working on File: user.angerami.24559744.OutputStream._000092.root - 92/502
+Array dimension: (3100, 886, 6)
+Time to construct index array: 0.6640870571136475
+Time to populate elements: 4.082980632781982
+Time to concatenate arrays: 10.34089183807373
+Time for this file: 15.08795952796936
+Total events: 281749
+Current size: (281749, 1086, 6)
+Total time: 1149.9867992401123
+
+
+Working on File: user.angerami.24559744.OutputStream._000093.root - 93/502
+Array dimension: (3076, 818, 6)
+Time to construct index array: 0.6929404735565186
+Time to populate elements: 4.3137805461883545
+Time to concatenate arrays: 11.608217477798462
+Time for this file: 16.614938497543335
+Total events: 284825
+Current size: (284825, 1086, 6)
+Total time: 1166.6017377376556
+
+
+Working on File: user.angerami.24559744.OutputStream._000094.root - 94/502
+Array dimension: (3086, 872, 6)
+Time to construct index array: 0.6269958019256592
+Time to populate elements: 3.7266645431518555
+Time to concatenate arrays: 19.589884996414185
+Time for this file: 23.9435453414917
+Total events: 287911
+Current size: (287911, 1086, 6)
+Total time: 1190.5452830791473
+
+
+Working on File: user.angerami.24559744.OutputStream._000095.root - 95/502
+Array dimension: (2981, 977, 6)
+Time to construct index array: 0.5969936847686768
+Time to populate elements: 3.974147081375122
+Time to concatenate arrays: 17.212762355804443
+Time for this file: 21.783903121948242
+Total events: 290892
+Current size: (290892, 1086, 6)
+Total time: 1212.3291862010956
+
+
+Working on File: user.angerami.24559744.OutputStream._000096.root - 96/502
+Array dimension: (3029, 845, 6)
+Time to construct index array: 0.6615691184997559
+Time to populate elements: 4.38080358505249
+Time to concatenate arrays: 19.55707049369812
+Time for this file: 24.599443197250366
+Total events: 293921
+Current size: (293921, 1086, 6)
+Total time: 1236.928629398346
+
+
+Working on File: user.angerami.24559744.OutputStream._000097.root - 97/502
+Array dimension: (3061, 924, 6)
+Time to construct index array: 0.6214072704315186
+Time to populate elements: 4.134221076965332
+Time to concatenate arrays: 21.139152765274048
+Time for this file: 25.8947811126709
+Total events: 296982
+Current size: (296982, 1086, 6)
+Total time: 1262.8234105110168
+
+
+Working on File: user.angerami.24559744.OutputStream._000098.root - 98/502
+Array dimension: (3078, 706, 6)
+Time to construct index array: 0.7063438892364502
+Time to populate elements: 3.78664493560791
+Time to concatenate arrays: 18.57326912879944
+Time for this file: 23.0662579536438
+Total events: 300060
+Current size: (300060, 1086, 6)
+Total time: 1285.8896684646606
+
+
+Working on File: user.angerami.24559744.OutputStream._000099.root - 99/502
+Array dimension: (3091, 866, 6)
+Time to construct index array: 0.5782041549682617
+Time to populate elements: 4.119048595428467
+Time to concatenate arrays: 15.601735591888428
+Time for this file: 20.298988342285156
+Total events: 303151
+Current size: (303151, 1086, 6)
+Total time: 1306.1886568069458
+
+
+Working on File: user.angerami.24559744.OutputStream._000100.root - 100/502
+Array dimension: (3049, 800, 6)
+Time to construct index array: 0.605522871017456
+Time to populate elements: 3.8408265113830566
+Time to concatenate arrays: 13.21622371673584
+Time for this file: 17.662573099136353
+Total events: 306200
+Current size: (306200, 1086, 6)
+Total time: 1323.8512299060822
+
+
+Working on File: user.angerami.24559744.OutputStream._000101.root - 101/502
+Array dimension: (2917, 902, 6)
+Time to construct index array: 1.0465753078460693
+Time to populate elements: 6.102338075637817
+Time to concatenate arrays: 17.17636799812317
+Time for this file: 24.325281381607056
+Total events: 309117
+Current size: (309117, 1086, 6)
+Total time: 1348.1765112876892
+
+
+Working on File: user.angerami.24559744.OutputStream._000102.root - 102/502
+Array dimension: (3096, 810, 6)
+Time to construct index array: 0.6110057830810547
+Time to populate elements: 3.698387861251831
+Time to concatenate arrays: 16.72661590576172
+Time for this file: 21.036009550094604
+Total events: 312213
+Current size: (312213, 1086, 6)
+Total time: 1369.2125208377838
+
+
+Working on File: user.angerami.24559744.OutputStream._000103.root - 103/502
+Array dimension: (3031, 866, 6)
+Time to construct index array: 0.6094560623168945
+Time to populate elements: 4.126775026321411
+Time to concatenate arrays: 18.445536851882935
+Time for this file: 23.18176794052124
+Total events: 315244
+Current size: (315244, 1086, 6)
+Total time: 1392.394288778305
+
+
+Working on File: user.angerami.24559744.OutputStream._000104.root - 104/502
+Array dimension: (3085, 914, 6)
+Time to construct index array: 0.6418936252593994
+Time to populate elements: 4.027873754501343
+Time to concatenate arrays: 18.801907777786255
+Time for this file: 23.471675157546997
+Total events: 318329
+Current size: (318329, 1086, 6)
+Total time: 1415.865963935852
+
+
+Working on File: user.angerami.24559744.OutputStream._000105.root - 105/502
+Array dimension: (3130, 787, 6)
+Time to construct index array: 0.9037697315216064
+Time to populate elements: 3.7662394046783447
+Time to concatenate arrays: 14.137194633483887
+Time for this file: 18.807203769683838
+Total events: 321459
+Current size: (321459, 1086, 6)
+Total time: 1434.673167705536
+
+
+Working on File: user.angerami.24559744.OutputStream._000106.root - 106/502
+Array dimension: (3087, 801, 6)
+Time to construct index array: 0.8024539947509766
+Time to populate elements: 3.8101305961608887
+Time to concatenate arrays: 16.302067041397095
+Time for this file: 20.91465163230896
+Total events: 324546
+Current size: (324546, 1086, 6)
+Total time: 1455.5878193378448
+
+
+Working on File: user.angerami.24559744.OutputStream._000107.root - 107/502
+Array dimension: (3034, 819, 6)
+Time to construct index array: 0.6917538642883301
+Time to populate elements: 3.644773244857788
+Time to concatenate arrays: 12.110353946685791
+Time for this file: 16.44688105583191
+Total events: 327580
+Current size: (327580, 1086, 6)
+Total time: 1472.0347003936768
+
+
+Working on File: user.angerami.24559744.OutputStream._000108.root - 108/502
+Array dimension: (2962, 784, 6)
+Time to construct index array: 0.6877505779266357
+Time to populate elements: 3.583104372024536
+Time to concatenate arrays: 21.623845100402832
+Time for this file: 25.894700050354004
+Total events: 330542
+Current size: (330542, 1086, 6)
+Total time: 1497.9294004440308
+
+
+Working on File: user.angerami.24559744.OutputStream._000109.root - 109/502
+Array dimension: (3014, 943, 6)
+Time to construct index array: 0.7177050113677979
+Time to populate elements: 3.514115333557129
+Time to concatenate arrays: 17.795253038406372
+Time for this file: 22.0270733833313
+Total events: 333556
+Current size: (333556, 1086, 6)
+Total time: 1519.956473827362
+
+
+Working on File: user.angerami.24559744.OutputStream._000110.root - 110/502
+Array dimension: (2952, 888, 6)
+Time to construct index array: 0.6232285499572754
+Time to populate elements: 3.4720876216888428
+Time to concatenate arrays: 15.933696508407593
+Time for this file: 20.02901268005371
+Total events: 336508
+Current size: (336508, 1086, 6)
+Total time: 1539.9854865074158
+
+
+Working on File: user.angerami.24559744.OutputStream._000111.root - 111/502
+Array dimension: (3173, 839, 6)
+Time to construct index array: 0.6861193180084229
+Time to populate elements: 4.221768617630005
+Time to concatenate arrays: 12.284934997558594
+Time for this file: 17.19282293319702
+Total events: 339681
+Current size: (339681, 1086, 6)
+Total time: 1557.1783094406128
+
+
+Working on File: user.angerami.24559744.OutputStream._000112.root - 112/502
+Array dimension: (3091, 788, 6)
+Time to construct index array: 0.6300272941589355
+Time to populate elements: 4.152014970779419
+Time to concatenate arrays: 17.921538829803467
+Time for this file: 22.70358109474182
+Total events: 342772
+Current size: (342772, 1086, 6)
+Total time: 1579.8818905353546
+
+
+Working on File: user.angerami.24559744.OutputStream._000113.root - 113/502
+Array dimension: (3022, 803, 6)
+Time to construct index array: 0.942141056060791
+Time to populate elements: 3.6447529792785645
+Time to concatenate arrays: 17.040826082229614
+Time for this file: 21.62772011756897
+Total events: 345794
+Current size: (345794, 1086, 6)
+Total time: 1601.5096106529236
+
+
+File /fast_scratch/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000114.root not found..
+
+
+File /fast_scratch/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000115.root not found..
+
+
+Working on File: user.angerami.24559744.OutputStream._000116.root - 116/502
+Array dimension: (3035, 805, 6)
+Time to construct index array: 0.6322431564331055
+Time to populate elements: 8.725864887237549
+Time to concatenate arrays: 22.85568380355835
+Time for this file: 32.213791847229004
+Total events: 348829
+Current size: (348829, 1086, 6)
+Total time: 1633.7234025001526
+
+
+Working on File: user.angerami.24559744.OutputStream._000117.root - 117/502
+Array dimension: (3095, 848, 6)
+Time to construct index array: 0.7240569591522217
+Time to populate elements: 3.78312349319458
+Time to concatenate arrays: 21.355828285217285
+Time for this file: 25.863008737564087
+Total events: 351924
+Current size: (351924, 1086, 6)
+Total time: 1659.5864112377167
+
+
+Working on File: user.angerami.24559744.OutputStream._000118.root - 118/502
+Array dimension: (3087, 759, 6)
+Time to construct index array: 0.6180388927459717
+Time to populate elements: 3.7642529010772705
+Time to concatenate arrays: 18.751266479492188
+Time for this file: 23.13355827331543
+Total events: 355011
+Current size: (355011, 1086, 6)
+Total time: 1682.719969511032
+
+
+Working on File: user.angerami.24559744.OutputStream._000119.root - 119/502
+Array dimension: (3041, 865, 6)
+Time to construct index array: 0.6514253616333008
+Time to populate elements: 4.42526650428772
+Time to concatenate arrays: 18.554637908935547
+Time for this file: 23.631329774856567
+Total events: 358052
+Current size: (358052, 1086, 6)
+Total time: 1706.3512992858887
+
+
+Working on File: user.angerami.24559744.OutputStream._000120.root - 120/502
+Array dimension: (3046, 835, 6)
+Time to construct index array: 0.5978450775146484
+Time to populate elements: 3.488565683364868
+Time to concatenate arrays: 10.285173654556274
+Time for this file: 14.371584415435791
+Total events: 361098
+Current size: (361098, 1086, 6)
+Total time: 1720.7228837013245
+
+
+Working on File: user.angerami.24559744.OutputStream._000121.root - 121/502
+Array dimension: (3118, 862, 6)
+Time to construct index array: 0.6211261749267578
+Time to populate elements: 3.8666131496429443
+Time to concatenate arrays: 22.694931030273438
+Time for this file: 27.18267035484314
+Total events: 364216
+Current size: (364216, 1086, 6)
+Total time: 1747.9055540561676
+
+
+Working on File: user.angerami.24559744.OutputStream._000122.root - 122/502
+Array dimension: (3074, 827, 6)
+Time to construct index array: 0.602649450302124
+Time to populate elements: 3.547640085220337
+Time to concatenate arrays: 20.678614854812622
+Time for this file: 24.828904390335083
+Total events: 367290
+Current size: (367290, 1086, 6)
+Total time: 1772.7344584465027
+
+
+Working on File: user.angerami.24559744.OutputStream._000123.root - 123/502
+Array dimension: (3071, 772, 6)
+Time to construct index array: 0.6324160099029541
+Time to populate elements: 4.094502210617065
+Time to concatenate arrays: 13.41467022895813
+Time for this file: 18.14158844947815
+Total events: 370361
+Current size: (370361, 1086, 6)
+Total time: 1790.8760468959808
+
+
+Working on File: user.angerami.24559744.OutputStream._000124.root - 124/502
+Array dimension: (3101, 796, 6)
+Time to construct index array: 0.6021335124969482
+Time to populate elements: 3.707343101501465
+Time to concatenate arrays: 8.690423727035522
+Time for this file: 12.999900341033936
+Total events: 373462
+Current size: (373462, 1086, 6)
+Total time: 1803.8759472370148
+
+
+Working on File: user.angerami.24559744.OutputStream._000125.root - 125/502
+Array dimension: (3076, 881, 6)
+Time to construct index array: 0.7683513164520264
+Time to populate elements: 3.5952370166778564
+Time to concatenate arrays: 8.223493337631226
+Time for this file: 12.587081670761108
+Total events: 376538
+Current size: (376538, 1086, 6)
+Total time: 1816.4630289077759
+
+
+Working on File: user.angerami.24559744.OutputStream._000126.root - 126/502
+Array dimension: (3076, 832, 6)
+Time to construct index array: 0.6487996578216553
+Time to populate elements: 3.3462319374084473
+Time to concatenate arrays: 8.270641088485718
+Time for this file: 12.26567268371582
+Total events: 379614
+Current size: (379614, 1086, 6)
+Total time: 1828.7287015914917
+
+
+Working on File: user.angerami.24559744.OutputStream._000127.root - 127/502
+Array dimension: (3038, 827, 6)
+Time to construct index array: 0.5931241512298584
+Time to populate elements: 3.3685672283172607
+Time to concatenate arrays: 10.370086193084717
+Time for this file: 14.331777572631836
+Total events: 382652
+Current size: (382652, 1086, 6)
+Total time: 1843.0604791641235
+
+
+Working on File: user.angerami.24559744.OutputStream._000128.root - 128/502
+Array dimension: (3033, 865, 6)
+Time to construct index array: 0.6473767757415771
+Time to populate elements: 3.5299460887908936
+Time to concatenate arrays: 12.333521366119385
+Time for this file: 16.510844230651855
+Total events: 385685
+Current size: (385685, 1086, 6)
+Total time: 1859.5713233947754
+
+
+Working on File: user.angerami.24559744.OutputStream._000129.root - 129/502
+Array dimension: (3034, 831, 6)
+Time to construct index array: 0.5796022415161133
+Time to populate elements: 3.911525011062622
+Time to concatenate arrays: 8.61969518661499
+Time for this file: 13.110822439193726
+Total events: 388719
+Current size: (388719, 1086, 6)
+Total time: 1872.6821458339691
+
+
+Working on File: user.angerami.24559744.OutputStream._000130.root - 130/502
+Array dimension: (3086, 918, 6)
+Time to construct index array: 0.5804779529571533
+Time to populate elements: 3.5890262126922607
+Time to concatenate arrays: 8.545366525650024
+Time for this file: 12.714870691299438
+Total events: 391805
+Current size: (391805, 1086, 6)
+Total time: 1885.3970165252686
+
+
+Working on File: user.angerami.24559744.OutputStream._000131.root - 131/502
+Array dimension: (3086, 809, 6)
+Time to construct index array: 0.966773271560669
+Time to populate elements: 3.4228036403656006
+Time to concatenate arrays: 8.805284976959229
+Time for this file: 13.194861888885498
+Total events: 394891
+Current size: (394891, 1086, 6)
+Total time: 1898.591878414154
+
+
+Working on File: user.angerami.24559744.OutputStream._000132.root - 132/502
+Array dimension: (3110, 856, 6)
+Time to construct index array: 0.5816447734832764
+Time to populate elements: 3.3455755710601807
+Time to concatenate arrays: 9.211804628372192
+Time for this file: 13.13902497291565
+Total events: 398001
+Current size: (398001, 1086, 6)
+Total time: 1911.7309033870697
+
+
+Working on File: user.angerami.24559744.OutputStream._000133.root - 133/502
+Array dimension: (3076, 913, 6)
+Time to construct index array: 0.6043875217437744
+Time to populate elements: 3.64945912361145
+Time to concatenate arrays: 11.331067562103271
+Time for this file: 15.584914207458496
+Total events: 401077
+Current size: (401077, 1086, 6)
+Total time: 1927.3158175945282
+
+
+Working on File: user.angerami.24559744.OutputStream._000134.root - 134/502
+Array dimension: (2986, 860, 6)
+Time to construct index array: 0.5687689781188965
+Time to populate elements: 3.353119373321533
+Time to concatenate arrays: 13.059435844421387
+Time for this file: 16.981324195861816
+Total events: 404063
+Current size: (404063, 1086, 6)
+Total time: 1944.29714179039
+
+
+Working on File: user.angerami.24559744.OutputStream._000135.root - 135/502
+Array dimension: (3026, 811, 6)
+Time to construct index array: 0.5712058544158936
+Time to populate elements: 3.6070828437805176
+Time to concatenate arrays: 10.993634939193726
+Time for this file: 15.171923637390137
+Total events: 407089
+Current size: (407089, 1086, 6)
+Total time: 1959.4690654277802
+
+
+Working on File: user.angerami.24559744.OutputStream._000136.root - 136/502
+Array dimension: (3154, 833, 6)
+Time to construct index array: 0.5998787879943848
+Time to populate elements: 3.378422498703003
+Time to concatenate arrays: 14.95476484298706
+Time for this file: 18.93306612968445
+Total events: 410243
+Current size: (410243, 1086, 6)
+Total time: 1978.4021315574646
+
+
+Working on File: user.angerami.24559744.OutputStream._000137.root - 137/502
+Array dimension: (3083, 902, 6)
+Time to construct index array: 0.6275646686553955
+Time to populate elements: 3.929351568222046
+Time to concatenate arrays: 9.990524530410767
+Time for this file: 14.547440767288208
+Total events: 413326
+Current size: (413326, 1086, 6)
+Total time: 1992.9495723247528
+
+
+Working on File: user.angerami.24559744.OutputStream._000138.root - 138/502
+Array dimension: (3026, 822, 6)
+Time to construct index array: 0.5740766525268555
+Time to populate elements: 3.3232421875
+Time to concatenate arrays: 14.390275239944458
+Time for this file: 18.287594079971313
+Total events: 416352
+Current size: (416352, 1086, 6)
+Total time: 2011.2371664047241
+
+
+Working on File: user.angerami.24559744.OutputStream._000139.root - 139/502
+Array dimension: (3062, 1049, 6)
+Time to construct index array: 0.8197891712188721
+Time to populate elements: 3.449326992034912
+Time to concatenate arrays: 14.461963891983032
+Time for this file: 18.731080055236816
+Total events: 419414
+Current size: (419414, 1086, 6)
+Total time: 2029.968246459961
+
+
+Working on File: user.angerami.24559744.OutputStream._000140.root - 140/502
+Array dimension: (3067, 826, 6)
+Time to construct index array: 0.7982301712036133
+Time to populate elements: 3.350271701812744
+Time to concatenate arrays: 15.070383787155151
+Time for this file: 19.21888566017151
+Total events: 422481
+Current size: (422481, 1086, 6)
+Total time: 2049.1871321201324
+
+
+Working on File: user.angerami.24559744.OutputStream._000141.root - 141/502
+Array dimension: (3093, 823, 6)
+Time to construct index array: 0.5752589702606201
+Time to populate elements: 3.4000532627105713
+Time to concatenate arrays: 14.051947832107544
+Time for this file: 18.027260065078735
+Total events: 425574
+Current size: (425574, 1086, 6)
+Total time: 2067.214392185211
+
+
+Working on File: user.angerami.24559744.OutputStream._000142.root - 142/502
+Array dimension: (3050, 887, 6)
+Time to construct index array: 0.8549892902374268
+Time to populate elements: 3.5768215656280518
+Time to concatenate arrays: 10.498064994812012
+Time for this file: 14.92987585067749
+Total events: 428624
+Current size: (428624, 1086, 6)
+Total time: 2082.1442680358887
+
+
+Working on File: user.angerami.24559744.OutputStream._000143.root - 143/502
+Array dimension: (3114, 885, 6)
+Time to construct index array: 0.6606321334838867
+Time to populate elements: 3.5936086177825928
+Time to concatenate arrays: 15.359583616256714
+Time for this file: 19.613824367523193
+Total events: 431738
+Current size: (431738, 1086, 6)
+Total time: 2101.758092403412
+
+
+Working on File: user.angerami.24559744.OutputStream._000144.root - 144/502
+Array dimension: (3057, 836, 6)
+Time to construct index array: 0.5754566192626953
+Time to populate elements: 3.7157766819000244
+Time to concatenate arrays: 10.828463792800903
+Time for this file: 15.119697093963623
+Total events: 434795
+Current size: (434795, 1086, 6)
+Total time: 2116.8777894973755
+
+
+Working on File: user.angerami.24559744.OutputStream._000145.root - 145/502
+Array dimension: (3068, 846, 6)
+Time to construct index array: 0.5870471000671387
+Time to populate elements: 6.942084550857544
+Time to concatenate arrays: 12.485045909881592
+Time for this file: 20.014177560806274
+Total events: 437863
+Current size: (437863, 1086, 6)
+Total time: 2136.8919670581818
+
+
+Working on File: user.angerami.24559744.OutputStream._000146.root - 146/502
+Array dimension: (3080, 784, 6)
+Time to construct index array: 0.9138624668121338
+Time to populate elements: 4.05574893951416
+Time to concatenate arrays: 13.459302425384521
+Time for this file: 18.428913831710815
+Total events: 440943
+Current size: (440943, 1086, 6)
+Total time: 2155.3208808898926
+
+
+Working on File: user.angerami.24559744.OutputStream._000147.root - 147/502
+Array dimension: (3108, 790, 6)
+Time to construct index array: 0.6081011295318604
+Time to populate elements: 3.3994626998901367
+Time to concatenate arrays: 17.09220838546753
+Time for this file: 21.099772214889526
+Total events: 444051
+Current size: (444051, 1086, 6)
+Total time: 2176.420653104782
+
+
+Working on File: user.angerami.24559744.OutputStream._000148.root - 148/502
+Array dimension: (3078, 766, 6)
+Time to construct index array: 0.5813915729522705
+Time to populate elements: 3.5839147567749023
+Time to concatenate arrays: 19.631303787231445
+Time for this file: 23.796610116958618
+Total events: 447129
+Current size: (447129, 1086, 6)
+Total time: 2200.2172632217407
+
+
+Working on File: user.angerami.24559744.OutputStream._000149.root - 149/502
+Array dimension: (3058, 787, 6)
+Time to construct index array: 0.6543679237365723
+Time to populate elements: 3.556964874267578
+Time to concatenate arrays: 23.329615592956543
+Time for this file: 27.540948390960693
+Total events: 450187
+Current size: (450187, 1086, 6)
+Total time: 2227.7582116127014
+
+
+Working on File: user.angerami.24559744.OutputStream._000150.root - 150/502
+Array dimension: (3086, 931, 6)
+Time to construct index array: 0.6081767082214355
+Time to populate elements: 3.529691219329834
+Time to concatenate arrays: 21.15457057952881
+Time for this file: 25.292438507080078
+Total events: 453273
+Current size: (453273, 1086, 6)
+Total time: 2253.0506501197815
+
+
+Working on File: user.angerami.24559744.OutputStream._000151.root - 151/502
+Array dimension: (3075, 955, 6)
+Time to construct index array: 0.5807321071624756
+Time to populate elements: 3.4291796684265137
+Time to concatenate arrays: 16.8981671333313
+Time for this file: 20.908078908920288
+Total events: 456348
+Current size: (456348, 1086, 6)
+Total time: 2273.958729028702
+
+
+Working on File: user.angerami.24559744.OutputStream._000152.root - 152/502
+Array dimension: (2982, 809, 6)
+Time to construct index array: 0.5759797096252441
+Time to populate elements: 4.281176805496216
+Time to concatenate arrays: 27.086427450180054
+Time for this file: 31.943583965301514
+Total events: 459330
+Current size: (459330, 1086, 6)
+Total time: 2305.9023129940033
+
+
+Working on File: user.angerami.24559744.OutputStream._000153.root - 153/502
+Array dimension: (3041, 745, 6)
+Time to construct index array: 0.625441312789917
+Time to populate elements: 3.6211752891540527
+Time to concatenate arrays: 22.23887324333191
+Time for this file: 26.48548984527588
+Total events: 462371
+Current size: (462371, 1086, 6)
+Total time: 2332.387802839279
+
+
+Working on File: user.angerami.24559744.OutputStream._000154.root - 154/502
+Array dimension: (3077, 909, 6)
+Time to construct index array: 0.5971500873565674
+Time to populate elements: 3.4515509605407715
+Time to concatenate arrays: 25.611261129379272
+Time for this file: 29.65996217727661
+Total events: 465448
+Current size: (465448, 1086, 6)
+Total time: 2362.047765016556
+
+
+Working on File: user.angerami.24559744.OutputStream._000155.root - 155/502
+Array dimension: (3030, 895, 6)
+Time to construct index array: 0.813452959060669
+Time to populate elements: 3.3628392219543457
+Time to concatenate arrays: 22.033203125
+Time for this file: 26.209495306015015
+Total events: 468478
+Current size: (468478, 1086, 6)
+Total time: 2388.257260322571
+
+
+Working on File: user.angerami.24559744.OutputStream._000156.root - 156/502
+Array dimension: (2930, 860, 6)
+Time to construct index array: 0.6106233596801758
+Time to populate elements: 3.3658149242401123
+Time to concatenate arrays: 28.33338689804077
+Time for this file: 32.30982518196106
+Total events: 471408
+Current size: (471408, 1086, 6)
+Total time: 2420.567085504532
+
+
+Working on File: user.angerami.24559744.OutputStream._000157.root - 157/502
+Array dimension: (3027, 865, 6)
+Time to construct index array: 0.7002108097076416
+Time to populate elements: 4.001506805419922
+Time to concatenate arrays: 28.91704225540161
+Time for this file: 33.618759870529175
+Total events: 474435
+Current size: (474435, 1086, 6)
+Total time: 2454.185845375061
+
+
+Working on File: user.angerami.24559744.OutputStream._000158.root - 158/502
+Array dimension: (3104, 839, 6)
+Time to construct index array: 0.8279697895050049
+Time to populate elements: 3.4168059825897217
+Time to concatenate arrays: 27.848201513290405
+Time for this file: 32.09297728538513
+Total events: 477539
+Current size: (477539, 1086, 6)
+Total time: 2486.278822660446
+
+
+Working on File: user.angerami.24559744.OutputStream._000159.root - 159/502
+Array dimension: (3047, 827, 6)
+Time to construct index array: 0.6032464504241943
+Time to populate elements: 3.696988105773926
+Time to concatenate arrays: 24.59805965423584
+Time for this file: 28.89829421043396
+Total events: 480586
+Current size: (480586, 1086, 6)
+Total time: 2515.17711687088
+
+
+Working on File: user.angerami.24559744.OutputStream._000160.root - 160/502
+Array dimension: (2983, 789, 6)
+Time to construct index array: 0.5794320106506348
+Time to populate elements: 3.3999476432800293
+Time to concatenate arrays: 26.021305322647095
+Time for this file: 30.00068497657776
+Total events: 483569
+Current size: (483569, 1086, 6)
+Total time: 2545.177801847458
+
+
+Working on File: user.angerami.24559744.OutputStream._000161.root - 161/502
+Array dimension: (3034, 754, 6)
+Time to construct index array: 0.6040794849395752
+Time to populate elements: 3.7391645908355713
+Time to concatenate arrays: 27.817641258239746
+Time for this file: 32.16088533401489
+Total events: 486603
+Current size: (486603, 1086, 6)
+Total time: 2577.338687181473
+
+
+Working on File: user.angerami.24559744.OutputStream._000162.root - 162/502
+Array dimension: (3063, 751, 6)
+Time to construct index array: 0.5554704666137695
+Time to populate elements: 3.5731866359710693
+Time to concatenate arrays: 25.612215518951416
+Time for this file: 29.740872621536255
+Total events: 489666
+Current size: (489666, 1086, 6)
+Total time: 2607.079559803009
+
+
+Working on File: user.angerami.24559744.OutputStream._000163.root - 163/502
+Array dimension: (3030, 833, 6)
+Time to construct index array: 0.6066775321960449
+Time to populate elements: 3.6905529499053955
+Time to concatenate arrays: 29.38417673110962
+Time for this file: 33.68140721321106
+Total events: 492696
+Current size: (492696, 1086, 6)
+Total time: 2640.76096701622
+
+
+Working on File: user.angerami.24559744.OutputStream._000164.root - 164/502
+Array dimension: (3041, 829, 6)
+Time to construct index array: 0.5899887084960938
+Time to populate elements: 3.354693651199341
+Time to concatenate arrays: 36.4479193687439
+Time for this file: 40.39260172843933
+Total events: 495737
+Current size: (495737, 1086, 6)
+Total time: 2681.1535687446594
+
+
+Working on File: user.angerami.24559744.OutputStream._000165.root - 165/502
+Array dimension: (3012, 850, 6)
+Time to construct index array: 0.5626163482666016
+Time to populate elements: 5.031801462173462
+Time to concatenate arrays: 31.54602837562561
+Time for this file: 37.140446186065674
+Total events: 498749
+Current size: (498749, 1086, 6)
+Total time: 2718.294014930725
+
+
+Working on File: user.angerami.24559744.OutputStream._000166.root - 166/502
+Array dimension: (3004, 876, 6)
+Time to construct index array: 0.5873608589172363
+Time to populate elements: 3.5163841247558594
+Time to concatenate arrays: 32.1149480342865
+Time for this file: 36.218693017959595
+Total events: 501753
+Current size: (501753, 1086, 6)
+Total time: 2754.5127079486847
+
+
+Working on File: user.angerami.24559744.OutputStream._000167.root - 167/502
+Array dimension: (3054, 769, 6)
+Time to construct index array: 0.5814988613128662
+Time to populate elements: 3.5984323024749756
+Time to concatenate arrays: 29.552037000656128
+Time for this file: 33.73196816444397
+Total events: 504807
+Current size: (504807, 1086, 6)
+Total time: 2788.2446761131287
+
+
+Working on File: user.angerami.24559744.OutputStream._000168.root - 168/502
+Array dimension: (3113, 725, 6)
+Time to construct index array: 0.596564531326294
+Time to populate elements: 3.581202745437622
+Time to concatenate arrays: 28.057689428329468
+Time for this file: 32.235456705093384
+Total events: 507920
+Current size: (507920, 1086, 6)
+Total time: 2820.480132818222
+
+
+Working on File: user.angerami.24559744.OutputStream._000169.root - 169/502
+Array dimension: (2990, 768, 6)
+Time to construct index array: 0.6356070041656494
+Time to populate elements: 3.5638580322265625
+Time to concatenate arrays: 27.46315884590149
+Time for this file: 31.6626238822937
+Total events: 510910
+Current size: (510910, 1086, 6)
+Total time: 2852.1427567005157
+
+
+Working on File: user.angerami.24559744.OutputStream._000170.root - 170/502
+Array dimension: (2996, 820, 6)
+Time to construct index array: 0.5618081092834473
+Time to populate elements: 3.3467884063720703
+Time to concatenate arrays: 28.97478985786438
+Time for this file: 32.8833863735199
+Total events: 513906
+Current size: (513906, 1086, 6)
+Total time: 2885.0261430740356
+
+
+Working on File: user.angerami.24559744.OutputStream._000171.root - 171/502
+Array dimension: (3063, 1014, 6)
+Time to construct index array: 0.6195282936096191
+Time to populate elements: 3.5439608097076416
+Time to concatenate arrays: 25.816242694854736
+Time for this file: 29.979731798171997
+Total events: 516969
+Current size: (516969, 1086, 6)
+Total time: 2915.0058748722076
+
+
+Working on File: user.angerami.24559744.OutputStream._000172.root - 172/502
+Array dimension: (3078, 805, 6)
+Time to construct index array: 0.5835967063903809
+Time to populate elements: 3.750314950942993
+Time to concatenate arrays: 25.56592059135437
+Time for this file: 29.899832248687744
+Total events: 520047
+Current size: (520047, 1086, 6)
+Total time: 2944.9057071208954
+
+
+Working on File: user.angerami.24559744.OutputStream._000173.root - 173/502
+Array dimension: (3089, 900, 6)
+Time to construct index array: 0.5851705074310303
+Time to populate elements: 3.4263086318969727
+Time to concatenate arrays: 29.07193684577942
+Time for this file: 33.08341598510742
+Total events: 523136
+Current size: (523136, 1086, 6)
+Total time: 2977.989123106003
+
+
+Working on File: user.angerami.24559744.OutputStream._000174.root - 174/502
+Array dimension: (3033, 964, 6)
+Time to construct index array: 0.5785536766052246
+Time to populate elements: 3.9254984855651855
+Time to concatenate arrays: 26.47032332420349
+Time for this file: 30.9743754863739
+Total events: 526169
+Current size: (526169, 1086, 6)
+Total time: 3008.9634985923767
+
+
+Working on File: user.angerami.24559744.OutputStream._000175.root - 175/502
+Array dimension: (3102, 885, 6)
+Time to construct index array: 0.8771955966949463
+Time to populate elements: 3.742645025253296
+Time to concatenate arrays: 22.343982458114624
+Time for this file: 26.963823080062866
+Total events: 529271
+Current size: (529271, 1086, 6)
+Total time: 3035.9273216724396
+
+
+Working on File: user.angerami.24559744.OutputStream._000176.root - 176/502
+Array dimension: (3029, 935, 6)
+Time to construct index array: 0.627504825592041
+Time to populate elements: 3.9966561794281006
+Time to concatenate arrays: 29.230220079421997
+Time for this file: 33.85438108444214
+Total events: 532300
+Current size: (532300, 1086, 6)
+Total time: 3069.7817027568817
+
+
+Working on File: user.angerami.24559744.OutputStream._000177.root - 177/502
+Array dimension: (3093, 745, 6)
+Time to construct index array: 0.639700174331665
+Time to populate elements: 3.5328383445739746
+Time to concatenate arrays: 24.802103757858276
+Time for this file: 28.974642276763916
+Total events: 535393
+Current size: (535393, 1086, 6)
+Total time: 3098.7563450336456
+
+
+Working on File: user.angerami.24559744.OutputStream._000178.root - 178/502
+Array dimension: (3057, 784, 6)
+Time to construct index array: 0.577481746673584
+Time to populate elements: 3.33309268951416
+Time to concatenate arrays: 26.124009609222412
+Time for this file: 30.034584045410156
+Total events: 538450
+Current size: (538450, 1086, 6)
+Total time: 3128.790929079056
+
+
+Working on File: user.angerami.24559744.OutputStream._000179.root - 179/502
+Array dimension: (3163, 833, 6)
+Time to construct index array: 0.6247923374176025
+Time to populate elements: 3.837951898574829
+Time to concatenate arrays: 32.227741956710815
+Time for this file: 36.69048619270325
+Total events: 541613
+Current size: (541613, 1086, 6)
+Total time: 3165.481415271759
+
+
+Working on File: user.angerami.24559744.OutputStream._000180.root - 180/502
+Array dimension: (2969, 811, 6)
+Time to construct index array: 0.5784456729888916
+Time to populate elements: 4.251694440841675
+Time to concatenate arrays: 31.61215567588806
+Time for this file: 36.44229578971863
+Total events: 544582
+Current size: (544582, 1086, 6)
+Total time: 3201.9237110614777
+
+
+Working on File: user.angerami.24559744.OutputStream._000181.root - 181/502
+Array dimension: (3015, 767, 6)
+Time to construct index array: 0.5681500434875488
+Time to populate elements: 3.252178192138672
+Time to concatenate arrays: 32.17182779312134
+Time for this file: 35.99215602874756
+Total events: 547597
+Current size: (547597, 1086, 6)
+Total time: 3237.915867090225
+
+
+Working on File: user.angerami.24559744.OutputStream._000182.root - 182/502
+Array dimension: (3053, 743, 6)
+Time to construct index array: 0.6806602478027344
+Time to populate elements: 3.6667675971984863
+Time to concatenate arrays: 31.24000597000122
+Time for this file: 35.58743381500244
+Total events: 550650
+Current size: (550650, 1086, 6)
+Total time: 3273.5033009052277
+
+
+Working on File: user.angerami.24559744.OutputStream._000183.root - 183/502
+Array dimension: (3175, 853, 6)
+Time to construct index array: 0.6057374477386475
+Time to populate elements: 4.18820595741272
+Time to concatenate arrays: 45.76372265815735
+Time for this file: 50.557666063308716
+Total events: 553825
+Current size: (553825, 1086, 6)
+Total time: 3324.0609669685364
+
+
+Working on File: user.angerami.24559744.OutputStream._000184.root - 184/502
+Array dimension: (3075, 774, 6)
+Time to construct index array: 0.5970675945281982
+Time to populate elements: 3.545356035232544
+Time to concatenate arrays: 21.597999334335327
+Time for this file: 25.74042296409607
+Total events: 556900
+Current size: (556900, 1086, 6)
+Total time: 3349.8013899326324
+
+
+Working on File: user.angerami.24559744.OutputStream._000185.root - 185/502
+Array dimension: (3090, 1006, 6)
+Time to construct index array: 0.5741286277770996
+Time to populate elements: 3.757293224334717
+Time to concatenate arrays: 26.916380643844604
+Time for this file: 31.24780249595642
+Total events: 559990
+Current size: (559990, 1086, 6)
+Total time: 3381.049192428589
+
+
+Working on File: user.angerami.24559744.OutputStream._000186.root - 186/502
+Array dimension: (3060, 770, 6)
+Time to construct index array: 0.604076623916626
+Time to populate elements: 3.426142692565918
+Time to concatenate arrays: 25.63990068435669
+Time for this file: 29.670120000839233
+Total events: 563050
+Current size: (563050, 1086, 6)
+Total time: 3410.719312429428
+
+
+Working on File: user.angerami.24559744.OutputStream._000187.root - 187/502
+Array dimension: (3073, 695, 6)
+Time to construct index array: 0.6282260417938232
+Time to populate elements: 3.7460975646972656
+Time to concatenate arrays: 25.809625387191772
+Time for this file: 30.18394899368286
+Total events: 566123
+Current size: (566123, 1086, 6)
+Total time: 3440.903261423111
+
+
+Working on File: user.angerami.24559744.OutputStream._000188.root - 188/502
+Array dimension: (3077, 901, 6)
+Time to construct index array: 0.5856802463531494
+Time to populate elements: 3.4611172676086426
+Time to concatenate arrays: 31.505441188812256
+Time for this file: 35.55223870277405
+Total events: 569200
+Current size: (569200, 1086, 6)
+Total time: 3476.455500125885
+
+
+Working on File: user.angerami.24559744.OutputStream._000189.root - 189/502
+Array dimension: (3069, 800, 6)
+Time to construct index array: 0.5836188793182373
+Time to populate elements: 4.7808849811553955
+Time to concatenate arrays: 29.17235565185547
+Time for this file: 34.5368595123291
+Total events: 572269
+Current size: (572269, 1086, 6)
+Total time: 3510.992359638214
+
+
+Working on File: user.angerami.24559744.OutputStream._000190.root - 190/502
+Array dimension: (2956, 781, 6)
+Time to construct index array: 0.6552646160125732
+Time to populate elements: 3.6042070388793945
+Time to concatenate arrays: 30.78027844429016
+Time for this file: 35.03975009918213
+Total events: 575225
+Current size: (575225, 1086, 6)
+Total time: 3546.0321097373962
+
+
+Working on File: user.angerami.24559744.OutputStream._000191.root - 191/502
+Array dimension: (3090, 775, 6)
+Time to construct index array: 0.613349437713623
+Time to populate elements: 3.4099364280700684
+Time to concatenate arrays: 31.345415592193604
+Time for this file: 35.368701457977295
+Total events: 578315
+Current size: (578315, 1086, 6)
+Total time: 3581.4008111953735
+
+
+Working on File: user.angerami.24559744.OutputStream._000192.root - 192/502
+Array dimension: (3070, 744, 6)
+Time to construct index array: 0.954495906829834
+Time to populate elements: 3.4126834869384766
+Time to concatenate arrays: 34.51735877990723
+Time for this file: 38.88453817367554
+Total events: 581385
+Current size: (581385, 1086, 6)
+Total time: 3620.285349369049
+
+
+Working on File: user.angerami.24559744.OutputStream._000193.root - 193/502
+Array dimension: (3155, 869, 6)
+Time to construct index array: 0.5979454517364502
+Time to populate elements: 3.7580161094665527
+Time to concatenate arrays: 34.29112935066223
+Time for this file: 38.647090911865234
+Total events: 584540
+Current size: (584540, 1086, 6)
+Total time: 3658.9324402809143
+
+
+Working on File: user.angerami.24559744.OutputStream._000194.root - 194/502
+Array dimension: (3148, 820, 6)
+Time to construct index array: 0.6024038791656494
+Time to populate elements: 3.4187443256378174
+Time to concatenate arrays: 41.04228854179382
+Time for this file: 45.06343674659729
+Total events: 587688
+Current size: (587688, 1086, 6)
+Total time: 3703.9958770275116
+
+
+Working on File: user.angerami.24559744.OutputStream._000195.root - 195/502
+Array dimension: (2993, 963, 6)
+Time to construct index array: 0.6331613063812256
+Time to populate elements: 3.540006399154663
+Time to concatenate arrays: 36.366464138031006
+Time for this file: 40.539631843566895
+Total events: 590681
+Current size: (590681, 1086, 6)
+Total time: 3744.5355088710785
+
+
+Working on File: user.angerami.24559744.OutputStream._000196.root - 196/502
+Array dimension: (3067, 856, 6)
+Time to construct index array: 0.5706145763397217
+Time to populate elements: 3.5704755783081055
+Time to concatenate arrays: 39.60581874847412
+Time for this file: 43.74690890312195
+Total events: 593748
+Current size: (593748, 1086, 6)
+Total time: 3788.2824177742004
+
+
+Working on File: user.angerami.24559744.OutputStream._000197.root - 197/502
+Array dimension: (3002, 777, 6)
+Time to construct index array: 0.8081138134002686
+Time to populate elements: 3.50373911857605
+Time to concatenate arrays: 39.91045141220093
+Time for this file: 44.222304344177246
+Total events: 596750
+Current size: (596750, 1086, 6)
+Total time: 3832.5047221183777
+
+
+Working on File: user.angerami.24559744.OutputStream._000198.root - 198/502
+Array dimension: (3029, 898, 6)
+Time to construct index array: 0.6077971458435059
+Time to populate elements: 3.587855815887451
+Time to concatenate arrays: 41.05081057548523
+Time for this file: 45.24646353721619
+Total events: 599779
+Current size: (599779, 1086, 6)
+Total time: 3877.751185655594
+
+
+Working on File: user.angerami.24559744.OutputStream._000199.root - 199/502
+Array dimension: (3122, 833, 6)
+Time to construct index array: 0.5684046745300293
+Time to populate elements: 3.4494524002075195
+Time to concatenate arrays: 42.13030743598938
+Time for this file: 46.14816451072693
+Total events: 602901
+Current size: (602901, 1086, 6)
+Total time: 3923.899350166321
+
+
+Working on File: user.angerami.24559744.OutputStream._000200.root - 200/502
+Array dimension: (3003, 750, 6)
+Time to construct index array: 0.5595645904541016
+Time to populate elements: 3.3135433197021484
+Time to concatenate arrays: 44.755635499954224
+Time for this file: 48.628743410110474
+Total events: 605904
+Current size: (605904, 1086, 6)
+Total time: 3972.5280935764313
+
+
+Working on File: user.angerami.24559744.OutputStream._000201.root - 201/502
+Array dimension: (3154, 823, 6)
+Time to construct index array: 0.6518816947937012
+Time to populate elements: 3.5967068672180176
+Time to concatenate arrays: 44.742196559906006
+Time for this file: 48.990785121917725
+Total events: 609058
+Current size: (609058, 1086, 6)
+Total time: 4021.518878698349
+
+
+Working on File: user.angerami.24559744.OutputStream._000202.root - 202/502
+Array dimension: (3086, 844, 6)
+Time to construct index array: 0.6344928741455078
+Time to populate elements: 4.2305896282196045
+Time to concatenate arrays: 46.29472088813782
+Time for this file: 51.15980339050293
+Total events: 612144
+Current size: (612144, 1086, 6)
+Total time: 4072.678682088852
+
+
+Working on File: user.angerami.24559744.OutputStream._000203.root - 203/502
+Array dimension: (3125, 1034, 6)
+Time to construct index array: 0.6396405696868896
+Time to populate elements: 3.720395565032959
+Time to concatenate arrays: 46.11933350563049
+Time for this file: 50.47936964035034
+Total events: 615269
+Current size: (615269, 1086, 6)
+Total time: 4123.158051729202
+
+
+Working on File: user.angerami.24559744.OutputStream._000204.root - 204/502
+Array dimension: (3029, 920, 6)
+Time to construct index array: 0.5592281818389893
+Time to populate elements: 4.0368263721466064
+Time to concatenate arrays: 49.87622022628784
+Time for this file: 54.47227478027344
+Total events: 618298
+Current size: (618298, 1086, 6)
+Total time: 4177.630326509476
+
+
+Working on File: user.angerami.24559744.OutputStream._000205.root - 205/502
+Array dimension: (2995, 742, 6)
+Time to construct index array: 0.587383508682251
+Time to populate elements: 3.417181968688965
+Time to concatenate arrays: 48.10231566429138
+Time for this file: 52.1068811416626
+Total events: 621293
+Current size: (621293, 1086, 6)
+Total time: 4229.737207651138
+
+
+Working on File: user.angerami.24559744.OutputStream._000206.root - 206/502
+Array dimension: (3124, 888, 6)
+Time to construct index array: 0.63468337059021
+Time to populate elements: 3.574793815612793
+Time to concatenate arrays: 51.87784743309021
+Time for this file: 56.08732461929321
+Total events: 624417
+Current size: (624417, 1086, 6)
+Total time: 4285.8245322704315
+
+
+Working on File: user.angerami.24559744.OutputStream._000207.root - 207/502
+Array dimension: (2954, 858, 6)
+Time to construct index array: 0.7333955764770508
+Time to populate elements: 3.2473912239074707
+Time to concatenate arrays: 50.942341327667236
+Time for this file: 54.92312812805176
+Total events: 627371
+Current size: (627371, 1086, 6)
+Total time: 4340.747660398483
+
+
+Working on File: user.angerami.24559744.OutputStream._000208.root - 208/502
+Array dimension: (3071, 825, 6)
+Time to construct index array: 0.5955445766448975
+Time to populate elements: 3.6628260612487793
+Time to concatenate arrays: 53.67767810821533
+Time for this file: 57.93604874610901
+Total events: 630442
+Current size: (630442, 1086, 6)
+Total time: 4398.683709144592
+
+
+Working on File: user.angerami.24559744.OutputStream._000209.root - 209/502
+Array dimension: (3035, 812, 6)
+Time to construct index array: 0.5833349227905273
+Time to populate elements: 3.856989622116089
+Time to concatenate arrays: 53.38326025009155
+Time for this file: 57.82358479499817
+Total events: 633477
+Current size: (633477, 1086, 6)
+Total time: 4456.50729393959
+
+
+Working on File: user.angerami.24559744.OutputStream._000210.root - 210/502
+Array dimension: (3040, 889, 6)
+Time to construct index array: 0.716742992401123
+Time to populate elements: 3.374117851257324
+Time to concatenate arrays: 55.95220398902893
+Time for this file: 60.04306483268738
+Total events: 636517
+Current size: (636517, 1086, 6)
+Total time: 4516.550358772278
+
+
+Working on File: user.angerami.24559744.OutputStream._000211.root - 211/502
+Array dimension: (2986, 949, 6)
+Time to construct index array: 0.5586349964141846
+Time to populate elements: 3.497105121612549
+Time to concatenate arrays: 55.10157799720764
+Time for this file: 59.157318115234375
+Total events: 639503
+Current size: (639503, 1086, 6)
+Total time: 4575.707676887512
+
+
+Working on File: user.angerami.24559744.OutputStream._000212.root - 212/502
+Array dimension: (2977, 840, 6)
+Time to construct index array: 0.581984281539917
+Time to populate elements: 3.5284481048583984
+Time to concatenate arrays: 60.62782669067383
+Time for this file: 64.73825907707214
+Total events: 642480
+Current size: (642480, 1086, 6)
+Total time: 4640.445935964584
+
+
+Working on File: user.angerami.24559744.OutputStream._000213.root - 213/502
+Array dimension: (3156, 829, 6)
+Time to construct index array: 0.6063332557678223
+Time to populate elements: 3.3848958015441895
+Time to concatenate arrays: 56.744558334350586
+Time for this file: 60.7357873916626
+Total events: 645636
+Current size: (645636, 1086, 6)
+Total time: 4701.181723356247
+
+
+Working on File: user.angerami.24559744.OutputStream._000214.root - 214/502
+Array dimension: (3017, 753, 6)
+Time to construct index array: 0.8760364055633545
+Time to populate elements: 3.283766269683838
+Time to concatenate arrays: 60.174349784851074
+Time for this file: 64.33415246009827
+Total events: 648653
+Current size: (648653, 1086, 6)
+Total time: 4765.515875816345
+
+
+Working on File: user.angerami.24559744.OutputStream._000215.root - 215/502
+Array dimension: (3111, 906, 6)
+Time to construct index array: 0.6073057651519775
+Time to populate elements: 3.569441795349121
+Time to concatenate arrays: 59.39817714691162
+Time for this file: 63.57492470741272
+Total events: 651764
+Current size: (651764, 1086, 6)
+Total time: 4829.090800523758
+
+
+Working on File: user.angerami.24559744.OutputStream._000216.root - 216/502
+Array dimension: (3061, 868, 6)
+Time to construct index array: 0.6564321517944336
+Time to populate elements: 3.8782007694244385
+Time to concatenate arrays: 62.53231239318848
+Time for this file: 67.06694531440735
+Total events: 654825
+Current size: (654825, 1086, 6)
+Total time: 4896.157745838165
+
+
+Working on File: user.angerami.24559744.OutputStream._000217.root - 217/502
+Array dimension: (3100, 952, 6)
+Time to construct index array: 0.7571136951446533
+Time to populate elements: 3.552515983581543
+Time to concatenate arrays: 62.35580039024353
+Time for this file: 66.66543006896973
+Total events: 657925
+Current size: (657925, 1086, 6)
+Total time: 4962.823175907135
+
+
+Working on File: user.angerami.24559744.OutputStream._000218.root - 218/502
+Array dimension: (2972, 948, 6)
+Time to construct index array: 0.7389397621154785
+Time to populate elements: 3.304856538772583
+Time to concatenate arrays: 67.38639664649963
+Time for this file: 71.4301929473877
+Total events: 660897
+Current size: (660897, 1086, 6)
+Total time: 5034.253368854523
+
+
+Working on File: user.angerami.24559744.OutputStream._000219.root - 219/502
+Array dimension: (2966, 892, 6)
+Time to construct index array: 0.5859785079956055
+Time to populate elements: 3.424055337905884
+Time to concatenate arrays: 64.02062654495239
+Time for this file: 68.03066039085388
+Total events: 663863
+Current size: (663863, 1086, 6)
+Total time: 5102.284029245377
+
+
+Working on File: user.angerami.24559744.OutputStream._000220.root - 220/502
+Array dimension: (3169, 878, 6)
+Time to construct index array: 0.5995614528656006
+Time to populate elements: 3.4573299884796143
+Time to concatenate arrays: 66.59927439689636
+Time for this file: 70.65616583824158
+Total events: 667032
+Current size: (667032, 1086, 6)
+Total time: 5172.940195083618
+
+
+Working on File: user.angerami.24559744.OutputStream._000221.root - 221/502
+Array dimension: (3019, 823, 6)
+Time to construct index array: 0.5842814445495605
+Time to populate elements: 3.5046164989471436
+Time to concatenate arrays: 65.79782819747925
+Time for this file: 69.88672614097595
+Total events: 670051
+Current size: (670051, 1086, 6)
+Total time: 5242.826921224594
+
+
+Working on File: user.angerami.24559744.OutputStream._000222.root - 222/502
+Array dimension: (3088, 789, 6)
+Time to construct index array: 0.667963981628418
+Time to populate elements: 3.40956449508667
+Time to concatenate arrays: 69.73094654083252
+Time for this file: 73.80847501754761
+Total events: 673139
+Current size: (673139, 1086, 6)
+Total time: 5316.635396242142
+
+
+Working on File: user.angerami.24559744.OutputStream._000223.root - 223/502
+Array dimension: (3084, 845, 6)
+Time to construct index array: 0.5769827365875244
+Time to populate elements: 3.8247854709625244
+Time to concatenate arrays: 67.46028852462769
+Time for this file: 71.86205673217773
+Total events: 676223
+Current size: (676223, 1086, 6)
+Total time: 5388.4974529743195
+
+
+Working on File: user.angerami.24559744.OutputStream._000224.root - 224/502
+Array dimension: (3046, 838, 6)
+Time to construct index array: 0.5819053649902344
+Time to populate elements: 3.4287970066070557
+Time to concatenate arrays: 72.11372017860413
+Time for this file: 76.12442255020142
+Total events: 679269
+Current size: (679269, 1086, 6)
+Total time: 5464.621875524521
+
+
+Working on File: user.angerami.24559744.OutputStream._000225.root - 225/502
+Array dimension: (3104, 850, 6)
+Time to construct index array: 0.5898463726043701
+Time to populate elements: 3.3929266929626465
+Time to concatenate arrays: 77.45922517776489
+Time for this file: 81.44199824333191
+Total events: 682373
+Current size: (682373, 1086, 6)
+Total time: 5546.063873767853
+
+
+Working on File: user.angerami.24559744.OutputStream._000226.root - 226/502
+Array dimension: (3074, 959, 6)
+Time to construct index array: 0.5833604335784912
+Time to populate elements: 3.36136531829834
+Time to concatenate arrays: 70.55136322975159
+Time for this file: 74.49608898162842
+Total events: 685447
+Current size: (685447, 1086, 6)
+Total time: 5620.559962749481
+
+
+Working on File: user.angerami.24559744.OutputStream._000227.root - 227/502
+Array dimension: (3166, 762, 6)
+Time to construct index array: 0.6102149486541748
+Time to populate elements: 3.347179651260376
+Time to concatenate arrays: 73.48838090896606
+Time for this file: 77.44577550888062
+Total events: 688613
+Current size: (688613, 1086, 6)
+Total time: 5698.005738258362
+
+
+Working on File: user.angerami.24559744.OutputStream._000228.root - 228/502
+Array dimension: (2989, 870, 6)
+Time to construct index array: 0.6718173027038574
+Time to populate elements: 3.329441547393799
+Time to concatenate arrays: 73.76911997795105
+Time for this file: 77.7703788280487
+Total events: 691602
+Current size: (691602, 1086, 6)
+Total time: 5775.7761170864105
+
+
+Working on File: user.angerami.24559744.OutputStream._000229.root - 229/502
+Array dimension: (3088, 832, 6)
+Time to construct index array: 0.5910148620605469
+Time to populate elements: 3.8049404621124268
+Time to concatenate arrays: 72.39701771736145
+Time for this file: 76.79297304153442
+Total events: 694690
+Current size: (694690, 1086, 6)
+Total time: 5852.569090127945
+
+
+Working on File: user.angerami.24559744.OutputStream._000230.root - 230/502
+Array dimension: (3061, 973, 6)
+Time to construct index array: 0.5829305648803711
+Time to populate elements: 3.419682025909424
+Time to concatenate arrays: 76.77622175216675
+Time for this file: 80.77883434295654
+Total events: 697751
+Current size: (697751, 1086, 6)
+Total time: 5933.3479244709015
+
+
+Working on File: user.angerami.24559744.OutputStream._000231.root - 231/502
+Array dimension: (3132, 790, 6)
+Time to construct index array: 0.6234662532806396
+Time to populate elements: 3.463876724243164
+Time to concatenate arrays: 75.51309728622437
+Time for this file: 79.60044026374817
+Total events: 700883
+Current size: (700883, 1086, 6)
+Total time: 6012.94836473465
+
+
+Working on File: user.angerami.24559744.OutputStream._000232.root - 232/502
+Array dimension: (3010, 838, 6)
+Time to construct index array: 0.6092743873596191
+Time to populate elements: 3.970411539077759
+Time to concatenate arrays: 88.42155241966248
+Time for this file: 93.00123834609985
+Total events: 703893
+Current size: (703893, 1086, 6)
+Total time: 6105.9496030807495
+
+
+Working on File: user.angerami.24559744.OutputStream._000233.root - 233/502
+Array dimension: (3114, 920, 6)
+Time to construct index array: 0.5894150733947754
+Time to populate elements: 3.6099846363067627
+Time to concatenate arrays: 81.18008852005005
+Time for this file: 85.37948822975159
+Total events: 707007
+Current size: (707007, 1086, 6)
+Total time: 6191.329091310501
+
+
+Working on File: user.angerami.24559744.OutputStream._000234.root - 234/502
+Array dimension: (3002, 749, 6)
+Time to construct index array: 0.6870484352111816
+Time to populate elements: 3.3304686546325684
+Time to concatenate arrays: 77.67721796035767
+Time for this file: 81.69473505020142
+Total events: 710009
+Current size: (710009, 1086, 6)
+Total time: 6273.0238263607025
+
+
+Working on File: user.angerami.24559744.OutputStream._000235.root - 235/502
+Array dimension: (2998, 941, 6)
+Time to construct index array: 0.885138988494873
+Time to populate elements: 3.5425033569335938
+Time to concatenate arrays: 79.34767436981201
+Time for this file: 83.77531671524048
+Total events: 713007
+Current size: (713007, 1086, 6)
+Total time: 6356.799143075943
+
+
+Working on File: user.angerami.24559744.OutputStream._000236.root - 236/502
+Array dimension: (2986, 876, 6)
+Time to construct index array: 0.6255755424499512
+Time to populate elements: 3.7094593048095703
+Time to concatenate arrays: 83.36049938201904
+Time for this file: 87.69553422927856
+Total events: 715993
+Current size: (715993, 1086, 6)
+Total time: 6444.494677305222
+
+
+Working on File: user.angerami.24559744.OutputStream._000237.root - 237/502
+Array dimension: (3067, 900, 6)
+Time to construct index array: 0.5753474235534668
+Time to populate elements: 4.027522087097168
+Time to concatenate arrays: 80.16888213157654
+Time for this file: 84.77175164222717
+Total events: 719060
+Current size: (719060, 1086, 6)
+Total time: 6529.266428947449
+
+
+Working on File: user.angerami.24559744.OutputStream._000238.root - 238/502
+Array dimension: (3081, 839, 6)
+Time to construct index array: 0.5837540626525879
+Time to populate elements: 3.3474292755126953
+Time to concatenate arrays: 92.0130786895752
+Time for this file: 95.94426202774048
+Total events: 722141
+Current size: (722141, 1086, 6)
+Total time: 6625.210690975189
+
+
+Working on File: user.angerami.24559744.OutputStream._000239.root - 239/502
+Array dimension: (3095, 811, 6)
+Time to construct index array: 0.6559004783630371
+Time to populate elements: 3.4426653385162354
+Time to concatenate arrays: 91.72549557685852
+Time for this file: 95.8240613937378
+Total events: 725236
+Current size: (725236, 1086, 6)
+Total time: 6721.034752368927
+
+
+Working on File: user.angerami.24559744.OutputStream._000240.root - 240/502
+Array dimension: (3100, 794, 6)
+Time to construct index array: 0.5855250358581543
+Time to populate elements: 3.6342735290527344
+Time to concatenate arrays: 87.66500544548035
+Time for this file: 91.88480401039124
+Total events: 728336
+Current size: (728336, 1086, 6)
+Total time: 6812.919556379318
+
+
+Working on File: user.angerami.24559744.OutputStream._000241.root - 241/502
+Array dimension: (3048, 862, 6)
+Time to construct index array: 0.6005501747131348
+Time to populate elements: 3.8170595169067383
+Time to concatenate arrays: 83.42510461807251
+Time for this file: 87.84271430969238
+Total events: 731384
+Current size: (731384, 1086, 6)
+Total time: 6900.762270689011
+
+
+Working on File: user.angerami.24559744.OutputStream._000242.root - 242/502
+Array dimension: (3080, 889, 6)
+Time to construct index array: 0.7751989364624023
+Time to populate elements: 3.301867961883545
+Time to concatenate arrays: 89.07974553108215
+Time for this file: 93.1568124294281
+Total events: 734464
+Current size: (734464, 1086, 6)
+Total time: 6993.919083118439
+
+
+Working on File: user.angerami.24559744.OutputStream._000243.root - 243/502
+Array dimension: (3106, 954, 6)
+Time to construct index array: 0.6332097053527832
+Time to populate elements: 4.166948318481445
+Time to concatenate arrays: 84.46114826202393
+Time for this file: 89.26130628585815
+Total events: 737570
+Current size: (737570, 1086, 6)
+Total time: 7083.180389404297
+
+
+Working on File: user.angerami.24559744.OutputStream._000244.root - 244/502
+Array dimension: (3037, 884, 6)
+Time to construct index array: 0.7167773246765137
+Time to populate elements: 3.5621063709259033
+Time to concatenate arrays: 89.29660749435425
+Time for this file: 93.57549118995667
+Total events: 740607
+Current size: (740607, 1086, 6)
+Total time: 7176.7558805942535
+
+
+Working on File: user.angerami.24559744.OutputStream._000245.root - 245/502
+Array dimension: (3085, 872, 6)
+Time to construct index array: 0.6289353370666504
+Time to populate elements: 3.642198085784912
+Time to concatenate arrays: 101.15931582450867
+Time for this file: 105.43044924736023
+Total events: 743692
+Current size: (743692, 1086, 6)
+Total time: 7282.186329841614
+
+
+Working on File: user.angerami.24559744.OutputStream._000246.root - 246/502
+Array dimension: (3073, 754, 6)
+Time to construct index array: 0.6599726676940918
+Time to populate elements: 3.4750587940216064
+Time to concatenate arrays: 95.16764092445374
+Time for this file: 99.30267238616943
+Total events: 746765
+Current size: (746765, 1086, 6)
+Total time: 7381.489002227783
+
+
+Working on File: user.angerami.24559744.OutputStream._000247.root - 247/502
+Array dimension: (3021, 848, 6)
+Time to construct index array: 0.6204426288604736
+Time to populate elements: 3.6913692951202393
+Time to concatenate arrays: 89.63409376144409
+Time for this file: 93.9459056854248
+Total events: 749786
+Current size: (749786, 1086, 6)
+Total time: 7475.434907913208
+
+
+Working on File: user.angerami.24559744.OutputStream._000248.root - 248/502
+Array dimension: (3158, 904, 6)
+Time to construct index array: 0.6306443214416504
+Time to populate elements: 3.9737305641174316
+Time to concatenate arrays: 95.86849975585938
+Time for this file: 100.47287464141846
+Total events: 752944
+Current size: (752944, 1086, 6)
+Total time: 7575.9077825546265
+
+
+Working on File: user.angerami.24559744.OutputStream._000249.root - 249/502
+Array dimension: (3036, 827, 6)
+Time to construct index array: 0.6358213424682617
+Time to populate elements: 3.5189332962036133
+Time to concatenate arrays: 91.49223947525024
+Time for this file: 95.64699411392212
+Total events: 755980
+Current size: (755980, 1086, 6)
+Total time: 7671.554776668549
+
+
+Working on File: user.angerami.24559744.OutputStream._000250.root - 250/502
+Array dimension: (2998, 805, 6)
+Time to construct index array: 0.5644357204437256
+Time to populate elements: 4.094252347946167
+Time to concatenate arrays: 99.89739561080933
+Time for this file: 104.55608367919922
+Total events: 758978
+Current size: (758978, 1086, 6)
+Total time: 7776.110860347748
+
+
+Working on File: user.angerami.24559744.OutputStream._000251.root - 251/502
+Array dimension: (3097, 820, 6)
+Time to construct index array: 0.5898845195770264
+Time to populate elements: 3.6625733375549316
+Time to concatenate arrays: 94.47688937187195
+Time for this file: 98.7293472290039
+Total events: 762075
+Current size: (762075, 1086, 6)
+Total time: 7874.840207576752
+
+
+Working on File: user.angerami.24559744.OutputStream._000252.root - 252/502
+Array dimension: (3117, 827, 6)
+Time to construct index array: 0.5931832790374756
+Time to populate elements: 3.9720311164855957
+Time to concatenate arrays: 108.41588854789734
+Time for this file: 112.98110294342041
+Total events: 765192
+Current size: (765192, 1086, 6)
+Total time: 7987.821310520172
+
+
+Working on File: user.angerami.24559744.OutputStream._000253.root - 253/502
+Array dimension: (3121, 788, 6)
+Time to construct index array: 0.5957317352294922
+Time to populate elements: 4.123366594314575
+Time to concatenate arrays: 97.97267985343933
+Time for this file: 102.6917781829834
+Total events: 768313
+Current size: (768313, 1086, 6)
+Total time: 8090.5130887031555
+
+
+Working on File: user.angerami.24559744.OutputStream._000254.root - 254/502
+Array dimension: (3151, 798, 6)
+Time to construct index array: 0.5963461399078369
+Time to populate elements: 3.8481051921844482
+Time to concatenate arrays: 99.33368563652039
+Time for this file: 103.77813696861267
+Total events: 771464
+Current size: (771464, 1086, 6)
+Total time: 8194.291225671768
+
+
+Working on File: user.angerami.24559744.OutputStream._000255.root - 255/502
+Array dimension: (3114, 920, 6)
+Time to construct index array: 0.602039098739624
+Time to populate elements: 3.809354782104492
+Time to concatenate arrays: 99.47292017936707
+Time for this file: 103.88431406021118
+Total events: 774578
+Current size: (774578, 1086, 6)
+Total time: 8298.17553973198
+
+
+Working on File: user.angerami.24559744.OutputStream._000256.root - 256/502
+Array dimension: (3049, 806, 6)
+Time to construct index array: 0.5813212394714355
+Time to populate elements: 3.311950445175171
+Time to concatenate arrays: 104.24983477592468
+Time for this file: 108.14310646057129
+Total events: 777627
+Current size: (777627, 1086, 6)
+Total time: 8406.31864619255
+
+
+Working on File: user.angerami.24559744.OutputStream._000257.root - 257/502
+Array dimension: (3069, 841, 6)
+Time to construct index array: 0.6165213584899902
+Time to populate elements: 3.843179702758789
+Time to concatenate arrays: 99.3556559085846
+Time for this file: 103.81535696983337
+Total events: 780696
+Current size: (780696, 1086, 6)
+Total time: 8510.134003162384
+
+
+Working on File: user.angerami.24559744.OutputStream._000258.root - 258/502
+Array dimension: (3032, 915, 6)
+Time to construct index array: 0.5907609462738037
+Time to populate elements: 3.344055652618408
+Time to concatenate arrays: 101.21851348876953
+Time for this file: 105.15333008766174
+Total events: 783728
+Current size: (783728, 1086, 6)
+Total time: 8615.287333250046
+
+
+Working on File: user.angerami.24559744.OutputStream._000259.root - 259/502
+Array dimension: (3143, 844, 6)
+Time to construct index array: 0.5919458866119385
+Time to populate elements: 3.4941632747650146
+Time to concatenate arrays: 100.72573852539062
+Time for this file: 104.81184768676758
+Total events: 786871
+Current size: (786871, 1086, 6)
+Total time: 8720.099180936813
+
+
+Working on File: user.angerami.24559744.OutputStream._000260.root - 260/502
+Array dimension: (3049, 850, 6)
+Time to construct index array: 0.7730216979980469
+Time to populate elements: 3.428100824356079
+Time to concatenate arrays: 103.99181532859802
+Time for this file: 108.19293785095215
+Total events: 789920
+Current size: (789920, 1086, 6)
+Total time: 8828.292118787766
+
+
+Working on File: user.angerami.24559744.OutputStream._000261.root - 261/502
+Array dimension: (3075, 828, 6)
+Time to construct index array: 0.5955402851104736
+Time to populate elements: 4.4228434562683105
+Time to concatenate arrays: 97.70063638687134
+Time for this file: 102.71902012825012
+Total events: 792995
+Current size: (792995, 1086, 6)
+Total time: 8931.011138916016
+
+
+Working on File: user.angerami.24559744.OutputStream._000262.root - 262/502
+Array dimension: (3040, 881, 6)
+Time to construct index array: 0.559971809387207
+Time to populate elements: 3.631040573120117
+Time to concatenate arrays: 104.16549515724182
+Time for this file: 108.35650753974915
+Total events: 796035
+Current size: (796035, 1086, 6)
+Total time: 9039.367646455765
+
+
+Working on File: user.angerami.24559744.OutputStream._000263.root - 263/502
+Array dimension: (3100, 943, 6)
+Time to construct index array: 0.836780309677124
+Time to populate elements: 3.5716850757598877
+Time to concatenate arrays: 104.17350006103516
+Time for this file: 108.58196544647217
+Total events: 799135
+Current size: (799135, 1086, 6)
+Total time: 9147.949611902237
+
+
+Working on File: user.angerami.24559744.OutputStream._000264.root - 264/502
+Array dimension: (2927, 834, 6)
+Time to construct index array: 0.5980186462402344
+Time to populate elements: 3.2598531246185303
+Time to concatenate arrays: 109.25191402435303
+Time for this file: 113.10978579521179
+Total events: 802062
+Current size: (802062, 1086, 6)
+Total time: 9261.059397697449
+
+
+Working on File: user.angerami.24559744.OutputStream._000265.root - 265/502
+Array dimension: (3034, 882, 6)
+Time to construct index array: 0.5721621513366699
+Time to populate elements: 4.299923658370972
+Time to concatenate arrays: 97.84904766082764
+Time for this file: 102.72113347053528
+Total events: 805096
+Current size: (805096, 1086, 6)
+Total time: 9363.780531167984
+
+
+Working on File: user.angerami.24559744.OutputStream._000266.root - 266/502
+Array dimension: (3018, 824, 6)
+Time to construct index array: 0.5773615837097168
+Time to populate elements: 3.658379316329956
+Time to concatenate arrays: 102.40928721427917
+Time for this file: 106.64502811431885
+Total events: 808114
+Current size: (808114, 1086, 6)
+Total time: 9470.425559282303
+
+
+Working on File: user.angerami.24559744.OutputStream._000267.root - 267/502
+Array dimension: (3091, 964, 6)
+Time to construct index array: 0.578965425491333
+Time to populate elements: 3.8160324096679688
+Time to concatenate arrays: 99.19322872161865
+Time for this file: 103.58822655677795
+Total events: 811205
+Current size: (811205, 1086, 6)
+Total time: 9574.01378583908
+
+
+Working on File: user.angerami.24559744.OutputStream._000268.root - 268/502
+Array dimension: (3098, 810, 6)
+Time to construct index array: 0.5877101421356201
+Time to populate elements: 3.658193826675415
+Time to concatenate arrays: 103.12941694259644
+Time for this file: 107.37532091140747
+Total events: 814303
+Current size: (814303, 1086, 6)
+Total time: 9681.389106750488
+
+
+Working on File: user.angerami.24559744.OutputStream._000269.root - 269/502
+Array dimension: (3088, 767, 6)
+Time to construct index array: 0.6048614978790283
+Time to populate elements: 3.480990409851074
+Time to concatenate arrays: 103.07317543029785
+Time for this file: 107.15902733802795
+Total events: 817391
+Current size: (817391, 1086, 6)
+Total time: 9788.548134088516
+
+
+Working on File: user.angerami.24559744.OutputStream._000270.root - 270/502
+Array dimension: (3073, 785, 6)
+Time to construct index array: 0.5773184299468994
+Time to populate elements: 4.124925851821899
+Time to concatenate arrays: 102.03571963310242
+Time for this file: 106.73796391487122
+Total events: 820464
+Current size: (820464, 1086, 6)
+Total time: 9895.286098003387
+
+
+Working on File: user.angerami.24559744.OutputStream._000271.root - 271/502
+Array dimension: (3025, 757, 6)
+Time to construct index array: 0.5679137706756592
+Time to populate elements: 3.6744225025177
+Time to concatenate arrays: 105.89666056632996
+Time for this file: 110.13899683952332
+Total events: 823489
+Current size: (823489, 1086, 6)
+Total time: 10005.42509484291
+
+
+Working on File: user.angerami.24559744.OutputStream._000272.root - 272/502
+Array dimension: (3077, 811, 6)
+Time to construct index array: 0.9628236293792725
+Time to populate elements: 3.7113492488861084
+Time to concatenate arrays: 103.79230999946594
+Time for this file: 108.46648287773132
+Total events: 826566
+Current size: (826566, 1086, 6)
+Total time: 10113.891577720642
+
+
+Working on File: user.angerami.24559744.OutputStream._000273.root - 273/502
+Array dimension: (3138, 908, 6)
+Time to construct index array: 0.5767598152160645
+Time to populate elements: 3.5519957542419434
+Time to concatenate arrays: 106.18147850036621
+Time for this file: 110.31023406982422
+Total events: 829704
+Current size: (829704, 1086, 6)
+Total time: 10224.201811790466
+
+
+Working on File: user.angerami.24559744.OutputStream._000274.root - 274/502
+Array dimension: (3106, 791, 6)
+Time to construct index array: 0.6052711009979248
+Time to populate elements: 3.8258955478668213
+Time to concatenate arrays: 103.88194823265076
+Time for this file: 108.3131148815155
+Total events: 832810
+Current size: (832810, 1086, 6)
+Total time: 10332.514926671982
+
+
+Working on File: user.angerami.24559744.OutputStream._000275.root - 275/502
+Array dimension: (3104, 810, 6)
+Time to construct index array: 0.864086389541626
+Time to populate elements: 3.567070722579956
+Time to concatenate arrays: 109.95058608055115
+Time for this file: 114.38174319267273
+Total events: 835914
+Current size: (835914, 1086, 6)
+Total time: 10446.896669864655
+
+
+Working on File: user.angerami.24559744.OutputStream._000276.root - 276/502
+Array dimension: (3083, 863, 6)
+Time to construct index array: 0.6085119247436523
+Time to populate elements: 3.4208459854125977
+Time to concatenate arrays: 107.08516788482666
+Time for this file: 111.11452579498291
+Total events: 838997
+Current size: (838997, 1086, 6)
+Total time: 10558.011195659637
+
+
+Working on File: user.angerami.24559744.OutputStream._000277.root - 277/502
+Array dimension: (3022, 833, 6)
+Time to construct index array: 0.8994183540344238
+Time to populate elements: 3.5408084392547607
+Time to concatenate arrays: 107.78557109832764
+Time for this file: 112.22579789161682
+Total events: 842019
+Current size: (842019, 1086, 6)
+Total time: 10670.236993551254
+
+
+Working on File: user.angerami.24559744.OutputStream._000278.root - 278/502
+Array dimension: (2999, 838, 6)
+Time to construct index array: 0.5558321475982666
+Time to populate elements: 3.3487191200256348
+Time to concatenate arrays: 100.58960032463074
+Time for this file: 104.49415159225464
+Total events: 845018
+Current size: (845018, 1086, 6)
+Total time: 10774.731145143509
+
+
+Working on File: user.angerami.24559744.OutputStream._000279.root - 279/502
+Array dimension: (3062, 878, 6)
+Time to construct index array: 0.5663385391235352
+Time to populate elements: 3.570061683654785
+Time to concatenate arrays: 109.83330631256104
+Time for this file: 113.96970653533936
+Total events: 848080
+Current size: (848080, 1086, 6)
+Total time: 10888.700851678848
+
+
+Working on File: user.angerami.24559744.OutputStream._000280.root - 280/502
+Array dimension: (3047, 743, 6)
+Time to construct index array: 0.5891628265380859
+Time to populate elements: 3.508547782897949
+Time to concatenate arrays: 104.54240250587463
+Time for this file: 108.64011311531067
+Total events: 851127
+Current size: (851127, 1086, 6)
+Total time: 10997.340964794159
+
+
+Working on File: user.angerami.24559744.OutputStream._000281.root - 281/502
+Array dimension: (3082, 939, 6)
+Time to construct index array: 0.601003885269165
+Time to populate elements: 3.93093204498291
+Time to concatenate arrays: 109.11441159248352
+Time for this file: 113.6463475227356
+Total events: 854209
+Current size: (854209, 1086, 6)
+Total time: 11110.987312316895
+
+
+Working on File: user.angerami.24559744.OutputStream._000282.root - 282/502
+Array dimension: (3050, 902, 6)
+Time to construct index array: 0.596519947052002
+Time to populate elements: 3.9150710105895996
+Time to concatenate arrays: 106.66070246696472
+Time for this file: 111.17229342460632
+Total events: 857259
+Current size: (857259, 1086, 6)
+Total time: 11222.1596057415
+
+
+Working on File: user.angerami.24559744.OutputStream._000283.root - 283/502
+Array dimension: (3052, 915, 6)
+Time to construct index array: 0.711580753326416
+Time to populate elements: 3.5205276012420654
+Time to concatenate arrays: 109.95332789421082
+Time for this file: 114.1854362487793
+Total events: 860311
+Current size: (860311, 1086, 6)
+Total time: 11336.34504199028
+
+
+Working on File: user.angerami.24559744.OutputStream._000284.root - 284/502
+Array dimension: (3016, 791, 6)
+Time to construct index array: 0.8264434337615967
+Time to populate elements: 3.819164991378784
+Time to concatenate arrays: 104.66364574432373
+Time for this file: 109.30925416946411
+Total events: 863327
+Current size: (863327, 1086, 6)
+Total time: 11445.654296159744
+
+
+Working on File: user.angerami.24559744.OutputStream._000285.root - 285/502
+Array dimension: (3006, 810, 6)
+Time to construct index array: 0.6134865283966064
+Time to populate elements: 3.681224822998047
+Time to concatenate arrays: 108.6967453956604
+Time for this file: 112.99145674705505
+Total events: 866333
+Current size: (866333, 1086, 6)
+Total time: 11558.6457529068
+
+
+Working on File: user.angerami.24559744.OutputStream._000286.root - 286/502
+Array dimension: (3028, 904, 6)
+Time to construct index array: 0.5712287425994873
+Time to populate elements: 3.5409762859344482
+Time to concatenate arrays: 110.36186790466309
+Time for this file: 114.47407293319702
+Total events: 869361
+Current size: (869361, 1086, 6)
+Total time: 11673.119825839996
+
+
+Working on File: user.angerami.24559744.OutputStream._000287.root - 287/502
+Array dimension: (3140, 781, 6)
+Time to construct index array: 0.6077072620391846
+Time to populate elements: 3.7107057571411133
+Time to concatenate arrays: 113.73526120185852
+Time for this file: 118.05367422103882
+Total events: 872501
+Current size: (872501, 1086, 6)
+Total time: 11791.173500061035
+
+
+Working on File: user.angerami.24559744.OutputStream._000288.root - 288/502
+Array dimension: (3038, 785, 6)
+Time to construct index array: 0.5948560237884521
+Time to populate elements: 3.4545652866363525
+Time to concatenate arrays: 107.97026753425598
+Time for this file: 112.01968884468079
+Total events: 875539
+Current size: (875539, 1086, 6)
+Total time: 11903.193188905716
+
+
+Working on File: user.angerami.24559744.OutputStream._000289.root - 289/502
+Array dimension: (3007, 771, 6)
+Time to construct index array: 0.5526695251464844
+Time to populate elements: 3.7523646354675293
+Time to concatenate arrays: 119.49472332000732
+Time for this file: 123.79975748062134
+Total events: 878546
+Current size: (878546, 1086, 6)
+Total time: 12026.992946386337
+
+
+Working on File: user.angerami.24559744.OutputStream._000290.root - 290/502
+Array dimension: (3149, 823, 6)
+Time to construct index array: 0.6858365535736084
+Time to populate elements: 3.9722115993499756
+Time to concatenate arrays: 110.25640106201172
+Time for this file: 114.9144492149353
+Total events: 881695
+Current size: (881695, 1086, 6)
+Total time: 12141.907395601273
+
+
+Working on File: user.angerami.24559744.OutputStream._000291.root - 291/502
+Array dimension: (3052, 781, 6)
+Time to construct index array: 0.5905437469482422
+Time to populate elements: 3.643348455429077
+Time to concatenate arrays: 123.32660555839539
+Time for this file: 127.5604977607727
+Total events: 884747
+Current size: (884747, 1086, 6)
+Total time: 12269.467893362045
+
+
+Working on File: user.angerami.24559744.OutputStream._000292.root - 292/502
+Array dimension: (3053, 842, 6)
+Time to construct index array: 0.605064868927002
+Time to populate elements: 3.487673759460449
+Time to concatenate arrays: 115.7102165222168
+Time for this file: 119.80295515060425
+Total events: 887800
+Current size: (887800, 1086, 6)
+Total time: 12389.27084851265
+
+
+Working on File: user.angerami.24559744.OutputStream._000293.root - 293/502
+Array dimension: (3151, 730, 6)
+Time to construct index array: 0.6825244426727295
+Time to populate elements: 3.6540231704711914
+Time to concatenate arrays: 134.85390520095825
+Time for this file: 139.19045281410217
+Total events: 890951
+Current size: (890951, 1086, 6)
+Total time: 12528.461301326752
+
+
+Working on File: user.angerami.24559744.OutputStream._000294.root - 294/502
+Array dimension: (2996, 719, 6)
+Time to construct index array: 0.7808558940887451
+Time to populate elements: 3.3758487701416016
+Time to concatenate arrays: 113.50718259811401
+Time for this file: 117.66388726234436
+Total events: 893947
+Current size: (893947, 1086, 6)
+Total time: 12646.125188589096
+
+
+Working on File: user.angerami.24559744.OutputStream._000295.root - 295/502
+Array dimension: (3079, 828, 6)
+Time to construct index array: 0.5663554668426514
+Time to populate elements: 3.4700000286102295
+Time to concatenate arrays: 134.32693910598755
+Time for this file: 138.36329460144043
+Total events: 897026
+Current size: (897026, 1086, 6)
+Total time: 12784.488483190536
+
+
+Working on File: user.angerami.24559744.OutputStream._000296.root - 296/502
+Array dimension: (2968, 848, 6)
+Time to construct index array: 0.5532336235046387
+Time to populate elements: 3.25770902633667
+Time to concatenate arrays: 102.31313753128052
+Time for this file: 106.12408018112183
+Total events: 899994
+Current size: (899994, 1086, 6)
+Total time: 12890.612563371658
+
+
+Working on File: user.angerami.24559744.OutputStream._000297.root - 297/502
+Array dimension: (3062, 822, 6)
+Time to construct index array: 0.5733437538146973
+Time to populate elements: 3.3599417209625244
+Time to concatenate arrays: 118.79433560371399
+Time for this file: 122.72762107849121
+Total events: 903056
+Current size: (903056, 1086, 6)
+Total time: 13013.34018445015
+
+
+Working on File: user.angerami.24559744.OutputStream._000298.root - 298/502
+Array dimension: (3118, 851, 6)
+Time to construct index array: 0.5893206596374512
+Time to populate elements: 3.4300806522369385
+Time to concatenate arrays: 90.28774428367615
+Time for this file: 94.30714559555054
+Total events: 906174
+Current size: (906174, 1086, 6)
+Total time: 13107.6473300457
+
+
+Working on File: user.angerami.24559744.OutputStream._000299.root - 299/502
+Array dimension: (3084, 749, 6)
+Time to construct index array: 0.8238983154296875
+Time to populate elements: 3.40112566947937
+Time to concatenate arrays: 116.74441528320312
+Time for this file: 120.96943926811218
+Total events: 909258
+Current size: (909258, 1086, 6)
+Total time: 13228.616769313812
+
+
+Working on File: user.angerami.24559744.OutputStream._000300.root - 300/502
+Array dimension: (3123, 757, 6)
+Time to construct index array: 0.5922203063964844
+Time to populate elements: 3.4769349098205566
+Time to concatenate arrays: 88.99076747894287
+Time for this file: 93.05992269515991
+Total events: 912381
+Current size: (912381, 1086, 6)
+Total time: 13321.676692008972
+
+
+Working on File: user.angerami.24559744.OutputStream._000301.root - 301/502
+Array dimension: (2947, 915, 6)
+Time to construct index array: 0.565211296081543
+Time to populate elements: 3.6322717666625977
+Time to concatenate arrays: 112.85271859169006
+Time for this file: 117.0502016544342
+Total events: 915328
+Current size: (915328, 1086, 6)
+Total time: 13438.726893663406
+
+
+Working on File: user.angerami.24559744.OutputStream._000302.root - 302/502
+Array dimension: (2995, 997, 6)
+Time to construct index array: 0.5493512153625488
+Time to populate elements: 3.2159335613250732
+Time to concatenate arrays: 93.478839635849
+Time for this file: 97.24412441253662
+Total events: 918323
+Current size: (918323, 1086, 6)
+Total time: 13535.971018075943
+
+
+Working on File: user.angerami.24559744.OutputStream._000303.root - 303/502
+Array dimension: (3025, 773, 6)
+Time to construct index array: 0.5552165508270264
+Time to populate elements: 3.3805737495422363
+Time to concatenate arrays: 115.84868311882019
+Time for this file: 119.78447341918945
+Total events: 921348
+Current size: (921348, 1086, 6)
+Total time: 13655.755491495132
+
+
+Working on File: user.angerami.24559744.OutputStream._000304.root - 304/502
+Array dimension: (3078, 796, 6)
+Time to construct index array: 0.5762863159179688
+Time to populate elements: 3.472261667251587
+Time to concatenate arrays: 89.19535827636719
+Time for this file: 93.24390625953674
+Total events: 924426
+Current size: (924426, 1086, 6)
+Total time: 13748.99939775467
+
+
+Working on File: user.angerami.24559744.OutputStream._000305.root - 305/502
+Array dimension: (3028, 958, 6)
+Time to construct index array: 0.5872759819030762
+Time to populate elements: 3.4279372692108154
+Time to concatenate arrays: 120.15753626823425
+Time for this file: 124.17274951934814
+Total events: 927454
+Current size: (927454, 1086, 6)
+Total time: 13873.172147274017
+
+
+Working on File: user.angerami.24559744.OutputStream._000306.root - 306/502
+Array dimension: (3044, 769, 6)
+Time to construct index array: 0.5875906944274902
+Time to populate elements: 3.3161964416503906
+Time to concatenate arrays: 92.42861652374268
+Time for this file: 96.33240365982056
+Total events: 930498
+Current size: (930498, 1086, 6)
+Total time: 13969.504550933838
+
+
+Working on File: user.angerami.24559744.OutputStream._000307.root - 307/502
+Array dimension: (3053, 784, 6)
+Time to construct index array: 0.6931686401367188
+Time to populate elements: 3.6727051734924316
+Time to concatenate arrays: 123.56770086288452
+Time for this file: 127.93357467651367
+Total events: 933551
+Current size: (933551, 1086, 6)
+Total time: 14097.438125610352
+
+
+Working on File: user.angerami.24559744.OutputStream._000308.root - 308/502
+Array dimension: (3063, 915, 6)
+Time to construct index array: 0.7583041191101074
+Time to populate elements: 3.3353805541992188
+Time to concatenate arrays: 95.72350263595581
+Time for this file: 99.81718730926514
+Total events: 936614
+Current size: (936614, 1086, 6)
+Total time: 14197.255312919617
+
+
+Working on File: user.angerami.24559744.OutputStream._000309.root - 309/502
+Array dimension: (3093, 886, 6)
+Time to construct index array: 0.5871937274932861
+Time to populate elements: 3.3979086875915527
+Time to concatenate arrays: 122.69229745864868
+Time for this file: 126.67739987373352
+Total events: 939707
+Current size: (939707, 1086, 6)
+Total time: 14323.93271279335
+
+
+Working on File: user.angerami.24559744.OutputStream._000310.root - 310/502
+Array dimension: (3096, 792, 6)
+Time to construct index array: 0.5962462425231934
+Time to populate elements: 3.521435260772705
+Time to concatenate arrays: 93.02362203598022
+Time for this file: 97.14130353927612
+Total events: 942803
+Current size: (942803, 1086, 6)
+Total time: 14421.074016332626
+
+
+Working on File: user.angerami.24559744.OutputStream._000311.root - 311/502
+Array dimension: (3081, 934, 6)
+Time to construct index array: 0.5844013690948486
+Time to populate elements: 3.3573429584503174
+Time to concatenate arrays: 123.94149851799011
+Time for this file: 127.88324284553528
+Total events: 945884
+Current size: (945884, 1086, 6)
+Total time: 14548.957259178162
+
+
+Working on File: user.angerami.24559744.OutputStream._000312.root - 312/502
+Array dimension: (3105, 990, 6)
+Time to construct index array: 0.5947208404541016
+Time to populate elements: 3.559870481491089
+Time to concatenate arrays: 96.22497487068176
+Time for this file: 100.37956619262695
+Total events: 948989
+Current size: (948989, 1086, 6)
+Total time: 14649.336825370789
+
+
+Working on File: user.angerami.24559744.OutputStream._000313.root - 313/502
+Array dimension: (2940, 771, 6)
+Time to construct index array: 0.6987810134887695
+Time to populate elements: 3.1564557552337646
+Time to concatenate arrays: 126.79404854774475
+Time for this file: 130.64928531646729
+Total events: 951929
+Current size: (951929, 1086, 6)
+Total time: 14779.986110687256
+
+
+Working on File: user.angerami.24559744.OutputStream._000314.root - 314/502
+Array dimension: (2990, 791, 6)
+Time to construct index array: 0.6372184753417969
+Time to populate elements: 3.307938814163208
+Time to concatenate arrays: 110.58819031715393
+Time for this file: 114.53334760665894
+Total events: 954919
+Current size: (954919, 1086, 6)
+Total time: 14894.519458293915
+
+
+Working on File: user.angerami.24559744.OutputStream._000315.root - 315/502
+Array dimension: (2996, 931, 6)
+Time to construct index array: 0.5647215843200684
+Time to populate elements: 3.1406235694885254
+Time to concatenate arrays: 127.72064733505249
+Time for this file: 131.42599248886108
+Total events: 957915
+Current size: (957915, 1086, 6)
+Total time: 15025.945450782776
+
+
+Working on File: user.angerami.24559744.OutputStream._000316.root - 316/502
+Array dimension: (3059, 965, 6)
+Time to construct index array: 0.5692260265350342
+Time to populate elements: 3.4838340282440186
+Time to concatenate arrays: 86.77917766571045
+Time for this file: 90.8322377204895
+Total events: 960974
+Current size: (960974, 1086, 6)
+Total time: 15116.777688503265
+
+
+Working on File: user.angerami.24559744.OutputStream._000317.root - 317/502
+Array dimension: (3002, 786, 6)
+Time to construct index array: 0.55716872215271
+Time to populate elements: 3.2927470207214355
+Time to concatenate arrays: 141.24881172180176
+Time for this file: 145.0987274646759
+Total events: 963976
+Current size: (963976, 1086, 6)
+Total time: 15261.876415967941
+
+
+Working on File: user.angerami.24559744.OutputStream._000318.root - 318/502
+Array dimension: (3097, 933, 6)
+Time to construct index array: 0.5721900463104248
+Time to populate elements: 3.298872947692871
+Time to concatenate arrays: 81.6175172328949
+Time for this file: 85.4885802268982
+Total events: 967073
+Current size: (967073, 1086, 6)
+Total time: 15347.36499619484
+
+
+Working on File: user.angerami.24559744.OutputStream._000319.root - 319/502
+Array dimension: (3016, 770, 6)
+Time to construct index array: 0.5600461959838867
+Time to populate elements: 3.2025272846221924
+Time to concatenate arrays: 142.6342809200287
+Time for this file: 146.39685440063477
+Total events: 970089
+Current size: (970089, 1086, 6)
+Total time: 15493.761850595474
+
+
+Working on File: user.angerami.24559744.OutputStream._000320.root - 320/502
+Array dimension: (3027, 815, 6)
+Time to construct index array: 0.5590400695800781
+Time to populate elements: 3.2297513484954834
+Time to concatenate arrays: 85.46694016456604
+Time for this file: 89.2557315826416
+Total events: 973116
+Current size: (973116, 1086, 6)
+Total time: 15583.017582178116
+
+
+Working on File: user.angerami.24559744.OutputStream._000321.root - 321/502
+Array dimension: (3074, 900, 6)
+Time to construct index array: 0.5955607891082764
+Time to populate elements: 3.4103336334228516
+Time to concatenate arrays: 141.0128529071808
+Time for this file: 145.0187473297119
+Total events: 976190
+Current size: (976190, 1086, 6)
+Total time: 15728.036329507828
+
+
+Working on File: user.angerami.24559744.OutputStream._000322.root - 322/502
+Array dimension: (2982, 833, 6)
+Time to construct index array: 0.5463321208953857
+Time to populate elements: 3.310131072998047
+Time to concatenate arrays: 84.61231994628906
+Time for this file: 88.4687831401825
+Total events: 979172
+Current size: (979172, 1086, 6)
+Total time: 15816.50511264801
+
+
+Working on File: user.angerami.24559744.OutputStream._000323.root - 323/502
+Array dimension: (3011, 817, 6)
+Time to construct index array: 0.5664112567901611
+Time to populate elements: 3.2027015686035156
+Time to concatenate arrays: 143.19047498703003
+Time for this file: 146.9595878124237
+Total events: 982183
+Current size: (982183, 1086, 6)
+Total time: 15963.464700460434
+
+
+Working on File: user.angerami.24559744.OutputStream._000324.root - 324/502
+Array dimension: (3010, 849, 6)
+Time to construct index array: 0.5797426700592041
+Time to populate elements: 3.1927337646484375
+Time to concatenate arrays: 87.336905002594
+Time for this file: 91.10938143730164
+Total events: 985193
+Current size: (985193, 1086, 6)
+Total time: 16054.574081897736
+
+
+Working on File: user.angerami.24559744.OutputStream._000325.root - 325/502
+Array dimension: (3118, 733, 6)
+Time to construct index array: 0.5722942352294922
+Time to populate elements: 3.3137779235839844
+Time to concatenate arrays: 139.75729370117188
+Time for this file: 143.64336585998535
+Total events: 988311
+Current size: (988311, 1086, 6)
+Total time: 16198.217447757721
+
+
+Working on File: user.angerami.24559744.OutputStream._000326.root - 326/502
+Array dimension: (3106, 832, 6)
+Time to construct index array: 0.6237714290618896
+Time to populate elements: 3.175163507461548
+Time to concatenate arrays: 105.06989026069641
+Time for this file: 108.86882519721985
+Total events: 991417
+Current size: (991417, 1086, 6)
+Total time: 16307.08627295494
+
+
+Working on File: user.angerami.24559744.OutputStream._000327.root - 327/502
+Array dimension: (3084, 864, 6)
+Time to construct index array: 0.5529427528381348
+Time to populate elements: 3.2458384037017822
+Time to concatenate arrays: 145.00511193275452
+Time for this file: 148.80389308929443
+Total events: 994501
+Current size: (994501, 1086, 6)
+Total time: 16455.890166044235
+
+
+Working on File: user.angerami.24559744.OutputStream._000328.root - 328/502
+Array dimension: (3034, 793, 6)
+Time to construct index array: 0.5497775077819824
+Time to populate elements: 3.217740058898926
+Time to concatenate arrays: 94.4567322731018
+Time for this file: 98.22424983978271
+Total events: 997535
+Current size: (997535, 1086, 6)
+Total time: 16554.114415884018
+
+
+Working on File: user.angerami.24559744.OutputStream._000329.root - 329/502
+Array dimension: (3015, 831, 6)
+Time to construct index array: 0.5476007461547852
+Time to populate elements: 3.372725009918213
+Time to concatenate arrays: 140.51630878448486
+Time for this file: 144.43663454055786
+Total events: 1000550
+Current size: (1000550, 1086, 6)
+Total time: 16698.551050424576
+
+
+Working on File: user.angerami.24559744.OutputStream._000330.root - 330/502
+Array dimension: (3036, 882, 6)
+Time to construct index array: 0.5583181381225586
+Time to populate elements: 3.1537606716156006
+Time to concatenate arrays: 92.57350039482117
+Time for this file: 96.28557920455933
+Total events: 1003586
+Current size: (1003586, 1086, 6)
+Total time: 16794.836629629135
+
+
+Working on File: user.angerami.24559744.OutputStream._000331.root - 331/502
+Array dimension: (3072, 914, 6)
+Time to construct index array: 0.5365116596221924
+Time to populate elements: 3.1665961742401123
+Time to concatenate arrays: 133.91668033599854
+Time for this file: 137.61978816986084
+Total events: 1006658
+Current size: (1006658, 1086, 6)
+Total time: 16932.456417798996
+
+
+Working on File: user.angerami.24559744.OutputStream._000332.root - 332/502
+Array dimension: (3085, 919, 6)
+Time to construct index array: 0.5588021278381348
+Time to populate elements: 3.295109987258911
+Time to concatenate arrays: 93.55460143089294

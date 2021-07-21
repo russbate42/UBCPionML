@@ -12,7 +12,7 @@ from . import plot_util as pu
 
 def responsePlot(x, y, figfile='', statistic='median',
                  xlabel='Cluster Calib Hits', ylabel='Cluster Energy / Calib Hits',
-                 atlas_x=-1, atlas_y=-1, simulation=False,
+                 atlas_x=-1, atlas_y=-1, simulation=False, cblabel='Clusters',
                  textlist=[]):
     xbin = [10**exp for exp in np.arange(-1.0, 3.1, 0.1)]
     ybin = np.arange(0., 3.1, 0.1)
@@ -33,7 +33,7 @@ def responsePlot(x, y, figfile='', statistic='median',
     pu.ampl.set_ylabel(ylabel)
     # ampl.set_zlabel('Clusters')
     cb = plt.colorbar()
-    cb.ax.set_ylabel('Clusters')
+    cb.ax.set_ylabel(cblabel)
     # plt.legend()
 
     pu.drawLabels(fig, atlas_x, atlas_y, simulation, textlist)

@@ -1,0 +1,135 @@
+Awkward version: 1.4.0
+Uproot version: 4.0.11
+
+Working on File: user.angerami.24559744.OutputStream._000001.root - 1/10
+Array dimension: (2008, 695, 6)
+Time to create dicts and select events: 42.466362953186035
+Time to find dimensions and make new array: 0.3011198043823242
+Time to construct index array: 2.924379348754883
+Time to populate elements: 6.116252660751343
+Time to copy to memory map: 0.23269367218017578
+Time for this file: 52.04080843925476
+Total events: 2008
+Current size: (2008, 695, 6)
+Total time: 52.04080843925476
+
+
+Working on File: user.angerami.24559744.OutputStream._000002.root - 2/10
+Array dimension: (2063, 625, 6)
+Time to create dicts and select events: 42.44960021972656
+Time to find dimensions and make new array: 0.22648406028747559
+Time to construct index array: 3.052457094192505
+Time to populate elements: 5.7134833335876465
+Time to copy to memory map: 0.217789888381958
+Time for this file: 51.65981459617615
+Total events: 4071
+Current size: (4071, 695, 6)
+Total time: 103.70062303543091
+
+
+Working on File: user.angerami.24559744.OutputStream._000003.root - 3/10
+Array dimension: (2026, 721, 6)
+Time to create dicts and select events: 41.17517924308777
+Time to find dimensions and make new array: 0.22018718719482422
+Time to construct index array: 2.602013111114502
+Time to populate elements: 5.63109016418457
+Time to copy to memory map: 0.23074746131896973
+Time for this file: 49.859217166900635
+Total events: 6097
+Current size: (6097, 721, 6)
+Total time: 153.55984020233154
+
+
+Working on File: user.angerami.24559744.OutputStream._000004.root - 4/10
+Array dimension: (2012, 660, 6)
+Time to create dicts and select events: 41.90337324142456
+Time to find dimensions and make new array: 0.2964019775390625
+Time to construct index array: 2.678542375564575
+Time to populate elements: 5.741528511047363
+Time to copy to memory map: 0.25513744354248047
+Time for this file: 50.87498354911804
+Total events: 8109
+Current size: (8109, 721, 6)
+Total time: 204.43482375144958
+
+
+Working on File: user.angerami.24559744.OutputStream._000005.root - 5/10
+Array dimension: (2035, 720, 6)
+Time to create dicts and select events: 41.869789600372314
+Time to find dimensions and make new array: 0.25998616218566895
+Time to construct index array: 2.779165267944336
+Time to populate elements: 5.578358888626099
+Time to copy to memory map: 0.23639369010925293
+Time for this file: 50.72369360923767
+Total events: 10144
+Current size: (10144, 721, 6)
+Total time: 255.15851736068726
+
+
+Working on File: user.angerami.24559744.OutputStream._000006.root - 6/10
+Array dimension: (2046, 687, 6)
+Time to create dicts and select events: 42.00616097450256
+Time to find dimensions and make new array: 0.2570641040802002
+Time to construct index array: 2.71402907371521
+Time to populate elements: 5.5277862548828125
+Time to copy to memory map: 0.23300647735595703
+Time for this file: 50.73804688453674
+Total events: 12190
+Current size: (12190, 721, 6)
+Total time: 305.896564245224
+
+
+Working on File: user.angerami.24559744.OutputStream._000007.root - 7/10
+Array dimension: (2007, 600, 6)
+Time to create dicts and select events: 41.81098556518555
+Time to find dimensions and make new array: 0.27734923362731934
+Time to construct index array: 2.802077054977417
+Time to populate elements: 5.509947299957275
+Time to copy to memory map: 0.21753907203674316
+Time for this file: 50.6178982257843
+Total events: 14197
+Current size: (14197, 721, 6)
+Total time: 356.5144624710083
+
+
+Working on File: user.angerami.24559744.OutputStream._000008.root - 8/10
+Array dimension: (2053, 651, 6)
+Time to create dicts and select events: 42.255900144577026
+Time to find dimensions and make new array: 0.30139780044555664
+Time to construct index array: 2.7126924991607666
+Time to populate elements: 5.557803153991699
+Time to copy to memory map: 0.23929047584533691
+Time for this file: 51.067084074020386
+Total events: 16250
+Current size: (16250, 721, 6)
+Total time: 407.5815465450287
+
+
+Working on File: user.angerami.24559744.OutputStream._000009.root - 9/10
+Array dimension: (2044, 635, 6)
+Time to create dicts and select events: 41.48626160621643
+Time to find dimensions and make new array: 0.2614896297454834
+Time to construct index array: 2.737666606903076
+Time to populate elements: 5.651400804519653
+Time to copy to memory map: 0.21738862991333008
+Time for this file: 50.354207277297974
+Total events: 18294
+Current size: (18294, 721, 6)
+Total time: 457.93575382232666
+
+
+Working on File: user.angerami.24559744.OutputStream._000010.root - 10/10
+Array dimension: (2042, 749, 6)
+Time to create dicts and select events: 41.26157355308533
+Time to find dimensions and make new array: 0.3032972812652588
+Time to construct index array: 3.017049551010132
+Time to populate elements: 5.559925556182861
+Time to copy to memory map: 0.23219537734985352
+Time for this file: 50.37404131889343
+Total events: 20336
+Current size: (20336, 749, 6)
+Total time: 508.3097951412201
+
+
+Time to copy new and delete old: 1.4179301261901855 (s)
+

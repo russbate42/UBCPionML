@@ -136,9 +136,9 @@ firstArray = True
 
 ## MEMORY MAPPED ARRAY ALLOCATION ##
 X_large = np.lib.format.open_memmap('/data/rbate/X_large.npy', mode='w+', dtype=np.float64,
-                       shape=(2000000,2000,6), fortran_order=False, version=None)
+                       shape=(1700000,1500,6), fortran_order=False, version=None)
 Y_large = np.lib.format.open_memmap('/data/rbate/Y_large.npy', mode='w+', dtype=np.float64,
-                       shape=(2000000,3), fortran_order=False, version=None)
+                       shape=(1700000,3), fortran_order=False, version=None)
 
 k = 1 # tally used to keep track of file number
 tot_nEvts = 0 # used for keeping track of total number of events
@@ -365,11 +365,11 @@ for currFile in fileNames:
     old_tot = tot_nEvts - max_dims[0]
     X_large[old_tot:tot_nEvts, :max_dims[1], :6] = np.ndarray.copy(X_new)
     # pad the remainder with zeros (just to be sure)
-    fill_shape = (tot_nEvts - old_tot, 2000 - max_dims[1], 6)
-    X_large[old_tot:tot_nEvts, max_dims[1]:2000, :6] = np.zeros(fill_shape)
+    fill_shape = (tot_nEvts - old_tot, 1500 - max_dims[1], 6)
+    X_large[old_tot:tot_nEvts, max_dims[1]:1500, :6] = np.zeros(fill_shape)
     
     # Write to Y
-    Y_large[old_tot:tot_nEvts] = np.ndarray.copy(Y_new)
+    Y_large[old_tot:tot_nEvts,:] = np.ndarray.copy(Y_new)
         
     t1 = t.time()
     time_to_memmap = t1-t0
@@ -388,13 +388,31 @@ for currFile in fileNames:
     print('Current size: '+str((tot_nEvts,max_nPoints,6)))
     print('Total time: '+str(t_tot))
     print()
-    
+
 t0 = t.time()
-np.savez('/data/rbate/XY_STMC_allFiles', X_large[:tot_nEvts, :max_nPoints, :], Y_large[:tot_nEvts,:])
+X = np.lib.format.open_memmap('/data/rbate/X_STMC_'+str(Nfile)+'_files.npy',
+                             mode='w+', dtype=np.float64, shape=(tot_nEvts, max_nPoints, 6))
+np.copyto(dst=X, src=X_large[:tot_nEvts,:max_nPoints,:], casting='same_kind', where=True)
+del X_large
+os.system('rm /data/rbate/X_large.npy')
+
+Y = np.lib.format.open_memmap('/data/rbate/Y_STMC_'+str(Nfile)+'_files.npy',
+                             mode='w+', dtype=np.float64, shape=(tot_nEvts, 3))
+np.copyto(dst=Y, src=Y_large[:tot_nEvts,:], casting='same_kind', where=True)
+del Y_large
+os.system('rm /data/rbate/Y_large.npy')
+
 t1 = t.time()
 print()
-print('Time to save file: '+str(t1-t0)+' (s)')
+print('Time to copy new and delete old: '+str(t1-t0)+' (s)')
 print()
+
+# t0 = t.time()
+# np.savez('/data/rbate/XY_STMC_allFiles', X, Y)
+# t1 = t.time()
+# print()
+# print('Time to save file: '+str(t1-t0)+' (s)')
+# print()
         
     
 

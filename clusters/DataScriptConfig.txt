@@ -1,0 +1,10 @@
+# The purpose of this script is to configure the scripts which make python arrays from the root files such that all the variables
+# are declared here and each script
+ 
+Nfile = 35
+
+file_prefix = 'user.mswiatlo.27153452.OutputStream._000'
+
+events_prefix = '/data/atlas/data/allCellTruthv1/pipm'
+
+

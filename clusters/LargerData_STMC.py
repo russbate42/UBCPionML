@@ -104,9 +104,9 @@ geo_branches = ["cell_geo_ID", "cell_geo_eta", "cell_geo_phi", "cell_geo_rPerp",
 #====================
 # user.angerami.24559744.OutputStream._000001.root
 # Number of files
-Nfile = 502
+Nfile = 35
 fileNames = []
-file_prefix = 'user.angerami.24559744.OutputStream._000'
+file_prefix = 'user.mswiatlo.27153452.OutputStream._000'
 for i in range(1,Nfile+1):
     endstring = f'{i:03}'
     fileNames.append(file_prefix + endstring + '.root')
@@ -129,15 +129,15 @@ layer_rPerp = np.array([1540., 1733., 1930., 2450., 3010., 3630.])
 track_sample_layer = np.array([1,2,3,12,13,14])
 
 # for event dictionary
-events_prefix = '/fast_scratch/atlas_images/v01-45/pipm/'
+events_prefix = '/data/atlas/data/allCellTruthv1/pipm'
 
 # Use this to compare with the dimensionality of new events
 firstArray = True
 
 ## MEMORY MAPPED ARRAY ALLOCATION ##
-X_large = np.lib.format.open_memmap('/data/rbate/X_large.npy', mode='w+', dtype=np.float64,
+X_large = np.lib.format.open_memmap('/data/rbate/XPPM_large.npy', mode='w+', dtype=np.float64,
                        shape=(1700000,1500,6), fortran_order=False, version=None)
-Y_large = np.lib.format.open_memmap('/data/rbate/Y_large.npy', mode='w+', dtype=np.float64,
+Y_large = np.lib.format.open_memmap('/data/rbate/YPPM_large.npy', mode='w+', dtype=np.float64,
                        shape=(1700000,3), fortran_order=False, version=None)
 
 k = 1 # tally used to keep track of file number

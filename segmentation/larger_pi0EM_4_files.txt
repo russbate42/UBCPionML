@@ -1,0 +1,56 @@
+Awkward version: 1.5.0
+Uproot version: 4.1.4
+
+Working on File: user.mswiatlo.27153451.OutputStream._000001.root - 1/5
+Number of events after filter: 489
+Array dimension: (489, 617, 4)
+Time to create dicts and select events: 0.4122750759124756
+Time to populate elements: 0.7356793880462646
+Time to copy to memory map: 0.05005049705505371
+Time for this file: 1.198004961013794
+Total events: 489
+Current size: (489, 617, 4)
+Total time: 1.198004961013794
+
+
+Working on File: user.mswiatlo.27153451.OutputStream._000002.root - 2/5
+Number of events after filter: 454
+Array dimension: (454, 476, 4)
+Time to create dicts and select events: 0.381516695022583
+Time to populate elements: 0.7199563980102539
+Time to copy to memory map: 0.040126800537109375
+Time for this file: 1.1415998935699463
+Total events: 943
+Current size: (943, 617, 4)
+Total time: 2.3396048545837402
+
+
+Working on File: user.mswiatlo.27153451.OutputStream._000003.root - 3/5
+Number of events after filter: 518
+Array dimension: (518, 664, 4)
+Time to create dicts and select events: 0.40024757385253906
+Time to populate elements: 0.7583870887756348
+Time to copy to memory map: 0.04618072509765625
+Time for this file: 1.20481538772583
+Total events: 1461
+Current size: (1461, 664, 4)
+Total time: 3.5444202423095703
+
+
+File /data/atlas/data/allCellTruthv1/pi0/user.mswiatlo.27153451.OutputStream._000004.root not found..
+
+
+Working on File: user.mswiatlo.27153451.OutputStream._000005.root - 5/5
+Number of events after filter: 453
+Array dimension: (453, 452, 4)
+Time to create dicts and select events: 0.3779611587524414
+Time to populate elements: 0.6354730129241943
+Time to copy to memory map: 0.03977346420288086
+Time for this file: 1.0532076358795166
+Total events: 1914
+Current size: (1914, 664, 4)
+Total time: 4.597627878189087
+
+
+Time to copy new and delete old: 0.14730143547058105 (s)
+

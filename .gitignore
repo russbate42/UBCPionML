@@ -31,3 +31,17 @@ regression_u/data
 # don't copy pycaches
 **/__pycache__
 
+## NOTEBOOKS ##
+# CLUSTERS
+# clusters/Benchmarking_Testing.ipynb
+clusters/Regression_Plots/
+
+# SEGMENTATION
+segmentation/Plots/
+
+# REGRESSION
+regression/Regression_Plots/
+
+# VISUALIZATION
+visualization/Plots/
+

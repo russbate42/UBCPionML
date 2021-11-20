@@ -1,3 +1,5 @@
+''' This script is essentially a copy/paste of LargerData_Rho but attempting to make some universal
+code that will work for multiple different data files with a config file. More on this later. '''
 
 #====================
 # Load Utils ========
@@ -68,7 +70,7 @@ firstArray = True
 # MEMORY MAPPED ARRAY ALLOCATION ##
 #==================================
 X_large = np.lib.format.open_memmap('/data/atlas/rbate/XPPM_large.npy', mode='w+', dtype=np.float64,
-                       shape=(1000000,1700,4), fortran_order=False, version=None)
+                       shape=(1000000,1700,5), fortran_order=False, version=None)
 Y_large = np.lib.format.open_memmap('/data/atlas/rbate/YPPM_large.npy', mode='w+', dtype=np.float64,
                        shape=(1000000,1700,2), fortran_order=False, version=None)
 Y2_large = np.zeros((1000000,2)) # I don't think we need a mem-map here
@@ -137,7 +139,7 @@ for currFile in fileNames:
 
                 ## DELTA_R CUTS ##
                 current_coords = np.array([event_dict['cluster_Eta'][i][j], event_dict['cluster_Phi'][i][j]])
-                deltaR = dsu.deltaR(current_coords, clust_av)
+                deltaR = dsu.DeltaR(current_coords, clust_av)
 
                 if deltaR <= .2:
                     
@@ -153,7 +155,7 @@ for currFile in fileNames:
             # short circuit logic for cuts
             if cluster_E_tot >= .9*truth_E:
                 if this_pCloud > 15:
-                    clusters_idx = np.nonzero(deltaR_cut)
+                    clusters_idx = np.nonzero(deltaR_cut)[0]
                     event_indices.append((i, clusters_idx))
 
                     # Note this is done in the nested loop because we only care if it
@@ -215,7 +217,7 @@ for currFile in fileNames:
             cell_indices = dsu.find_index_1D(cluster_cell_ID, cell_ID_dict)
             
             # tally energy target
-            all_cluster_ENG_CALIB_TOT += event_duct['cluster_ENG_CALIB_TOT'][evt][c]
+            all_cluster_ENG_CALIB_TOT += event_dict['cluster_ENG_CALIB_TOT'][evt][c]
 
             cluster_cell_Eta = geo_dict['cell_geo_eta'][cell_indices]
             cluster_cell_Phi = geo_dict['cell_geo_phi'][cell_indices]
@@ -243,8 +245,8 @@ for currFile in fileNames:
             Y_new[i,low:high,0] = event_dict['cluster_cell_hitsE_EM'][evt][c]
             Y_new[i,low:high,1] = event_dict['cluster_cell_hitsE_nonEM'][evt][c]
             
-        Y2_new[i,0] = event_dict['truthPartE'][evt]
-        Y2_new[i,1] = all_clust_ENG_CALIB_TOT
+        Y2_new[i,0] = event_dict['truthPartE'][evt][0]
+        Y2_new[i,1] = all_cluster_ENG_CALIB_TOT
 
     #####################################################
     t1 = t.time()
@@ -256,19 +258,19 @@ for currFile in fileNames:
     #=======================#
     t0 = t.time()
     ## Write to X ##
-    X_large[tot_nEvts:tot_nEvts+nEvts, :max_dims[1], :5] = np.ndarray.copy(X_new)
+    X_large[tot_nEvts:tot_nEvts+nEvts, :max_dims[1], :6] = np.ndarray.copy(X_new)
     # pad the remainder with zeros (just to be sure)
     fill_shape_X = (nEvts, 1700 - max_dims[1], 5)
-    X_large[tot_nEvts:tot_nEvts+nEvts, max_dims[1]:1700, :5] = np.zeros(fill_shape_X)
+    X_large[tot_nEvts:tot_nEvts+nEvts, max_dims[1]:1700, :6] = np.zeros(fill_shape_X)
     
     ## Write to Y ##
-    YR_large[tot_nEvts:tot_nEvts+nEvts, :max_dims[1], :2] = np.ndarray.copy(Y_new)
+    Y_large[tot_nEvts:tot_nEvts+nEvts, :max_dims[1], :2] = np.ndarray.copy(Y_new)
     # pad the remainder with zeros (just to be sure)
     fill_shape_Y = (nEvts, 1700 - max_dims[1], 2)
-    YR_large[tot_nEvts:tot_nEvts+nEvts, max_dims[1]:1700, :2] = np.zeros(fill_shape_Y)
+    Y_large[tot_nEvts:tot_nEvts+nEvts, max_dims[1]:1700, :2] = np.zeros(fill_shape_Y)
     
     ## Regression Targets ##
-    Y2_large[tot_nEvts:tot_nEvts+nEvts, :] = np.ndarray.copy(Y_new)
+    Y2_large[tot_nEvts:tot_nEvts+nEvts, :] = np.ndarray.copy(Y2_new)
     
     # Book keeping for total number of events
     tot_nEvts += nEvts
@@ -291,7 +293,7 @@ for currFile in fileNames:
 
 t0 = t.time()
 # regression targets
-np.save(file='/data/atlas/rbate/PIPM_Y_regr_'+str(Nfile)+'_files.npy', arr=Y2, allow_pickle=False)
+np.save(file='/data/atlas/rbate/PIPM_Y_regr_'+str(Nfile)+'_files.npy', arr=Y2_large, allow_pickle=False)
 
 # deep sets
 X = np.lib.format.open_memmap('/data/atlas/rbate/PIPM_X_'+str(Nfile)+'_files.npy',
@@ -310,5 +312,4 @@ os.system('rm /data/atlas/rbate/YPPM_large.npy')
 t1 = t.time()
 print()
 print('Time to copy new and delete old: '+str(t1-t0)+' (s)')
-print()       
-        
+print()

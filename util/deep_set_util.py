@@ -76,15 +76,27 @@ def tvt_num(data, tvt=(75, 10, 15)):
     return train_rtrn, val_rtrn, test_rtrn
 
 def DeltaR(coords, ref):
-    ''' Straight forward function, expects Nx2 inputs for coords, 1x2 input for ref '''
-    ref = np.tile(ref, (len(coords[:,0]), 1))
+    ''' Straight forward function, expects Nx2 inputs for coords, 1x2 input for ref.
+    speed this up to accept 1x2 and 1x2 to bypass the tile function. '''
+    
     DeltaCoords = np.subtract(coords, ref)
+    
     ## Mirroring ##
     gt_pi_mask = DeltaCoords > np.pi
     lt_pi_mask = DeltaCoords < - np.pi
     DeltaCoords[lt_pi_mask] = DeltaCoords[lt_pi_mask] + 2*np.pi
     DeltaCoords[gt_pi_mask] = DeltaCoords[gt_pi_mask] - 2*np.pi
-    return np.sqrt(DeltaCoords[:,0]**2 + DeltaCoords[:,1]**2)
+    
+    rank = DeltaCoords.ndim
+    retVal = None
+    
+    if rank == 1:
+        retVal = np.sqrt(DeltaCoords[0]**2 + DeltaCoords[1]**2)
+    elif rank == 2:
+        retVal = np.sqrt(DeltaCoords[:,0]**2 + DeltaCoords[:,1]**2)
+    else:
+        raise ValueError('Too many dimensions for DeltaR')
+    return retVal
 
 def dict_from_tree(tree, branches=None, np_branches=None):
     ''' Loads branches as default awkward arrays and np_branches as numpy arrays. '''
@@ -154,7 +166,7 @@ def find_index_1D(values, dictionary):
         idx_vec[i] = dictionary[values[i]]
     return idx_vec
 
-def to_xyz(coords):
+def to_xyz(coords, mask=None):
     ''' Simple geometric conversion to xyz from eta, phi, rperp (READ: in this order)
     Inputs: np array of shape (N, 3) where columns are [eta, phi, rPerp]
     Outputs: np array of shape (N, 3) where columns are [x,y,z] '''
@@ -175,13 +187,24 @@ def to_xyz(coords):
         eta = coords[:,:,0]
         phi = coords[:,:,1]
         rperp = coords[:,:,2]
-        theta = 2*np.arctan( np.exp(-eta) )
-    
-        cell_x = rperp*np.cos(phi)
-        cell_y = rperp*np.sin(phi)
-        cell_z = rperp/np.tan(theta)
+        shape = eta.shape
         
-        return np.stack(cell_x,cell_y,cell_z, axis=2)
+        if mask is None:
+            mask = eta == 0
+            mask = np.logical_and(mask, phi == 0)
+            mask = np.invert(np.logical_and(mask, rPerp == 0))
+        
+        theta = 2*np.arctan( np.exp(-eta[mask]) )
+        
+        cell_x = np.zeros(shape)
+        cell_y = np.zeros(shape)
+        cell_z = np.zeros(shape)
+
+        cell_x[mask] = rperp[mask]*np.cos(phi[mask])
+        cell_y[mask] = rperp[mask]*np.sin(phi[mask])
+        cell_z[mask] = rperp[mask]/np.tan(theta)
+        
+        return np.stack((cell_x,cell_y,cell_z), axis=2)
     
     else:
         raise ValueError('Unsupported array type in to_xyz()')
@@ -195,8 +218,8 @@ def weighted_sum(variable, weights):
 def find_centroid(coords_3d, targets):
     ''' Designed to find the energy weighted centroid of all the cells in the cluster.
     Inputs:
-        X: raw x, y, z without masking 
-        Y: energies in order of EM, nonEM'''
+        coords_3d: raw x, y, z without masking 
+        target: energies in order of EM, nonEM'''
     
     xmask = coords_3d[:,0] != 0
     ymask = coords_3d[:,1] != 0

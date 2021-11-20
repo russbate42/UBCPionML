@@ -100,6 +100,7 @@ class keras_PointNet_segmentation:
         self.model = None
         
     def build(self):
+        ''' Calling build on the object instantiation returns the pointer '''
         
         input_points = keras.Input(shape=(None, self.num_features))
 

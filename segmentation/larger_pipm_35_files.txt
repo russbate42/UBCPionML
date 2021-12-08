@@ -1,0 +1,237 @@
+Awkward version: 1.5.0
+Uproot version: 4.1.4
+
+Working on File: user.mswiatlo.27153452.OutputStream._000001.root - 1/35
+Number of events after filter: 250
+Array dimension: (250, 732, 5)
+Time to create dicts and select events: 32.28852102300152
+Time to populate elements: 1.479796376079321
+Time to copy to memory map: 0.21581631433218718
+Time for this file: 33.98413371341303
+Total events: 250
+Current size: (250, 732, 5)
+Total time: 33.98413371341303
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000002.root - 2/35
+Number of events after filter: 249
+Array dimension: (249, 725, 5)
+Time to create dicts and select events: 30.645118909422308
+Time to populate elements: 1.3291654880158603
+Time to copy to memory map: 0.04944354295730591
+Time for this file: 32.023727940395474
+Total events: 499
+Current size: (499, 732, 5)
+Total time: 66.0078616538085
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000003.root - 3/35
+Number of events after filter: 247
+Array dimension: (247, 715, 5)
+Time to create dicts and select events: 32.328865055926144
+Time to populate elements: 1.5116699738427997
+Time to copy to memory map: 0.04980770405381918
+Time for this file: 33.89034273382276
+Total events: 746
+Current size: (746, 732, 5)
+Total time: 99.89820438763127
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000004.root - 4/35
+Number of events after filter: 263
+Array dimension: (263, 691, 5)
+Time to create dicts and select events: 32.90903191501275
+Time to populate elements: 1.868698650971055
+Time to copy to memory map: 0.04885482508689165
+Time for this file: 34.826585391070694
+Total events: 1009
+Current size: (1009, 732, 5)
+Total time: 134.72478977870196
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000005.root - 5/35
+Number of events after filter: 259
+Array dimension: (259, 1117, 5)
+Time to create dicts and select events: 31.805945604108274
+Time to populate elements: 1.434936409816146
+Time to copy to memory map: 4.5396729642525315
+Time for this file: 37.78055497817695
+Total events: 1268
+Current size: (1268, 1117, 5)
+Total time: 172.5053447568789
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000006.root - 6/35
+Number of events after filter: 239
+Array dimension: (239, 775, 5)
+Time to create dicts and select events: 31.077960543800145
+Time to populate elements: 1.267389272339642
+Time to copy to memory map: 0.044611787889152765
+Time for this file: 32.38996160402894
+Total events: 1507
+Current size: (1507, 1117, 5)
+Total time: 204.89530636090785
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000007.root - 7/35
+Number of events after filter: 248
+Array dimension: (248, 708, 5)
+Time to create dicts and select events: 31.732436701189727
+Time to populate elements: 1.5089323790743947
+Time to copy to memory map: 0.0698908967897296
+Time for this file: 33.31125997705385
+Total events: 1755
+Current size: (1755, 1117, 5)
+Total time: 238.2065663379617
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000008.root - 8/35
+Number of events after filter: 237
+Array dimension: (237, 885, 5)
+Time to create dicts and select events: 32.844266813248396
+Time to populate elements: 1.4475794970057905
+Time to copy to memory map: 0.04632543912157416
+Time for this file: 34.33817174937576
+Total events: 1992
+Current size: (1992, 1117, 5)
+Total time: 272.54473808733746
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000009.root - 9/35
+Number of events after filter: 258
+Array dimension: (258, 746, 5)
+Time to create dicts and select events: 33.1415348961018
+Time to populate elements: 1.5356125668622553
+Time to copy to memory map: 0.04243425140157342
+Time for this file: 34.71958171436563
+Total events: 2250
+Current size: (2250, 1117, 5)
+Total time: 307.2643198017031
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000010.root - 10/35
+Number of events after filter: 261
+Array dimension: (261, 710, 5)
+Time to create dicts and select events: 34.42231421917677
+Time to populate elements: 1.621725299861282
+Time to copy to memory map: 0.0464412160217762
+Time for this file: 36.09048073505983
+Total events: 2511
+Current size: (2511, 1117, 5)
+Total time: 343.3548005367629
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000011.root - 11/35
+Number of events after filter: 49643
+Array dimension: (49643, 1063, 5)
+Time to create dicts and select events: 93950.69440987008
+Time to populate elements: 279.33670773357153
+Time to copy to memory map: 96.82532147224993
+Time for this file: 94326.8564390759
+Total events: 52154
+Current size: (52154, 1117, 5)
+Total time: 94670.21123961266
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000012.root - 12/35
+Number of events after filter: 49429
+Array dimension: (49429, 1080, 5)
+Time to create dicts and select events: 74046.23280638643
+Time to populate elements: 171.24158298876137
+Time to copy to memory map: 7.645443549379706
+Time for this file: 74225.11983292457
+Total events: 101583
+Current size: (101583, 1117, 5)
+Total time: 168895.33107253723
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000013.root - 13/35
+Number of events after filter: 49943
+Array dimension: (49943, 1044, 5)
+Time to create dicts and select events: 54310.3747740658
+Time to populate elements: 179.39127746596932
+Time to copy to memory map: 8.168826758861542
+Time for this file: 54497.93487829063
+Total events: 151526
+Current size: (151526, 1117, 5)
+Total time: 223393.26595082786
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000014.root - 14/35
+Number of events after filter: 49598
+Array dimension: (49598, 1010, 5)
+Time to create dicts and select events: 68025.19135749992
+Time to populate elements: 186.78757589124143
+Time to copy to memory map: 8.402338437736034
+Time for this file: 68220.3812718289
+Total events: 201124
+Current size: (201124, 1117, 5)
+Total time: 291613.64722265676
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000015.root - 15/35
+Number of events after filter: 49253
+Array dimension: (49253, 978, 5)
+Time to create dicts and select events: 58836.544884240255
+Time to populate elements: 184.86835798993707
+Time to copy to memory map: 8.678727422840893
+Time for this file: 59030.09196965303
+Total events: 250377
+Current size: (250377, 1117, 5)
+Total time: 350643.7391923098
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000016.root - 16/35
+Number of events after filter: 49606
+Array dimension: (49606, 1010, 5)
+Time to create dicts and select events: 48585.3607468307
+Time to populate elements: 137.3536004954949
+Time to copy to memory map: 6.906314617022872
+Time for this file: 48729.62066194322
+Total events: 299983
+Current size: (299983, 1117, 5)
+Total time: 399373.359854253
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000017.root - 17/35
+Number of events after filter: 49725
+Array dimension: (49725, 1188, 5)
+Time to create dicts and select events: 48867.75044832565
+Time to populate elements: 159.89864545408636
+Time to copy to memory map: 7.304881438612938
+Time for this file: 49034.95397521835
+Total events: 349708
+Current size: (349708, 1188, 5)
+Total time: 448408.31382947136
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000018.root - 18/35
+Number of events after filter: 49524
+Array dimension: (49524, 948, 5)
+Time to create dicts and select events: 48262.012142688036
+Time to populate elements: 123.49749853927642
+Time to copy to memory map: 6.418329254724085
+Time for this file: 48391.92797048204
+Total events: 399232
+Current size: (399232, 1188, 5)
+Total time: 496800.2417999534
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000019.root - 19/35
+Number of events after filter: 49519
+Array dimension: (49519, 1008, 5)
+Time to create dicts and select events: 71320.83968717046
+Time to populate elements: 254.80132263153791
+Time to copy to memory map: 19.6813556086272
+Time for this file: 71595.32236541063
+Total events: 448751
+Current size: (448751, 1188, 5)
+Total time: 568395.564165364
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000020.root - 20/35
+Number of events after filter: 49677
+Array dimension: (49677, 1039, 5)
+Time to create dicts and select events: 87039.40159846004
+Time to populate elements: 261.1679514814168
+Time to copy to memory map: 10.06196083407849

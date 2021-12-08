@@ -35,9 +35,11 @@ regression_u/data
 # CLUSTERS
 # clusters/Benchmarking_Testing.ipynb
 clusters/Regression_Plots/
+clusters/Plots/
 
 # SEGMENTATION
 segmentation/Plots/
+segmentation/Model_Building.ipynb
 
 # REGRESSION
 regression/Regression_Plots/

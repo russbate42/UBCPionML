@@ -9,6 +9,7 @@ import numpy as np
 import uproot as ur
 import awkward as ak
 import time as t
+from time import perf_counter as cput
 import os
 print("Awkward version: "+str(ak.__version__))
 print("Uproot version: "+str(ur.__version__))
@@ -34,7 +35,7 @@ from deep_set_util import track_branches, event_branches, ak_event_branches, np_
 #====================
 # user.angerami.24559744.OutputStream._000001.root
 # Number of files
-Nfile = 15
+Nfile = 35
 fileNames = []
 file_prefix = 'user.mswiatlo.27153452.OutputStream._000'
 for i in range(1,Nfile+1):
@@ -70,10 +71,10 @@ firstArray = True
 # MEMORY MAPPED ARRAY ALLOCATION ##
 #==================================
 X_large = np.lib.format.open_memmap('/data/atlas/rbate/XPPM_large.npy', mode='w+', dtype=np.float64,
-                       shape=(1000000,1700,5), fortran_order=False, version=None)
+                       shape=(2500000,1700,5), fortran_order=False, version=None)
 Y_large = np.lib.format.open_memmap('/data/atlas/rbate/YPPM_large.npy', mode='w+', dtype=np.float64,
-                       shape=(1000000,1700,2), fortran_order=False, version=None)
-Y2_large = np.zeros((1000000,2)) # I don't think we need a mem-map here
+                       shape=(2500000,1700,2), fortran_order=False, version=None)
+Y2_large = np.zeros((2500000,2)) # I don't think we need a mem-map here
 
 k = 1 # tally used to keep track of file number
 tot_nEvts = 0 # used for keeping track of total number of events
@@ -95,7 +96,7 @@ for currFile in fileNames:
         print('Working on File: '+str(currFile)+' - '+str(k)+'/'+str(Nfile))
         k += 1
 
-    t0 = t.time()
+    t0 = cput()
     ## EVENT DICTIONARY ##
     event = ur.open(events_prefix+currFile)
     event_tree = event["EventTree"]
@@ -110,7 +111,6 @@ for currFile in fileNames:
     ''' This section combines the previous find_max_dim_tuple function seeing as we are already searching
     for the size of the point cloud anyways. Simultaneous cluster index creation and mem map size. '''
     event_indices = []
-    t0 = t.time()
     # create ordered list of events to use for index slicing
     nEvts_in_file = len(event_dict['eventNumber'])
     
@@ -153,7 +153,7 @@ for currFile in fileNames:
 
             ## CHECK CUTS AND ADD TO LIST
             # short circuit logic for cuts
-            if cluster_E_tot >= .9*truth_E:
+            if cluster_E_tot >= .50*truth_E:
                 if this_pCloud > 15:
                     clusters_idx = np.nonzero(deltaR_cut)[0]
                     event_indices.append((i, clusters_idx))
@@ -167,7 +167,7 @@ for currFile in fileNames:
     nEvts = len(event_indices)
     print('Number of events after filter: '+str(nEvts))
     event_indices = np.array(event_indices, dtype=np.object_)
-    t1 = t.time()
+    t1 = cput()
     event_cuts_time = t1 - t0
     
     
@@ -181,7 +181,7 @@ for currFile in fileNames:
         max_nPoints = biggest_pCloud
         
     
-    t0 = t.time()
+    t0 = cput()
     # [EM, nonEM]
     Y_new = np.zeros((nEvts,biggest_pCloud,2))
     Y2_new = np.zeros((nEvts,2))
@@ -249,14 +249,14 @@ for currFile in fileNames:
         Y2_new[i,1] = all_cluster_ENG_CALIB_TOT
 
     #####################################################
-    t1 = t.time()
+    t1 = cput()
     array_construction_time = t1 - t0
     
     
     #=======================#
     ## ARRAY CONCATENATION ##
     #=======================#
-    t0 = t.time()
+    t0 = cput()
     ## Write to X ##
     X_large[tot_nEvts:tot_nEvts+nEvts, :max_dims[1], :6] = np.ndarray.copy(X_new)
     # pad the remainder with zeros (just to be sure)
@@ -275,7 +275,7 @@ for currFile in fileNames:
     # Book keeping for total number of events
     tot_nEvts += nEvts
         
-    t1 = t.time()
+    t1 = cput()
     time_to_memmap = t1-t0
     
     thisfile_t_tot = event_cuts_time+array_construction_time+time_to_memmap
@@ -291,9 +291,10 @@ for currFile in fileNames:
     print('Total time: '+str(t_tot))
     print()
 
-t0 = t.time()
+t0 = cput()
 # regression targets
-np.save(file='/data/atlas/rbate/PIPM_Y_regr_'+str(Nfile)+'_files.npy', arr=Y2_large, allow_pickle=False)
+np.save(file='/data/atlas/rbate/PIPM_Y_regr_'+str(Nfile)+'_files.npy', arr=Y2_large[:tot_nEvts],
+        allow_pickle=False)
 
 # deep sets
 X = np.lib.format.open_memmap('/data/atlas/rbate/PIPM_X_'+str(Nfile)+'_files.npy',
@@ -309,7 +310,7 @@ np.copyto(dst=Y, src=Y_large[:tot_nEvts,:max_nPoints,:], casting='same_kind', wh
 del Y_large
 os.system('rm /data/atlas/rbate/YPPM_large.npy')
 
-t1 = t.time()
+t1 = cput()
 print()
 print('Time to copy new and delete old: '+str(t1-t0)+' (s)')
 print()

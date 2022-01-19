@@ -1,6 +1,3 @@
-''' This script is essentially a copy/paste of LargerData_Rho but attempting to make some universal
-code that will work for multiple different data files with a config file. More on this later. '''
-
 #====================
 # Load Utils ========
 #====================
@@ -36,13 +33,12 @@ from deep_set_util import track_branches, event_branches, ak_event_branches, np_
 #====================
 # user.angerami.24559744.OutputStream._000001.root
 # Number of files
-Nfile = 35
+Nfile = 42
 fileNames = []
-file_prefix = 'user.mswiatlo.27153452.OutputStream._000'
+file_prefix = 'user.akong.26471083.OutputStream._000'
 for i in range(1,Nfile+1):
     endstring = f'{i:03}'
     fileNames.append(file_prefix + endstring + '.root')
-
 
 #====================
 # Load Data Files ===
@@ -62,7 +58,7 @@ layer_rPerp = np.array([1540., 1733., 1930., 2450., 3010., 3630.])
 track_sample_layer = np.array([1,2,3,12,13,14])
 
 # for event dictionary
-events_prefix = '/data/atlas/data/allCellTruthv1/pipm/'
+events_prefix = '/data/atlas/akong/singlerho-percell/'
 
 # Use this to compare with the dimensionality of new events
 firstArray = True
@@ -71,9 +67,9 @@ firstArray = True
 #==================================
 # MEMORY MAPPED ARRAY ALLOCATION ##
 #==================================
-X_large = np.lib.format.open_memmap('/data/atlas/rbate/XPPM_large.npy', mode='w+', dtype=np.float64,
+X_large = np.lib.format.open_memmap('/data/atlas/rbate/XR_large.npy', mode='w+', dtype=np.float64,
                        shape=(2500000,1700,5), fortran_order=False, version=None)
-Y_large = np.lib.format.open_memmap('/data/atlas/rbate/YPPM_large.npy', mode='w+', dtype=np.float64,
+Y_large = np.lib.format.open_memmap('/data/atlas/rbate/YR_large.npy', mode='w+', dtype=np.float64,
                        shape=(2500000,1700,2), fortran_order=False, version=None)
 Y2_large = np.zeros((2500000,2)) # I don't think we need a mem-map here
 
@@ -82,6 +78,7 @@ tot_nEvts = 0 # used for keeping track of total number of events
 max_nPoints = 0 # Keep track of the largest point cloud overall
 t_tot = 0 # total time
 
+print('starting run...')
 for currFile in fileNames:
     
     # Check for file, a few are missing
@@ -218,7 +215,7 @@ for currFile in fileNames:
         av_Eta = np.sum(clust_Eta * clust_E)/tot_E
         av_Phi = np.sum(clust_Phi * clust_E)/tot_E
         clust_av = np.array([av_Eta, av_Phi])
-
+        
         nClust_current_total = 0
         for c in cluster_nums:            
             # cluster data
@@ -226,7 +223,7 @@ for currFile in fileNames:
             nInClust = len(cluster_cell_ID)
             cluster_cell_E = event_dict['cluster_cell_E'][evt][c].to_numpy()    
             cell_indices = dsu.find_index_1D(cluster_cell_ID, cell_ID_dict)
-
+            
             cluster_cell_Eta = geo_dict['cell_geo_eta'][cell_indices]
             cluster_cell_Phi = geo_dict['cell_geo_phi'][cell_indices]
             cluster_cell_rPerp = geo_dict['cell_geo_rPerp'][cell_indices]
@@ -304,22 +301,22 @@ for currFile in fileNames:
 
 t0 = cput()
 # regression targets
-np.save(file='/data/atlas/rbate/PIPM_Y_regr_'+str(Nfile)+'_files.npy', arr=Y2_large[:tot_nEvts],
+np.save(file='/data/atlas/rbate/Rho_Y_regr_'+str(Nfile)+'_files.npy', arr=Y2_large[:tot_nEvts],
         allow_pickle=False)
 
 # deep sets
-X = np.lib.format.open_memmap('/data/atlas/rbate/PIPM_X_'+str(Nfile)+'_files.npy',
+X = np.lib.format.open_memmap('/data/atlas/rbate/Rho_X_'+str(Nfile)+'_files.npy',
                              mode='w+', dtype=np.float64, shape=(tot_nEvts, max_nPoints, 5))
 np.copyto(dst=X, src=X_large[:tot_nEvts,:max_nPoints,:], casting='same_kind', where=True)
 del X_large
-os.system('rm /data/atlas/rbate/XPPM_large.npy')
+os.system('rm /data/atlas/rbate/XR_large.npy')
 
 # segmentation targets
-Y = np.lib.format.open_memmap('/data/atlas/rbate/PIPM_Y_segm_'+str(Nfile)+'_files.npy',
+Y = np.lib.format.open_memmap('/data/atlas/rbate/Rho_Y_segm_'+str(Nfile)+'_files.npy',
                              mode='w+', dtype=np.float64, shape=(tot_nEvts, max_nPoints, 2))
 np.copyto(dst=Y, src=Y_large[:tot_nEvts,:max_nPoints,:], casting='same_kind', where=True)
 del Y_large
-os.system('rm /data/atlas/rbate/YPPM_large.npy')
+os.system('rm /data/atlas/rbate/YR_large.npy')
 
 t1 = cput()
 print()

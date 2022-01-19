@@ -5,6 +5,7 @@
 #===========================================================================================
 
 import numpy as np
+import awkward as ak
 
 track_branches = ['trackEta_EMB1', 'trackPhi_EMB1', 'trackEta_EMB2', 'trackPhi_EMB2', 'trackEta_EMB3', 'trackPhi_EMB3',
                   'trackEta_TileBar0', 'trackPhi_TileBar0', 'trackEta_TileBar1', 'trackPhi_TileBar1',
@@ -14,10 +15,10 @@ event_branches = ["cluster_nCells", "cluster_cell_ID", "cluster_cell_E", 'cluste
                   "nTrack", "nTruthPart", "truthPartPdgId", "cluster_Eta", "cluster_Phi", 'trackPt', 'trackP',
                   'trackMass', 'trackEta', 'trackPhi', 'truthPartE', 'cluster_ENG_CALIB_TOT', "cluster_E", 'truthPartPt']
 
-ak_event_branches = ["cluster_nCells", "cluster_cell_ID", "cluster_cell_E", "cluster_nCells",
-                  "nTruthPart", "truthPartPdgId", "cluster_Eta", "cluster_Phi", "trackPt", "trackP",
-                  "trackMass", "trackEta", "trackPhi", "truthPartE", "cluster_ENG_CALIB_TOT", "cluster_E", "truthPartPt",
-                    "cluster_cell_hitsE_EM", "cluster_cell_hitsE_nonEM"]
+ak_event_branches = ["cluster_nCells", "cluster_cell_ID", "cluster_cell_E",
+                    "truthPartPdgId", "cluster_Eta", "cluster_Phi", "trackPt", "trackP", "trackEta",
+                    "cluster_cell_hitsE_EM", "cluster_cell_hitsE_nonEM", 'truthPartE',
+                    'cluster_ENG_CALIB_TOT', "cluster_E"]
 
 np_event_branches = ["nCluster", "eventNumber", "nTrack", "nTruthPart"]
 
@@ -99,19 +100,30 @@ def DeltaR(coords, ref):
     return retVal
 
 def dict_from_tree(tree, branches=None, np_branches=None):
-    ''' Loads branches as default awkward arrays and np_branches as numpy arrays. '''
-    dictionary = dict()
+    ''' Loads branches as default awkward arrays and np_branches as numpy arrays.
+    Note need to modify this to pass either branches or np branches and still work '''
+    ak_dict = dict()
     if branches is not None:
-        for key in branches:
-            branch = tree.arrays()[key]
-            dictionary[key] = branch
-            
-    if np_branches is not None:
-        for np_key in np_branches:
-            np_branch = np.ndarray.flatten(tree.arrays()[np_key].to_numpy())
-            dictionary[np_key] = np_branch
+        ak_arrays = tree.arrays(filter_name=branches)[branches]
+        for branch in branches:
+            ak_dict[branch] = ak_arrays[branch]
     
-    if branches is None and np_branches is None:
+    np_dict = dict()
+    if np_branches is not None:
+        np_arrays = tree.arrays(filter_name=np_branches)
+        for np_key in np_branches:
+            np_dict[np_key] = ak.to_numpy( np_arrays[np_key] ).flatten()
+    
+    if branches is not None and np_branches is not None:
+        dictionary = {**np_dict, **ak_dict}
+    
+    elif branches is not None:
+        dictionary = reg_dict
+    
+    elif np_branches is not None:
+        dictionary = np_dict
+        
+    else:
         raise ValueError("No branches passed to function.")
         
     return dictionary

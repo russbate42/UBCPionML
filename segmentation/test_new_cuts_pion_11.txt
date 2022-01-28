@@ -1,0 +1,170 @@
+Awkward version: 1.5.0
+Uproot version: 4.1.4
+
+Working on File: user.mswiatlo.27153452.OutputStream._000001.root - 1/11
+Number of events total: 2000
+Number after nonzero_mask: 1336
+Number of events after filter: 276
+Array dimension: (276, 804, 5)
+Time to load events and create dicts: 5.682654297997942
+Time to make cuts: 1.9576824489995488
+Time to populate elements: 1.2286332889998448
+Time to copy to memory map: 0.04554851199645782
+Time for this file: 8.914518547993794
+Total events: 276
+Current size: (276, 804, 5)
+Total time: 8.914518547993794
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000002.root - 2/11
+Number of events total: 2000
+Number after nonzero_mask: 1329
+Number of events after filter: 267
+Array dimension: (267, 736, 5)
+Time to load events and create dicts: 5.377246762000141
+Time to make cuts: 1.7414072239989764
+Time to populate elements: 1.2198175009980332
+Time to copy to memory map: 0.04645517100288998
+Time for this file: 8.38492665800004
+Total events: 543
+Current size: (543, 804, 5)
+Total time: 17.299445205993834
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000003.root - 3/11
+Number of events total: 2000
+Number after nonzero_mask: 1365
+Number of events after filter: 248
+Array dimension: (248, 855, 5)
+Time to load events and create dicts: 5.741175688999647
+Time to make cuts: 1.935098788002506
+Time to populate elements: 1.1953578899992863
+Time to copy to memory map: 0.030748872995900456
+Time for this file: 8.90238123999734
+Total events: 791
+Current size: (791, 855, 5)
+Total time: 26.201826445991173
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000004.root - 4/11
+Number of events total: 2000
+Number after nonzero_mask: 1354
+Number of events after filter: 283
+Array dimension: (283, 705, 5)
+Time to load events and create dicts: 5.860151606000727
+Time to make cuts: 1.7859646439974313
+Time to populate elements: 1.416678054993099
+Time to copy to memory map: 0.0394271650002338
+Time for this file: 9.102221469991491
+Total events: 1074
+Current size: (1074, 855, 5)
+Total time: 35.304047915982665
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000005.root - 5/11
+Number of events total: 2000
+Number after nonzero_mask: 1361
+Number of events after filter: 281
+Array dimension: (281, 1201, 5)
+Time to load events and create dicts: 5.706667517995811
+Time to make cuts: 1.8926713020046009
+Time to populate elements: 1.336486184001842
+Time to copy to memory map: 0.040963819999888074
+Time for this file: 8.976788824002142
+Total events: 1355
+Current size: (1355, 1201, 5)
+Total time: 44.28083673998481
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000006.root - 6/11
+Number of events total: 2000
+Number after nonzero_mask: 1327
+Number of events after filter: 271
+Array dimension: (271, 919, 5)
+Time to load events and create dicts: 5.7404608850047225
+Time to make cuts: 1.945715364003263
+Time to populate elements: 1.237799601003644
+Time to copy to memory map: 0.042822406998311635
+Time for this file: 8.966798257009941
+Total events: 1626
+Current size: (1626, 1201, 5)
+Total time: 53.24763499699475
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000007.root - 7/11
+Number of events total: 2000
+Number after nonzero_mask: 1333
+Number of events after filter: 268
+Array dimension: (268, 817, 5)
+Time to load events and create dicts: 5.636788536001404
+Time to make cuts: 2.0904914820057456
+Time to populate elements: 1.4641643430004478
+Time to copy to memory map: 0.04259521499625407
+Time for this file: 9.234039576003852
+Total events: 1894
+Current size: (1894, 1201, 5)
+Total time: 62.4816745729986
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000008.root - 8/11
+Number of events total: 2000
+Number after nonzero_mask: 1331
+Number of events after filter: 260
+Array dimension: (260, 917, 5)
+Time to load events and create dicts: 6.071553039000719
+Time to make cuts: 2.0910649210054544
+Time to populate elements: 1.1683369789971039
+Time to copy to memory map: 0.038708075997419655
+Time for this file: 9.369663015000697
+Total events: 2154
+Current size: (2154, 1201, 5)
+Total time: 71.8513375879993
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000009.root - 9/11
+Number of events total: 2000
+Number after nonzero_mask: 1337
+Number of events after filter: 284
+Array dimension: (284, 828, 5)
+Time to load events and create dicts: 5.6635718779944
+Time to make cuts: 1.9295869850029703
+Time to populate elements: 1.3268963070004247
+Time to copy to memory map: 0.047363325000333134
+Time for this file: 8.967418494998128
+Total events: 2438
+Current size: (2438, 1201, 5)
+Total time: 80.81875608299742
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000010.root - 10/11
+Number of events total: 2000
+Number after nonzero_mask: 1330
+Number of events after filter: 289
+Array dimension: (289, 831, 5)
+Time to load events and create dicts: 6.481449916995189
+Time to make cuts: 1.9754230260004988
+Time to populate elements: 1.4247406399954343
+Time to copy to memory map: 0.039703927002847195
+Time for this file: 9.921317509993969
+Total events: 2727
+Current size: (2727, 1201, 5)
+Total time: 90.7400735929914
+
+
+Working on File: user.mswiatlo.27153452.OutputStream._000011.root - 11/11
+Number of events total: 400000
+Number after nonzero_mask: 267134
+Number of events after filter: 54562
+Array dimension: (54562, 1165, 5)
+Time to load events and create dicts: 1078.6498613389995
+Time to make cuts: 396.2049591239993
+Time to populate elements: 268.9571082440016
+Time to copy to memory map: 12.620893776998855
+Time for this file: 1756.4328224839992
+Total events: 57289
+Current size: (57289, 1201, 5)
+Total time: 1847.1728960769906
+
+
+Time to copy new and delete old: 6.946338506997563 (s)
+

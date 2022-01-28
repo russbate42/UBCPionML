@@ -1,0 +1,14 @@
+TensorFlow version 2.6.0
+Keras version 
+(355887, 1053, 5)
+(355887, 1053, 2)
+
+Time to load memory mapped data: 0.06631900399224833 (s)
+Traceback (most recent call last):
+  File "pnet_train_loop.py", line 90, in <module>
+    target_ratio[nz_mask] = Yraw[nz_mask,0] / (Yraw[nz_mask,0] + Yraw[nz_mask,1])
+  File "/usr/local/lib/python3.8/dist-packages/numpy/core/memmap.py", line 334, in __getitem__
+    res = super().__getitem__(index)
+  File "/usr/local/lib/python3.8/dist-packages/numpy/core/memmap.py", line 288, in __array_finalize__
+    def __array_finalize__(self, obj):
+KeyboardInterrupt

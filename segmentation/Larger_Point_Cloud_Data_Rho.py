@@ -67,11 +67,13 @@ firstArray = True
 #==================================
 # MEMORY MAPPED ARRAY ALLOCATION ##
 #==================================
+zero_ax = int(2e6)
+first_ax = 1700
 X_large = np.lib.format.open_memmap('/data/atlas/rbate/XR_large.npy', mode='w+', dtype=np.float64,
-                       shape=(2500000,1700,5), fortran_order=False, version=None)
+                       shape=(zero_ax,first_ax,5), fortran_order=False, version=None)
 Y_large = np.lib.format.open_memmap('/data/atlas/rbate/YR_large.npy', mode='w+', dtype=np.float64,
-                       shape=(2500000,1700,2), fortran_order=False, version=None)
-Y2_large = np.zeros((2500000,2)) # I don't think we need a mem-map here
+                       shape=(zero_ax,first_ax,2), fortran_order=False, version=None)
+Y2_large = np.zeros((zero_ax,2)) # I don't think we need a mem-map here
 
 k = 1 # tally used to keep track of file number
 tot_nEvts = 0 # used for keeping track of total number of events
@@ -145,16 +147,16 @@ for currFile in fileNames:
         clusterCoords = np.stack((clust_Eta, clust_Phi), axis=1)
 
         _DeltaR = DeltaR(clusterCoords, clust_av)
-        DeltaR_mask = _DeltaR < .2
+        DeltaR_mask = _DeltaR < .4
         matched_clusters = cluster_idx[DeltaR_mask]
         
         ## CHECK ENERGY
         evt_energy = np.sum( event_dict['cluster_E'][evt][matched_clusters].to_numpy() )
-        energy_cut = evt_energy > 100
+        energy_cut = evt_energy > 5
         
         ## CHECK N POINTS
         nPts = len(ak.flatten(event_dict['cluster_cell_ID'][evt][matched_clusters], axis=None))
-        nPts_cut = nPts > 15
+        nPts_cut = nPts > 5
         
         ## CENTRAL EVENT CUTS
         eta_cut = np.abs(av_Eta) <= .7
@@ -267,14 +269,14 @@ for currFile in fileNames:
     ## Write to X ##
     X_large[tot_nEvts:tot_nEvts+nEvts, :max_dims[1], :6] = np.ndarray.copy(X_new)
     # pad the remainder with zeros (just to be sure)
-    fill_shape_X = (nEvts, 1700 - max_dims[1], 5)
-    X_large[tot_nEvts:tot_nEvts+nEvts, max_dims[1]:1700, :6] = np.zeros(fill_shape_X)
+    fill_shape_X = (nEvts, first_ax - max_dims[1], 5)
+    X_large[tot_nEvts:tot_nEvts+nEvts, max_dims[1]:first_ax, :6] = np.zeros(fill_shape_X)
     
     ## Write to Y ##
     Y_large[tot_nEvts:tot_nEvts+nEvts, :max_dims[1], :2] = np.ndarray.copy(Y_new)
     # pad the remainder with zeros (just to be sure)
-    fill_shape_Y = (nEvts, 1700 - max_dims[1], 2)
-    Y_large[tot_nEvts:tot_nEvts+nEvts, max_dims[1]:1700, :2] = np.zeros(fill_shape_Y)
+    fill_shape_Y = (nEvts, first_ax - max_dims[1], 2)
+    Y_large[tot_nEvts:tot_nEvts+nEvts, max_dims[1]:first_ax, :2] = np.zeros(fill_shape_Y)
     
     ## Regression Targets ##
     Y2_large[tot_nEvts:tot_nEvts+nEvts, :] = np.ndarray.copy(Y2_new)

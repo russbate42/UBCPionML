@@ -1,0 +1,244 @@
+Awkward version: 1.5.0
+Uproot version: 4.1.4
+starting run...
+
+Working on File: user.akong.26471083.OutputStream._000001.root - 1/42
+Number of events total: 2000
+Number after nonzero_mask: 1925
+Number of events after filter: 232
+Array dimension: (232, 958, 5)
+Time to load events and create dicts: 9.962998850271106
+Time to make cuts: 2.6187411416321993
+Time to populate elements: 0.8865177799016237
+Time to copy to memory map: 0.04049628786742687
+Time for this file: 13.508754059672356
+Total events: 232
+Current size: (232, 958, 5)
+Total time: 13.508754059672356
+
+
+Working on File: user.akong.26471083.OutputStream._000002.root - 2/42
+Number of events total: 2000
+Number after nonzero_mask: 1914
+Number of events after filter: 219
+Array dimension: (219, 657, 5)
+Time to load events and create dicts: 9.534839551895857
+Time to make cuts: 2.606411451473832
+Time to populate elements: 1.093041205778718
+Time to copy to memory map: 0.031673576682806015
+Time for this file: 13.265965785831213
+Total events: 451
+Current size: (451, 958, 5)
+Total time: 26.77471984550357
+
+
+Working on File: user.akong.26471083.OutputStream._000003.root - 3/42
+Number of events total: 2000
+Number after nonzero_mask: 1911
+Number of events after filter: 235
+Array dimension: (235, 672, 5)
+Time to load events and create dicts: 9.139202335849404
+Time to make cuts: 2.6750385630875826
+Time to populate elements: 0.9827395919710398
+Time to copy to memory map: 0.03279353491961956
+Time for this file: 12.829774025827646
+Total events: 686
+Current size: (686, 958, 5)
+Total time: 39.604493871331215
+
+
+Working on File: user.akong.26471083.OutputStream._000004.root - 4/42
+Number of events total: 2000
+Number after nonzero_mask: 1920
+Number of events after filter: 208
+Array dimension: (208, 855, 5)
+Time to load events and create dicts: 9.030921103432775
+Time to make cuts: 2.5021434351801872
+Time to populate elements: 0.897695891559124
+Time to copy to memory map: 0.02576359547674656
+Time for this file: 12.456524025648832
+Total events: 894
+Current size: (894, 958, 5)
+Total time: 52.06101789698005
+
+
+Working on File: user.akong.26471083.OutputStream._000005.root - 5/42
+Number of events total: 2000
+Number after nonzero_mask: 1933
+Number of events after filter: 201
+Array dimension: (201, 771, 5)
+Time to load events and create dicts: 9.052335543558002
+Time to make cuts: 2.63774648681283
+Time to populate elements: 0.9705997910350561
+Time to copy to memory map: 0.02842297963798046
+Time for this file: 12.689104801043868
+Total events: 1095
+Current size: (1095, 958, 5)
+Total time: 64.75012269802392
+
+
+Working on File: user.akong.26471083.OutputStream._000006.root - 6/42
+Number of events total: 2000
+Number after nonzero_mask: 1923
+Number of events after filter: 203
+Array dimension: (203, 620, 5)
+Time to load events and create dicts: 8.887701762840152
+Time to make cuts: 2.487338388338685
+Time to populate elements: 0.8088769093155861
+Time to copy to memory map: 0.03074030764400959
+Time for this file: 12.214657368138433
+Total events: 1298
+Current size: (1298, 958, 5)
+Total time: 76.96478006616235
+
+
+Working on File: user.akong.26471083.OutputStream._000007.root - 7/42
+Number of events total: 2000
+Number after nonzero_mask: 1928
+Number of events after filter: 238
+Array dimension: (238, 889, 5)
+Time to load events and create dicts: 8.961846435442567
+Time to make cuts: 2.4274310059845448
+Time to populate elements: 0.9671782124787569
+Time to copy to memory map: 0.03844497352838516
+Time for this file: 12.394900627434254
+Total events: 1536
+Current size: (1536, 958, 5)
+Total time: 89.3596806935966
+
+
+Working on File: user.akong.26471083.OutputStream._000008.root - 8/42
+Number of events total: 2000
+Number after nonzero_mask: 1915
+Number of events after filter: 219
+Array dimension: (219, 742, 5)
+Time to load events and create dicts: 9.225622741505504
+Time to make cuts: 3.0221122074872255
+Time to populate elements: 1.1224259622395039
+Time to copy to memory map: 0.03154631704092026
+Time for this file: 13.401707228273153
+Total events: 1755
+Current size: (1755, 958, 5)
+Total time: 102.76138792186975
+
+
+Working on File: user.akong.26471083.OutputStream._000009.root - 9/42
+Number of events total: 2000
+Number after nonzero_mask: 1912
+Number of events after filter: 218
+Array dimension: (218, 778, 5)
+Time to load events and create dicts: 9.981808058917522
+Time to make cuts: 2.92137941904366
+Time to populate elements: 1.0212906058877707
+Time to copy to memory map: 0.03156909719109535
+Time for this file: 13.956047181040049
+Total events: 1973
+Current size: (1973, 958, 5)
+Total time: 116.7174351029098
+
+
+Working on File: user.akong.26471083.OutputStream._000010.root - 10/42
+Number of events total: 2000
+Number after nonzero_mask: 1908
+Number of events after filter: 221
+Array dimension: (221, 761, 5)
+Time to load events and create dicts: 10.068247793242335
+Time to make cuts: 3.1632344033569098
+Time to populate elements: 0.9501634649932384
+Time to copy to memory map: 0.0301082544028759
+Time for this file: 14.21175391599536
+Total events: 2194
+Current size: (2194, 958, 5)
+Total time: 130.92918901890516
+
+
+Working on File: user.akong.26471083.OutputStream._000011.root - 11/42
+Number of events total: 320000
+Number after nonzero_mask: 306956
+Number of events after filter: 35542
+Array dimension: (35542, 1053, 5)
+Time to load events and create dicts: 1501.9818883426487
+Time to make cuts: 448.88763804733753
+Time to populate elements: 160.33439287357032
+Time to copy to memory map: 31.778528468683362
+Time for this file: 2142.98244773224
+Total events: 37736
+Current size: (37736, 1053, 5)
+Total time: 2273.911636751145
+
+
+Working on File: user.akong.26471083.OutputStream._000012.root - 12/42
+Number of events total: 320000
+Number after nonzero_mask: 306899
+Number of events after filter: 35288
+Array dimension: (35288, 917, 5)
+Time to load events and create dicts: 1464.1141125001013
+Time to make cuts: 440.4582808110863
+Time to populate elements: 171.28320484608412
+Time to copy to memory map: 6.284752793610096
+Time for this file: 2082.140350950882
+Total events: 73024
+Current size: (73024, 1053, 5)
+Total time: 4356.051987702027
+
+
+Working on File: user.akong.26471083.OutputStream._000013.root - 13/42
+Number of events total: 320000
+Number after nonzero_mask: 307110
+Number of events after filter: 35269
+Array dimension: (35269, 995, 5)
+Time to load events and create dicts: 1240.573879847303
+Time to make cuts: 352.463193660602
+Time to populate elements: 147.45565024204552
+Time to copy to memory map: 4.552428465336561
+Time for this file: 1745.045152215287
+Total events: 108293
+Current size: (108293, 1053, 5)
+Total time: 6101.097139917314
+
+
+Working on File: user.akong.26471083.OutputStream._000014.root - 14/42
+Number of events total: 320000
+Number after nonzero_mask: 306898
+Number of events after filter: 35184
+Array dimension: (35184, 917, 5)
+Time to load events and create dicts: 1161.962821541354
+Time to make cuts: 323.8446807395667
+Time to populate elements: 118.42554673552513
+Time to copy to memory map: 4.495944105088711
+Time for this file: 1608.7289931215346
+Total events: 143477
+Current size: (143477, 1053, 5)
+Total time: 7709.826133038849
+
+
+Working on File: user.akong.26471083.OutputStream._000015.root - 15/42
+Number of events total: 320000
+Number after nonzero_mask: 306864
+Number of events after filter: 35456
+Array dimension: (35456, 1039, 5)
+Time to load events and create dicts: 1109.41615036875
+Time to make cuts: 327.4998818244785
+Time to populate elements: 117.17049071192741
+Time to copy to memory map: 4.714471247047186
+Time for this file: 1558.8009941522032
+Total events: 178933
+Current size: (178933, 1053, 5)
+Total time: 9268.627127191052
+
+
+Working on File: user.akong.26471083.OutputStream._000016.root - 16/42
+Number of events total: 320000
+Number after nonzero_mask: 307029
+Number of events after filter: 35427
+Array dimension: (35427, 935, 5)
+Time to load events and create dicts: 1118.069160707295
+Time to make cuts: 323.76759277656674
+Time to populate elements: 116.58113322965801
+Time to copy to memory map: 4.441892892122269
+Time for this file: 1562.859779605642
+Total events: 214360
+Current size: (214360, 1053, 5)
+Total time: 10831.486906796694
+
+

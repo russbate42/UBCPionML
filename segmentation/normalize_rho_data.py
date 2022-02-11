@@ -19,7 +19,6 @@ print()
 ## General imports
 #======================================
 import numpy as np
-import matplotlib.pyplot as plt
 import time as t
 from time import perf_counter as cput
 import logging
@@ -32,8 +31,8 @@ from util import deep_set_util as dsu
 ## Load Data
 #======================================
 t0 = cput()
-Xraw = np.load(datapath_prefix+'Rho_X_20_files.npy', mmap_mode='r')[:,:,:]
-Yraw = np.load(datapath_prefix+'Rho_Y_segm_20_files.npy', mmap_mode='r')[:,:,:]
+Xraw = np.load(datapath_prefix+'Rho_X_42_files.npy', mmap_mode='r')[:,:,:]
+Yraw = np.load(datapath_prefix+'Rho_Y_segm_42_files.npy', mmap_mode='r')[:,:,:]
 
 print('segmentation X data shape: {}'.format(Xraw.shape))
 print('segmentation Y data shape: {}'.format(Yraw.shape))

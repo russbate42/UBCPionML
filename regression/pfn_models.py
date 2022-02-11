@@ -1,0 +1,202 @@
+'''
+##============##
+## PFN MODELS ##
+##============##
+- Modeled after the EnergyFlow API
+
+author: Russell Bate
+russellbate@phas.ubc.ca
+'''
+
+import numpy as np
+import tensorflow as tf
+from tensorflow import keras
+from keras import layers
+from keras import backend as K
+
+
+def point_mask_fn(X, mask_val=0.):
+    return K.cast(K.any(K.not_equal(X, mask_val), axis=-1), K.dtype(X))
+
+def tdist_block(x, mask, size: int, number: str):
+    dense = layers.Dense(size)
+    x = layers.TimeDistributed(dense, name='t_dist_'+number)(x, mask=mask)
+    x = layers.Activation('relu', name='activation_'+number)(x)
+    return x
+
+def multiply(tensor1, tensor2):
+    return K.dot(tensor1,tensor2)
+
+## Basic PFN
+def PFN_base(num_points, num_features, name="Russell Flow Network"):
+    ''' Tested '''
+    inputs = keras.Input(shape=(num_points, num_features), name='input')
+
+    #============== Phi Layers ===============================================#
+    dense_0 = layers.Dense(100)
+    t_dist_0 = layers.TimeDistributed(dense_0, name='t_dist_0')(inputs)
+    activation_0 = layers.Activation('relu', name="activation_0")(t_dist_0)
+    
+    dense_1 = layers.Dense(100)
+    t_dist_1 = layers.TimeDistributed(dense_1, name='t_dist_1')(activation_0)
+    activation_1 = layers.Activation('relu', name='activation_1')(t_dist_1)
+    
+    dense_2 = layers.Dense(128)
+    t_dist_2 = layers.TimeDistributed(dense_2, name='t_dist_2')(activation_1)
+    activation_2 = layers.Activation('relu', name='activation_2')(t_dist_2)
+    #=========================================================================#
+    
+    #============== Aggregation Function (Sum) ===============================#
+    lambda_layer = layers.Lambda(point_mask_fn,
+                                name='mask')(inputs)
+
+    sum_layer = layers.Dot(axes=(1,1), name='sum')(
+        [lambda_layer, activation_2])
+    #=========================================================================#
+    
+    #============== F Layers =================================================#
+    dense_3 = layers.Dense(100, name='dense_0')(sum_layer)
+    activation_3 = layers.Activation('relu', name="activation_3")(dense_3)
+    
+    dense_4 = layers.Dense(100, name='dense_1')(activation_3)
+    activation_4 = layers.Activation('relu', name="activation_4")(dense_4)
+    
+    dense_5 = layers.Dense(100, name='dense_2')(activation_4)
+    activation_5 = layers.Activation('relu', name="activation_5")(dense_5)
+    
+    dense_6 = layers.Dense(1, name='output')(activation_5)
+    activation_6 = layers.Activation('linear', name="activation_6")(dense_6)
+    #=========================================================================#
+    
+    return keras.Model(inputs=inputs, outputs=activation_6, name=name)
+
+
+## PFN Adding Dropout on Every Layer!
+def PFN_wDropout(num_points, num_features, name="PFN_w_dropout"):
+    ''' Tested '''
+    inputs = keras.Input(shape=(num_points, num_features), name='input')
+
+    #============== Phi Layers With Dropout ==================================#
+    dense_0 = layers.Dense(100)
+    t_dist_0 = layers.TimeDistributed(dense_0, name='t_dist_0')(inputs)
+    activation_0 = layers.Activation('relu', name="activation_0")(t_dist_0)
+    dropout_0 = layers.Dropout(rate=.15, name='dropout_0')(activation_0)
+    
+    dense_1 = layers.Dense(100)
+    t_dist_1 = layers.TimeDistributed(dense_1, name='t_dist_1')(dropout_0)
+    activation_1 = layers.Activation('relu', name='activation_1')(t_dist_1)
+    dropout_1 = layers.Dropout(rate=.15, name='dropout_1')(activation_1)
+    
+    dense_2 = layers.Dense(128)
+    t_dist_2 = layers.TimeDistributed(dense_2, name='t_dist_2')(dropout_1)
+    activation_2 = layers.Activation('relu', name='activation_2')(t_dist_2)
+    dropout_2 = layers.Dropout(rate=.15, name='dropout_2')(activation_2)
+    #=========================================================================#
+    
+    #============== Aggregration Function (Sum) ==============================#
+    lambda_layer = layers.Lambda(point_mask_fn,
+                                name='mask')(inputs)
+
+    sum_layer = layers.Dot(axes=(1,1), name='sum')([lambda_layer, activation_2])
+    #=========================================================================#
+    
+    #============== F Layers With Dropout ====================================#
+    dense_3 = layers.Dense(100, name='dense_0')(sum_layer)
+    activation_3 = layers.Activation('relu', name="activation_3")(dense_3)
+    dropout_3 = layers.Dropout(rate=.15, name='dropout_3')(activation_3)
+    
+    dense_4 = layers.Dense(100, name='dense_1')(dropout_3)
+    activation_4 = layers.Activation('relu', name="activation_4")(dense_4)
+    dropout_4 = layers.Dropout(rate=.15, name='dropout_4')(activation_4)
+    
+    dense_5 = layers.Dense(100, name='dense_2')(dropout_4)
+    activation_5 = layers.Activation('relu', name="activation_5")(dense_5)
+    dropout_5 = layers.Dropout(rate=.15, name='dropout_5')(activation_5)
+    
+    dense_6 = layers.Dense(1, name='output')(activation_5)
+    activation_6 = layers.Activation('linear', name="activation_6")(dense_6)
+    #=========================================================================#
+    
+    return keras.Model(inputs=inputs, outputs=activation_6, name=name)
+
+
+## PFN with TNet
+def PFN_wTNet(num_points, num_features, name="Russell Flow Network"):
+    
+    inputs = keras.Input(shape=(num_points, num_features), name='input')
+
+    #============== Masking for TNet =========================================#
+    mask_tens = layers.Masking(mask_value=0.0, input_shape=shape)(inputs)
+    keras_mask = mask_tens._keras_mask
+    #=========================================================================#
+
+    #============== TNet =====================================================#
+    block_0 = tdist_block(inputs, mask=keras_mask, size=50, number='0')
+    block_0 = tdist_block(inputs, mask=keras_mask, size=100, number='1')
+    block_0 = tdist_block(inputs, mask=keras_mask, size=100, number='2')
+    
+    max_pool = layers.MaxPool1d(pool_size=num_points, name='tnet_0_MaxPool')(
+        [block_2])
+    
+    tnet_0_block_0 = layers.Dense(100, activation='relu',
+                                  name='tnet_0_dense_0')(max_pool) 
+    tnet_0_block_1 = layers.Dense(50, activation='relu',
+                                  name='tnet_0_dense_1')(tnet_0_block_0)
+    
+    vector_dense = layers.Dense(
+        num_features**2,
+        kernel_initializer='zeros',
+        bias_initializer=keras.initializers.Constant(
+            np.eye(num_points).flatten()),
+        name='pre_matrix_0'
+    )(mlp_tnet_1)
+    
+    mat_layer = layers.Reshape((num_points, num_points),
+                               name='matrix_0')(vector_dense)
+    
+    mat_mul_layer = layers.Dot(axes=(-1,-2), name='matrix_multiply_0')
+    mod_inputs = layers.TimeDistributed(mat_mul_layer, name='tdist_multiply')(
+        [inputs, mat_layer])
+    #=========================================================================#
+    
+    #============== T_Dist Phi Block =========================================#
+    dense_0 = layers.Dense(100)
+    t_dist_0 = layers.TimeDistributed(dense_0, name='t_dist_0')(mod_inputs)
+    activation_0 = layers.Activation('relu', name="activation_0")(t_dist_0)
+    
+    dense_1 = layers.Dense(100)
+    t_dist_1 = layers.TimeDistributed(dense_1, name='t_dist_1')(activation_0)
+    activation_1 = layers.Activation('relu', name='activation_1')(t_dist_1)
+    
+    dense_2 = layers.Dense(128)
+    t_dist_2 = layers.TimeDistributed(dense_2, name='t_dist_2')(activation_1)
+    activation_2 = layers.Activation('relu', name='activation_2')(t_dist_2)
+    #=========================================================================#
+    
+    #============== Aggregation Function (Summation) =========================#
+    
+    # This is important as it produces a layer tensor of 1s and 0s
+    # to be dotted with the output of the activation
+    lambda_layer = layers.Lambda(point_mask_fn,
+                                name='mask')(inputs)
+
+    sum_layer = layers.Dot(axes=(-1,-1), name='sum')(
+        [lambda_layer, activation_2])
+    #=========================================================================#
+    
+    #============== F Block ==================================================#
+    dense_3 = layers.Dense(100, name='dense_0')(sum_layer)
+    activation_3 = layers.Activation('relu', name="activation_3")(dense_3)
+    
+    dense_4 = layers.Dense(100, name='dense_1')(activation_3)
+    activation_4 = layers.Activation('relu', name="activation_4")(dense_4)
+    
+    dense_5 = layers.Dense(100, name='dense_2')(activation_4)
+    activation_5 = layers.Activation('relu', name="activation_5")(dense_5)
+    
+    dense_6 = layers.Dense(1, name='output')(activation_5)
+    activation_6 = layers.Activation('linear', name="activation_6")(dense_6)
+    #=========================================================================#
+    
+    return keras.Model(inputs=inputs, outputs=activation_6, name=name)
+

@@ -476,3 +476,122 @@ Time to load events and create dicts: 1436.888025682012
 Time to make cuts: 479.2271973689785
 Time to populate elements: 371.06547623395454
 Time to copy to memory map: 36.73803482402582
+Time for this file: 2323.918734108971
+Total events: 1469175
+Current size: (1469175, 1269, 5)
+Total time: 52996.34737529472
+
+
+Working on File: user.akong.26471083.OutputStream._000033.root - 33/42
+Number of events total: 320000
+Number after nonzero_mask: 306702
+Number of events after filter: 66600
+Array dimension: (66600, 1015, 5)
+Time to load events and create dicts: 1546.1145945820026
+Time to make cuts: 473.5743763029459
+Time to populate elements: 369.49052021600073
+Time to copy to memory map: 33.163962857972365
+Time for this file: 2422.3434539589216
+Total events: 1535775
+Current size: (1535775, 1269, 5)
+Total time: 55418.69082925364
+
+
+Working on File: user.akong.26471083.OutputStream._000034.root - 34/42
+Number of events total: 320000
+Number after nonzero_mask: 306859
+Number of events after filter: 66555
+Array dimension: (66555, 1032, 5)
+Time to load events and create dicts: 1547.6175446159905
+Time to make cuts: 474.74663540994516
+Time to populate elements: 372.82191992300795
+Time to copy to memory map: 34.72022099397145
+Time for this file: 2429.906320942915
+Total events: 1602330
+Current size: (1602330, 1269, 5)
+Total time: 57848.597150196554
+
+
+Working on File: user.akong.26471083.OutputStream._000035.root - 35/42
+Number of events total: 320000
+Number after nonzero_mask: 306897
+Number of events after filter: 66576
+Array dimension: (66576, 1011, 5)
+Time to load events and create dicts: 1488.9744830640266
+Time to make cuts: 468.6441339799785
+Time to populate elements: 368.0119919559802
+Time to copy to memory map: 18.981638472992927
+Time for this file: 2344.612247472978
+Total events: 1668906
+Current size: (1668906, 1269, 5)
+Total time: 60193.20939766953
+
+
+Working on File: user.akong.26471083.OutputStream._000036.root - 36/42
+Number of events total: 320000
+Number after nonzero_mask: 307025
+Number of events after filter: 66493
+Array dimension: (66493, 1110, 5)
+Time to load events and create dicts: 1539.0517169940285
+Time to make cuts: 469.89147138397675
+Time to populate elements: 370.1795894369716
+Time to copy to memory map: 16.419360163039528
+Time for this file: 2395.5421379780164
+Total events: 1735399
+Current size: (1735399, 1269, 5)
+Total time: 62588.75153564755
+
+
+Working on File: user.akong.26471083.OutputStream._000037.root - 37/42
+Number of events total: 320000
+Number after nonzero_mask: 306938
+Number of events after filter: 66962
+Array dimension: (66962, 1201, 5)
+Time to load events and create dicts: 1491.7603500040132
+Time to make cuts: 439.2611567399581
+Time to populate elements: 348.02430093096336
+Time to copy to memory map: 11.177200227044523
+Time for this file: 2290.223007901979
+Total events: 1802361
+Current size: (1802361, 1269, 5)
+Total time: 64878.97454354953
+
+
+Working on File: user.akong.26471083.OutputStream._000038.root - 38/42
+Number of events total: 320000
+Number after nonzero_mask: 306969
+Number of events after filter: 66500
+Array dimension: (66500, 1108, 5)
+Time to load events and create dicts: 1419.931744737958
+Time to make cuts: 441.6557958039921
+Time to populate elements: 341.7522841360187
+Time to copy to memory map: 10.90017459896626
+Time for this file: 2214.239999276935
+Total events: 1868861
+Current size: (1868861, 1269, 5)
+Total time: 67093.21454282646
+
+
+Working on File: user.akong.26471083.OutputStream._000039.root - 39/42
+Number of events total: 320000
+Number after nonzero_mask: 306933
+Number of events after filter: 66528
+Array dimension: (66528, 1197, 5)
+Time to load events and create dicts: 1516.488655121997
+Time to make cuts: 467.1984025790007
+Time to populate elements: 346.42153141996823
+Time to copy to memory map: 18.476527229009662
+Time for this file: 2348.5851163499756
+Total events: 1935389
+Current size: (1935389, 1269, 5)
+Total time: 69441.79965917644
+
+
+Working on File: user.akong.26471083.OutputStream._000040.root - 40/42
+Number of events total: 320000
+Number after nonzero_mask: 306898
+Number of events after filter: 66422
+Traceback (most recent call last):
+  File "Larger_Point_Cloud_Data_Rho.py", line 270, in <module>
+    X_large[tot_nEvts:tot_nEvts+nEvts, :max_dims[1], :6] = np.ndarray.copy(X_new)
+ValueError: could not broadcast input array from shape (66422,1006,5) into shape (64611,1006,5)

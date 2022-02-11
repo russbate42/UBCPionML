@@ -161,7 +161,7 @@ print()
 #======================================
 t0 = cput()
 delta_hist = pnet_delta.fit(x=X_train, y=Y_train,
-                           epochs=30,
+                           epochs=5,
                            batch_size=300,
                            validation_data=(X_val, Y_val),
                            verbose=1)
@@ -172,64 +172,63 @@ print('{} (min)'.format((t1-t0)/60))
 print('{} (hour)'.format((t1-t0)/3600))
 
 
-## Loss Curves
-#======================================
-plot_dict = delta_hist
+# ## Loss Curves
+# #======================================
+# plot_dict = delta_hist
+# fig = plt.figure(figsize=(8,6))
+# plt.plot(plot_dict.history['val_loss'], label="Validation")
+# plt.plot(plot_dict.history['loss'], label="Training")
+# plt.ylim(0.008,0.02)
+# plt.yticks(fontsize=13)
+# plt.xlim(0,len(plot_dict.history['loss'])-1)
+# plt.xticks(fontsize=13)
+# plt.xlabel('Epochs', fontsize=14)
+# plt.ylabel('Loss', fontsize=14)
+# plt.legend(loc='upper right', ncol=1, frameon=True, fancybox=True)
+# plt.text(21.5, 1.75e-2, 'PointNet Delta', fontsize=13)
+# plt.text(21.5, 1.7e-2, 'LR=1e-3', fontsize=13)
+# plt.text(21.5, 1.65e-2, 'Batch: 300', fontsize=13)
+# plt.text(21.5, 1.6e-2, 'Train: 2.5e5', fontsize=13)
+# plt.savefig('Plots/January22/LossCurves_pnetDelta_LR1e-3_batch300__Train2.5e5_2022-01-27.png',
+#         format='png')
 
-fig = plt.figure(figsize=(8,6))
-plt.plot(plot_dict.history['val_loss'], label="Validation")
-plt.plot(plot_dict.history['loss'], label="Training")
-plt.ylim(0.008,0.02)
-plt.yticks(fontsize=13)
-plt.xlim(0,len(plot_dict.history['loss'])-1)
-plt.xticks(fontsize=13)
-plt.xlabel('Epochs', fontsize=14)
-plt.ylabel('Loss', fontsize=14)
-plt.legend(loc='upper right', ncol=1, frameon=True, fancybox=True)
-plt.text(21.5, 1.75e-2, 'PointNet Delta', fontsize=13)
-plt.text(21.5, 1.7e-2, 'LR=1e-3', fontsize=13)
-plt.text(21.5, 1.65e-2, 'Batch: 300', fontsize=13)
-plt.text(21.5, 1.6e-2, 'Train: 2.5e5', fontsize=13)
-plt.savefig('Plots/January22/LossCurves_pnetDelta_LR1e-3_batch300__Train2.5e5_2022-01-27.png',
-        format='png')
-
-## Predictions
-#======================================
-t0 = cput()
-predictions_delta = pnet_delta.predict(X_test)
-t1 = cput()
-print(predictions_delta.shape)
-print()
-print('Time to make predictions: {} (s)'.format(t1-t0))
+# ## Predictions
+# #======================================
+# t0 = cput()
+# predictions_delta = pnet_delta.predict(X_test)
+# t1 = cput()
+# print(predictions_delta.shape)
+# print()
+# print('Time to make predictions: {} (s)'.format(t1-t0))
 
 
-## Plot Preds
-#======================================
-predictions_delta = predictions_delta.reshape(predictions_delta.shape[0],
-                                              predictions_delta.shape[1])
-Y_test = Y_test.reshape(Y_test.shape[0], Y_test.shape[1])
+# ## Plot Preds
+# #======================================
+# predictions_delta = predictions_delta.reshape(predictions_delta.shape[0],
+#                                               predictions_delta.shape[1])
+# Y_test = Y_test.reshape(Y_test.shape[0], Y_test.shape[1])
+# 
+# plt.cla(); plt.clf()
+# fig = plt.figure(figsize=(10,6))
+# 
+# EMbins = np.linspace(0,1,50, endpoint=True)
+# plt.hist(predictions_delta[nz_test_mask], color='indianred', bins=EMbins, density=True,
+#         alpha=.35, edgecolor='black', label='Predictions')
+# plt.hist(Y_test[nz_test_mask], color='goldenrod', bins=EMbins, density=True,
+#         alpha=.35, edgecolor='black', label='Truth')
+# plt.title('NonEM Versus EM Per Cell', fontsize=16)
+# plt.xlabel('EM Fraction', fontsize=14)
+# plt.xlim(0,1)
+# plt.ylim(0,5)
+# plt.xticks(fontsize=13)
+# plt.yticks(fontsize=13)
+# plt.legend(loc='upper left', frameon=True, fancybox=True, prop={'size': 13})
+# plt.tight_layout()
+# plt.savefig('Plots/January22/predsHist_pnetDelta_LR1e-3_batch300__Train2.5e5_2022-01-27.png',
+#         format='png')
 
-plt.cla(); plt.clf()
-fig = plt.figure(figsize=(10,6))
-
-EMbins = np.linspace(0,1,50, endpoint=True)
-plt.hist(predictions_delta[nz_test_mask], color='indianred', bins=EMbins, density=True,
-        alpha=.35, edgecolor='black', label='Predictions')
-plt.hist(Y_test[nz_test_mask], color='goldenrod', bins=EMbins, density=True,
-        alpha=.35, edgecolor='black', label='Truth')
-plt.title('NonEM Versus EM Per Cell', fontsize=16)
-plt.xlabel('EM Fraction', fontsize=14)
-plt.xlim(0,1)
-plt.ylim(0,5)
-plt.xticks(fontsize=13)
-plt.yticks(fontsize=13)
-plt.legend(loc='upper left', frameon=True, fancybox=True, prop={'size': 13})
-plt.tight_layout()
-plt.savefig('Plots/January22/predsHist_pnetDelta_LR1e-3_batch300__Train2.5e5_2022-01-27.png',
-        format='png')
-
-print()
-print('Finished')
-print()
+# print()
+# print('Finished')
+# print()
 
 

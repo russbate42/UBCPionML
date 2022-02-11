@@ -67,7 +67,7 @@ firstArray = True
 #==================================
 # MEMORY MAPPED ARRAY ALLOCATION ##
 #==================================
-zero_ax = int(2e6)
+zero_ax = int(2.5e6)
 first_ax = 1700
 X_large = np.lib.format.open_memmap('/data/atlas/rbate/XR_large.npy', mode='w+', dtype=np.float64,
                        shape=(zero_ax,first_ax,5), fortran_order=False, version=None)

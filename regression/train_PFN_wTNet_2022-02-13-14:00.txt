@@ -1,0 +1,46 @@
+2022-02-13 18:06:31.468271: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2022-02-13 18:06:31.468339: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 9672 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 2080 Ti, pci bus id: 0000:b2:00.0, compute capability: 7.5
+
+Training with values: 
+Batch size: 1000
+Learning rate: 0.001
+Epochs: 800
+Model: PFN_wTNet
+Training on GPU: 7
+Training on 200000 events
+
+Loading data..
+time to load data: 0.0069 (s)
+
+X size: (200000, 1086, 5)
+
+train -- val -- test
+140000 -- 30000 -- 30000
+
+time to split:   0.00 (m)
+
+Loading models..
+Traceback (most recent call last):
+  File "train_pflow.py", line 160, in <module>
+    model = PFN_wTNet(num_points=X.shape[1], num_features=X.shape[2],
+  File "/home/russbate/MLPionCollaboration/LCStudies/regression/pfn_models.py", line 160, in PFN_wTNet
+    mod_inputs = layers.TimeDistributed(dot_layer, name='try')(
+  File "/usr/local/lib/python3.8/dist-packages/keras/engine/base_layer.py", line 976, in __call__
+    return self._functional_construction_call(inputs, args, kwargs,
+  File "/usr/local/lib/python3.8/dist-packages/keras/engine/base_layer.py", line 1114, in _functional_construction_call
+    outputs = self._keras_tensor_symbolic_call(
+  File "/usr/local/lib/python3.8/dist-packages/keras/engine/base_layer.py", line 848, in _keras_tensor_symbolic_call
+    return self._infer_output_signature(inputs, args, kwargs, input_masks)
+  File "/usr/local/lib/python3.8/dist-packages/keras/engine/base_layer.py", line 886, in _infer_output_signature
+    self._maybe_build(inputs)
+  File "/usr/local/lib/python3.8/dist-packages/keras/engine/base_layer.py", line 2659, in _maybe_build
+    self.build(input_shapes)  # pylint:disable=not-callable
+  File "/usr/local/lib/python3.8/dist-packages/keras/layers/wrappers.py", line 183, in build
+    super(TimeDistributed, self).build(tuple(child_input_shape))
+  File "/usr/local/lib/python3.8/dist-packages/keras/layers/wrappers.py", line 52, in build
+    self.layer.build(input_shape)
+  File "/usr/local/lib/python3.8/dist-packages/keras/utils/tf_utils.py", line 259, in wrapper
+    output_shape = fn(instance, input_shape)
+  File "/usr/local/lib/python3.8/dist-packages/keras/layers/merge.py", line 673, in build
+    raise ValueError('Dimension incompatibility '
+ValueError: Dimension incompatibility 5 != None. Layer shapes: (None, 5), (None, 5). Chosen axes: -1, -2

@@ -121,25 +121,27 @@ def PFN_wDropout(num_points, num_features, name="PFN_w_dropout"):
 
 
 ## PFN with TNet
-def PFN_wTNet(num_points, num_features, name="Russell Flow Network"):
+def PFN_wTNet(num_points, num_features, name="PFN_wTNet"):
     
     inputs = keras.Input(shape=(num_points, num_features), name='input')
 
     #============== Masking for TNet =========================================#
-    mask_tens = layers.Masking(mask_value=0.0, input_shape=shape)(inputs)
+    mask_tens = layers.Masking(mask_value=0.0, input_shape=(num_points,
+                                num_features))(inputs)
     keras_mask = mask_tens._keras_mask
     #=========================================================================#
 
     #============== TNet =====================================================#
     block_0 = tdist_block(inputs, mask=keras_mask, size=50, number='0')
-    block_0 = tdist_block(inputs, mask=keras_mask, size=100, number='1')
-    block_0 = tdist_block(inputs, mask=keras_mask, size=100, number='2')
+    block_1 = tdist_block(block_0, mask=keras_mask, size=100, number='1')
+    block_2 = tdist_block(block_1, mask=keras_mask, size=100, number='2')
     
-    max_pool = layers.MaxPool1d(pool_size=num_points, name='tnet_0_MaxPool')(
-        [block_2])
+    max_pool = layers.MaxPool1D(pool_size=100, padding='valid',
+                                name='tnet_0_MaxPool', strides=num_points)(block_2)
     
     tnet_0_block_0 = layers.Dense(100, activation='relu',
-                                  name='tnet_0_dense_0')(max_pool) 
+                                  name='tnet_0_dense_0')(max_pool)
+    
     tnet_0_block_1 = layers.Dense(50, activation='relu',
                                   name='tnet_0_dense_1')(tnet_0_block_0)
     
@@ -147,30 +149,42 @@ def PFN_wTNet(num_points, num_features, name="Russell Flow Network"):
         num_features**2,
         kernel_initializer='zeros',
         bias_initializer=keras.initializers.Constant(
-            np.eye(num_points).flatten()),
+            np.eye(num_features).flatten()),
         name='pre_matrix_0'
-    )(mlp_tnet_1)
+    )(tnet_0_block_1)
+
+    squeeze = layers.Reshape((num_features**2,))(vector_dense)
+    rep_layer = layers.RepeatVector(num_points)(squeeze)
     
-    mat_layer = layers.Reshape((num_points, num_points),
-                               name='matrix_0')(vector_dense)
+    print('********')
+    print('rep_layer shape: {}'.format(rep_layer.shape))
+    print('********')
     
-    mat_mul_layer = layers.Dot(axes=(-1,-2), name='matrix_multiply_0')
-    mod_inputs = layers.TimeDistributed(mat_mul_layer, name='tdist_multiply')(
+    mat_layer = layers.Reshape((num_points, num_features, num_features),
+                               name='matrix_0')(rep_layer)
+
+    dot_layer = layers.Dot(axes=(-1,-2), name='matrix_multiply_0')
+    mod_inputs = layers.TimeDistributed(dot_layer, name='try')(
         [inputs, mat_layer])
+    print('********')
+    print('mod_inputs shape: {}'.format(mod_inputs.shape))
+    print('********')
+    
+
     #=========================================================================#
     
     #============== T_Dist Phi Block =========================================#
     dense_0 = layers.Dense(100)
-    t_dist_0 = layers.TimeDistributed(dense_0, name='t_dist_0')(mod_inputs)
-    activation_0 = layers.Activation('relu', name="activation_0")(t_dist_0)
+    t_dist_0 = layers.TimeDistributed(dense_0, name='t_dist_3')(mod_inputs)
+    activation_0 = layers.Activation('relu', name="activation_3")(t_dist_0)
     
     dense_1 = layers.Dense(100)
-    t_dist_1 = layers.TimeDistributed(dense_1, name='t_dist_1')(activation_0)
-    activation_1 = layers.Activation('relu', name='activation_1')(t_dist_1)
+    t_dist_1 = layers.TimeDistributed(dense_1, name='t_dist_4')(activation_0)
+    activation_1 = layers.Activation('relu', name='activation_4')(t_dist_1)
     
     dense_2 = layers.Dense(128)
-    t_dist_2 = layers.TimeDistributed(dense_2, name='t_dist_2')(activation_1)
-    activation_2 = layers.Activation('relu', name='activation_2')(t_dist_2)
+    t_dist_2 = layers.TimeDistributed(dense_2, name='t_dist_5')(activation_1)
+    activation_2 = layers.Activation('relu', name='activation_5')(t_dist_2)
     #=========================================================================#
     
     #============== Aggregation Function (Summation) =========================#
@@ -180,22 +194,22 @@ def PFN_wTNet(num_points, num_features, name="Russell Flow Network"):
     lambda_layer = layers.Lambda(point_mask_fn,
                                 name='mask')(inputs)
 
-    sum_layer = layers.Dot(axes=(-1,-1), name='sum')(
+    sum_layer = layers.Dot(axes=(1,1), name='sum')(
         [lambda_layer, activation_2])
     #=========================================================================#
-    
+
     #============== F Block ==================================================#
-    dense_3 = layers.Dense(100, name='dense_0')(sum_layer)
-    activation_3 = layers.Activation('relu', name="activation_3")(dense_3)
+    dense_3 = layers.Dense(100, name='dense_6')(sum_layer)
+    activation_3 = layers.Activation('relu', name="activation_6")(dense_3)
     
-    dense_4 = layers.Dense(100, name='dense_1')(activation_3)
-    activation_4 = layers.Activation('relu', name="activation_4")(dense_4)
+    dense_4 = layers.Dense(100, name='dense_7')(activation_3)
+    activation_4 = layers.Activation('relu', name="activation_7")(dense_4)
     
-    dense_5 = layers.Dense(100, name='dense_2')(activation_4)
-    activation_5 = layers.Activation('relu', name="activation_5")(dense_5)
+    dense_5 = layers.Dense(100, name='dense_8')(activation_4)
+    activation_5 = layers.Activation('relu', name="activation_8")(dense_5)
     
     dense_6 = layers.Dense(1, name='output')(activation_5)
-    activation_6 = layers.Activation('linear', name="activation_6")(dense_6)
+    activation_6 = layers.Activation('linear', name="activation_9")(dense_6)
     #=========================================================================#
     
     return keras.Model(inputs=inputs, outputs=activation_6, name=name)

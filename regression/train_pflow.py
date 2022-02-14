@@ -56,8 +56,8 @@ parser.add_argument('--events', action="store", dest="events", default=None,
                    type=int)
 parser.add_argument('--full_data', action="store", dest="full_data", default=False,
                    type=bool)
-parser.add_argument('--run_eagerly', action="store", dest="eager", default=True,
-                   type=bool)
+parser.add_argument('--graph_execution', action="store_true",
+                    dest="graph_execution")
 
 args = parser.parse_args()
 
@@ -84,8 +84,15 @@ else:
     EPOCHS = args.ep
     GPU = str(args.gpu)
     NEVENTS = args.events
+    GRAPH_EXECUTION = args.graph_execution
     
-    args_list = [BATCH_SIZE, LEARNING_RATE, MODEL, GPU]
+    exec_str = ""
+    if GRAPH_EXECUTION == True:
+        exec_str += "GRAPH execution"
+    else:
+        exec_str += "EAGER execution"
+        
+    args_list = [BATCH_SIZE, LEARNING_RATE, MODEL, EPOCHS, GPU, NEVENTS]
     
     if any([arg is None for arg in args_list]):
         print('Insufficient flags supplied. Exiting program.')
@@ -98,6 +105,7 @@ else:
         print('Model: {}'.format(MODEL))
         print('Training on GPU: {}'.format(GPU))
         print('Training on {} events'.format(NEVENTS))
+        print('Eager or graph? -- {}'.format(exec_str))
 
         
 ## TF Environment
@@ -110,10 +118,13 @@ os.environ['CUDA_VISIBLE_DEVICES'] = GPU
 os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
 
 ## Eager execution
-if not args.eager:
+if GRAPH_EXECUTION == True:
+    print('Running in GRAPH execution mode!')
     from tensorflow.python.framework.ops import disable_eager_execution
     disable_eager_execution()
-
+else:
+    print('Running in EAGER execution mode!')
+    
 
 ## Load Data
 #======================================

@@ -27,6 +27,20 @@ def tdist_block(x, mask, size: int, number: str):
 def multiply(tensor1, tensor2):
     return K.dot(tensor1,tensor2)
 
+def mat_mul(tensors):
+    x, y = tensors
+    return tf.linalg.matmul(x,y)
+
+def cast_to_zero(tensors):
+    ''' casts all cvalues that should be zero to zero in the modified tensor '''
+    mod_input, input_tens = tensors
+    full_mask = tf.logical_not(tf.math.equal(input_tens, 0.))
+    reduced_mask = tf.experimental.numpy.any(full_mask, axis=-1)
+    reduced_mask = tf.cast(reduced_mask, dtype=tf.float32)
+    reduced_mask = tf.expand_dims(reduced_mask, axis=-1)
+    return_tens = tf.math.multiply(mod_input, reduced_mask)
+    return return_tens
+
 ## Basic PFN
 def PFN_base(num_points, num_features, name="Russell Flow Network"):
     ''' Tested '''
@@ -136,8 +150,12 @@ def PFN_wTNet(num_points, num_features, name="PFN_wTNet"):
     block_1 = tdist_block(block_0, mask=keras_mask, size=100, number='1')
     block_2 = tdist_block(block_1, mask=keras_mask, size=100, number='2')
     
+    block_2_masked = layers.Lambda(cast_to_zero, name='block_2_masked')(
+        [block_2, inputs])
+    
     max_pool = layers.MaxPool1D(pool_size=100, padding='valid',
-                                name='tnet_0_MaxPool', strides=num_points)(block_2)
+                                name='tnet_0_MaxPool', strides=num_points)(
+        block_2_masked)
     
     tnet_0_block_0 = layers.Dense(100, activation='relu',
                                   name='tnet_0_dense_0')(max_pool)
@@ -152,25 +170,12 @@ def PFN_wTNet(num_points, num_features, name="PFN_wTNet"):
             np.eye(num_features).flatten()),
         name='pre_matrix_0'
     )(tnet_0_block_1)
-
-    squeeze = layers.Reshape((num_features**2,))(vector_dense)
-    rep_layer = layers.RepeatVector(num_points)(squeeze)
     
-    print('********')
-    print('rep_layer shape: {}'.format(rep_layer.shape))
-    print('********')
-    
-    mat_layer = layers.Reshape((num_points, num_features, num_features),
-                               name='matrix_0')(rep_layer)
+    mat_layer = layers.Reshape((num_features, num_features),
+                               name='matrix_0')(vector_dense)
 
-    dot_layer = layers.Dot(axes=(-1,-2), name='matrix_multiply_0')
-    mod_inputs = layers.TimeDistributed(dot_layer, name='try')(
+    mod_inputs = layers.Lambda(mat_mul, name='matrix_multiply_0')(
         [inputs, mat_layer])
-    print('********')
-    print('mod_inputs shape: {}'.format(mod_inputs.shape))
-    print('********')
-    
-
     #=========================================================================#
     
     #============== T_Dist Phi Block =========================================#

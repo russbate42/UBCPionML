@@ -27,6 +27,20 @@ def tdist_block(x, mask, size: int, number: str):
 def multiply(tensor1, tensor2):
     return K.dot(tensor1,tensor2)
 
+def mat_mul(tensors):
+    x, y = tensors
+    return tf.linalg.matmul(x,y)
+
+def cast_to_zero(tensors):
+    ''' casts all cvalues that should be zero to zero in the modified tensor '''
+    mod_input, input_tens = tensors
+    full_mask = tf.logical_not(tf.math.equal(input_tens, 0.))
+    reduced_mask = tf.experimental.numpy.any(full_mask, axis=-1)
+    reduced_mask = tf.cast(reduced_mask, dtype=tf.float32)
+    reduced_mask = tf.expand_dims(reduced_mask, axis=-1)
+    return_tens = tf.math.multiply(mod_input, reduced_mask)
+    return return_tens    
+    
 ## Basic PFN
 def PFN_base(num_points, num_features, name="Russell Flow Network"):
     ''' Tested '''
@@ -121,25 +135,31 @@ def PFN_wDropout(num_points, num_features, name="PFN_w_dropout"):
 
 
 ## PFN with TNet
-def PFN_wTNet(num_points, num_features, name="Russell Flow Network"):
+def PFN_wTNet(num_points, num_features, name="PFN_wTNet"):
     
     inputs = keras.Input(shape=(num_points, num_features), name='input')
 
     #============== Masking for TNet =========================================#
-    mask_tens = layers.Masking(mask_value=0.0, input_shape=shape)(inputs)
+    mask_tens = layers.Masking(mask_value=0.0, input_shape=(num_points,
+                                num_features))(inputs)
     keras_mask = mask_tens._keras_mask
     #=========================================================================#
 
     #============== TNet =====================================================#
     block_0 = tdist_block(inputs, mask=keras_mask, size=50, number='0')
-    block_0 = tdist_block(inputs, mask=keras_mask, size=100, number='1')
-    block_0 = tdist_block(inputs, mask=keras_mask, size=100, number='2')
+    block_1 = tdist_block(block_0, mask=keras_mask, size=100, number='1')
+    block_2 = tdist_block(block_1, mask=keras_mask, size=100, number='2')
     
-    max_pool = layers.MaxPool1d(pool_size=num_points, name='tnet_0_MaxPool')(
-        [block_2])
+    block_2_masked = layers.Lambda(cast_to_zero, name='block_2_masked')(
+        [block_2, inputs])
+    
+    max_pool = layers.MaxPool1D(pool_size=100, padding='valid',
+                                name='tnet_0_MaxPool', strides=num_points)(
+        block_2_masked)
     
     tnet_0_block_0 = layers.Dense(100, activation='relu',
-                                  name='tnet_0_dense_0')(max_pool) 
+                                  name='tnet_0_dense_0')(max_pool)
+    
     tnet_0_block_1 = layers.Dense(50, activation='relu',
                                   name='tnet_0_dense_1')(tnet_0_block_0)
     
@@ -147,30 +167,29 @@ def PFN_wTNet(num_points, num_features, name="Russell Flow Network"):
         num_features**2,
         kernel_initializer='zeros',
         bias_initializer=keras.initializers.Constant(
-            np.eye(num_points).flatten()),
+            np.eye(num_features).flatten()),
         name='pre_matrix_0'
-    )(mlp_tnet_1)
+    )(tnet_0_block_1)
     
-    mat_layer = layers.Reshape((num_points, num_points),
+    mat_layer = layers.Reshape((num_features, num_features),
                                name='matrix_0')(vector_dense)
-    
-    mat_mul_layer = layers.Dot(axes=(-1,-2), name='matrix_multiply_0')
-    mod_inputs = layers.TimeDistributed(mat_mul_layer, name='tdist_multiply')(
+
+    mod_inputs = layers.Lambda(mat_mul, name='matrix_multiply_0')(
         [inputs, mat_layer])
     #=========================================================================#
     
     #============== T_Dist Phi Block =========================================#
     dense_0 = layers.Dense(100)
-    t_dist_0 = layers.TimeDistributed(dense_0, name='t_dist_0')(mod_inputs)
-    activation_0 = layers.Activation('relu', name="activation_0")(t_dist_0)
+    t_dist_0 = layers.TimeDistributed(dense_0, name='t_dist_3')(mod_inputs)
+    activation_0 = layers.Activation('relu', name="activation_3")(t_dist_0)
     
     dense_1 = layers.Dense(100)
-    t_dist_1 = layers.TimeDistributed(dense_1, name='t_dist_1')(activation_0)
-    activation_1 = layers.Activation('relu', name='activation_1')(t_dist_1)
+    t_dist_1 = layers.TimeDistributed(dense_1, name='t_dist_4')(activation_0)
+    activation_1 = layers.Activation('relu', name='activation_4')(t_dist_1)
     
     dense_2 = layers.Dense(128)
-    t_dist_2 = layers.TimeDistributed(dense_2, name='t_dist_2')(activation_1)
-    activation_2 = layers.Activation('relu', name='activation_2')(t_dist_2)
+    t_dist_2 = layers.TimeDistributed(dense_2, name='t_dist_5')(activation_1)
+    activation_2 = layers.Activation('relu', name='activation_5')(t_dist_2)
     #=========================================================================#
     
     #============== Aggregation Function (Summation) =========================#
@@ -180,22 +199,22 @@ def PFN_wTNet(num_points, num_features, name="Russell Flow Network"):
     lambda_layer = layers.Lambda(point_mask_fn,
                                 name='mask')(inputs)
 
-    sum_layer = layers.Dot(axes=(-1,-1), name='sum')(
+    sum_layer = layers.Dot(axes=(1,1), name='sum')(
         [lambda_layer, activation_2])
     #=========================================================================#
-    
+
     #============== F Block ==================================================#
-    dense_3 = layers.Dense(100, name='dense_0')(sum_layer)
-    activation_3 = layers.Activation('relu', name="activation_3")(dense_3)
+    dense_3 = layers.Dense(100, name='dense_6')(sum_layer)
+    activation_3 = layers.Activation('relu', name="activation_6")(dense_3)
     
-    dense_4 = layers.Dense(100, name='dense_1')(activation_3)
-    activation_4 = layers.Activation('relu', name="activation_4")(dense_4)
+    dense_4 = layers.Dense(100, name='dense_7')(activation_3)
+    activation_4 = layers.Activation('relu', name="activation_7")(dense_4)
     
-    dense_5 = layers.Dense(100, name='dense_2')(activation_4)
-    activation_5 = layers.Activation('relu', name="activation_5")(dense_5)
+    dense_5 = layers.Dense(100, name='dense_8')(activation_4)
+    activation_5 = layers.Activation('relu', name="activation_8")(dense_5)
     
     dense_6 = layers.Dense(1, name='output')(activation_5)
-    activation_6 = layers.Activation('linear', name="activation_6")(dense_6)
+    activation_6 = layers.Activation('linear', name="activation_9")(dense_6)
     #=========================================================================#
     
     return keras.Model(inputs=inputs, outputs=activation_6, name=name)

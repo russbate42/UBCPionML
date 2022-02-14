@@ -10,12 +10,12 @@ russellbate@phas.ubc.ca
 ## META-DATA ##
 datapath_prefix = '/fast_scratch/atlas/'
 module_path = '/home/russbate/MLPionCollaboration/LCStudies/util/'
-BATCH_SIZE=100
+BATCH_SIZE=2000
 LEARNING_RATE=1e-3
 EPOCHS=800
 MODEL='PFN_base'
 GPU="5"
-NEVENTS=int(1e4)
+NEVENTS=int(2e5)
 
 ## General Python Imports
 #======================================
@@ -55,6 +55,8 @@ parser.add_argument('--GPU', action="store", dest="gpu", default=None, type=int)
 parser.add_argument('--events', action="store", dest="events", default=None,
                    type=int)
 parser.add_argument('--full_data', action="store", dest="full_data", default=False,
+                   type=bool)
+parser.add_argument('--run_eagerly', action="store", dest="eager", default=True,
                    type=bool)
 
 args = parser.parse_args()
@@ -106,6 +108,14 @@ import os
 os.environ['CUDA_VISIBLE_DEVICES'] = GPU
 # os.environ['TF_GPU_ALLOCATOR'] = 'cuda_malloc_async'
 os.environ['TF_FORCE_GPU_ALLOW_GROWTH'] = 'true'
+
+## Eager execution
+if args.eager:
+    print('Runnig in EAGER execution mode!')
+else:
+    print('Running in GRAPH execution mode!')
+    from tensorflow.python.framework.ops import disable_eager_execution
+    disable_eager_execution()
 
 
 ## Load Data

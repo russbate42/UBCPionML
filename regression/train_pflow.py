@@ -16,6 +16,8 @@ EPOCHS=800
 MODEL='PFN_base'
 GPU="5"
 NEVENTS=int(2e5)
+SAVE_MODEL = False
+SAVE_RESULTS = False
 
 ## General Python Imports
 #======================================
@@ -58,6 +60,8 @@ parser.add_argument('--full_data', action="store", dest="full_data", default=Fal
                    type=bool)
 parser.add_argument('--graph_execution', action="store_true",
                     dest="graph_execution")
+parser.add_argument('--save_model', action="store_true", dest="save_model")
+parser.add_argument('--save_results', action="store_true", dest="save_results")
 
 args = parser.parse_args()
 
@@ -85,6 +89,8 @@ else:
     GPU = str(args.gpu)
     NEVENTS = args.events
     GRAPH_EXECUTION = args.graph_execution
+    SAVE_MODEL = args.save_model
+    SAVE_RESULTS = args.save_results
     
     exec_str = ""
     if GRAPH_EXECUTION == True:
@@ -219,21 +225,25 @@ print()
 
 ## Save Information
 #======================================
-infostring = '{}_LR--{:.0e}_BS--{}_EP--{}_EV--{}_{}'.format(MODEL,
+infostring = '{}_STMC_--LR_{:.0e}--BS_{}--EP_{}--EV_{}--{}'.format(MODEL,
                 LEARNING_RATE, BATCH_SIZE, EPOCHS, NEVENTS, DATE)
-print('saving_files..')
-with open('results/history_'+infostring+'.pickle', 'wb')\
-         as histfile:
-    pickle.dump(history.history, histfile)
+if SAVE_RESULTS == True:
+    print('saving_files..')
+    with open('results/history_'+infostring+'.pickle', 'wb')\
+             as histfile:
+        pickle.dump(history.history, histfile)
 
+    np.savez('results/target_preds_'+infostring,
+            args=(Y_test, np.squeeze(prediction, axis=1)), kwds=('target', 'prediction'))
+else:
+    print('No saved results flag. No results will be saved.')
 
-np.savez('results/target_preds_'+infostring,
-        args=(Y_test, np.squeeze(prediction, axis=1)), kwds=('target', 'prediction'))
-print()
-
-print('saving model..')
-model.save('models/model_'+infostring)
-
+if SAVE_MODEL == True:
+    print('saving model..')
+    model.save('models/model_'+infostring)
+else:
+    print('No saved model flag. Model will not be saved.')
+    
 print()
 print()
 print('..le fin..')

@@ -58,23 +58,48 @@ def iqrOverMed(x):
     med = np.median(x)
     return iqr / med
 
+def choose_res(x, y, bins, statistic):
+    # Declare statistics for plot
+    if statistic == 'std': # or any other baseline one?
+        resolution = stats.binned_statistic(x, y, bins=bins,
+                                            statistic=statistic).statistic
+    elif statistic == 'stdOverMean':
+        resolution = stats.binned_statistic(x, y, bins=bins,
+                                            statistic=stdOverMean).statistic
+    elif statistic == 'iqrOverMed':
+        resolution = stats.binned_statistic(x, y, bins=bins,
+                                            statistic=iqrOverMed).statistic
+    else:
+        raise ValueError('Incorrect value passed to statistic argument.')
+    return resolution
+
+        
 def resolutionPlot(x, y, figfile='', statistic='std',
                    xlabel='Cluster Calib Hits', ylabel='Energy IQR over Median',
                    atlas_x=-1, atlas_y=-1, simulation=False,
-                   textlist=[]):
+                   textlist=[], colors=None, labels=None):
+    
+    # determine ranges for scale on plot
     xbin = [10**exp for exp in  np.arange(-1.0, 3.1, 0.1)]
     xcenter = [(xbin[i] + xbin[i+1]) / 2 for i in range(len(xbin)-1)]
-    if statistic == 'std': # or any other baseline one?
-        resolution = stats.binned_statistic(x, y, bins=xbin,statistic=statistic).statistic
-    elif statistic == 'stdOverMean':
-        resolution = stats.binned_statistic(x, y, bins=xbin,statistic=stdOverMean).statistic
-    elif statistic == 'iqrOverMed':
-        resolution = stats.binned_statistic(x, y, bins=xbin,statistic=iqrOverMed).statistic
 
+    # start plotting
     plt.cla(); plt.clf()
     fig = plt.figure()
     fig.patch.set_facecolor('white')
-    plt.plot(xcenter, resolution)
+
+    if type(x) == list:
+        if np.any(len(x) != np.array([len(y), len(colors), len(labels)])):
+            raise ValueError('Args passed to resolutionPlot differ in length.')
+        for xi, yi, ci, li in zip(x, y, colors, labels):
+            resi = choose_res(x=xi, y=yi, bins=xbin, statistic=statistic)
+            plt.plot(xcenter, resi, color=ci, label=li)
+        res=None
+            
+    else:
+        res = choose_res(x, y, bins=xbin, statistic=statistic)
+        plt.plot(xcenter, res)
+
     plt.xscale('log')
     plt.xlim(0.1, 1000)
     plt.ylim(0,2)
@@ -82,9 +107,12 @@ def resolutionPlot(x, y, figfile='', statistic='std',
     pu.ampl.set_ylabel(ylabel)
 
     pu.drawLabels(fig, atlas_x, atlas_y, simulation, textlist)
+    
+    if labels is not None:
+        plt.legend(loc='upper right')
 
     if figfile != '':
         plt.savefig(figfile)
     plt.show()
 
-    return xcenter, resolution
+    return xcenter, res

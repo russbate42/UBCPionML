@@ -94,17 +94,16 @@ def PFN_wDropout(num_points, num_features, name="PFN_w_dropout"):
     dense_0 = layers.Dense(100)
     t_dist_0 = layers.TimeDistributed(dense_0, name='t_dist_0')(inputs)
     activation_0 = layers.Activation('relu', name="activation_0")(t_dist_0)
-    dropout_0 = layers.Dropout(rate=.15, name='dropout_0')(activation_0)
+    dropout_0 = layers.Dropout(rate=.1, name='dropout_0')(activation_0)
     
     dense_1 = layers.Dense(100)
     t_dist_1 = layers.TimeDistributed(dense_1, name='t_dist_1')(dropout_0)
     activation_1 = layers.Activation('relu', name='activation_1')(t_dist_1)
-    dropout_1 = layers.Dropout(rate=.15, name='dropout_1')(activation_1)
+    dropout_1 = layers.Dropout(rate=.1, name='dropout_1')(activation_1)
     
     dense_2 = layers.Dense(128)
     t_dist_2 = layers.TimeDistributed(dense_2, name='t_dist_2')(dropout_1)
     activation_2 = layers.Activation('relu', name='activation_2')(t_dist_2)
-    dropout_2 = layers.Dropout(rate=.15, name='dropout_2')(activation_2)
     #=========================================================================#
     
     #============== Aggregration Function (Sum) ==============================#
@@ -117,15 +116,15 @@ def PFN_wDropout(num_points, num_features, name="PFN_w_dropout"):
     #============== F Layers With Dropout ====================================#
     dense_3 = layers.Dense(100, name='dense_0')(sum_layer)
     activation_3 = layers.Activation('relu', name="activation_3")(dense_3)
-    dropout_3 = layers.Dropout(rate=.15, name='dropout_3')(activation_3)
+    dropout_3 = layers.Dropout(rate=.1, name='dropout_3')(activation_3)
     
     dense_4 = layers.Dense(100, name='dense_1')(dropout_3)
     activation_4 = layers.Activation('relu', name="activation_4")(dense_4)
-    dropout_4 = layers.Dropout(rate=.15, name='dropout_4')(activation_4)
+    dropout_4 = layers.Dropout(rate=.1, name='dropout_4')(activation_4)
     
     dense_5 = layers.Dense(100, name='dense_2')(dropout_4)
     activation_5 = layers.Activation('relu', name="activation_5")(dense_5)
-    dropout_5 = layers.Dropout(rate=.15, name='dropout_5')(activation_5)
+    dropout_5 = layers.Dropout(rate=.1, name='dropout_5')(activation_5)
     
     dense_6 = layers.Dense(1, name='output')(activation_5)
     activation_6 = layers.Activation('linear', name="activation_6")(dense_6)

@@ -41,10 +41,13 @@ clusters/Plots/
 segmentation/Plots/
 segmentation/Model_Building.ipynb
 segmentation/results/*.npz
+segmentation/Models/
 
 # REGRESSION
 regression/Regression_Plots/
 regression/results/*.npz
+regression/models/
+regression/training_output/
 
 # VISUALIZATION
 visualization/Plots/

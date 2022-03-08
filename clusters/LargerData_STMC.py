@@ -104,9 +104,9 @@ geo_branches = ["cell_geo_ID", "cell_geo_eta", "cell_geo_phi", "cell_geo_rPerp",
 #====================
 # user.angerami.24559744.OutputStream._000001.root
 # Number of files
-Nfile = 35
+Nfile = 502
 fileNames = []
-file_prefix = 'user.mswiatlo.27153452.OutputStream._000'
+file_prefix = 'user.angerami.24559744.OutputStream._000'
 for i in range(1,Nfile+1):
     endstring = f'{i:03}'
     fileNames.append(file_prefix + endstring + '.root')
@@ -129,16 +129,16 @@ layer_rPerp = np.array([1540., 1733., 1930., 2450., 3010., 3630.])
 track_sample_layer = np.array([1,2,3,12,13,14])
 
 # for event dictionary
-events_prefix = '/data/atlas/data/allCellTruthv1/pipm'
+events_prefix = '/fast_scratch/atlas_images/v01-45/pipm/'
 
 # Use this to compare with the dimensionality of new events
 firstArray = True
 
 ## MEMORY MAPPED ARRAY ALLOCATION ##
-X_large = np.lib.format.open_memmap('/data/rbate/XPPM_large.npy', mode='w+', dtype=np.float64,
-                       shape=(1700000,1500,6), fortran_order=False, version=None)
-Y_large = np.lib.format.open_memmap('/data/rbate/YPPM_large.npy', mode='w+', dtype=np.float64,
-                       shape=(1700000,3), fortran_order=False, version=None)
+X_large = np.lib.format.open_memmap('/data/atlas/rbate/X_large.npy', mode='w+', dtype=np.float64,
+                       shape=(2500000,1500,6), fortran_order=False, version=None)
+Y_large = np.lib.format.open_memmap('/data/atlas/rbate/Y_large.npy', mode='w+', dtype=np.float64,
+                       shape=(2500000,3), fortran_order=False, version=None)
 
 k = 1 # tally used to keep track of file number
 tot_nEvts = 0 # used for keeping track of total number of events
@@ -183,7 +183,7 @@ for currFile in fileNames:
     # CENTRAL TRACKS
     # Warning: we are safe for now with single tracks but not for multiples using this
     trackEta_EMB1 = ak.flatten(track_dict['trackEta_EMB1'][filtered_event]).to_numpy()
-    central_track_mask = np.abs(trackEta_EMB1) < .7
+    central_track_mask = np.abs(trackEta_EMB1) < 4.9
     filtered_event = filtered_event[central_track_mask]
     
     # TRACKS WITH CLUSTERS
@@ -390,17 +390,17 @@ for currFile in fileNames:
     print()
 
 t0 = t.time()
-X = np.lib.format.open_memmap('/data/rbate/X_STMC_'+str(Nfile)+'_files.npy',
+X = np.lib.format.open_memmap('/data/atlas/rbate/X_STMC_'+str(Nfile)+'_files2.npy',
                              mode='w+', dtype=np.float64, shape=(tot_nEvts, max_nPoints, 6))
 np.copyto(dst=X, src=X_large[:tot_nEvts,:max_nPoints,:], casting='same_kind', where=True)
 del X_large
-os.system('rm /data/rbate/X_large.npy')
+os.system('rm /data/atlas/rbate/X_large.npy')
 
-Y = np.lib.format.open_memmap('/data/rbate/Y_STMC_'+str(Nfile)+'_files.npy',
+Y = np.lib.format.open_memmap('/data/atlas/rbate/Y_STMC_'+str(Nfile)+'_files2.npy',
                              mode='w+', dtype=np.float64, shape=(tot_nEvts, 3))
 np.copyto(dst=Y, src=Y_large[:tot_nEvts,:], casting='same_kind', where=True)
 del Y_large
-os.system('rm /data/rbate/Y_large.npy')
+os.system('rm /data/atlas/rbate/Y_large.npy')
 
 t1 = t.time()
 print()

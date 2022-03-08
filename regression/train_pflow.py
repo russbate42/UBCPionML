@@ -12,12 +12,13 @@ datapath_prefix = '/fast_scratch/atlas/'
 module_path = '/home/russbate/MLPionCollaboration/LCStudies/util/'
 BATCH_SIZE=2000
 LEARNING_RATE=1e-3
-EPOCHS=800
+EPOCHS=4
 MODEL='PFN_base'
-GPU="5"
-NEVENTS=int(2e5)
+GPU="6"
+NEVENTS=int(5e5)
 SAVE_MODEL = False
 SAVE_RESULTS = False
+GRAPH_EXECUTION = False
 
 ## General Python Imports
 #======================================
@@ -152,19 +153,39 @@ train_num, val_num, test_num = dsu.tvt_num(X, tvt=(70,15,15))
 print('train -- val -- test')
 print('{} -- {} -- {}'.format(train_num, val_num, test_num)); print()
 
-# Split
+## Datasets ##
+#===========##
 t0 = cput()
+data = tf.data.Dataset.from_tensor_slices((X, Y))
+# normalized data is shuffled already
+# data.shuffle(buffer_size = 10000)
 
-X_train = X[:train_num,:,:]
-Y_train = Y[:train_num].reshape((train_num,1))
+data_train = data.skip(val_num+test_num)
+data_test = data.take(val_num+test_num)
+data_val = data_test.skip(test_num)
+data_test = data_test.take(test_num)
 
-X_val = X[train_num:train_num+val_num,:,:]
-Y_val = Y[train_num:train_num+val_num].reshape((val_num,1))
-
-X_test = X[train_num+val_num:,:,:]
-Y_test = Y[train_num+val_num:]
+data_train = data_train.batch(batch_size=BATCH_SIZE, drop_remainder=True)
+data_val = data_val.batch(batch_size=BATCH_SIZE, drop_remainder=True)
+data_test = data_test.batch(batch_size=BATCH_SIZE, drop_remainder=True)
 t1 = cput()
-print('time to split: {:6.2f} (m)'.format((t1-t0)/60)); print()
+
+## Mem-maps ##
+#===========##
+# Split
+# t0 = cput()
+
+# X_train = X[:train_num,:,:]
+# Y_train = Y[:train_num].reshape((train_num,1))
+
+# X_val = X[train_num:train_num+val_num,:,:]
+# Y_val = Y[train_num:train_num+val_num].reshape((val_num,1))
+
+# X_test = X[train_num+val_num:,:,:]
+# Y_test = Y[train_num+val_num:]
+# t1 = cput()
+
+print('time to fiddle with data: {:6.2f} (m)'.format((t1-t0)/60)); print()
 
 
 ## Load Models
@@ -197,15 +218,26 @@ print()
 print('Training model..')
 print()
 
+# #mem-maps
+# t0 = cput()
+# history = model.fit(X_train,
+#                   Y_train,
+#                   batch_size=BATCH_SIZE,
+#                   validation_data=(X_val, Y_val),
+#                   epochs=EPOCHS,
+#                   verbose=1
+#                   )
+# t1 = cput()
+
+# datasets
 t0 = cput()
-history = model.fit(X_train,
-                  Y_train,
-                  batch_size=BATCH_SIZE,
-                  validation_data=(X_val, Y_val),
+history = model.fit(data_train,
+                  validation_data=data_val,
                   epochs=EPOCHS,
                   verbose=1
                   )
 t1 = cput()
+
 print()
 print()
 print('Time to train: {:8.2f} (s)'.format(t1-t0))

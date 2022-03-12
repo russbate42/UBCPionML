@@ -1,0 +1,709 @@
+===========================================
+== Single Track Multiple Cluster Script ==
+===========================================
+
+Awkward version: 1.5.1
+Uproot version: 4.1.8
+
+Working on File: user.angerami.24559744.OutputStream._000001.root - 1/50
+Array dimension: (9634, 1039, 6)
+Number of null track projection: 1
+Time to create dicts and select events: 94.89744687080383
+Time to find dimensions and make new array: 4.246087074279785
+Time to construct index array: 8.779528379440308
+Time to populate elements: 87.5304970741272
+Time to copy to memory map: 6.409216403961182
+Time for this file: 201.8627758026123
+Total events: 9634
+Current size: (9634, 1039, 6)
+Total time: 201.8627758026123
+
+
+Working on File: user.angerami.24559744.OutputStream._000002.root - 2/50
+Array dimension: (9741, 1088, 6)
+Number of null track projection: 5
+Time to create dicts and select events: 89.55945825576782
+Time to find dimensions and make new array: 3.3889575004577637
+Time to construct index array: 8.85240912437439
+Time to populate elements: 90.37336730957031
+Time to copy to memory map: 2.9023709297180176
+Time for this file: 195.0765631198883
+Total events: 19375
+Current size: (19375, 1088, 6)
+Total time: 396.9393389225006
+
+
+Working on File: user.angerami.24559744.OutputStream._000003.root - 3/50
+Array dimension: (9702, 1091, 6)
+Number of null track projection: 10
+Time to create dicts and select events: 90.44596648216248
+Time to find dimensions and make new array: 4.222534894943237
+Time to construct index array: 9.6487135887146
+Time to populate elements: 97.62325692176819
+Time to copy to memory map: 1.362962245941162
+Time for this file: 203.30343413352966
+Total events: 29077
+Current size: (29077, 1091, 6)
+Total time: 600.2427730560303
+
+
+Working on File: user.angerami.24559744.OutputStream._000004.root - 4/50
+Array dimension: (9745, 1012, 6)
+Number of null track projection: 12
+Time to create dicts and select events: 95.4769172668457
+Time to find dimensions and make new array: 3.740859031677246
+Time to construct index array: 9.419841289520264
+Time to populate elements: 96.55562114715576
+Time to copy to memory map: 5.392543792724609
+Time for this file: 210.58578252792358
+Total events: 38822
+Current size: (38822, 1091, 6)
+Total time: 810.8285555839539
+
+
+Working on File: user.angerami.24559744.OutputStream._000005.root - 5/50
+Array dimension: (9651, 1018, 6)
+Number of null track projection: 12
+Time to create dicts and select events: 93.4545841217041
+Time to find dimensions and make new array: 4.089169263839722
+Time to construct index array: 9.403441429138184
+Time to populate elements: 99.66037106513977
+Time to copy to memory map: 11.318677425384521
+Time for this file: 217.9262433052063
+Total events: 48473
+Current size: (48473, 1091, 6)
+Total time: 1028.7547988891602
+
+
+Working on File: user.angerami.24559744.OutputStream._000006.root - 6/50
+Array dimension: (9612, 912, 6)
+Number of null track projection: 14
+Time to create dicts and select events: 91.32522368431091
+Time to find dimensions and make new array: 3.4045393466949463
+Time to construct index array: 9.2050621509552
+Time to populate elements: 94.5887279510498
+Time to copy to memory map: 5.132158041000366
+Time for this file: 203.65571117401123
+Total events: 58085
+Current size: (58085, 1091, 6)
+Total time: 1232.4105100631714
+
+
+Working on File: user.angerami.24559744.OutputStream._000007.root - 7/50
+Array dimension: (9627, 1107, 6)
+Number of null track projection: 15
+Time to create dicts and select events: 94.66779971122742
+Time to find dimensions and make new array: 3.6077721118927
+Time to construct index array: 9.288001775741577
+Time to populate elements: 93.50325417518616
+Time to copy to memory map: 17.074536085128784
+Time for this file: 218.14136385917664
+Total events: 67712
+Current size: (67712, 1107, 6)
+Total time: 1450.551873922348
+
+
+Working on File: user.angerami.24559744.OutputStream._000008.root - 8/50
+Array dimension: (9732, 985, 6)
+Number of null track projection: 15
+Time to create dicts and select events: 92.43735671043396
+Time to find dimensions and make new array: 4.344720363616943
+Time to construct index array: 9.573871374130249
+Time to populate elements: 96.37870216369629
+Time to copy to memory map: 1.373548984527588
+Time for this file: 204.10819959640503
+Total events: 77444
+Current size: (77444, 1107, 6)
+Total time: 1654.660073518753
+
+
+Working on File: user.angerami.24559744.OutputStream._000009.root - 9/50
+Array dimension: (9646, 1081, 6)
+Number of null track projection: 16
+Time to create dicts and select events: 93.88368487358093
+Time to find dimensions and make new array: 3.652428388595581
+Time to construct index array: 9.21602201461792
+Time to populate elements: 98.02445411682129
+Time to copy to memory map: 15.881210565567017
+Time for this file: 220.65779995918274
+Total events: 87090
+Current size: (87090, 1107, 6)
+Total time: 1875.3178734779358
+
+
+Working on File: user.angerami.24559744.OutputStream._000010.root - 10/50
+Array dimension: (9829, 1027, 6)
+Number of null track projection: 18
+Time to create dicts and select events: 96.70893096923828
+Time to find dimensions and make new array: 4.073380708694458
+Time to construct index array: 9.95235276222229
+Time to populate elements: 103.30696654319763
+Time to copy to memory map: 18.667187213897705
+Time for this file: 232.70881819725037
+Total events: 96919
+Current size: (96919, 1107, 6)
+Total time: 2108.026691675186
+
+
+Working on File: user.angerami.24559744.OutputStream._000011.root - 11/50
+Array dimension: (9717, 1056, 6)
+Number of null track projection: 20
+Time to create dicts and select events: 103.5239930152893
+Time to find dimensions and make new array: 4.333822250366211
+Time to construct index array: 10.14427900314331
+Time to populate elements: 104.56694316864014
+Time to copy to memory map: 16.733888626098633
+Time for this file: 239.3029260635376
+Total events: 106636
+Current size: (106636, 1107, 6)
+Total time: 2347.3296177387238
+
+
+Working on File: user.angerami.24559744.OutputStream._000012.root - 12/50
+Array dimension: (9731, 1175, 6)
+Number of null track projection: 21
+Time to create dicts and select events: 100.08300304412842
+Time to find dimensions and make new array: 3.933751344680786
+Time to construct index array: 9.883837461471558
+Time to populate elements: 104.1280689239502
+Time to copy to memory map: 18.57669496536255
+Time for this file: 236.6053557395935
+Total events: 116367
+Current size: (116367, 1175, 6)
+Total time: 2583.9349734783173
+
+
+Working on File: user.angerami.24559744.OutputStream._000013.root - 13/50
+Array dimension: (9674, 1163, 6)
+Number of null track projection: 24
+Time to create dicts and select events: 101.90447854995728
+Time to find dimensions and make new array: 3.953310012817383
+Time to construct index array: 10.808417558670044
+Time to populate elements: 106.66291546821594
+Time to copy to memory map: 11.95765233039856
+Time for this file: 235.2867739200592
+Total events: 126041
+Current size: (126041, 1175, 6)
+Total time: 2819.2217473983765
+
+
+Working on File: user.angerami.24559744.OutputStream._000014.root - 14/50
+Array dimension: (9684, 959, 6)
+Number of null track projection: 25
+Time to create dicts and select events: 102.7663140296936
+Time to find dimensions and make new array: 4.174222230911255
+Time to construct index array: 11.072497844696045
+Time to populate elements: 107.44102811813354
+Time to copy to memory map: 24.570295810699463
+Time for this file: 250.0243580341339
+Total events: 135725
+Current size: (135725, 1175, 6)
+Total time: 3069.2461054325104
+
+
+Working on File: user.angerami.24559744.OutputStream._000015.root - 15/50
+Array dimension: (9615, 1118, 6)
+Number of null track projection: 26
+Time to create dicts and select events: 101.4802451133728
+Time to find dimensions and make new array: 4.305124998092651
+Time to construct index array: 10.629997491836548
+Time to populate elements: 105.50907349586487
+Time to copy to memory map: 8.310384035110474
+Time for this file: 230.23482513427734
+Total events: 145340
+Current size: (145340, 1175, 6)
+Total time: 3299.4809305667877
+
+
+Working on File: user.angerami.24559744.OutputStream._000016.root - 16/50
+Array dimension: (9686, 1084, 6)
+Number of null track projection: 28
+Time to create dicts and select events: 105.47021436691284
+Time to find dimensions and make new array: 4.307913541793823
+Time to construct index array: 10.353920698165894
+Time to populate elements: 108.95335149765015
+Time to copy to memory map: 23.36229181289673
+Time for this file: 252.44769191741943
+Total events: 155026
+Current size: (155026, 1175, 6)
+Total time: 3551.928622484207
+
+
+Working on File: user.angerami.24559744.OutputStream._000017.root - 17/50
+Array dimension: (9606, 981, 6)
+Number of null track projection: 31
+Time to create dicts and select events: 100.5527560710907
+Time to find dimensions and make new array: 3.979363441467285
+Time to construct index array: 11.085444211959839
+Time to populate elements: 106.37276339530945
+Time to copy to memory map: 25.595125198364258
+Time for this file: 247.58545231819153
+Total events: 164632
+Current size: (164632, 1175, 6)
+Total time: 3799.5140748023987
+
+
+Working on File: user.angerami.24559744.OutputStream._000018.root - 18/50
+Array dimension: (9775, 1129, 6)
+Number of null track projection: 33
+Time to create dicts and select events: 104.93956470489502
+Time to find dimensions and make new array: 4.062776565551758
+Time to construct index array: 10.797893762588501
+Time to populate elements: 107.19360637664795
+Time to copy to memory map: 27.698484659194946
+Time for this file: 254.69232606887817
+Total events: 174407
+Current size: (174407, 1175, 6)
+Total time: 4054.206400871277
+
+
+Working on File: user.angerami.24559744.OutputStream._000019.root - 19/50
+Array dimension: (9606, 1047, 6)
+Number of null track projection: 36
+Time to create dicts and select events: 102.32893204689026
+Time to find dimensions and make new array: 3.9106333255767822
+Time to construct index array: 9.470040559768677
+Time to populate elements: 109.83239316940308
+Time to copy to memory map: 32.389455795288086
+Time for this file: 257.9314548969269
+Total events: 184013
+Current size: (184013, 1175, 6)
+Total time: 4312.137855768204
+
+
+Working on File: user.angerami.24559744.OutputStream._000020.root - 20/50
+Array dimension: (9784, 1019, 6)
+Number of null track projection: 38
+Time to create dicts and select events: 101.50577211380005
+Time to find dimensions and make new array: 3.9344210624694824
+Time to construct index array: 10.765542268753052
+Time to populate elements: 107.83353757858276
+Time to copy to memory map: 15.244956016540527
+Time for this file: 239.28422904014587
+Total events: 193797
+Current size: (193797, 1175, 6)
+Total time: 4551.42208480835
+
+
+Working on File: user.angerami.24559744.OutputStream._000021.root - 21/50
+Array dimension: (9777, 1047, 6)
+Number of null track projection: 41
+Time to create dicts and select events: 104.78282260894775
+Time to find dimensions and make new array: 4.000422954559326
+Time to construct index array: 10.571908473968506
+Time to populate elements: 109.48448276519775
+Time to copy to memory map: 34.315261363983154
+Time for this file: 263.1548981666565
+Total events: 203574
+Current size: (203574, 1175, 6)
+Total time: 4814.576982975006
+
+
+Working on File: user.angerami.24559744.OutputStream._000022.root - 22/50
+Array dimension: (9790, 904, 6)
+Number of null track projection: 43
+Time to create dicts and select events: 102.80586266517639
+Time to find dimensions and make new array: 4.082015037536621
+Time to construct index array: 10.698547601699829
+Time to populate elements: 113.74958634376526
+Time to copy to memory map: 15.736126184463501
+Time for this file: 247.0721378326416
+Total events: 213364
+Current size: (213364, 1175, 6)
+Total time: 5061.649120807648
+
+
+Working on File: user.angerami.24559744.OutputStream._000023.root - 23/50
+Array dimension: (9693, 955, 6)
+Number of null track projection: 45
+Time to create dicts and select events: 110.32404494285583
+Time to find dimensions and make new array: 4.494799375534058
+Time to construct index array: 11.279032230377197
+Time to populate elements: 109.97842526435852
+Time to copy to memory map: 17.467815399169922
+Time for this file: 253.54411721229553
+Total events: 223057
+Current size: (223057, 1175, 6)
+Total time: 5315.193238019943
+
+
+Working on File: user.angerami.24559744.OutputStream._000024.root - 24/50
+Array dimension: (9654, 965, 6)
+Number of null track projection: 45
+Time to create dicts and select events: 109.18302631378174
+Time to find dimensions and make new array: 4.4340291023254395
+Time to construct index array: 11.564762115478516
+Time to populate elements: 113.87188267707825
+Time to copy to memory map: 20.231284141540527
+Time for this file: 259.28498435020447
+Total events: 232711
+Current size: (232711, 1175, 6)
+Total time: 5574.478222370148
+
+
+Working on File: user.angerami.24559744.OutputStream._000025.root - 25/50
+Array dimension: (9788, 969, 6)
+Number of null track projection: 49
+Time to create dicts and select events: 107.68617105484009
+Time to find dimensions and make new array: 4.548946857452393
+Time to construct index array: 11.2400963306427
+Time to populate elements: 112.89396595954895
+Time to copy to memory map: 28.348084449768066
+Time for this file: 264.7172646522522
+Total events: 242499
+Current size: (242499, 1175, 6)
+Total time: 5839.1954870224
+
+
+Working on File: user.angerami.24559744.OutputStream._000026.root - 26/50
+Array dimension: (9692, 993, 6)
+Number of null track projection: 51
+Time to create dicts and select events: 108.37087559700012
+Time to find dimensions and make new array: 4.481311321258545
+Time to construct index array: 10.896637678146362
+Time to populate elements: 112.72557735443115
+Time to copy to memory map: 27.70227813720703
+Time for this file: 264.1766800880432
+Total events: 252191
+Current size: (252191, 1175, 6)
+Total time: 6103.372167110443
+
+
+Working on File: user.angerami.24559744.OutputStream._000027.root - 27/50
+Array dimension: (9750, 1014, 6)
+Number of null track projection: 53
+Time to create dicts and select events: 111.24717116355896
+Time to find dimensions and make new array: 4.79849910736084
+Time to construct index array: 11.34649920463562
+Time to populate elements: 113.96906280517578
+Time to copy to memory map: 18.127110958099365
+Time for this file: 259.48834323883057
+Total events: 261941
+Current size: (261941, 1175, 6)
+Total time: 6362.860510349274
+
+
+Working on File: user.angerami.24559744.OutputStream._000028.root - 28/50
+Array dimension: (9705, 1054, 6)
+Number of null track projection: 54
+Time to create dicts and select events: 116.05931735038757
+Time to find dimensions and make new array: 4.96321177482605
+Time to construct index array: 11.55613660812378
+Time to populate elements: 114.40838885307312
+Time to copy to memory map: 25.665159225463867
+Time for this file: 272.6522138118744
+Total events: 271646
+Current size: (271646, 1175, 6)
+Total time: 6635.512724161148
+
+
+Working on File: user.angerami.24559744.OutputStream._000029.root - 29/50
+Array dimension: (9671, 991, 6)
+Number of null track projection: 54
+Time to create dicts and select events: 109.68471050262451
+Time to find dimensions and make new array: 4.604090452194214
+Time to construct index array: 11.0090491771698
+Time to populate elements: 116.92259526252747
+Time to copy to memory map: 4.532022714614868
+Time for this file: 246.75246810913086
+Total events: 281317
+Current size: (281317, 1175, 6)
+Total time: 6882.265192270279
+
+
+Working on File: user.angerami.24559744.OutputStream._000030.root - 30/50
+Array dimension: (9672, 938, 6)
+Number of null track projection: 55
+Time to create dicts and select events: 112.14650893211365
+Time to find dimensions and make new array: 4.426218271255493
+Time to construct index array: 11.36509394645691
+Time to populate elements: 116.29382634162903
+Time to copy to memory map: 15.5635666847229
+Time for this file: 259.795214176178
+Total events: 290989
+Current size: (290989, 1175, 6)
+Total time: 7142.060406446457
+
+
+Working on File: user.angerami.24559744.OutputStream._000031.root - 31/50
+Array dimension: (9654, 1014, 6)
+Number of null track projection: 60
+Time to create dicts and select events: 112.30538487434387
+Time to find dimensions and make new array: 4.395117282867432
+Time to construct index array: 11.541123628616333
+Time to populate elements: 116.92722582817078
+Time to copy to memory map: 18.890950679779053
+Time for this file: 264.05980229377747
+Total events: 300643
+Current size: (300643, 1175, 6)
+Total time: 7406.120208740234
+
+
+Working on File: user.angerami.24559744.OutputStream._000032.root - 32/50
+Array dimension: (9669, 1061, 6)
+Number of null track projection: 60
+Time to create dicts and select events: 112.38899493217468
+Time to find dimensions and make new array: 4.253577947616577
+Time to construct index array: 11.343465566635132
+Time to populate elements: 115.67448043823242
+Time to copy to memory map: 11.563926458358765
+Time for this file: 255.22444534301758
+Total events: 310312
+Current size: (310312, 1175, 6)
+Total time: 7661.344654083252
+
+
+Working on File: user.angerami.24559744.OutputStream._000033.root - 33/50
+Array dimension: (9706, 973, 6)
+Number of null track projection: 61
+Time to create dicts and select events: 112.16912531852722
+Time to find dimensions and make new array: 4.442651271820068
+Time to construct index array: 11.194858312606812
+Time to populate elements: 117.59816002845764
+Time to copy to memory map: 34.73116159439087
+Time for this file: 280.1359565258026
+Total events: 320018
+Current size: (320018, 1175, 6)
+Total time: 7941.480610609055
+
+
+Working on File: user.angerami.24559744.OutputStream._000034.root - 34/50
+Array dimension: (9590, 1027, 6)
+Number of null track projection: 61
+Time to create dicts and select events: 111.27672505378723
+Time to find dimensions and make new array: 4.448384523391724
+Time to construct index array: 11.542489528656006
+Time to populate elements: 113.9158308506012
+Time to copy to memory map: 26.117125988006592
+Time for this file: 267.30055594444275
+Total events: 329608
+Current size: (329608, 1175, 6)
+Total time: 8208.781166553497
+
+
+Working on File: user.angerami.24559744.OutputStream._000035.root - 35/50
+Array dimension: (9694, 1112, 6)
+Number of null track projection: 65
+Time to create dicts and select events: 112.52441000938416
+Time to find dimensions and make new array: 5.054105043411255
+Time to construct index array: 11.294662475585938
+Time to populate elements: 117.71400451660156
+Time to copy to memory map: 31.286076307296753
+Time for this file: 277.87325835227966
+Total events: 339302
+Current size: (339302, 1175, 6)
+Total time: 8486.654424905777
+
+
+Working on File: user.angerami.24559744.OutputStream._000036.root - 36/50
+Array dimension: (9699, 941, 6)
+Number of null track projection: 69
+Time to create dicts and select events: 113.79970335960388
+Time to find dimensions and make new array: 4.5676350593566895
+Time to construct index array: 11.48729944229126
+Time to populate elements: 119.63797688484192
+Time to copy to memory map: 12.423406839370728
+Time for this file: 261.9160215854645
+Total events: 349001
+Current size: (349001, 1175, 6)
+Total time: 8748.570446491241
+
+
+Working on File: user.angerami.24559744.OutputStream._000037.root - 37/50
+Array dimension: (9706, 1053, 6)
+Number of null track projection: 70
+Time to create dicts and select events: 116.06066346168518
+Time to find dimensions and make new array: 4.98818302154541
+Time to construct index array: 11.336304664611816
+Time to populate elements: 119.3777871131897
+Time to copy to memory map: 21.794209718704224
+Time for this file: 273.5571479797363
+Total events: 358707
+Current size: (358707, 1175, 6)
+Total time: 9022.127594470978
+
+
+Working on File: user.angerami.24559744.OutputStream._000038.root - 38/50
+Array dimension: (9784, 985, 6)
+Number of null track projection: 72
+Time to create dicts and select events: 117.6337080001831
+Time to find dimensions and make new array: 5.189625978469849
+Time to construct index array: 11.582828998565674
+Time to populate elements: 120.20585536956787
+Time to copy to memory map: 22.914522886276245
+Time for this file: 277.52654123306274
+Total events: 368491
+Current size: (368491, 1175, 6)
+Total time: 9299.65413570404
+
+
+Working on File: user.angerami.24559744.OutputStream._000039.root - 39/50
+Array dimension: (9644, 1002, 6)
+Number of null track projection: 76
+Time to create dicts and select events: 117.266437292099
+Time to find dimensions and make new array: 4.5191566944122314
+Time to construct index array: 11.52079725265503
+Time to populate elements: 119.52345657348633
+Time to copy to memory map: 19.112918376922607
+Time for this file: 271.9427661895752
+Total events: 378135
+Current size: (378135, 1175, 6)
+Total time: 9571.596901893616
+
+
+Working on File: user.angerami.24559744.OutputStream._000040.root - 40/50
+Array dimension: (9747, 999, 6)
+Number of null track projection: 79
+Time to create dicts and select events: 116.00688409805298
+Time to find dimensions and make new array: 5.416672706604004
+Time to construct index array: 11.50131630897522
+Time to populate elements: 119.85146999359131
+Time to copy to memory map: 30.100693941116333
+Time for this file: 282.87703704833984
+Total events: 387882
+Current size: (387882, 1175, 6)
+Total time: 9854.473938941956
+
+
+Working on File: user.angerami.24559744.OutputStream._000041.root - 41/50
+Array dimension: (9682, 1191, 6)
+Number of null track projection: 82
+Time to create dicts and select events: 118.14720368385315
+Time to find dimensions and make new array: 4.728648900985718
+Time to construct index array: 11.183906078338623
+Time to populate elements: 118.97071027755737
+Time to copy to memory map: 25.580376625061035
+Time for this file: 278.6108455657959
+Total events: 397564
+Current size: (397564, 1191, 6)
+Total time: 10133.084784507751
+
+
+Working on File: user.angerami.24559744.OutputStream._000042.root - 42/50
+Array dimension: (9749, 1080, 6)
+Number of null track projection: 84
+Time to create dicts and select events: 115.43578577041626
+Time to find dimensions and make new array: 4.615382671356201
+Time to construct index array: 11.374200344085693
+Time to populate elements: 118.491375207901
+Time to copy to memory map: 11.169360637664795
+Time for this file: 261.08610463142395
+Total events: 407313
+Current size: (407313, 1191, 6)
+Total time: 10394.170889139175
+
+
+Working on File: user.angerami.24559744.OutputStream._000043.root - 43/50
+Array dimension: (9765, 1038, 6)
+Number of null track projection: 87
+Time to create dicts and select events: 114.6699435710907
+Time to find dimensions and make new array: 4.764024972915649
+Time to construct index array: 11.528567790985107
+Time to populate elements: 119.0491509437561
+Time to copy to memory map: 8.001848459243774
+Time for this file: 258.01353573799133
+Total events: 417078
+Current size: (417078, 1191, 6)
+Total time: 10652.184424877167
+
+
+Working on File: user.angerami.24559744.OutputStream._000044.root - 44/50
+Array dimension: (9604, 1159, 6)
+Number of null track projection: 88
+Time to create dicts and select events: 114.61474990844727
+Time to find dimensions and make new array: 4.626696586608887
+Time to construct index array: 11.714573860168457
+Time to populate elements: 119.87472295761108
+Time to copy to memory map: 26.560858726501465
+Time for this file: 277.39160203933716
+Total events: 426682
+Current size: (426682, 1191, 6)
+Total time: 10929.576026916504
+
+
+Working on File: user.angerami.24559744.OutputStream._000045.root - 45/50
+Array dimension: (9678, 1071, 6)
+Number of null track projection: 88
+Time to create dicts and select events: 116.57041382789612
+Time to find dimensions and make new array: 4.4434967041015625
+Time to construct index array: 11.485121011734009
+Time to populate elements: 118.8080530166626
+Time to copy to memory map: 24.04340171813965
+Time for this file: 275.35048627853394
+Total events: 436360
+Current size: (436360, 1191, 6)
+Total time: 11204.926513195038
+
+
+Working on File: user.angerami.24559744.OutputStream._000046.root - 46/50
+Array dimension: (9695, 1067, 6)
+Number of null track projection: 88
+Time to create dicts and select events: 116.39181852340698
+Time to find dimensions and make new array: 5.0052618980407715
+Time to construct index array: 11.249786853790283
+Time to populate elements: 117.04727935791016
+Time to copy to memory map: 28.610849142074585
+Time for this file: 278.3049957752228
+Total events: 446055
+Current size: (446055, 1191, 6)
+Total time: 11483.23150897026
+
+
+Working on File: user.angerami.24559744.OutputStream._000047.root - 47/50
+Array dimension: (9660, 1039, 6)
+Number of null track projection: 88
+Time to create dicts and select events: 113.38136720657349
+Time to find dimensions and make new array: 4.784290075302124
+Time to construct index array: 11.438782691955566
+Time to populate elements: 118.21915221214294
+Time to copy to memory map: 31.87159562110901
+Time for this file: 279.69518780708313
+Total events: 455715
+Current size: (455715, 1191, 6)
+Total time: 11762.926696777344
+
+
+Working on File: user.angerami.24559744.OutputStream._000048.root - 48/50
+Array dimension: (9713, 1071, 6)
+Number of null track projection: 91
+Time to create dicts and select events: 112.06911969184875
+Time to find dimensions and make new array: 4.641578674316406
+Time to construct index array: 11.353933334350586
+Time to populate elements: 116.18242835998535
+Time to copy to memory map: 46.1671507358551
+Time for this file: 290.4142107963562
+Total events: 465428
+Current size: (465428, 1191, 6)
+Total time: 12053.3409075737
+
+
+Working on File: user.angerami.24559744.OutputStream._000049.root - 49/50
+Array dimension: (9758, 1302, 6)
+Number of null track projection: 93
+Time to create dicts and select events: 116.06299376487732
+Time to find dimensions and make new array: 4.639166831970215
+Time to construct index array: 11.394678831100464
+Time to populate elements: 119.38468074798584
+Time to copy to memory map: 61.635624170303345
+Time for this file: 313.1171443462372
+Total events: 475186
+Current size: (475186, 1302, 6)
+Total time: 12366.458051919937
+
+
+Working on File: user.angerami.24559744.OutputStream._000050.root - 50/50
+Array dimension: (9690, 971, 6)
+Number of null track projection: 95
+Time to create dicts and select events: 116.58026194572449
+Time to find dimensions and make new array: 4.458509922027588
+Time to construct index array: 11.273838996887207
+Time to populate elements: 117.45627546310425
+Time to copy to memory map: 22.81902813911438
+Time for this file: 272.5879144668579
+Total events: 484876
+Current size: (484876, 1302, 6)
+Total time: 12639.045966386795
+
+
+Time to copy new and delete old: 211.31859683990479 (s)
+

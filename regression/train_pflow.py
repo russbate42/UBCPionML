@@ -8,7 +8,7 @@ russellbate@phas.ubc.ca
 '''
 
 ## META-DATA ##
-datapath_prefix = '/fast_scratch/atlas/'
+datapath_prefix = '/fast_scratch_1/atlas/'
 module_path = '/home/russbate/MLPionCollaboration/LCStudies/util/'
 BATCH_SIZE=2000
 LEARNING_RATE=1e-3
@@ -139,11 +139,16 @@ print()
 print('Loading data..')
 t0 = cput()
 if args.full_data:
-    X = np.load(datapath_prefix+'X_STMC_full_norm.npy', mmap_mode='r+')
-    Y = np.load(datapath_prefix+'Y_STMC_full_norm.npy', mmap_mode='r+')    
+    X = np.load(datapath_prefix+'X_STMC_v2_25_norm.npy', mmap_mode='r+')
+    Y = np.load(datapath_prefix+'Y_STMC_v2_25_norm.npy', mmap_mode='r+')
+    E = np.load(datapath_prefix+'Eta_STMC_v2_25_norm.npy', mmap_mode='r+')
 else:
-    X = np.load(datapath_prefix+'X_STMC_full_norm.npy', mmap_mode='r+')[:NEVENTS,:,:]
-    Y = np.load(datapath_prefix+'Y_STMC_full_norm.npy', mmap_mode='r+')[:NEVENTS]
+    X = np.load(datapath_prefix+'X_STMC_v2_25_norm.npy', mmap_mode='r+')\
+            [:NEVENTS,:,:]
+    Y = np.load(datapath_prefix+'Y_STMC_v2_25_norm.npy', mmap_mode='r+')\
+            [:NEVENTS]
+    E = np.load(datapath_prefix+'Eta_STMC_v2_25_norm.npy', mmap_mode='r+')\
+            [:NEVENTS]
 t1 = cput()
 print('time to load data: {:6.4f} (s)'.format(t1-t0)); print()
 print('X size: {}'.format(X.shape))
@@ -155,35 +160,36 @@ print('{} -- {} -- {}'.format(train_num, val_num, test_num)); print()
 
 ## Datasets ##
 #===========##
-t0 = cput()
-data = tf.data.Dataset.from_tensor_slices((X, Y))
-# normalized data is shuffled already
-# data.shuffle(buffer_size = 10000)
+# t0 = cput()
+# data = tf.data.Dataset.from_tensor_slices((X, Y))
+# # normalized data is shuffled already
+# # data.shuffle(buffer_size = 10000)
 
-data_train = data.skip(val_num+test_num)
-data_test = data.take(val_num+test_num)
-data_val = data_test.skip(test_num)
-data_test = data_test.take(test_num)
+# data_train = data.skip(val_num+test_num)
+# data_test = data.take(val_num+test_num)
+# data_val = data_test.skip(test_num)
+# data_test = data_test.take(test_num)
 
-data_train = data_train.batch(batch_size=BATCH_SIZE, drop_remainder=True)
-data_val = data_val.batch(batch_size=BATCH_SIZE, drop_remainder=True)
-data_test = data_test.batch(batch_size=BATCH_SIZE, drop_remainder=True)
-t1 = cput()
+# data_train = data_train.batch(batch_size=BATCH_SIZE, drop_remainder=True)
+# data_val = data_val.batch(batch_size=BATCH_SIZE, drop_remainder=True)
+# data_test = data_test.batch(batch_size=BATCH_SIZE, drop_remainder=True)
+# t1 = cput()
 
 ## Mem-maps ##
 #===========##
 # Split
-# t0 = cput()
+t0 = cput()
 
-# X_train = X[:train_num,:,:]
-# Y_train = Y[:train_num].reshape((train_num,1))
+X_train = X[:train_num,:,:]
+Y_train = Y[:train_num].reshape((train_num,1))
 
-# X_val = X[train_num:train_num+val_num,:,:]
-# Y_val = Y[train_num:train_num+val_num].reshape((val_num,1))
+X_val = X[train_num:train_num+val_num,:,:]
+Y_val = Y[train_num:train_num+val_num].reshape((val_num,1))
 
-# X_test = X[train_num+val_num:,:,:]
-# Y_test = Y[train_num+val_num:]
-# t1 = cput()
+X_test = X[train_num+val_num:,:,:]
+Y_test = Y[train_num+val_num:]
+E_test = E[train_num+val_num:]
+t1 = cput()
 
 print('time to fiddle with data: {:6.2f} (m)'.format((t1-t0)/60)); print()
 
@@ -218,25 +224,25 @@ print()
 print('Training model..')
 print()
 
-# #mem-maps
-# t0 = cput()
-# history = model.fit(X_train,
-#                   Y_train,
-#                   batch_size=BATCH_SIZE,
-#                   validation_data=(X_val, Y_val),
-#                   epochs=EPOCHS,
-#                   verbose=1
-#                   )
-# t1 = cput()
-
-# datasets
+#mem-maps
 t0 = cput()
-history = model.fit(data_train,
-                  validation_data=data_val,
+history = model.fit(X_train,
+                  Y_train,
+                  batch_size=BATCH_SIZE,
+                  validation_data=(X_val, Y_val),
                   epochs=EPOCHS,
                   verbose=1
                   )
 t1 = cput()
+
+# datasets
+# t0 = cput()
+# history = model.fit(data_train,
+#                   validation_data=data_val,
+#                   epochs=EPOCHS,
+#                   verbose=1
+#                   )
+# t1 = cput()
 
 print()
 print()
@@ -257,7 +263,7 @@ print()
 
 ## Save Information
 #======================================
-infostring = '{}_STMC_--LR_{:.0e}--BS_{}--EP_{}--EV_{}--{}'.format(MODEL,
+infostring = '{}_STMC--LR_{:.0e}--BS_{}--EP_{}--EV_{}--{}'.format(MODEL,
                 LEARNING_RATE, BATCH_SIZE, EPOCHS, NEVENTS, DATE)
 if SAVE_RESULTS == True:
     print('saving_files..')
@@ -266,7 +272,8 @@ if SAVE_RESULTS == True:
         pickle.dump(history.history, histfile)
 
     np.savez('results/target_preds_'+infostring,
-            args=(Y_test, np.squeeze(prediction, axis=1)), kwds=('target', 'prediction'))
+            args=(np.exp(Y_test), np.exp(np.squeeze(prediction,
+            axis=1)), E_test), kwds=('target', 'prediction', 'Eta'))
 else:
     print('No saved results flag. No results will be saved.')
 

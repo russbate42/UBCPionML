@@ -8,8 +8,32 @@ import uproot as ur
 import awkward as ak
 import time as t
 import os
+import argparse
+from copy import deepcopy
+
+Nfile=1
+
+print()
+print('='*43)
+print('== Single Track Multiple Cluster Script ==')
+print('='*43)
+print()
 print("Awkward version: "+str(ak.__version__))
 print("Uproot version: "+str(ur.__version__))
+
+
+## Read in Parameters
+#=============================================================================
+parser = argparse.ArgumentParser(description='Inputs for STMC track script.')
+
+parser.add_argument('--nFile', action="store", dest='nf', default=1,
+                   type=int)
+
+args = parser.parse_args()
+
+Nfile = args.nf
+
+print('Working on {} files'.format(Nfile))
 
 #====================
 # Functions =========
@@ -37,7 +61,7 @@ def find_max_dim_tuple(events, event_dict):
         
         clust_num_total = 0
         # set this to six for now to handle single track events, change later
-        track_num_total = 6
+        track_num_total = 10 # I think its seven but keep a buffer
         
         # Check if there are clusters, None type object may be associated with it
         if clust_nums is not None:
@@ -99,12 +123,45 @@ np_event_branches = ["nCluster", "eventNumber", "nTrack", "nTruthPart"]
 
 geo_branches = ["cell_geo_ID", "cell_geo_eta", "cell_geo_phi", "cell_geo_rPerp", "cell_geo_sampling"]
 
+
+#======================================
+# Track related meta-data
+#======================================
+trk_proj_eta = ['trackEta_EMB1', 'trackEta_EMB2', 'trackEta_EMB3',
+    'trackEta_EME1', 'trackEta_EME2', 'trackEta_EME3', 'trackEta_HEC0',
+    'trackEta_HEC1', 'trackEta_HEC2', 'trackEta_HEC3', 'trackEta_TileBar0',
+    'trackEta_TileBar1', 'trackEta_TileBar2', 'trackEta_TileGap1',
+    'trackEta_TileGap2', 'trackEta_TileGap3', 'trackEta_TileExt0',
+    'trackEta_TileExt1', 'trackEta_TileExt2']
+trk_proj_phi = ['trackPhi_EMB1', 'trackPhi_EMB2', 'trackPhi_EMB3',
+    'trackPhi_EME1', 'trackPhi_EME2', 'trackPhi_EME3', 'trackPhi_HEC0',
+    'trackPhi_HEC1', 'trackPhi_HEC2', 'trackPhi_HEC3', 'trackPhi_TileBar0',
+    'trackPhi_TileBar1', 'trackPhi_TileBar2', 'trackPhi_TileGap1',
+    'trackPhi_TileGap2', 'trackPhi_TileGap3', 'trackPhi_TileExt0',
+    'trackPhi_TileExt1', 'trackPhi_TileExt2']
+calo_numbers = [1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+eta_trk_dict = dict(zip(trk_proj_eta, calo_numbers))
+
+calo_layers = ['EMB1', 'EMB2', 'EMB3', 'EME1', 'EME2', 'EME3', 'HEC0', 'HEC1',
+    'HEC2', 'HEC3', 'TileBar0', 'TileBar1', 'TileBar2', 'TileGap1', 'TileGap2',
+    'TileGap3', 'TileExt0', 'TileExt1', 'TileExt2']
+calo_numbers2 = [1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
+calo_dict = dict(zip(calo_numbers2, calo_layers))
+
+fixed_z_numbers = [5,6,7,8,9,10,11]
+fixed_z_vals = [3790.03, 3983.68, 4195.84, 4461.25, 4869.50, 5424.50, 5905.00]
+z_calo_dict = dict(zip(fixed_z_numbers, fixed_z_vals))
+
+fixed_r_numbers = [1,2,3,12,13,14,15,16,17,18,19,20]
+fixed_r_vals = [1532.18, 1723.89, 1923.02, 2450.00, 2995.00, 3630.00, 3215.00,
+                3630.00, 2246.50, 2450.00, 2870.00, 3480.00]
+r_calo_dict = dict(zip(fixed_r_numbers, fixed_r_vals))
+
+
 #====================
 # File setup ========
 #====================
 # user.angerami.24559744.OutputStream._000001.root
-# Number of files
-Nfile = 502
 fileNames = []
 file_prefix = 'user.angerami.24559744.OutputStream._000'
 for i in range(1,Nfile+1):
@@ -116,7 +173,7 @@ for i in range(1,Nfile+1):
 #====================
 
 ## GEOMETRY DICTIONARY ##
-geo_file = ur.open('/fast_scratch/atlas_images/v01-45/cell_geo.root')
+geo_file = ur.open('/fast_scratch_1/atlas_images/v01-45/cell_geo.root')
 CellGeo_tree = geo_file["CellGeo"]
 geo_dict = dict_from_tree(tree=CellGeo_tree, branches=None, np_branches=geo_branches)
 
@@ -125,11 +182,12 @@ cell_geo_ID = geo_dict['cell_geo_ID']
 cell_ID_dict = dict(zip(cell_geo_ID, np.arange(len(cell_geo_ID))))
 
 # additional geometry data
+# This should be deleted if new track projection technique works.
 layer_rPerp = np.array([1540., 1733., 1930., 2450., 3010., 3630.])
 track_sample_layer = np.array([1,2,3,12,13,14])
 
 # for event dictionary
-events_prefix = '/fast_scratch/atlas_images/v01-45/pipm/'
+events_prefix = '/fast_scratch_1/atlas_images/v01-45/pipm/'
 
 # Use this to compare with the dimensionality of new events
 firstArray = True
@@ -139,11 +197,13 @@ X_large = np.lib.format.open_memmap('/data/atlas/rbate/X_large.npy', mode='w+', 
                        shape=(2500000,1500,6), fortran_order=False, version=None)
 Y_large = np.lib.format.open_memmap('/data/atlas/rbate/Y_large.npy', mode='w+', dtype=np.float64,
                        shape=(2500000,3), fortran_order=False, version=None)
+Eta_large = np.empty(2500000)
 
 k = 1 # tally used to keep track of file number
 tot_nEvts = 0 # used for keeping track of total number of events
 max_nPoints = 0 # used for keeping track of the largest 'point cloud'
 t_tot = 0 # total time
+num_zero_tracks = 0
 
 for currFile in fileNames:
     
@@ -167,7 +227,8 @@ for currFile in fileNames:
     event_dict = dict_from_tree(tree=event_tree, branches=ak_event_branches, np_branches=np_event_branches)
     
     ## TRACK DICTIONARY ##
-    track_dict = dict_from_tree(tree=event_tree, branches=track_branches)
+    track_dict = dict_from_tree(tree=event_tree,
+                branches=deepcopy(trk_proj_eta+trk_proj_phi))
     
     #===================
     # APPLY CUTS =======
@@ -178,18 +239,19 @@ for currFile in fileNames:
 
     # SINGLE TRACK CUT
     single_track_mask = event_dict['nTrack'] == np.full(nEvents, 1)
-    filtered_event = all_events[single_track_mask]
+    single_track_filter = all_events[single_track_mask]
     
     # CENTRAL TRACKS
     # Warning: we are safe for now with single tracks but not for multiples using this
-    trackEta_EMB1 = ak.flatten(track_dict['trackEta_EMB1'][filtered_event]).to_numpy()
-    central_track_mask = np.abs(trackEta_EMB1) < 4.9
-    filtered_event = filtered_event[central_track_mask]
+    # trackEta = ak.flatten(event_dict['trackEta'][single_track_filter]\
+    #                      ).to_numpy()
+    # track_eta_cut = np.abs(trackEta) < 2.5
+    # track_filter = single_track_filter[track_eta_cut]
     
     # TRACKS WITH CLUSTERS
-    nCluster = event_dict['nCluster'][filtered_event]
-    filtered_event_mask = nCluster != 0
-    filtered_event = filtered_event[filtered_event_mask]
+    nCluster = event_dict['nCluster'][single_track_filter]
+    nz_clust_mask = nCluster != 0
+    filtered_event = single_track_filter[nz_clust_mask]
     t1 = t.time()
     events_cuts_time = t1 - t0
     
@@ -243,6 +305,7 @@ for currFile in fileNames:
     # Create arrays
     Y_new = np.zeros((max_dims[0],3))
     X_new = np.zeros(max_dims)
+    Eta_new = np.zeros(max_dims[0])
     t1 = t.time()
     find_create_max_dims_time = t1 - t0    
     
@@ -267,8 +330,12 @@ for currFile in fileNames:
             # find averaged center of clusters
             cluster_Eta = event_dict['cluster_Eta'][evt].to_numpy()
             cluster_Phi = event_dict['cluster_Phi'][evt].to_numpy()
-            av_Eta = np.mean(cluster_Eta)
-            av_Phi = np.mean(cluster_Phi)
+            cluster_E = event_dict['cluster_E'][evt].to_numpy()
+            cl_E_tot = np.sum(cluster_E)
+            
+            # Energy weighted average
+            av_Eta = np.dot(cluster_Eta, cluster_E)/cl_E_tot
+            av_Phi = np.dot(cluster_Phi, cluster_E)/cl_E_tot
 
             nClust_current_total = 0
             target_ENG_CALIB_TOT = 0
@@ -305,55 +372,73 @@ for currFile in fileNames:
         Y_new[i,0] = event_dict['truthPartE'][evt][0]
         Y_new[i,1] = event_dict['truthPartPt'][evt][track_idx]
         Y_new[i,2] = target_ENG_CALIB_TOT
+        
+        #########
+        ## ETA ##
+        #########
+        # again only get away with this because we have a single track
+        Eta_new[i] = event_dict["trackEta"][evt][track_idx]
 
         ############
         ## TRACKS ##
         ############
-
-        trackP = event_dict['trackP'][evt][track_idx]
-
-        track_arr = np.zeros((6,6))
-        track_arr[:,5] = track_sample_layer
-        # track flag
-        track_arr[:,4] = np.ones((6,))
-        track_arr[:,3] = layer_rPerp
-
-        # Fill in eta and phi values
-        # this is complicated - simplify?
-        p, q = 0, 1
-        for j in range(12):
-            # This gives the key for the track dict
-            track_arr[p,q] = track_dict[track_branches[j]][evt][track_idx]
-            if j%2 != 0:
-                p += 1
-                q = 1
-            else:
-                q = 2
-
-        # search for NULL track flags
-        track_eta_null_mask = np.abs(track_arr[:,1]) > 4.9
-        track_phi_null_mask = np.abs(track_arr[:,2]) >= np.pi
-        track_flag_null = np.logical_or(track_eta_null_mask, track_phi_null_mask)
         
-        # Normalize track information!
-        track_arr[:,1] = track_arr[:,1] - av_Eta
-        track_arr[:,2] = track_arr[:,2] - av_Phi
-
-        # where the flag is set to null, set values of energy and calo layer to zero
-        if np.any(track_flag_null):
-            # number for which to spread the energy out over
-            p_nums = 6 - np.count_nonzero(track_flag_null)
-            track_arr[track_flag_null,1:6] = 0
-            # get where the track exists (not null)
-            track_arr[np.invert(track_flag_null),0] = trackP/p_nums
-        # otherwise fill in pt/6 for all
+        trk_bool = np.zeros(len(calo_numbers), dtype=bool)
+        trk_full = np.empty((len(calo_numbers), 4))
+        
+        for j, (eta_key, phi_key) in enumerate(zip(trk_proj_eta, trk_proj_phi)):
+            
+            cnum = eta_trk_dict[eta_key]
+            layer = calo_dict[cnum]
+            
+            eta = track_dict[eta_key][evt][track_idx]
+            phi = track_dict[phi_key][evt][track_idx]
+            
+            if np.abs(eta) < 2.5 and np.abs(phi) <= np.pi:
+                trk_bool[j] = True
+                trk_full[j,0] = eta
+                trk_full[j,1] = phi
+                trk_full[j,3] = cnum
+                
+                if cnum in fixed_r_numbers:
+                    rPerp = r_calo_dict[cnum]
+                    
+                elif cnum in fixed_z_numbers:
+                    z = z_calo_dict[cnum]
+                    rPerp = z*2*np.exp(eta)/(np.exp(2*eta) - 1)
+                    
+                else:
+                    raise ValueError('Calo sample num not found in dicts..')
+                    
+                trk_full[j,2] = rPerp
+                
+        # Fill in track array
+        trk_proj_num = np.count_nonzero(trk_bool)
+        
+        if trk_proj_num == 0:
+            trk_proj_num = 1
+            trk_arr = np.empty((1, 6))
+            num_zero_tracks += 1
+            trk_arr[:,0] = event_dict['trackP'][evt][track_idx]
+            trk_arr[:,1] = event_dict['trackEta'][evt][track_idx] - av_Eta
+            trk_arr[:,2] = event_dict['trackPhi'][evt][track_idx] - av_Phi
+            trk_arr[:,3] = 1532.18 # just place it in EMB1
+            trk_arr[:,4] = 1 # track flag
+            trk_arr[:,5] = 1 # place layer in EMB1
         else:
-            track_arr[:,0] = trackP/6      
+            trk_arr = np.empty((trk_proj_num, 6))
+            trackP = event_dict['trackP'][evt][track_idx]
+            trk_arr[:,1:4] = np.ndarray.copy(trk_full[trk_bool,:3])
+            trk_arr[:,4] = np.ones(trk_proj_num)
+            trk_arr[:,5] = np.ndarray.copy(trk_full[trk_bool,3])
+            trk_arr[:,0] = trackP/trk_proj_num
 
-        # Save track information
-        X_new[i,high:high+6,0:6] = track_arr
+            trk_arr[:,1] = trk_arr[:,1] - av_Eta
+            trk_arr[:,2] = trk_arr[:,2] - av_Phi
 
-    #####################################################
+        X_new[i,high:high+trk_proj_num,:] = np.ndarray.copy(trk_arr)
+    
+    #=========================================================================#
     t1 = t.time()
     array_construction_time = t1 - t0
     
@@ -370,6 +455,9 @@ for currFile in fileNames:
     
     # Write to Y
     Y_large[old_tot:tot_nEvts,:] = np.ndarray.copy(Y_new)
+    
+    # Eta
+    Eta_large[old_tot:tot_nEvts] = np.ndarray.copy(Eta_new)
         
     t1 = t.time()
     time_to_memmap = t1-t0
@@ -378,6 +466,7 @@ for currFile in fileNames:
     t_tot += thisfile_t_tot
     
     print('Array dimension: '+str(max_dims))
+    print('Number of null track projection: '+str(num_zero_tracks))
     print('Time to create dicts and select events: '+str(events_cuts_time))
     print('Time to find dimensions and make new array: '+str(find_create_max_dims_time))
     print('Time to construct index array: '+str(indices_time))
@@ -390,17 +479,20 @@ for currFile in fileNames:
     print()
 
 t0 = t.time()
-X = np.lib.format.open_memmap('/data/atlas/rbate/X_STMC_'+str(Nfile)+'_files2.npy',
+X = np.lib.format.open_memmap('/data/atlas/rbate/X_STMC_v2_'+str(Nfile)+'_files.npy',
                              mode='w+', dtype=np.float64, shape=(tot_nEvts, max_nPoints, 6))
 np.copyto(dst=X, src=X_large[:tot_nEvts,:max_nPoints,:], casting='same_kind', where=True)
 del X_large
 os.system('rm /data/atlas/rbate/X_large.npy')
 
-Y = np.lib.format.open_memmap('/data/atlas/rbate/Y_STMC_'+str(Nfile)+'_files2.npy',
+Y = np.lib.format.open_memmap('/data/atlas/rbate/Y_STMC_v2_'+str(Nfile)+'_files.npy',
                              mode='w+', dtype=np.float64, shape=(tot_nEvts, 3))
 np.copyto(dst=Y, src=Y_large[:tot_nEvts,:], casting='same_kind', where=True)
 del Y_large
 os.system('rm /data/atlas/rbate/Y_large.npy')
+
+np.save('/data/atlas/rbate/Eta_STMC_v2_'+str(Nfile)+'_files', Eta_large[:tot_nEvts])
+
 
 t1 = t.time()
 print()

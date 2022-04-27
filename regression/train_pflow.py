@@ -5,6 +5,7 @@
 
 author: Russell Bate
 russellbate@phas.ubc.ca
+russell.bate@cern.ch
 '''
 
 ## META-DATA ##
@@ -63,6 +64,10 @@ parser.add_argument('--graph_execution', action="store_true",
                     dest="graph_execution")
 parser.add_argument('--save_model', action="store_true", dest="save_model")
 parser.add_argument('--save_results', action="store_true", dest="save_results")
+parser.add_argument('--data', action="store", dest='datafiles',
+                    default='CL+TR', type=str)
+parser.add_argument('--save_tag', action="store", dest='savetag',
+                    default=None, type=str)
 
 args = parser.parse_args()
 
@@ -114,7 +119,38 @@ else:
         print('Training on {} events'.format(NEVENTS))
         print('Eager or graph? -- {}'.format(exec_str))
 
-        
+
+## Choose which files to train from!
+datafiles = args.datafiles
+# the following three are from the STMC_v2 dataset
+if datafiles == 'CL+TR':
+    Xfile = 'X_STMC_v2_25_norm2.npy'
+    Yfile = 'Y_STMC_v2_25_norm2.npy'
+    Etafile = 'Eta_STMC_v2_25_norm2.npy'
+elif datafiles == 'CL-TR':
+    Xfile = 'X_STMC_v2_Cl_25.npy'
+    Yfile = 'Y_STMC_v2_25_norm2.npy'
+    Etafile = 'Eta_STMC_v2_25_norm2.npy'
+elif datafiles == 'TR-CL':
+    Xfile = 'X_STMC_v2_Tr_25.npy'
+    Yfile = 'Y_STMC_v2_25_norm2.npy'
+    Etafile = 'Eta_STMC_v2_25_norm2.npy'
+# this is a new dataset with Cluster Only
+elif datafiles == 'CLO':
+    Xfile = ''
+    Yfile = ''
+    Etafile = ''
+    sys.exit('Cluster Only cluster_ENG_CALIB_TOT not ready yet.\n')
+else:
+    raise ValueError('incorrect option passed to --data')
+
+## Add information to the savestring!
+if args.savetag is None:
+    extra_info = ''
+else:
+    extra_info = '_'+args.savetag
+
+
 ## TF Environment
 #======================================
 import tensorflow as tf
@@ -139,15 +175,15 @@ print()
 print('Loading data..')
 t0 = cput()
 if args.full_data:
-    X = np.load(datapath_prefix+'X_STMC_v2_25_norm.npy', mmap_mode='r+')
-    Y = np.load(datapath_prefix+'Y_STMC_v2_25_norm.npy', mmap_mode='r+')
-    E = np.load(datapath_prefix+'Eta_STMC_v2_25_norm.npy', mmap_mode='r+')
+    X = np.load(datapath_prefix+Xfile, mmap_mode='r+')
+    Y = np.load(datapath_prefix+Yfile, mmap_mode='r+')
+    E = np.load(datapath_prefix+Etafile, mmap_mode='r+')
 else:
-    X = np.load(datapath_prefix+'X_STMC_v2_25_norm.npy', mmap_mode='r+')\
+    X = np.load(datapath_prefix+Xfile, mmap_mode='r+')\
             [:NEVENTS,:,:]
-    Y = np.load(datapath_prefix+'Y_STMC_v2_25_norm.npy', mmap_mode='r+')\
+    Y = np.load(datapath_prefix+Yfile, mmap_mode='r+')\
             [:NEVENTS]
-    E = np.load(datapath_prefix+'Eta_STMC_v2_25_norm.npy', mmap_mode='r+')\
+    E = np.load(datapath_prefix+Etafile, mmap_mode='r+')\
             [:NEVENTS]
 t1 = cput()
 print('time to load data: {:6.4f} (s)'.format(t1-t0)); print()
@@ -207,11 +243,9 @@ elif MODEL == 'PFN_wDropout':
     model = PFN_wDropout(num_points=X.shape[1], num_features=X.shape[2],
                      name=MODEL)
 elif MODEL == 'PFN_wAttention':
-    print('Not built yet saaaarrryy :) ..')
-    sys.exit()
+    sys.exit('Not built yet saaaarrryy :) ..')
 else:
-    print('Unknown model. Quitting program.')
-    sys.exit()
+    sys.exit('Unknown model. Quitting program.')
 
 model.compile(loss='mse', optimizer=keras.optimizers.Adam(
     learning_rate=LEARNING_RATE))
@@ -263,17 +297,18 @@ print()
 
 ## Save Information
 #======================================
-infostring = '{}_STMC--LR_{:.0e}--BS_{}--EP_{}--EV_{}--{}'.format(MODEL,
-                LEARNING_RATE, BATCH_SIZE, EPOCHS, NEVENTS, DATE)
+infostring = '{}_STMCv2--LR_{:.0e}--BS_{}--EP_{}--EV_{}--{}{}'.format(MODEL,
+                LEARNING_RATE, BATCH_SIZE, EPOCHS, NEVENTS, DATE,
+                extra_info)
 if SAVE_RESULTS == True:
-    print('saving_files..')
+    print('saving results..');print()
     with open('results/history_'+infostring+'.pickle', 'wb')\
              as histfile:
         pickle.dump(history.history, histfile)
 
     np.savez('results/target_preds_'+infostring,
-            args=(np.exp(Y_test), np.exp(np.squeeze(prediction,
-            axis=1)), E_test), kwds=('target', 'prediction', 'Eta'))
+            args=(Y_test, np.squeeze(prediction,
+            axis=1), E_test), kwds=('target', 'prediction', 'Eta'))
 else:
     print('No saved results flag. No results will be saved.')
 

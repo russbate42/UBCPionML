@@ -77,7 +77,8 @@ def choose_res(x, y, bins, statistic):
 def resolutionPlot(x, y, figfile='', statistic='std',
                    xlabel='Cluster Calib Hits', ylabel='Energy IQR over Median',
                    atlas_x=-1, atlas_y=-1, simulation=False,
-                   textlist=[], colors=None, labels=None):
+                   textlist=[], colors=None, labels=None,
+                   leg_font_size=12):
     
     # determine ranges for scale on plot
     xbin = [10**exp for exp in  np.arange(-1.0, 3.1, 0.1)]
@@ -109,7 +110,7 @@ def resolutionPlot(x, y, figfile='', statistic='std',
     pu.drawLabels(fig, atlas_x, atlas_y, simulation, textlist)
     
     if labels is not None:
-        plt.legend(loc='upper right')
+        plt.legend(loc='upper right', prop={'size':leg_font_size})
 
     if figfile != '':
         plt.savefig(figfile)

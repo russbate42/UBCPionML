@@ -15,11 +15,12 @@ print()
 print('starting data normalization for STMC..v2..');print()
 
 ## General Imports
-#======================================
+#===============w=======================
 import numpy as np
 import time
 from time import process_time as cput
 import os
+cwd = os.getcwd()
 
 ## Local ML Packages
 import sys
@@ -50,7 +51,12 @@ print('Time to load memory mapped data and copy: {:8.6f} (s)'.format(t1-t0))
 print()
 print('normalizing target..')
 t0 = cput()
-Y = np.log(Yraw[:,0])
+Y_log_mean = np.mean(np.log(Yraw[:,0]))
+print('Y_log_mean: ')
+print(Y_log_mean); print()
+with open(cwd+'/STMC_v2_25_files_Y_logmean.txt', 'w+') as f:
+    f.write('{}'.format(Y_log_mean))
+Y = np.log(Yraw[:,0]) - Y_log_mean
 t1 = cput()
 print('{:6.2f} (m)'.format((t1-t0)/60));print()
 print('normalized target..');print()
@@ -88,6 +94,10 @@ X[nz_mask,1] = np.ndarray.copy(Xraw[nz_mask,1]/eta_std)
 # phi_mask = X[:,:,2] != 0
 cellPhi_std = np.std(Xraw[nz_mask,2])
 X[nz_mask,2] = np.ndarray.copy(Xraw[nz_mask,2]/cellPhi_std)
+
+# Track Flag!
+X[nz_mask,4] = np.ndarray.copy(Xraw[nz_mask,4])
+
 t1 = cput()
 print('Time to Normalize: {:6.2f} (m)'.format((t1-t0)/60))
 print()
@@ -105,18 +115,18 @@ shuffle_time = t1 - t0
 
 print('Saving shuffled data..')
 t0 = cput()
-Xfin = np.lib.format.open_memmap('/fast_scratch_1/atlas/X_STMC_v2_25_norm.npy',
+Xfin = np.lib.format.open_memmap('/fast_scratch_1/atlas/X_STMC_v2_25_norm2.npy',
                              mode='w+', dtype=np.float64, shape=(Xraw.shape[0],
                                                          Xraw.shape[1], 5))
 
-Yfin = np.lib.format.open_memmap('/fast_scratch_1/atlas/Y_STMC_v2_25_norm.npy',
+Yfin = np.lib.format.open_memmap('/fast_scratch_1/atlas/Y_STMC_v2_25_norm2.npy',
                              mode='w+', dtype=np.float64, shape=(Yraw.shape[0],))
 
 np.copyto(src=X[indices,:,:], dst=Xfin, casting='same_kind', where=True)
 np.copyto(src=Y[indices], dst=Yfin, casting='same_kind', where=True)
 
 EtaFin = np.ndarray.copy(EtaRaw[indices])
-np.save('/fast_scratch_1/atlas/Eta_STMC_v2_25_norm', EtaFin)
+np.save('/fast_scratch_1/atlas/Eta_STMC_v2_25_norm2', EtaFin)
 
 del X
 del Y
@@ -128,8 +138,8 @@ save_time = t1 - t0
 print()
 print('time to copy shuffled files: {:8.2f} (m)'.format((t1-t0)/60))
 print()
-print('Total time: {:8.2f}'.format(load_time+target_time+zero_elem_time\
-                         +input_time+shuffle_time+save_time))
+print('Total time: {:8.2f} (m)'.format((load_time+target_time+zero_elem_time\
+                         +input_time+shuffle_time+save_time)/60))
 print()
 print('finished normalizing the STMC v2 dataset')
 print()

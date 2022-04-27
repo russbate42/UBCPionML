@@ -4,10 +4,8 @@ Author: Russell Bate
 russell.bate@cern.ch
 russellbate@phas.ubc.ca
 
-Notes: Version 2 of the STMC data script.
-- single tracks
-- clusters within DeltaR of 1.2 of track
-- energy weighted cluster average '''
+Notes: This script (beta) is designed as a test for the energy
+regime of the tracks '''
 #====================
 # Load Utils ========
 #====================
@@ -70,7 +68,7 @@ def find_max_dim_tuple(events, event_dict):
         
         clust_num_total = 0
         # set this to six for now to handle single track events, change later
-        track_num_total = 10 # max 9 but keep a buffer of 1
+        track_num_total = 10 # I think its seven but keep a buffer
         
         # Check if there are clusters, None type object may be associated with it
         if clust_nums is not None:
@@ -116,6 +114,10 @@ def find_index_1D(values, dictionary):
 #====================
 # Metadata ==========
 #====================
+track_branches = ['trackEta_EMB1', 'trackPhi_EMB1', 'trackEta_EMB2', 'trackPhi_EMB2', 'trackEta_EMB3', 'trackPhi_EMB3',
+                  'trackEta_TileBar0', 'trackPhi_TileBar0', 'trackEta_TileBar1', 'trackPhi_TileBar1',
+                  'trackEta_TileBar2', 'trackPhi_TileBar2']
+
 event_branches = ["cluster_nCells", "cluster_cell_ID", "cluster_cell_E", 'cluster_nCells', "nCluster", "eventNumber",
                   "nTrack", "nTruthPart", "truthPartPdgId", "cluster_Eta", "cluster_Phi", 'trackPt', 'trackP',
                   'trackMass', 'trackEta', 'trackPhi', 'truthPartE', 'cluster_ENG_CALIB_TOT', "cluster_E", 'truthPartPt']
@@ -132,9 +134,6 @@ geo_branches = ["cell_geo_ID", "cell_geo_eta", "cell_geo_phi", "cell_geo_rPerp",
 #======================================
 # Track related meta-data
 #======================================
-trk_em_eta = ['trackEta_EMB2', 'trackEta_EME2']
-trk_em_phi = ['trackPhi_EMB2', 'trackPhi_EME2']
-
 trk_proj_eta = ['trackEta_EMB1', 'trackEta_EMB2', 'trackEta_EMB3',
     'trackEta_EME1', 'trackEta_EME2', 'trackEta_EME3', 'trackEta_HEC0',
     'trackEta_HEC1', 'trackEta_HEC2', 'trackEta_HEC3', 'trackEta_TileBar0',
@@ -189,27 +188,33 @@ geo_dict = dict_from_tree(tree=CellGeo_tree, branches=None, np_branches=geo_bran
 cell_geo_ID = geo_dict['cell_geo_ID']
 cell_ID_dict = dict(zip(cell_geo_ID, np.arange(len(cell_geo_ID))))
 
+# additional geometry data
+# This should be deleted if new track projection technique works.
+layer_rPerp = np.array([1540., 1733., 1930., 2450., 3010., 3630.])
+track_sample_layer = np.array([1,2,3,12,13,14])
+
+# for event dictionary
+events_prefix = '/fast_scratch_1/atlas_images/v01-45/pipm/'
+
+# Use this to compare with the dimensionality of new events
+firstArray = True
+
 ## MEMORY MAPPED ARRAY ALLOCATION ##
 X_large = np.lib.format.open_memmap('/data/atlas/rbate/X_large.npy', mode='w+', dtype=np.float64,
                        shape=(2500000,1500,6), fortran_order=False, version=None)
 Y_large = np.lib.format.open_memmap('/data/atlas/rbate/Y_large.npy', mode='w+', dtype=np.float64,
                        shape=(2500000,3), fortran_order=False, version=None)
+TPE_STAC = np.empty(2500000)
+TPE_STMC = np.empty(2500000)
 Eta_large = np.empty(2500000)
 
-
-# Pre-Loop Definitions ##
-#======================================
 k = 1 # tally used to keep track of file number
 tot_nEvts = 0 # used for keeping track of total number of events
+tot_nEvts2 = 0 # Used for tracking track only filter
 max_nPoints = 0 # used for keeping track of the largest 'point cloud'
 t_tot = 0 # total time
-# for event dictionary
-events_prefix = '/fast_scratch_1/atlas_images/v01-45/pipm/'
 num_zero_tracks = 0
 
-
-## Main File Loop ##
-#======================================
 for currFile in fileNames:
     
     # Check for file, a few are missing
@@ -245,6 +250,7 @@ for currFile in fileNames:
     # SINGLE TRACK CUT
     single_track_mask = event_dict['nTrack'] == np.full(nEvents, 1)
     single_track_filter = all_events[single_track_mask]
+
     
     # TRACKS WITH CLUSTERS
     nCluster = event_dict['nCluster'][single_track_filter]
@@ -252,6 +258,22 @@ for currFile in fileNames:
     filtered_event = single_track_filter[nz_clust_mask]
     t1 = t.time()
     events_cuts_time = t1 - t0
+    
+    
+    #==================================##
+    ## CREATE all cluster truth energy ##
+    #===================================#
+    t0 = t.time()
+    tracks_thisfile = single_track_filter.shape[0]
+    TPE_all = np.zeros(tracks_thisfile)
+    for i, evt in enumerate(single_track_filter):
+        TPE_all[i] = event_dict['truthPartE'][evt][0]
+        
+    tot_nEvts2 += tracks_thisfile
+    TPE_STAC[tot_nEvts2-tracks_thisfile:tot_nEvts2] = np.ndarray.copy(TPE_all)
+    t1 = t.time()
+    extra_time = t1 - t0
+    
     
     #============================================#
     ## CREATE INDEX ARRAY FOR TRACKS + CLUSTERS ##
@@ -277,7 +299,7 @@ for currFile in fileNames:
                                    event_dict["cluster_Phi"][evt].to_numpy()), axis=1)
 
         _DeltaR = DeltaR(clusterCoords, trackCoords)
-        DeltaR_mask = _DeltaR < 1.2
+        DeltaR_mask = _DeltaR < .2
         matched_clusters = cluster_idx[DeltaR_mask]
 
         ## CREATE LIST ##
@@ -301,6 +323,7 @@ for currFile in fileNames:
         max_nPoints = max_dims[1]
     
     # Create arrays
+    TPE_stmc = np.zeros(max_dims[0])
     Y_new = np.zeros((max_dims[0],3))
     X_new = np.zeros(max_dims)
     Eta_new = np.zeros(max_dims[0])
@@ -318,34 +341,6 @@ for currFile in fileNames:
         # recall this now returns an array
         cluster_nums = event_indices[i,2]
 
-        ## Centering ##
-        trk_bool_em = np.zeros(2, dtype=bool)
-        trk_full_em = np.empty((2,2))
-    
-        for l, (eta_key, phi_key) in enumerate(zip(trk_em_eta, trk_em_phi)):
-
-            eta_em = track_dict[eta_key][evt][track_idx]
-            phi_em = track_dict[phi_key][evt][track_idx]
-
-            if np.abs(eta_em) < 2.5 and np.abs(phi_em) <= np.pi:
-                trk_bool_em[l] = True
-                trk_full_em[l,0] = eta_em
-                trk_full_em[l,1] = phi_em
-                
-        nProj_em = np.count_nonzero(trk_bool_em)
-        if nProj_em == 1:
-            eta_ctr = trk_full_em[trk_bool_em, 0]
-            phi_ctr = trk_full_em[trk_bool_em, 1]
-            
-        elif nProj_em == 2:
-            trk_av_em = np.mean(trk_full_em, axis=1)
-            eta_ctr = trk_av_em[0]
-            phi_ctr = trk_av_em[1]
-            
-        elif nProj_em == 0:
-            eta_ctr = event_dict['trackEta'][evt][track_idx]
-            phi_ctr = event_dict['trackPhi'][evt][track_idx]      
-        
         ##############
         ## CLUSTERS ##
         ##############
@@ -358,6 +353,10 @@ for currFile in fileNames:
             cluster_Phi = event_dict['cluster_Phi'][evt].to_numpy()
             cluster_E = event_dict['cluster_E'][evt].to_numpy()
             cl_E_tot = np.sum(cluster_E)
+            
+            # Energy weighted average
+            av_Eta = np.dot(cluster_Eta, cluster_E)/cl_E_tot
+            av_Phi = np.dot(cluster_Phi, cluster_E)/cl_E_tot
 
             nClust_current_total = 0
             target_ENG_CALIB_TOT = 0
@@ -380,8 +379,8 @@ for currFile in fileNames:
                 high = low + nInClust
                 X_new[i,low:high,0] = cluster_cell_E
                 # Normalize to average cluster centers
-                X_new[i,low:high,1] = cluster_cell_Eta - eta_ctr
-                X_new[i,low:high,2] = cluster_cell_Phi - eta_ctr
+                X_new[i,low:high,1] = cluster_cell_Eta - av_Eta
+                X_new[i,low:high,2] = cluster_cell_Phi - av_Phi
                 X_new[i,low:high,3] = cluster_cell_rPerp
                 X_new[i,low:high,5] = cluster_cell_sampling
 
@@ -394,6 +393,7 @@ for currFile in fileNames:
         Y_new[i,0] = event_dict['truthPartE'][evt][0]
         Y_new[i,1] = event_dict['truthPartPt'][evt][track_idx]
         Y_new[i,2] = target_ENG_CALIB_TOT
+        TPE_stmc[i] = event_dict['truthPartE'][evt][0]
         
         #########
         ## ETA ##
@@ -427,20 +427,10 @@ for currFile in fileNames:
                     
                 elif cnum in fixed_z_numbers:
                     z = z_calo_dict[cnum]
-                    aeta = np.abs(eta)
-                    rPerp = z*2*np.exp(aeta)/(np.exp(2*aeta) - 1)
+                    rPerp = z*2*np.exp(eta)/(np.exp(2*eta) - 1)
                     
                 else:
                     raise ValueError('Calo sample num not found in dicts..')
-                
-                if rPerp < 0:
-                    print()
-                    print('Found negative rPerp'); print()
-                    print('Event number: {}'.format(evt))
-                    print('Eta: {}'.format(eta))
-                    print('Phi: {}'.format(phi))
-                    print('rPerp: {}'.format(rPerp))
-                    raise ValueError('Found negative rPerp')
                     
                 trk_full[j,2] = rPerp
                 
@@ -452,8 +442,8 @@ for currFile in fileNames:
             trk_arr = np.empty((1, 6))
             num_zero_tracks += 1
             trk_arr[:,0] = event_dict['trackP'][evt][track_idx]
-            trk_arr[:,1] = event_dict['trackEta'][evt][track_idx] - eta_ctr
-            trk_arr[:,2] = event_dict['trackPhi'][evt][track_idx] - phi_ctr
+            trk_arr[:,1] = event_dict['trackEta'][evt][track_idx] - av_Eta
+            trk_arr[:,2] = event_dict['trackPhi'][evt][track_idx] - av_Phi
             trk_arr[:,3] = 1532.18 # just place it in EMB1
             trk_arr[:,4] = 1 # track flag
             trk_arr[:,5] = 1 # place layer in EMB1
@@ -465,8 +455,8 @@ for currFile in fileNames:
             trk_arr[:,5] = np.ndarray.copy(trk_full[trk_bool,3])
             trk_arr[:,0] = trackP/trk_proj_num
 
-            trk_arr[:,1] = trk_arr[:,1] - eta_ctr
-            trk_arr[:,2] = trk_arr[:,2] - phi_ctr
+            trk_arr[:,1] = trk_arr[:,1] - av_Eta
+            trk_arr[:,2] = trk_arr[:,2] - av_Phi
 
         X_new[i,high:high+trk_proj_num,:] = np.ndarray.copy(trk_arr)
     
@@ -490,6 +480,9 @@ for currFile in fileNames:
     
     # Eta
     Eta_large[old_tot:tot_nEvts] = np.ndarray.copy(Eta_new)
+    
+    # Energy
+    TPE_STMC[old_tot:tot_nEvts] = np.ndarray.copy(TPE_stmc)
         
     t1 = t.time()
     time_to_memmap = t1-t0
@@ -525,19 +518,9 @@ os.system('rm /data/atlas/rbate/Y_large.npy')
 
 np.save('/data/atlas/rbate/Eta_STMC_v2_'+str(Nfile)+'_files', Eta_large[:tot_nEvts])
 
+np.savez('/data/atlas/rbate/STMC_v2_Energy_'+str(Nfile)+'_files', args=(TPE_STAC[:tot_nEvts], TPE_STMC[:tot_nEvts]), kwds=('STAC', 'STMC'))
 
 t1 = t.time()
 print()
 print('Time to copy new and delete old: '+str(t1-t0)+' (s)')
 print()
-
-# t0 = t.time()
-# np.savez('/data/rbate/XY_STMC_allFiles', X, Y)
-# t1 = t.time()
-# print()
-# print('Time to save file: '+str(t1-t0)+' (s)')
-# print()
-        
-    
-
-

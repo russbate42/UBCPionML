@@ -137,10 +137,9 @@ elif datafiles == 'TR-CL':
     Etafile = 'Eta_STMC_v2_25_norm2.npy'
 # this is a new dataset with Cluster Only
 elif datafiles == 'CLO':
-    Xfile = ''
-    Yfile = ''
-    Etafile = ''
-    sys.exit('Cluster Only cluster_ENG_CALIB_TOT not ready yet.\n')
+    Xfile = 'X_CLO_50_norm.npy'
+    Yfile = 'Y_CLO_50_norm.npy'
+    Etafile = 'Eta_CLO_50_norm.npy'
 else:
     raise ValueError('incorrect option passed to --data')
 

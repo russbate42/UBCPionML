@@ -16,9 +16,13 @@ import numpy as np
 import uproot as ur
 import awkward as ak
 import time as t
-import os
-import argparse
+import os, sys, argparse, json
 from copy import deepcopy
+
+sys.path.append('/home/russbate/MLPionCollaboration/LCStudies')
+from util import deep_set_util as dsu
+from util.deep_set_util import dict_from_tree, DeltaR, find_max_dim_tuple
+from util.deep_set_util import find_index_1D
 
 Nfile=1
 
@@ -27,8 +31,11 @@ print('='*43)
 print('== Single Track Multiple Cluster Script ==')
 print('='*43)
 print()
+print('== Generating data for PubNote 2022 ==')
+print()
 print("Awkward version: "+str(ak.__version__))
 print("Uproot version: "+str(ur.__version__))
+print("Numpy version: {}".format(np.__version__))
 
 
 ## Read in Parameters
@@ -37,152 +44,113 @@ parser = argparse.ArgumentParser(description='Inputs for STMC track script.')
 
 parser.add_argument('--nFile', action="store", dest='nf', default=1,
                    type=int)
-
+parser.add_argument('--file_loc', action="store", dest='fl', default=\
+                    '/fast_scratch_1/atlas_images/v01-45/pipm/',
+                   type=str)
+parser.add_argument('--output_loc', action="store", dest='ol', default=\
+                    '/fast_scratch_1/atlas/staged/STMC',
+                   type=str)
+parser.add_argument('--geo_loc', action="store", dest='gl', default=\
+                    '/fast_scratch_1/atlas_images/v01-45/cell_geo.root',
+                    type=str)
+parser.add_argument('--train', action='store_true',
+                    dest='train')
+parser.add_argument('--test', action='store_true',
+                    dest='test')
+parser.add_argument('--start', action='store', default=0, type=int)
 args = parser.parse_args()
 
 Nfile = args.nf
+file_loc = args.fl
+output_loc = args.ol
+geo_loc = args.gl
+train_bool = args.train
+test_bool = args.test
+file_start = args.start
+
+if not train_bool and not test_bool:
+    sys.exit('Need to specify --train or --test. Exiting.')
+    
+elif train_bool and test_bool:
+    sys.exit('Cannot specify --train and --test. Exiting.')
 
 print('Working on {} files'.format(Nfile))
-
-#====================
-# Functions =========
-#====================
-
-def DeltaR(coords, ref):
-    ''' Straight forward function, expects Nx2 inputs for coords, 1x2 input for ref '''
-    ref = np.tile(ref, (len(coords[:,0]), 1))
-    DeltaCoords = np.subtract(coords, ref)
-    ## Mirroring ##
-    gt_pi_mask = DeltaCoords > np.pi
-    lt_pi_mask = DeltaCoords < - np.pi
-    DeltaCoords[lt_pi_mask] = DeltaCoords[lt_pi_mask] + 2*np.pi
-    DeltaCoords[gt_pi_mask] = DeltaCoords[gt_pi_mask] - 2*np.pi
-    return np.sqrt(DeltaCoords[:,0]**2 + DeltaCoords[:,1]**2)
-
-def find_max_dim_tuple(events, event_dict):
-    nEvents = len(events)
-    max_clust = 0
+if train_bool:
+    print('Creating training data.')
+if test_bool:
+    print('Creating test data.')
     
-    for i in range(nEvents):
-        event = events[i,0]
-        track_nums = events[i,1]
-        clust_nums = events[i,2]
-        
-        clust_num_total = 0
-        # set this to six for now to handle single track events, change later
-        track_num_total = 10 # max 9 but keep a buffer of 1
-        
-        # Check if there are clusters, None type object may be associated with it
-        if clust_nums is not None:
-            # Search through cluster indices
-            for clst_idx in clust_nums:
-                nInClust = len(event_dict['cluster_cell_ID'][event][clst_idx])
-                # add the number in each cluster to the total
-                clust_num_total += nInClust
 
-        total_size = clust_num_total + track_num_total
-        if total_size > max_clust:
-            max_clust = total_size
-    
-    # 6 for energy, eta, phi, rperp, track flag, sample layer
-    return (nEvents, max_clust, 6)
-
-def dict_from_tree(tree, branches=None, np_branches=None):
-    ''' Loads branches as default awkward arrays and np_branches as numpy arrays. '''
-    dictionary = dict()
-    if branches is not None:
-        for key in branches:
-            branch = tree.arrays()[key]
-            dictionary[key] = branch
-            
-    if np_branches is not None:
-        for np_key in np_branches:
-            np_branch = np.ndarray.flatten(tree.arrays()[np_key].to_numpy())
-            dictionary[np_key] = np_branch
-    
-    if branches is None and np_branches is None:
-        raise ValueError("No branches passed to function.")
-        
-    return dictionary
-
-def find_index_1D(values, dictionary):
-    ''' Use a for loop and a dictionary. values are the IDs to search for. dict must be in format 
-    (cell IDs: index) '''
-    idx_vec = np.zeros(len(values), dtype=np.int32)
-    for i in range(len(values)):
-        idx_vec[i] = dictionary[values[i]]
-    return idx_vec
-
-        
 #====================
 # Metadata ==========
 #====================
-event_branches = ["cluster_nCells", "cluster_cell_ID", "cluster_cell_E", 'cluster_nCells', "nCluster", "eventNumber",
-                  "nTrack", "nTruthPart", "truthPartPdgId", "cluster_Eta", "cluster_Phi", 'trackPt', 'trackP',
-                  'trackMass', 'trackEta', 'trackPhi', 'truthPartE', 'cluster_ENG_CALIB_TOT', "cluster_E", 'truthPartPt']
-
-ak_event_branches = ["cluster_nCells", "cluster_cell_ID", "cluster_cell_E", "cluster_nCells",
-                  "nTruthPart", "truthPartPdgId", "cluster_Eta", "cluster_Phi", "trackPt", "trackP",
-                  "trackMass", "trackEta", "trackPhi", "truthPartE", "cluster_ENG_CALIB_TOT", "cluster_E", "truthPartPt"]
-
-np_event_branches = ["nCluster", "eventNumber", "nTrack", "nTruthPart"]
-
-geo_branches = ["cell_geo_ID", "cell_geo_eta", "cell_geo_phi", "cell_geo_rPerp", "cell_geo_sampling"]
+event_branches = dsu.event_branches
+ak_event_branches = dsu.ak_event_branches
+np_event_branches = dsu.np_event_branches
+geo_branches = dsu.event_branches
 
 
 #======================================
 # Track related meta-data
 #======================================
-trk_em_eta = ['trackEta_EMB2', 'trackEta_EME2']
-trk_em_phi = ['trackPhi_EMB2', 'trackPhi_EME2']
-
-trk_proj_eta = ['trackEta_EMB1', 'trackEta_EMB2', 'trackEta_EMB3',
-    'trackEta_EME1', 'trackEta_EME2', 'trackEta_EME3', 'trackEta_HEC0',
-    'trackEta_HEC1', 'trackEta_HEC2', 'trackEta_HEC3', 'trackEta_TileBar0',
-    'trackEta_TileBar1', 'trackEta_TileBar2', 'trackEta_TileGap1',
-    'trackEta_TileGap2', 'trackEta_TileGap3', 'trackEta_TileExt0',
-    'trackEta_TileExt1', 'trackEta_TileExt2']
-trk_proj_phi = ['trackPhi_EMB1', 'trackPhi_EMB2', 'trackPhi_EMB3',
-    'trackPhi_EME1', 'trackPhi_EME2', 'trackPhi_EME3', 'trackPhi_HEC0',
-    'trackPhi_HEC1', 'trackPhi_HEC2', 'trackPhi_HEC3', 'trackPhi_TileBar0',
-    'trackPhi_TileBar1', 'trackPhi_TileBar2', 'trackPhi_TileGap1',
-    'trackPhi_TileGap2', 'trackPhi_TileGap3', 'trackPhi_TileExt0',
-    'trackPhi_TileExt1', 'trackPhi_TileExt2']
-calo_numbers = [1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-eta_trk_dict = dict(zip(trk_proj_eta, calo_numbers))
-
-calo_layers = ['EMB1', 'EMB2', 'EMB3', 'EME1', 'EME2', 'EME3', 'HEC0', 'HEC1',
-    'HEC2', 'HEC3', 'TileBar0', 'TileBar1', 'TileBar2', 'TileGap1', 'TileGap2',
-    'TileGap3', 'TileExt0', 'TileExt1', 'TileExt2']
-calo_numbers2 = [1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-calo_dict = dict(zip(calo_numbers2, calo_layers))
-
-fixed_z_numbers = [5,6,7,8,9,10,11]
-fixed_z_vals = [3790.03, 3983.68, 4195.84, 4461.25, 4869.50, 5424.50, 5905.00]
-z_calo_dict = dict(zip(fixed_z_numbers, fixed_z_vals))
-
-fixed_r_numbers = [1,2,3,12,13,14,15,16,17,18,19,20]
-fixed_r_vals = [1532.18, 1723.89, 1923.02, 2450.00, 2995.00, 3630.00, 3215.00,
-                3630.00, 2246.50, 2450.00, 2870.00, 3480.00]
-r_calo_dict = dict(zip(fixed_r_numbers, fixed_r_vals))
+geo_branches = dsu.geo_branches
+eta_trk_dict = dsu.eta_trk_dict
+calo_dict = dsu.calo_dict
+z_calo_dict = dsu.z_calo_dict
+r_calo_dict = dsu.r_calo_dict
+trk_proj_eta = dsu.trk_proj_eta
+trk_proj_phi = dsu.trk_proj_phi
+trk_em_eta = dsu.trk_em_eta
+trk_em_phi = dsu.trk_em_phi
+calo_numbers = dsu.calo_numbers
+calo_layers = dsu.calo_layers
+fixed_z_numbers = dsu.fixed_z_numbers
+fixed_r_numbers = dsu.fixed_r_numbers
 
 
 #====================
-# File setup ========
+# JSON Files ========
 #====================
-# user.angerami.24559744.OutputStream._000001.root
-fileNames = []
-file_prefix = 'user.angerami.24559744.OutputStream._000'
-for i in range(1,Nfile+1):
-    endstring = f'{i:03}'
-    fileNames.append(file_prefix + endstring + '.root')
+
+root_files = []
+
+if train_bool:
+    with open('/home/russbate/MLPionCollaboration/LCStudies/clusters/pion_train.json', 'r') as f:
+        files = json.load(f)
+
+        for file in files:
+            file_end = os.path.basename(file)
+            root_files.append(file_end)
+
+    with open('/home/russbate/MLPionCollaboration/LCStudies/clusters/pion_val.json', 'r') as f:
+        files = json.load(f)
+
+        for file in files:
+            file_end = os.path.basename(file)
+            root_files.append(file_end)
+
+if test_bool:
+    with open('/home/russbate/MLPionCollaboration/LCStudies/clusters/pion_test.json', 'r') as f:
+        files = json.load(f)
+
+        for file in files:
+            file_end = os.path.basename(file)
+            root_files.append(file_end)
+    
+for i in range(len(root_files)):
+    root_files[i] = file_loc + root_files[i]
+
+if Nfile > len(root_files):
+    sys.exit('More files requested than in json. Exiting early.')
 
 #====================
 # Load Data Files ===
 #====================
+MAX_EVENTS = int(5e6)
+MAX_CELLS = 1600
 
 ## GEOMETRY DICTIONARY ##
-geo_file = ur.open('/fast_scratch_1/atlas_images/v01-45/cell_geo.root')
+geo_file = ur.open(geo_loc)
 CellGeo_tree = geo_file["CellGeo"]
 geo_dict = dict_from_tree(tree=CellGeo_tree, branches=None, np_branches=geo_branches)
 
@@ -191,11 +159,19 @@ cell_geo_ID = geo_dict['cell_geo_ID']
 cell_ID_dict = dict(zip(cell_geo_ID, np.arange(len(cell_geo_ID))))
 
 ## MEMORY MAPPED ARRAY ALLOCATION ##
-X_large = np.lib.format.open_memmap('/data/atlas/rbate/X_large.npy', mode='w+', dtype=np.float64,
-                       shape=(2500000,1500,6), fortran_order=False, version=None)
-Y_large = np.lib.format.open_memmap('/data/atlas/rbate/Y_large.npy', mode='w+', dtype=np.float64,
-                       shape=(2500000,3), fortran_order=False, version=None)
-Eta_large = np.empty(2500000)
+# if train_bool:
+#     X_large = np.lib.format.open_memmap(output_loc+'/X_large.npy', mode='w+', dtype=np.float64,
+#                            shape=(MAX_EVENTS,MAX_CELLS,6), fortran_order=False, version=None)
+#     Y_large = np.lib.format.open_memmap(output_loc+'/Y_large.npy', mode='w+', dtype=np.float64,
+#                            shape=(MAX_EVENTS,3), fortran_order=False, version=None)
+
+# if test_bool: #this is so we can run both at once
+#     X_large = np.lib.format.open_memmap(output_loc+'/X_large2.npy', mode='w+', dtype=np.float64,
+#                            shape=(MAX_EVENTS,MAX_CELLS,6), fortran_order=False, version=None)
+#     Y_large = np.lib.format.open_memmap(output_loc+'/Y_large2.npy', mode='w+', dtype=np.float64,
+#                            shape=(MAX_EVENTS,3), fortran_order=False, version=None)
+
+# Eta_large = np.empty(MAX_EVENTS)
 
 
 # Pre-Loop Definitions ##
@@ -204,31 +180,28 @@ k = 1 # tally used to keep track of file number
 tot_nEvts = 0 # used for keeping track of total number of events
 max_nPoints = 0 # used for keeping track of the largest 'point cloud'
 t_tot = 0 # total time
-# for event dictionary
-events_prefix = '/fast_scratch_1/atlas_images/v01-45/pipm/'
 num_zero_tracks = 0
 
 
 ## Main File Loop ##
 #======================================
-for currFile in fileNames:
+for currFile in root_files[file_start:Nfile]:
     
     # Check for file, a few are missing
-    if not os.path.isfile(events_prefix+currFile):
+    if not os.path.isfile(currFile):
         print()
-        print('File '+events_prefix+currFile+' not found..')
+        print('File '+currFile+' not found..')
         print()
-        k += 1
         continue
     
     else:
         print()
         print('Working on File: '+str(currFile)+' - '+str(k)+'/'+str(Nfile))
         k += 1
-        
+
     t0 = t.time()
     ## EVENT DICTIONARY ##
-    event = ur.open(events_prefix+currFile)
+    event = ur.open(currFile)
     event_tree = event["EventTree"]
     event_dict = dict_from_tree(tree=event_tree, branches=ak_event_branches, np_branches=np_event_branches)
     
@@ -271,7 +244,9 @@ for currFile in fileNames:
 
         ## DELTA R ##
         # pull coordinates of tracks and clusters from event
-        # we can get away with the zeroth index because we are working with single track events
+        '''We can get away with the zeroth index because we are working with
+        single track events. Technically we cut on trackEta and then select
+        from track EMx2 which is inconsistend. Could fix in the future.'''
         trackCoords = np.array([event_dict["trackEta"][evt][0],
                                  event_dict["trackPhi"][evt][0]])
         clusterCoords = np.stack((event_dict["cluster_Eta"][evt].to_numpy(),
@@ -302,7 +277,7 @@ for currFile in fileNames:
         max_nPoints = max_dims[1]
     
     # Create arrays
-    Y_new = np.zeros((max_dims[0],3))
+    Y_new = np.zeros((evt_tot,3))
     X_new = np.zeros(max_dims)
     Eta_new = np.zeros(max_dims[0])
     t1 = t.time()
@@ -392,7 +367,11 @@ for currFile in fileNames:
         ## TARGET ENERGIES ##
         #####################
         # this should be flattened or loaded as np array instead of zeroth index in future
-        Y_new[i,0] = event_dict['truthPartE'][evt][0]
+        truthParticleE = event_dict['truthPartE'][evt][0]
+        if truthParticleE <= 0:
+            raise ValueError('Truth particle energy found to be zero post cuts!')
+        else:
+            Y_new[i,0] = truthParticleE
         Y_new[i,1] = event_dict['truthPartPt'][evt][track_idx]
         Y_new[i,2] = target_ENG_CALIB_TOT
         
@@ -474,7 +453,42 @@ for currFile in fileNames:
     #=========================================================================#
     t1 = t.time()
     array_construction_time = t1 - t0
+
+    #==========================#
+    ## SAVE INDIVIDUAL ARRAYS ##
+    #==========================#
+    t0 = t.time()
+    if train_bool:
+        np.save(output_loc+'/Eta_STMC_v2_train_'+str(k-2), Eta_new)
+        np.save(output_loc+'/X_STMC_v2_train_'+str(k-2), X_new)
+        np.save(output_loc+'/Y_STMC_v2_train_'+str(k-2), Y_new) 
+    elif test_bool:
+        np.save(output_loc+'/Eta_STMC_v2_test_'+str(k-2), Eta_new)
+        np.save(output_loc+'/X_STMC_v2_test_'+str(k-2), X_new)
+        np.save(output_loc+'/Y_STMC_v2_test_'+str(k-2), Y_new)
+    t1 = t.time()
     
+    time_to_save = t1-t0
+    thisfile_t_tot = events_cuts_time+find_create_max_dims_time+indices_time\
+          +array_construction_time+time_to_save
+    t_tot += thisfile_t_tot
+       
+    
+    print('Array dimension: '+str(max_dims))
+    print('Number of null track projection: '+str(num_zero_tracks))
+    print('Time to create dicts and select events: '+str(events_cuts_time))
+    print('Time to find dimensions and make new array: '+str(find_create_max_dims_time))
+    print('Time to construct index array: '+str(indices_time))
+    print('Time to populate elements: '+str(array_construction_time))
+    print('Time to copy to save numpy files: '+str(time_to_save))
+    print('Time for this file: '+str(thisfile_t_tot))
+    print('Total events: '+str(tot_nEvts))
+    print('Current size: '+str((tot_nEvts,max_nPoints,6)))
+    print('Total time: '+str(t_tot))
+    print()
+
+
+    '''
     #=======================#
     ## ARRAY CONCATENATION ##
     #=======================#
@@ -483,8 +497,8 @@ for currFile in fileNames:
     old_tot = tot_nEvts - max_dims[0]
     X_large[old_tot:tot_nEvts, :max_dims[1], :6] = np.ndarray.copy(X_new)
     # pad the remainder with zeros (just to be sure)
-    fill_shape = (tot_nEvts - old_tot, 1500 - max_dims[1], 6)
-    X_large[old_tot:tot_nEvts, max_dims[1]:1500, :6] = np.zeros(fill_shape)
+    fill_shape = (tot_nEvts - old_tot, MAX_CELLS - max_dims[1], 6)
+    X_large[old_tot:tot_nEvts, max_dims[1]:MAX_CELLS, :6] = np.zeros(fill_shape)
     
     # Write to Y
     Y_large[old_tot:tot_nEvts,:] = np.ndarray.copy(Y_new)
@@ -494,38 +508,37 @@ for currFile in fileNames:
         
     t1 = t.time()
     time_to_memmap = t1-t0
-    thisfile_t_tot = events_cuts_time+find_create_max_dims_time+indices_time\
-          +array_construction_time+time_to_memmap
-    t_tot += thisfile_t_tot
     
-    print('Array dimension: '+str(max_dims))
-    print('Number of null track projection: '+str(num_zero_tracks))
-    print('Time to create dicts and select events: '+str(events_cuts_time))
-    print('Time to find dimensions and make new array: '+str(find_create_max_dims_time))
-    print('Time to construct index array: '+str(indices_time))
-    print('Time to populate elements: '+str(array_construction_time))
-    print('Time to copy to memory map: '+str(time_to_memmap))
-    print('Time for this file: '+str(thisfile_t_tot))
-    print('Total events: '+str(tot_nEvts))
-    print('Current size: '+str((tot_nEvts,max_nPoints,6)))
-    print('Total time: '+str(t_tot))
-    print()
-
 t0 = t.time()
-X = np.lib.format.open_memmap('/data/atlas/rbate/X_STMC_v2_'+str(Nfile)+'_files.npy',
-                             mode='w+', dtype=np.float64, shape=(tot_nEvts, max_nPoints, 6))
-np.copyto(dst=X, src=X_large[:tot_nEvts,:max_nPoints,:], casting='same_kind', where=True)
-del X_large
-os.system('rm /data/atlas/rbate/X_large.npy')
+if train_bool:
+    X = np.lib.format.open_memmap(output_loc+'/X_STMC_v2_'+str(Nfile)+'_train.npy',
+                                 mode='w+', dtype=np.float64, shape=(tot_nEvts, max_nPoints, 6))
+    np.copyto(dst=X, src=X_large[:tot_nEvts,:max_nPoints,:], casting='same_kind', where=True)
+    del X_large
+    os.system('rm '+output_loc+'/X_large.npy')
 
-Y = np.lib.format.open_memmap('/data/atlas/rbate/Y_STMC_v2_'+str(Nfile)+'_files.npy',
-                             mode='w+', dtype=np.float64, shape=(tot_nEvts, 3))
-np.copyto(dst=Y, src=Y_large[:tot_nEvts,:], casting='same_kind', where=True)
-del Y_large
-os.system('rm /data/atlas/rbate/Y_large.npy')
+    Y = np.lib.format.open_memmap(output_loc+'/Y_STMC_v2_'+str(Nfile)+'_train.npy',
+                                 mode='w+', dtype=np.float64, shape=(tot_nEvts, 3))
+    np.copyto(dst=Y, src=Y_large[:tot_nEvts,:], casting='same_kind', where=True)
+    del Y_large
+    os.system('rm '+output_loc+'/Y_large.npy')
 
-np.save('/data/atlas/rbate/Eta_STMC_v2_'+str(Nfile)+'_files', Eta_large[:tot_nEvts])
+    np.save(output_loc+'/Eta_STMC_v2_'+str(Nfile)+'_train', Eta_large[:tot_nEvts])
 
+if test_bool:
+    X = np.lib.format.open_memmap(output_loc+'/X_STMC_v2_'+str(Nfile)+'_test.npy',
+                                 mode='w+', dtype=np.float64, shape=(tot_nEvts, max_nPoints, 6))
+    np.copyto(dst=X, src=X_large[:tot_nEvts,:max_nPoints,:], casting='same_kind', where=True)
+    del X_large
+    os.system('rm '+output_loc+'/X_large2.npy')
+
+    Y = np.lib.format.open_memmap(output_loc+'/Y_STMC_v2_'+str(Nfile)+'_test.npy',
+                                 mode='w+', dtype=np.float64, shape=(tot_nEvts, 3))
+    np.copyto(dst=Y, src=Y_large[:tot_nEvts,:], casting='same_kind', where=True)
+    del Y_large
+    os.system('rm '+output_loc+'/Y_large2.npy')
+
+    np.save(output_loc+'/Eta_STMC_v2_'+str(Nfile)+'_test', Eta_large[:tot_nEvts])
 
 t1 = t.time()
 print()
@@ -538,7 +551,7 @@ print()
 # print()
 # print('Time to save file: '+str(t1-t0)+' (s)')
 # print()
-        
+'''        
     
 
 

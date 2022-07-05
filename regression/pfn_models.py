@@ -41,6 +41,38 @@ def cast_to_zero(tensors):
     return_tens = tf.math.multiply(mod_input, reduced_mask)
     return return_tens
 
+
+## Baseline DNN
+def DNN(num_features, name="Baseline - DNN"):
+    inputs = keras.Input(shape=(num_features), name='input')
+    
+    #============== Dumb Layers ==============================================#
+    dense_0 = layers.Dense(100)
+    t_dist_0 = layers.TimeDistributed(dense_0, name='t_dist_0')(inputs)
+    activation_0 = layers.Activation('relu', name="activation_0")(t_dist_0)
+    
+    dense_1 = layers.Dense(100)
+    t_dist_1 = layers.TimeDistributed(dense_1, name='t_dist_1')(activation_0)
+    activation_1 = layers.Activation('relu', name='activation_1')(t_dist_1)
+    
+    dense_2 = layers.Dense(100)
+    t_dist_2 = layers.TimeDistributed(dense_2, name='t_dist_2')(activation_1)
+    activation_2 = layers.Activation('relu', name='activation_2')(t_dist_2)
+    
+    dense_3 = layers.Dense(100)
+    t_dist_3 = layers.TimeDistributed(dense_3, name='t_dist_3')(activation_2)
+    activation_3 = layers.Activation('relu', name='activation_3')(t_dist_3)
+    #=========================================================================#
+    
+    ## Output
+    #=========================================================================#
+    dense_4 = layers.Dense(1, name='output')(activation_3)
+    activation_4 = layers.Activation('linear', name="activation_4")(dense_4)
+    #=========================================================================#
+    
+    return keras.Model(inputs=inputs, outputs=activation_4, name=name)
+    
+    
 ## Basic PFN
 def PFN_base(num_points, num_features, name="Russell Flow Network"):
     ''' Tested '''
@@ -83,6 +115,57 @@ def PFN_base(num_points, num_features, name="Russell Flow Network"):
     #=========================================================================#
     
     return keras.Model(inputs=inputs, outputs=activation_6, name=name)
+
+
+## PFN with more trainable parameters
+def PFN_large(num_points, num_features, name="DeepSets - Large"):
+    ''' Does more parameters help? More layers? '''
+    inputs = keras.Input(shape=(num_points, num_features), name='input')
+
+    #============== Phi Layers ===============================================#
+    dense_0 = layers.Dense(200)
+    t_dist_0 = layers.TimeDistributed(dense_0, name='t_dist_0')(inputs)
+    activation_0 = layers.Activation('relu', name="activation_0")(t_dist_0)
+    
+    dense_1 = layers.Dense(200)
+    t_dist_1 = layers.TimeDistributed(dense_1, name='t_dist_1')(activation_0)
+    activation_1 = layers.Activation('relu', name='activation_1')(t_dist_1)
+    
+    dense_2 = layers.Dense(200)
+    t_dist_2 = layers.TimeDistributed(dense_2, name='t_dist_2')(activation_1)
+    activation_2 = layers.Activation('relu', name='activation_2')(t_dist_2)
+    
+    dense_3 = layers.Dense(200)
+    t_dist_3 = layers.TimeDistributed(dense_3, name='t_dist_3')(activation_2)
+    activation_3 = layers.Activation('relu', name='activation_3')(t_dist_3)
+    #=========================================================================#
+    
+    #============== Aggregation Function (Sum) ===============================#
+    lambda_layer = layers.Lambda(point_mask_fn,
+                                name='mask')(inputs)
+
+    sum_layer = layers.Dot(axes=(1,1), name='sum')(
+        [lambda_layer, activation_3])
+    #=========================================================================#
+    
+    #============== F Layers =================================================#
+    dense_4 = layers.Dense(200, name='dense_0')(sum_layer)
+    activation_4 = layers.Activation('relu', name="activation_4")(dense_4)
+    
+    dense_5 = layers.Dense(200, name='dense_1')(activation_4)
+    activation_5 = layers.Activation('relu', name="activation_5")(dense_5)
+    
+    dense_6 = layers.Dense(100, name='dense_2')(activation_5)
+    activation_6 = layers.Activation('relu', name="activation_6")(dense_6)
+    
+    dense_7 = layers.Dense(100, name='dense_3')(activation_6)
+    activation_7 = layers.Activation('relu', name="activation_7")(dense_7)
+    
+    dense_8 = layers.Dense(1, name='output')(activation_7)
+    activation_8 = layers.Activation('linear', name="activation_8")(dense_8)
+    #=========================================================================#
+    
+    return keras.Model(inputs=inputs, outputs=activation_8, name=name)
 
 
 ## PFN Adding Dropout on Every Layer!

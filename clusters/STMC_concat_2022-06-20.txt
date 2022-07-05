@@ -1,0 +1,4804 @@
+
+starting concatenation for STMC..
+
+
+Working on file 0
+loading files..
+load time: 49.812951654 (s)
+slices: 0:10250
+x copy time: 0.612768789999997 (s)
+the rest time: 0.00031947799999443305 (s)
+flooshing..
+floosh time: 0.18780154200000254 (s)
+
+Total time for this file: 50.426039921999994
+Total time: 50.426039921999994
+
+Working on file 1
+loading files..
+load time: 126.127004081 (s)
+slices: 10250:20552
+x copy time: 0.5243877860000055 (s)
+the rest time: 0.000300291000002062 (s)
+flooshing..
+floosh time: 0.1766728139999998 (s)
+
+Total time for this file: 126.651692158
+Total time: 177.07773208
+
+Working on file 2
+loading files..
+load time: 107.13025665700002 (s)
+slices: 20552:30823
+x copy time: 0.531362511999987 (s)
+the rest time: 0.000238712999987456 (s)
+flooshing..
+floosh time: 0.17490137600003663 (s)
+
+Total time for this file: 107.66185788199999
+Total time: 284.73958996199997
+
+Working on file 3
+loading files..
+load time: 125.66583016499999 (s)
+slices: 30823:41194
+x copy time: 0.5616219380000302 (s)
+the rest time: 0.00027215000000069267 (s)
+flooshing..
+floosh time: 0.18189076400000204 (s)
+
+Total time for this file: 126.22772425300002
+Total time: 410.967314215
+
+Working on file 4
+loading files..
+load time: 45.37243706800001 (s)
+slices: 41194:51431
+x copy time: 0.5949775670000008 (s)
+the rest time: 0.0002712849999966238 (s)
+flooshing..
+floosh time: 0.17278521599996566 (s)
+
+Total time for this file: 45.96768592000001
+Total time: 456.935000135
+
+Working on file 5
+loading files..
+load time: 103.99960626799992 (s)
+slices: 51431:61681
+x copy time: 0.5018071210000699 (s)
+the rest time: 0.00022924299992155284 (s)
+flooshing..
+floosh time: 0.16760667699998066 (s)
+
+Total time for this file: 104.50164263199991
+Total time: 561.436642767
+
+Working on file 6
+loading files..
+load time: 52.80214821700008 (s)
+slices: 61681:71893
+x copy time: 0.5532740830000193 (s)
+the rest time: 0.00020662899999024376 (s)
+flooshing..
+floosh time: 0.1851255909999736 (s)
+
+Total time for this file: 53.35562892900009
+Total time: 614.7922716960001
+
+Working on file 7
+loading files..
+load time: 51.211969002000046 (s)
+slices: 71893:82147
+x copy time: 0.5599173099999462 (s)
+the rest time: 0.0002029800000400428 (s)
+flooshing..
+floosh time: 0.1453187560000515 (s)
+
+Total time for this file: 51.77208929200003
+Total time: 666.5643609880001
+
+Working on file 8
+loading files..
+load time: 19.1073288849999 (s)
+slices: 82147:92404
+x copy time: 0.4949580050000577 (s)
+the rest time: 0.0002271070000006148 (s)
+flooshing..
+floosh time: 0.1612922389999767 (s)
+
+Total time for this file: 19.60251399699996
+Total time: 686.166874985
+
+Working on file 9
+loading files..
+load time: 37.11758598299991 (s)
+slices: 92404:102844
+x copy time: 0.5551351920000798 (s)
+the rest time: 0.0002899510000133887 (s)
+flooshing..
+floosh time: 0.17986414799997874 (s)
+
+Total time for this file: 37.673011126000006
+Total time: 723.839886111
+
+Working on file 10
+loading files..
+load time: 18.086011818999964 (s)
+slices: 102844:113163
+x copy time: 0.5353804970000056 (s)
+the rest time: 0.00018692000003284193 (s)
+flooshing..
+floosh time: 0.1844718050000438 (s)
+
+Total time for this file: 18.621579236000002
+Total time: 742.4614653470001
+
+Working on file 11
+loading files..
+load time: 39.104633939999985 (s)
+slices: 113163:123483
+x copy time: 0.5852025440000261 (s)
+the rest time: 0.0002401899999995294 (s)
+flooshing..
+floosh time: 0.180217563000042 (s)
+
+Total time for this file: 39.69007667400001
+Total time: 782.1515420210001
+
+Working on file 12
+loading files..
+load time: 15.617612093999924 (s)
+slices: 123483:133717
+x copy time: 0.6406854340000336 (s)
+the rest time: 0.00029394199998478143 (s)
+flooshing..
+floosh time: 0.1842531960000997 (s)
+
+Total time for this file: 16.258591469999942
+Total time: 798.410133491
+
+Working on file 13
+loading files..
+load time: 31.156242469000063 (s)
+slices: 133717:144026
+x copy time: 0.5051804900000434 (s)
+the rest time: 0.0002955770000880875 (s)
+flooshing..
+floosh time: 0.16886480499999834 (s)
+
+Total time for this file: 31.661718536000194
+Total time: 830.0718520270002
+
+Working on file 14
+loading files..
+load time: 24.465989467999975 (s)
+slices: 144026:154254
+x copy time: 0.5541488540000046 (s)
+the rest time: 0.0001846419999083082 (s)
+flooshing..
+floosh time: 0.1644281610000462 (s)
+
+Total time for this file: 25.020322963999888
+Total time: 855.0921749910001
+
+Working on file 15
+loading files..
+load time: 36.825876859999994 (s)
+slices: 154254:164511
+x copy time: 0.5857757609999226 (s)
+the rest time: 0.00023471300005439844 (s)
+flooshing..
+floosh time: 0.1843661789999942 (s)
+
+Total time for this file: 37.41188733399997
+Total time: 892.5040623250001
+
+Working on file 16
+loading files..
+load time: 6.469419394000056 (s)
+slices: 164511:174673
+x copy time: 0.5932619959999101 (s)
+the rest time: 0.0002669560000185811 (s)
+flooshing..
+floosh time: 0.18165472300006513 (s)
+
+Total time for this file: 7.062948345999985
+Total time: 899.567010671
+
+Working on file 17
+loading files..
+load time: 38.571129885999994 (s)
+slices: 174673:185038
+x copy time: 0.6221236439999984 (s)
+the rest time: 0.000333444000034433 (s)
+flooshing..
+floosh time: 0.1818880690000242 (s)
+
+Total time for this file: 39.19358697400003
+Total time: 938.7605976450001
+
+Working on file 18
+loading files..
+load time: 6.4563278619999664 (s)
+slices: 185038:195224
+x copy time: 0.6513117909998982 (s)
+the rest time: 0.00022871300006954698 (s)
+flooshing..
+floosh time: 0.18496355299998868 (s)
+
+Total time for this file: 7.107868365999934
+Total time: 945.868466011
+
+Working on file 19
+loading files..
+load time: 34.58881524399999 (s)
+slices: 195224:205550
+x copy time: 0.4897899600000528 (s)
+the rest time: 0.00018097500003477762 (s)
+flooshing..
+floosh time: 0.16852161399992838 (s)
+
+Total time for this file: 35.078786179000076
+Total time: 980.9472521900001
+
+Working on file 20
+loading files..
+load time: 2.9147200529999964 (s)
+slices: 205550:215940
+x copy time: 0.4871556040000087 (s)
+the rest time: 0.00021306799999365467 (s)
+flooshing..
+floosh time: 0.1641432739999118 (s)
+
+Total time for this file: 3.4020887249999987
+Total time: 984.3493409150001
+
+Working on file 21
+loading files..
+load time: 27.95854491900002 (s)
+slices: 215940:226355
+x copy time: 0.512459569999919 (s)
+the rest time: 0.0003115750000688422 (s)
+flooshing..
+floosh time: 0.17383064799992098 (s)
+
+Total time for this file: 28.471316064000007
+Total time: 1012.8206569790001
+
+Working on file 22
+loading files..
+load time: 11.01052758600008 (s)
+slices: 226355:236643
+x copy time: 0.5054213519999848 (s)
+the rest time: 0.0001953549999598181 (s)
+flooshing..
+floosh time: 0.17645850400003837 (s)
+
+Total time for this file: 11.516144293000025
+Total time: 1024.3368012720002
+
+Working on file 23
+loading files..
+load time: 44.67408372099999 (s)
+slices: 236643:246891
+x copy time: 0.5238575429998491 (s)
+the rest time: 0.0002294849998634163 (s)
+flooshing..
+floosh time: 0.18312535399991248 (s)
+
+Total time for this file: 45.1981707489997
+Total time: 1069.534972021
+
+Working on file 24
+loading files..
+load time: 9.430640452000034 (s)
+slices: 246891:257271
+x copy time: 0.5142527069999687 (s)
+the rest time: 0.00021928000001025794 (s)
+flooshing..
+floosh time: 0.1805779189999157 (s)
+
+Total time for this file: 9.945112439000013
+Total time: 1079.48008446
+
+Working on file 25
+loading files..
+load time: 33.377477664000025 (s)
+slices: 257271:267574
+x copy time: 0.6275916329998381 (s)
+the rest time: 0.00039818900017962733 (s)
+flooshing..
+floosh time: 0.18883083099990472 (s)
+
+Total time for this file: 34.00546748600004
+Total time: 1113.485551946
+
+Working on file 26
+loading files..
+load time: 18.959215896999922 (s)
+slices: 267574:277880
+x copy time: 0.5747331899999608 (s)
+the rest time: 0.0003158330000587739 (s)
+flooshing..
+floosh time: 0.19308184999999867 (s)
+
+Total time for this file: 19.53426491999994
+Total time: 1133.019816866
+
+Working on file 27
+loading files..
+load time: 47.32100744199988 (s)
+slices: 277880:288213
+x copy time: 0.576728975999913 (s)
+the rest time: 0.00020662399992943392 (s)
+flooshing..
+floosh time: 0.18608966300007523 (s)
+
+Total time for this file: 47.897943041999724
+Total time: 1180.9177599079997
+
+Working on file 28
+loading files..
+load time: 29.249663012999918 (s)
+slices: 288213:298494
+x copy time: 0.5253395129998353 (s)
+the rest time: 0.0002112810000198806 (s)
+flooshing..
+floosh time: 0.3203263020000122 (s)
+
+Total time for this file: 29.775213806999773
+Total time: 1210.6929737149994
+
+Working on file 29
+loading files..
+load time: 25.708318379000048 (s)
+slices: 298494:308771
+x copy time: 0.5089072989999295 (s)
+the rest time: 0.00030114500009403855 (s)
+flooshing..
+floosh time: 0.17616479100001925 (s)
+
+Total time for this file: 26.21752682300007
+Total time: 1236.9105005379995
+
+Working on file 30
+loading files..
+load time: 27.95568889099991 (s)
+slices: 308771:319025
+x copy time: 0.4995493850001367 (s)
+the rest time: 0.00023217600005409622 (s)
+flooshing..
+floosh time: 0.1747989799998777 (s)
+
+Total time for this file: 28.4554704520001
+Total time: 1265.3659709899996
+
+Working on file 31
+loading files..
+load time: 36.32802876000005 (s)
+slices: 319025:329234
+x copy time: 0.5418700560001071 (s)
+the rest time: 0.0002199000000473461 (s)
+flooshing..
+floosh time: 0.1951147839999976 (s)
+
+Total time for this file: 36.870118716000206
+Total time: 1302.2360897059998
+
+Working on file 32
+loading files..
+load time: 12.99313589899998 (s)
+slices: 329234:339589
+x copy time: 0.5366799959999753 (s)
+the rest time: 0.00021602299989353924 (s)
+flooshing..
+floosh time: 0.187207719999833 (s)
+
+Total time for this file: 13.53003191799985
+Total time: 1315.7661216239997
+
+Working on file 33
+loading files..
+load time: 24.321807536999813 (s)
+slices: 339589:349776
+x copy time: 0.6361078030001863 (s)
+the rest time: 0.0003661230000489013 (s)
+flooshing..
+floosh time: 0.20429263699998046 (s)
+
+Total time for this file: 24.95828146300005
+Total time: 1340.7244030869997
+
+Working on file 34
+loading files..
+load time: 21.84856302000003 (s)
+slices: 349776:360043
+x copy time: 0.68017031699992 (s)
+the rest time: 0.00020840900015173247 (s)
+flooshing..
+floosh time: 0.20118614900002285 (s)
+
+Total time for this file: 22.5289417460001
+Total time: 1363.2533448329998
+
+Working on file 35
+loading files..
+load time: 20.53665858599993 (s)
+slices: 360043:370306
+x copy time: 0.49233130700008587 (s)
+the rest time: 0.00021626500006277638 (s)
+flooshing..
+floosh time: 0.1688512810001157 (s)
+
+Total time for this file: 21.02920615800008
+Total time: 1384.2825509909999
+
+Working on file 36
+loading files..
+load time: 18.751382611000054 (s)
+slices: 370306:380587
+x copy time: 0.5290631090001625 (s)
+the rest time: 0.00035226299996793387 (s)
+flooshing..
+floosh time: 0.18122625999990305 (s)
+
+Total time for this file: 19.280797983000184
+Total time: 1403.563348974
+
+Working on file 37
+loading files..
+load time: 33.70864277600003 (s)
+slices: 380587:390986
+x copy time: 0.5514203559998805 (s)
+the rest time: 0.00018578200001684309 (s)
+flooshing..
+floosh time: 0.18767042900003617 (s)
+
+Total time for this file: 34.26024891399993
+Total time: 1437.823597888
+
+Working on file 38
+loading files..
+load time: 19.388938173000042 (s)
+slices: 390986:401158
+x copy time: 0.49033558800010724 (s)
+the rest time: 0.0001950640000814019 (s)
+flooshing..
+floosh time: 0.1769822399999157 (s)
+
+Total time for this file: 19.87946882500023
+Total time: 1457.7030667130002
+
+Working on file 39
+loading files..
+load time: 29.388457906999975 (s)
+slices: 401158:411495
+x copy time: 0.5335322529999758 (s)
+the rest time: 0.0002333519998956035 (s)
+flooshing..
+floosh time: 0.20374766100007946 (s)
+
+Total time for this file: 29.922223511999846
+Total time: 1487.625290225
+
+Working on file 40
+loading files..
+load time: 25.600789379999924 (s)
+slices: 411495:421761
+x copy time: 0.541817433999995 (s)
+the rest time: 0.0002253720001590409 (s)
+flooshing..
+floosh time: 0.15999763800004985 (s)
+
+Total time for this file: 26.142832186000078
+Total time: 1513.7681224110001
+
+Working on file 41
+loading files..
+load time: 28.501903942000126 (s)
+slices: 421761:432084
+x copy time: 0.5126469540000471 (s)
+the rest time: 0.0002963229999295436 (s)
+flooshing..
+floosh time: 0.18043969999985165 (s)
+
+Total time for this file: 29.014847219000103
+Total time: 1542.7829696300003
+
+Working on file 42
+loading files..
+load time: 28.371435377999887 (s)
+slices: 432084:442380
+x copy time: 0.5260180890002175 (s)
+the rest time: 0.00019066200002271216 (s)
+flooshing..
+floosh time: 0.19167072200002622 (s)
+
+Total time for this file: 28.897644129000128
+Total time: 1571.6806137590004
+
+Working on file 43
+loading files..
+load time: 42.24696046500003 (s)
+slices: 442380:452599
+x copy time: 0.5654638930000147 (s)
+the rest time: 0.00022808199992141454 (s)
+flooshing..
+floosh time: 0.15835729400009768 (s)
+
+Total time for this file: 42.812652439999965
+Total time: 1614.4932661990003
+
+Working on file 44
+loading files..
+load time: 23.88587511300011 (s)
+slices: 452599:462886
+x copy time: 0.5681197889998657 (s)
+the rest time: 0.000325141000075746 (s)
+flooshing..
+floosh time: 0.19845814699988296 (s)
+
+Total time for this file: 24.454320043000052
+Total time: 1638.9475862420004
+
+Working on file 45
+loading files..
+load time: 31.528386548999833 (s)
+slices: 462886:473180
+x copy time: 0.5093573700000888 (s)
+the rest time: 0.0002656639999258914 (s)
+flooshing..
+floosh time: 0.1786455769999975 (s)
+
+Total time for this file: 32.03800958299985
+Total time: 1670.9855958250002
+
+Working on file 46
+loading files..
+load time: 32.448244995000096 (s)
+slices: 473180:483408
+x copy time: 0.5189034229999834 (s)
+the rest time: 0.00019936799981223885 (s)
+flooshing..
+floosh time: 0.1911211159999766 (s)
+
+Total time for this file: 32.96734778599989
+Total time: 1703.9529436110001
+
+Working on file 47
+loading files..
+load time: 28.277384642000015 (s)
+slices: 483408:493700
+x copy time: 0.556726782999931 (s)
+the rest time: 0.0002017669999077043 (s)
+flooshing..
+floosh time: 0.19076154499998665 (s)
+
+Total time for this file: 28.834313191999854
+Total time: 1732.787256803
+
+Working on file 48
+loading files..
+load time: 27.916404077000152 (s)
+slices: 493700:504037
+x copy time: 0.679615259000002 (s)
+the rest time: 0.0004042569999000989 (s)
+flooshing..
+floosh time: 0.19546940000009272 (s)
+
+Total time for this file: 28.596423593000054
+Total time: 1761.383680396
+
+Working on file 49
+loading files..
+load time: 31.779972572999895 (s)
+slices: 504037:514313
+x copy time: 0.5062286290001339 (s)
+the rest time: 0.0002740710001489788 (s)
+flooshing..
+floosh time: 0.17877734799981226 (s)
+
+Total time for this file: 32.28647527300018
+Total time: 1793.6701556690002
+
+Working on file 50
+loading files..
+load time: 34.152719913000055 (s)
+slices: 514313:524646
+x copy time: 0.5336352270001044 (s)
+the rest time: 0.00019276600005468936 (s)
+flooshing..
+floosh time: 0.18977474600001187 (s)
+
+Total time for this file: 34.686547906000214
+Total time: 1828.3567035750004
+
+Working on file 51
+loading files..
+load time: 32.43273331 (s)
+slices: 524646:534895
+x copy time: 0.5277742060000037 (s)
+the rest time: 0.0001948970000285044 (s)
+flooshing..
+floosh time: 0.18434215100000984 (s)
+
+Total time for this file: 32.960702413000035
+Total time: 1861.3174059880005
+
+Working on file 52
+loading files..
+load time: 21.43447811100009 (s)
+slices: 534895:545187
+x copy time: 0.5125870130000294 (s)
+the rest time: 0.0002941049999662937 (s)
+flooshing..
+floosh time: 0.18058841499987466 (s)
+
+Total time for this file: 21.947359229000085
+Total time: 1883.2647652170006
+
+Working on file 53
+loading files..
+load time: 39.30434177899997 (s)
+slices: 545187:555565
+x copy time: 0.6237662789999376 (s)
+the rest time: 0.00022010699990460125 (s)
+flooshing..
+floosh time: 0.21004502799996772 (s)
+
+Total time for this file: 39.92832816499981
+Total time: 1923.1930933820004
+
+Working on file 54
+loading files..
+load time: 21.782891843000016 (s)
+slices: 555565:565678
+x copy time: 0.5076278539997929 (s)
+the rest time: 0.00024334899990208214 (s)
+flooshing..
+floosh time: 0.17966322699999182 (s)
+
+Total time for this file: 22.29076304599971
+Total time: 1945.483856428
+
+Working on file 55
+loading files..
+load time: 39.29134571999998 (s)
+slices: 565678:575899
+x copy time: 0.5502825989999565 (s)
+the rest time: 0.00021629699995173723 (s)
+flooshing..
+floosh time: 0.1820701750000353 (s)
+
+Total time for this file: 39.84184461599989
+Total time: 1985.325701044
+
+Working on file 56
+loading files..
+load time: 35.823003454999935 (s)
+slices: 575899:586114
+x copy time: 0.5376970029999484 (s)
+the rest time: 0.00027641700012281945 (s)
+flooshing..
+floosh time: 0.19356655299998238 (s)
+
+Total time for this file: 36.360976875000006
+Total time: 2021.686677919
+
+Working on file 57
+loading files..
+load time: 51.57967629000018 (s)
+slices: 586114:596438
+x copy time: 0.5200834700003725 (s)
+the rest time: 0.00019966300033047446 (s)
+flooshing..
+floosh time: 0.192743375000191 (s)
+
+Total time for this file: 52.09995942300088
+Total time: 2073.786637342001
+
+Working on file 58
+loading files..
+load time: 28.05345868099994 (s)
+slices: 596438:606767
+x copy time: 0.5842719449997276 (s)
+the rest time: 0.0002422590000605851 (s)
+flooshing..
+floosh time: 0.2017242809997697 (s)
+
+Total time for this file: 28.637972884999726
+Total time: 2102.424610227001
+
+Working on file 59
+loading files..
+load time: 32.53262478899978 (s)
+slices: 606767:617138
+x copy time: 0.6447688090001975 (s)
+the rest time: 0.0003103709996139514 (s)
+flooshing..
+floosh time: 0.20599083300021448 (s)
+
+Total time for this file: 33.177703968999595
+Total time: 2135.6023141960004
+
+Working on file 60
+loading files..
+load time: 30.291534412000146 (s)
+slices: 617138:627361
+x copy time: 0.47701982600028714 (s)
+the rest time: 0.0003044799996132497 (s)
+flooshing..
+floosh time: 0.16970320599966726 (s)
+
+Total time for this file: 30.768858718000047
+Total time: 2166.3711729140005
+
+Working on file 61
+loading files..
+load time: 40.72750919600003 (s)
+slices: 627361:637655
+x copy time: 0.6137824060001549 (s)
+the rest time: 0.0002153530003852211 (s)
+flooshing..
+floosh time: 0.1971273439999095 (s)
+
+Total time for this file: 41.34150695500057
+Total time: 2207.712679869001
+
+Working on file 62
+loading files..
+load time: 29.941095739000048 (s)
+slices: 637655:647915
+x copy time: 0.5800650270002734 (s)
+the rest time: 0.00022984799988989835 (s)
+flooshing..
+floosh time: 0.18736398100008955 (s)
+
+Total time for this file: 30.52139061400021
+Total time: 2238.2340704830012
+
+Working on file 63
+loading files..
+load time: 38.02976777699996 (s)
+slices: 647915:658173
+x copy time: 0.5891491430002134 (s)
+the rest time: 0.00022822600021754624 (s)
+flooshing..
+floosh time: 0.2100119330002599 (s)
+
+Total time for this file: 38.61914514600039
+Total time: 2276.8532156290016
+
+Working on file 64
+loading files..
+load time: 26.298922993999895 (s)
+slices: 658173:668343
+x copy time: 0.5214663470001142 (s)
+the rest time: 0.00031826999975237413 (s)
+flooshing..
+floosh time: 0.18812894799975766 (s)
+
+Total time for this file: 26.82070761099976
+Total time: 2303.6739232400014
+
+Working on file 65
+loading files..
+load time: 25.665244763999908 (s)
+slices: 668343:678618
+x copy time: 0.5418332199997167 (s)
+the rest time: 0.00018831099987437483 (s)
+flooshing..
+floosh time: 0.18915595299995402 (s)
+
+Total time for this file: 26.2072662949995
+Total time: 2329.881189535001
+
+Working on file 66
+loading files..
+load time: 28.058653244000197 (s)
+slices: 678618:688933
+x copy time: 0.5472138940003788 (s)
+the rest time: 0.00021481499970832374 (s)
+flooshing..
+floosh time: 0.19231451799987553 (s)
+
+Total time for this file: 28.606081953000285
+Total time: 2358.487271488001
+
+Working on file 67
+loading files..
+load time: 35.34032718300023 (s)
+slices: 688933:699039
+x copy time: 0.49949953399982405 (s)
+the rest time: 0.0002746889999798441 (s)
+flooshing..
+floosh time: 0.18252652399996805 (s)
+
+Total time for this file: 35.84010140600003
+Total time: 2394.327372894001
+
+Working on file 68
+loading files..
+load time: 26.414123076000124 (s)
+slices: 699039:709351
+x copy time: 0.517503669999769 (s)
+the rest time: 0.00024575800034654094 (s)
+flooshing..
+floosh time: 0.19134584600033122 (s)
+
+Total time for this file: 26.93187250400024
+Total time: 2421.2592453980014
+
+Working on file 69
+loading files..
+load time: 30.24393393900027 (s)
+slices: 709351:719640
+x copy time: 0.5332951360001061 (s)
+the rest time: 0.00019197500023437897 (s)
+flooshing..
+floosh time: 0.1906579530000272 (s)
+
+Total time for this file: 30.777421050000612
+Total time: 2452.036666448002
+
+Working on file 70
+loading files..
+load time: 16.81500604499979 (s)
+slices: 719640:730056
+x copy time: 0.5127526880000914 (s)
+the rest time: 0.00022582900010093 (s)
+flooshing..
+floosh time: 0.1887415559999681 (s)
+
+Total time for this file: 17.327984561999983
+Total time: 2469.364651010002
+
+Working on file 71
+loading files..
+load time: 30.725850441000148 (s)
+slices: 730056:740352
+x copy time: 0.531285100000332 (s)
+the rest time: 0.0002298269996572344 (s)
+flooshing..
+floosh time: 0.18067918399992777 (s)
+
+Total time for this file: 31.257365368000137
+Total time: 2500.622016378002
+
+Working on file 72
+loading files..
+load time: 19.847981378999975 (s)
+slices: 740352:750645
+x copy time: 0.5235993340002096 (s)
+the rest time: 0.00029512999981307075 (s)
+flooshing..
+floosh time: 0.1787975600000209 (s)
+
+Total time for this file: 20.371875842999998
+Total time: 2520.993892221002
+
+Working on file 73
+loading files..
+load time: 33.51792925200016 (s)
+slices: 750645:760956
+x copy time: 0.6556508030002988 (s)
+the rest time: 0.000221076999878278 (s)
+flooshing..
+floosh time: 0.21258218200000556 (s)
+
+Total time for this file: 34.173801132000335
+Total time: 2555.1676933530025
+
+Working on file 74
+loading files..
+load time: 22.19248059099982 (s)
+slices: 760956:771142
+x copy time: 0.5522554369999852 (s)
+the rest time: 0.00022885099997438374 (s)
+flooshing..
+floosh time: 0.19803095199995369 (s)
+
+Total time for this file: 22.74496487899978
+Total time: 2577.9126582320023
+
+Working on file 75
+loading files..
+load time: 30.97414309700025 (s)
+slices: 771142:781555
+x copy time: 0.5413237549996666 (s)
+the rest time: 0.0002176760003749223 (s)
+flooshing..
+floosh time: 0.19531397799983097 (s)
+
+Total time for this file: 31.515684528000293
+Total time: 2609.4283427600026
+
+Working on file 76
+loading files..
+load time: 33.65230557699988 (s)
+slices: 781555:791830
+x copy time: 0.563813798999945 (s)
+the rest time: 0.00028577600005519344 (s)
+flooshing..
+floosh time: 0.1877691570002753 (s)
+
+Total time for this file: 34.21640515199988
+Total time: 2643.6447479120025
+
+Working on file 77
+loading files..
+load time: 40.089692989000014 (s)
+slices: 791830:802097
+x copy time: 0.6563420500001484 (s)
+the rest time: 0.00034947900030601886 (s)
+flooshing..
+floosh time: 0.2141040559999965 (s)
+
+Total time for this file: 40.74638451800047
+Total time: 2684.391132430003
+
+Working on file 78
+loading files..
+load time: 31.233393480999894 (s)
+slices: 802097:812297
+x copy time: 0.5611598489999778 (s)
+the rest time: 0.00018914199972641654 (s)
+flooshing..
+floosh time: 0.20196935000012672 (s)
+
+Total time for this file: 31.794742471999598
+Total time: 2716.1858749020025
+
+Working on file 79
+loading files..
+load time: 51.32773741500023 (s)
+slices: 812297:822532
+x copy time: 0.5197282519998225 (s)
+the rest time: 0.00019520000023476314 (s)
+flooshing..
+floosh time: 0.19474353199984762 (s)
+
+Total time for this file: 51.847660867000286
+Total time: 2768.033535769003
+
+Working on file 80
+loading files..
+load time: 35.6266985100001 (s)
+slices: 822532:832794
+x copy time: 0.5273548389995995 (s)
+the rest time: 0.00031405099980474915 (s)
+flooshing..
+floosh time: 0.20247937500016633 (s)
+
+Total time for this file: 36.1543673999995
+Total time: 2804.1879031690023
+
+Working on file 81
+loading files..
+load time: 41.44874295700038 (s)
+slices: 832794:843178
+x copy time: 0.545804859999862 (s)
+the rest time: 0.00019273599991720403 (s)
+flooshing..
+floosh time: 0.20086238900012177 (s)
+
+Total time for this file: 41.994740553000156
+Total time: 2846.1826437220025
+
+Working on file 82
+loading files..
+load time: 40.94371394400014 (s)
+slices: 843178:853384
+x copy time: 0.5543930020003245 (s)
+the rest time: 0.00023548199987999396 (s)
+flooshing..
+floosh time: 0.21236849100023392 (s)
+
+Total time for this file: 41.49834242800034
+Total time: 2887.680986150003
+
+Working on file 83
+loading files..
+load time: 30.402102706000278 (s)
+slices: 853384:863682
+x copy time: 0.4979827639999712 (s)
+the rest time: 0.00021286599985614885 (s)
+flooshing..
+floosh time: 0.18531936899989887 (s)
+
+Total time for this file: 30.900298336000105
+Total time: 2918.581284486003
+
+Working on file 84
+loading files..
+load time: 28.947209993999877 (s)
+slices: 863682:873833
+x copy time: 0.6554034629998569 (s)
+the rest time: 0.0004020319997835031 (s)
+flooshing..
+floosh time: 0.21785581299991463 (s)
+
+Total time for this file: 29.603015488999517
+Total time: 2948.1842999750024
+
+Working on file 85
+loading files..
+load time: 49.82070747099988 (s)
+slices: 873833:884090
+x copy time: 0.55418563000012 (s)
+the rest time: 0.00025881000010485877 (s)
+flooshing..
+floosh time: 0.17586204799999905 (s)
+
+Total time for this file: 50.3751519110001
+Total time: 2998.5594518860025
+
+Working on file 86
+loading files..
+load time: 31.72785993599973 (s)
+slices: 884090:894316
+x copy time: 0.5513150330002645 (s)
+the rest time: 0.000191835000350693 (s)
+flooshing..
+floosh time: 0.20699688200011224 (s)
+
+Total time for this file: 32.27936680400035
+Total time: 3030.838818690003
+
+Working on file 87
+loading files..
+load time: 46.374054115000035 (s)
+slices: 894316:904543
+x copy time: 0.5956999380000525 (s)
+the rest time: 0.00020049899967489182 (s)
+flooshing..
+floosh time: 0.2057439830000476 (s)
+
+Total time for this file: 46.96995455199976
+Total time: 3077.8087732420026
+
+Working on file 88
+loading files..
+load time: 38.49954742299997 (s)
+slices: 904543:914770
+x copy time: 0.513017955000123 (s)
+the rest time: 0.00029263899978104746 (s)
+flooshing..
+floosh time: 0.1917916540000988 (s)
+
+Total time for this file: 39.01285801699987
+Total time: 3116.8216312590025
+
+Working on file 89
+loading files..
+load time: 46.41231301100015 (s)
+slices: 914770:925120
+x copy time: 0.540592763999939 (s)
+the rest time: 0.00019505799991748063 (s)
+flooshing..
+floosh time: 0.20139065000012124 (s)
+
+Total time for this file: 46.95310083300001
+Total time: 3163.7747320920025
+
+Working on file 90
+loading files..
+load time: 37.213247552999746 (s)
+slices: 925120:935216
+x copy time: 0.617117596999833 (s)
+the rest time: 0.00026666300027500256 (s)
+flooshing..
+floosh time: 0.19699422999974558 (s)
+
+Total time for this file: 37.830631812999854
+Total time: 3201.6053639050024
+
+Working on file 91
+loading files..
+load time: 41.628818529 (s)
+slices: 935216:945515
+x copy time: 0.5124952119999762 (s)
+the rest time: 0.00032556499991187593 (s)
+flooshing..
+floosh time: 0.19567965499982165 (s)
+
+Total time for this file: 42.14163930599989
+Total time: 3243.7470032110023
+
+Working on file 92
+loading files..
+load time: 43.09210797199967 (s)
+slices: 945515:955799
+x copy time: 0.6390981209997335 (s)
+the rest time: 0.0002209199997196265 (s)
+flooshing..
+floosh time: 0.21293795500014312 (s)
+
+Total time for this file: 43.73142701299912
+Total time: 3287.4784302240014
+
+Working on file 93
+loading files..
+load time: 41.70860296899991 (s)
+slices: 955799:966068
+x copy time: 0.5292562159997942 (s)
+the rest time: 0.00019334699982209713 (s)
+flooshing..
+floosh time: 0.19542910499967547 (s)
+
+Total time for this file: 42.23805253199953
+Total time: 3329.716482756001
+
+Working on file 94
+loading files..
+load time: 35.656932223999775 (s)
+slices: 966068:976328
+x copy time: 0.5369723779999731 (s)
+the rest time: 0.00023662800003876328 (s)
+flooshing..
+floosh time: 0.20070520500030398 (s)
+
+Total time for this file: 36.194141229999786
+Total time: 3365.9106239860007
+
+Working on file 95
+loading files..
+load time: 39.23888176199989 (s)
+slices: 976328:986590
+x copy time: 0.5102360660002887 (s)
+the rest time: 0.00022591600009036483 (s)
+flooshing..
+floosh time: 0.19275291199983258 (s)
+
+Total time for this file: 39.74934374400027
+Total time: 3405.659967730001
+
+Working on file 96
+loading files..
+load time: 34.43430058900003 (s)
+slices: 986590:996970
+x copy time: 0.5138410110002951 (s)
+the rest time: 0.00029798000014125137 (s)
+flooshing..
+floosh time: 0.1995153019997815 (s)
+
+Total time for this file: 34.94843958000047
+Total time: 3440.6084073100014
+
+Working on file 97
+loading files..
+load time: 43.4505668769998 (s)
+slices: 996970:1007197
+x copy time: 0.5468461740001658 (s)
+the rest time: 0.00018391499997960636 (s)
+flooshing..
+floosh time: 0.19657480099976965 (s)
+
+Total time for this file: 43.997596965999946
+Total time: 3484.6060042760014
+
+Working on file 98
+loading files..
+load time: 33.15752504000011 (s)
+slices: 1007197:1017477
+x copy time: 0.5426991110002746 (s)
+the rest time: 0.00023236800006998237 (s)
+flooshing..
+floosh time: 0.20270598799970685 (s)
+
+Total time for this file: 33.700456519000454
+Total time: 3518.306460795002
+
+Working on file 99
+loading files..
+load time: 48.185480402000394 (s)
+slices: 1017477:1027805
+x copy time: 0.5123018630001752 (s)
+the rest time: 0.0002225530001851439 (s)
+flooshing..
+floosh time: 0.19250657200018395 (s)
+
+Total time for this file: 48.698004818000754
+Total time: 3567.0044656130026
+
+Working on file 100
+loading files..
+load time: 35.598820995000096 (s)
+slices: 1027805:1038027
+x copy time: 0.5648380100001305 (s)
+the rest time: 0.00032615100008115405 (s)
+flooshing..
+floosh time: 0.2028093059998355 (s)
+
+Total time for this file: 36.16398515600031
+Total time: 3603.168450769003
+
+Working on file 101
+loading files..
+load time: 33.73451537899973 (s)
+slices: 1038027:1048366
+x copy time: 0.6550301070001296 (s)
+the rest time: 0.000227811000058864 (s)
+flooshing..
+floosh time: 0.22521982499984006 (s)
+
+Total time for this file: 34.38977329699992
+Total time: 3637.558224066003
+
+Working on file 102
+loading files..
+load time: 29.056690220999826 (s)
+slices: 1048366:1058611
+x copy time: 0.5527048979997744 (s)
+the rest time: 0.00047852799980319105 (s)
+flooshing..
+floosh time: 0.29432920499994 (s)
+
+Total time for this file: 29.609873646999404
+Total time: 3667.168097713002
+
+Working on file 103
+loading files..
+load time: 40.412004846999935 (s)
+slices: 1058611:1068909
+x copy time: 0.650338138999814 (s)
+the rest time: 0.0003021170000465645 (s)
+flooshing..
+floosh time: 0.24322805899964806 (s)
+
+Total time for this file: 41.062645102999795
+Total time: 3708.230742816002
+
+Working on file 104
+loading files..
+load time: 38.09697425000013 (s)
+slices: 1068909:1079212
+x copy time: 0.6537566510000943 (s)
+the rest time: 0.0005005379998692661 (s)
+flooshing..
+floosh time: 0.21437147000006007 (s)
+
+Total time for this file: 38.751231439000094
+Total time: 3746.981974255002
+
+Working on file 105
+loading files..
+load time: 62.11055936699995 (s)
+slices: 1079212:1089512
+x copy time: 0.5896862370000235 (s)
+the rest time: 0.0002275220003866707 (s)
+flooshing..
+floosh time: 0.18747644599989144 (s)
+
+Total time for this file: 62.70047312600036
+Total time: 3809.6824473810025
+
+Working on file 106
+loading files..
+load time: 45.16130443799966 (s)
+slices: 1089512:1099722
+x copy time: 0.5418404250003732 (s)
+the rest time: 0.00027671499992720783 (s)
+flooshing..
+floosh time: 0.2020907110004373 (s)
+
+Total time for this file: 45.70342157799996
+Total time: 3855.3858689590024
+
+Working on file 107
+loading files..
+load time: 53.978012628000215 (s)
+slices: 1099722:1110008
+x copy time: 0.5159222259999297 (s)
+the rest time: 0.0002547039998717082 (s)
+flooshing..
+floosh time: 0.19614441900012025 (s)
+
+Total time for this file: 54.494189558000016
+Total time: 3909.8800585170025
+
+Working on file 108
+loading files..
+load time: 38.27792298600025 (s)
+slices: 1110008:1120273
+x copy time: 0.5460195229998135 (s)
+the rest time: 0.00019940500033044373 (s)
+flooshing..
+floosh time: 0.21270700300010503 (s)
+
+Total time for this file: 38.82414191400039
+Total time: 3948.704200431003
+
+Working on file 109
+loading files..
+load time: 47.098658801000056 (s)
+slices: 1120273:1130531
+x copy time: 0.578758138000012 (s)
+the rest time: 0.00027902100009669084 (s)
+flooshing..
+floosh time: 0.20834426999999778 (s)
+
+Total time for this file: 47.677695960000165
+Total time: 3996.381896391003
+
+Working on file 110
+loading files..
+load time: 27.094406113999867 (s)
+slices: 1130531:1140738
+x copy time: 0.5797111969995967 (s)
+the rest time: 0.00025355400020998786 (s)
+flooshing..
+floosh time: 0.2076289070000712 (s)
+
+Total time for this file: 27.674370864999673
+Total time: 4024.0562672560027
+
+Working on file 111
+loading files..
+load time: 81.1412098879996 (s)
+slices: 1140738:1151003
+x copy time: 0.5235862380004619 (s)
+the rest time: 0.00024435599971184274 (s)
+flooshing..
+floosh time: 0.21215925900014554 (s)
+
+Total time for this file: 81.66504048199977
+Total time: 4105.721307738002
+
+Working on file 112
+loading files..
+load time: 63.04166682699997 (s)
+slices: 1151003:1161267
+x copy time: 0.5990658750006332 (s)
+the rest time: 0.00020234300063748378 (s)
+flooshing..
+floosh time: 0.20797704000051453 (s)
+
+Total time for this file: 63.64093504500124
+Total time: 4169.362242783003
+
+Working on file 113
+loading files..
+load time: 48.31759887499993 (s)
+slices: 1161267:1171597
+x copy time: 0.5733821829999215 (s)
+the rest time: 0.00030286499986686977 (s)
+flooshing..
+floosh time: 0.19049005800025043 (s)
+
+Total time for this file: 48.89128392299972
+Total time: 4218.253526706003
+
+Working on file 114
+loading files..
+load time: 30.408264228000007 (s)
+slices: 1171597:1181955
+x copy time: 0.5009595300007277 (s)
+the rest time: 0.00020556199979182566 (s)
+flooshing..
+floosh time: 0.20354827499977546 (s)
+
+Total time for this file: 30.909429320000527
+Total time: 4249.1629560260035
+
+Working on file 115
+loading files..
+load time: 41.83583822400033 (s)
+slices: 1181955:1192305
+x copy time: 0.5548082859995702 (s)
+the rest time: 0.0002599930003270856 (s)
+flooshing..
+floosh time: 0.2114022939995266 (s)
+
+Total time for this file: 42.390906503000224
+Total time: 4291.553862529004
+
+Working on file 116
+loading files..
+load time: 44.08879122899998 (s)
+slices: 1192305:1202449
+x copy time: 0.5395024620002005 (s)
+the rest time: 0.000227348000407801 (s)
+flooshing..
+floosh time: 0.20518899399939983 (s)
+
+Total time for this file: 44.62852103900059
+Total time: 4336.182383568004
+
+Working on file 117
+loading files..
+load time: 41.05921482299982 (s)
+slices: 1202449:1212655
+x copy time: 0.5141605250000794 (s)
+the rest time: 0.00027646799935610034 (s)
+flooshing..
+floosh time: 0.20737457299946982 (s)
+
+Total time for this file: 41.573651815999256
+Total time: 4377.756035384004
+
+Working on file 118
+loading files..
+load time: 44.42219279999972 (s)
+slices: 1212655:1222942
+x copy time: 0.5465428020006584 (s)
+the rest time: 0.00018774600084725535 (s)
+flooshing..
+floosh time: 0.21457863399973576 (s)
+
+Total time for this file: 44.968923348001226
+Total time: 4422.724958732005
+
+Working on file 119
+loading files..
+load time: 45.848291678999885 (s)
+slices: 1222942:1233174
+x copy time: 0.6788680210001985 (s)
+the rest time: 0.00030507899919030024 (s)
+flooshing..
+floosh time: 0.22446588300044823 (s)
+
+Total time for this file: 46.527464778999274
+Total time: 4469.252423511004
+
+Working on file 120
+loading files..
+load time: 30.16759825600002 (s)
+slices: 1233174:1243348
+x copy time: 0.6384516849993815 (s)
+the rest time: 0.0002547760004745214 (s)
+flooshing..
+floosh time: 0.2242589659999794 (s)
+
+Total time for this file: 30.806304716999875
+Total time: 4500.058728228004
+
+Working on file 121
+loading files..
+load time: 50.938982238999415 (s)
+slices: 1243348:1253544
+x copy time: 0.5394703450001543 (s)
+the rest time: 0.00031636899984732736 (s)
+flooshing..
+floosh time: 0.21506871099973068 (s)
+
+Total time for this file: 51.47876895299942
+Total time: 4551.537497181003
+
+Working on file 122
+loading files..
+load time: 36.764113741000074 (s)
+slices: 1253544:1263943
+x copy time: 0.5610854389997257 (s)
+the rest time: 0.00019299199993838556 (s)
+flooshing..
+floosh time: 0.21903158799977973 (s)
+
+Total time for this file: 37.32539217199974
+Total time: 4588.862889353003
+
+Working on file 123
+loading files..
+load time: 40.636883535999914 (s)
+slices: 1263943:1274063
+x copy time: 0.4955175519999102 (s)
+the rest time: 0.0001916030005304492 (s)
+flooshing..
+floosh time: 0.20129571600045892 (s)
+
+Total time for this file: 41.132592691000355
+Total time: 4629.995482044003
+
+Working on file 124
+loading files..
+load time: 36.22534862300017 (s)
+slices: 1274063:1284344
+x copy time: 0.5281612899998436 (s)
+the rest time: 0.0002138720001312322 (s)
+flooshing..
+floosh time: 0.2053016199997728 (s)
+
+Total time for this file: 36.75372378500015
+Total time: 4666.749205829004
+
+Working on file 125
+loading files..
+load time: 48.77782325199951 (s)
+slices: 1284344:1294542
+x copy time: 0.5358805730002132 (s)
+the rest time: 0.0004892150000159745 (s)
+flooshing..
+floosh time: 0.21753134900063742 (s)
+
+Total time for this file: 49.314193039999736
+Total time: 4716.063398869003
+
+Working on file 126
+loading files..
+load time: 51.91050138199989 (s)
+slices: 1294542:1304642
+x copy time: 0.6489592699999776 (s)
+the rest time: 0.00022066300061851507 (s)
+flooshing..
+floosh time: 0.23045669000021007 (s)
+
+Total time for this file: 52.55968131500049
+Total time: 4768.623080184004
+
+Working on file 127
+loading files..
+load time: 39.22145646699937 (s)
+slices: 1304642:1314904
+x copy time: 0.5200933969999824 (s)
+the rest time: 0.0002179670000259648 (s)
+flooshing..
+floosh time: 0.20341422100045747 (s)
+
+Total time for this file: 39.74176783099938
+Total time: 4808.364848015003
+
+Working on file 128
+loading files..
+load time: 35.5111363850001 (s)
+slices: 1314904:1325205
+x copy time: 0.5116391219999059 (s)
+the rest time: 0.0002111730000251555 (s)
+flooshing..
+floosh time: 0.20462241000041104 (s)
+
+Total time for this file: 36.02298668000003
+Total time: 4844.387834695003
+
+Working on file 129
+loading files..
+load time: 31.53504197499933 (s)
+slices: 1325205:1335503
+x copy time: 0.5030238899998949 (s)
+the rest time: 0.0002888469998651999 (s)
+flooshing..
+floosh time: 0.20331527899998036 (s)
+
+Total time for this file: 32.03835471199909
+Total time: 4876.426189407002
+
+Working on file 130
+loading files..
+load time: 31.702708681999866 (s)
+slices: 1335503:1345791
+x copy time: 0.5678803660002814 (s)
+the rest time: 0.00022198400074557867 (s)
+flooshing..
+floosh time: 0.2237376889997904 (s)
+
+Total time for this file: 32.27081103200089
+Total time: 4908.697000439003
+
+Working on file 131
+loading files..
+load time: 42.68322072199953 (s)
+slices: 1345791:1355992
+x copy time: 0.5642838559997472 (s)
+the rest time: 0.0002703649997783941 (s)
+flooshing..
+floosh time: 0.22255269100060104 (s)
+
+Total time for this file: 43.24777494299906
+Total time: 4951.944775382002
+
+Working on file 132
+loading files..
+load time: 29.496809364 (s)
+slices: 1355992:1366152
+x copy time: 0.47311722099948383 (s)
+the rest time: 0.00019204499949410092 (s)
+flooshing..
+floosh time: 0.19655384399993636 (s)
+
+Total time for this file: 29.97011862999898
+Total time: 4981.914894012001
+
+Working on file 133
+loading files..
+load time: 44.645100041999285 (s)
+slices: 1366152:1376407
+x copy time: 0.5675243800005774 (s)
+the rest time: 0.0003762950000236742 (s)
+flooshing..
+floosh time: 0.22188690700022562 (s)
+
+Total time for this file: 45.213000716999886
+Total time: 5027.127894729001
+
+Working on file 134
+loading files..
+load time: 32.607847723000305 (s)
+slices: 1376407:1386692
+x copy time: 0.6006355239996992 (s)
+the rest time: 0.0002369190005993005 (s)
+flooshing..
+floosh time: 0.28180272600002354 (s)
+
+Total time for this file: 33.2087201660006
+Total time: 5060.336614895002
+
+Working on file 135
+loading files..
+load time: 25.62901065799997 (s)
+slices: 1386692:1396905
+x copy time: 0.5156452769997486 (s)
+the rest time: 0.00027808100003312575 (s)
+flooshing..
+floosh time: 0.20768919499914773 (s)
+
+Total time for this file: 26.144934015999752
+Total time: 5086.4815489110015
+
+Working on file 136
+loading files..
+load time: 34.829907947999345 (s)
+slices: 1396905:1407099
+x copy time: 0.5308362569994642 (s)
+the rest time: 0.00020453100023587467 (s)
+flooshing..
+floosh time: 0.2139819499998339 (s)
+
+Total time for this file: 35.360948735999045
+Total time: 5121.8424976470005
+
+Working on file 137
+loading files..
+load time: 32.16463797899996 (s)
+slices: 1407099:1417358
+x copy time: 0.5213149490000433 (s)
+the rest time: 0.00020675900032074424 (s)
+flooshing..
+floosh time: 0.21594476400059648 (s)
+
+Total time for this file: 32.68615968700033
+Total time: 5154.528657334001
+
+Working on file 138
+loading files..
+load time: 37.00912361100018 (s)
+slices: 1417358:1427686
+x copy time: 0.5674648540007183 (s)
+the rest time: 0.00022281099973042728 (s)
+flooshing..
+floosh time: 0.2125016489999325 (s)
+
+Total time for this file: 37.576811276000626
+Total time: 5192.1054686100015
+
+Working on file 139
+loading files..
+load time: 40.28384654399997 (s)
+slices: 1427686:1438021
+x copy time: 0.4916280719999122 (s)
+the rest time: 0.0003283400001237169 (s)
+flooshing..
+floosh time: 0.20374473999982 (s)
+
+Total time for this file: 40.77580295600001
+Total time: 5232.8812715660015
+
+Working on file 140
+loading files..
+load time: 28.260334001000047 (s)
+slices: 1438021:1448396
+x copy time: 0.5476534509998601 (s)
+the rest time: 0.00033869900016725296 (s)
+flooshing..
+floosh time: 0.23262738199991873 (s)
+
+Total time for this file: 28.808326151000074
+Total time: 5261.689597717002
+
+Working on file 141
+loading files..
+load time: 27.234386599000572 (s)
+slices: 1448396:1458644
+x copy time: 0.6045876979997047 (s)
+the rest time: 0.0003302140003142995 (s)
+flooshing..
+floosh time: 0.22353194000061194 (s)
+
+Total time for this file: 27.83930451100059
+Total time: 5289.528902228002
+
+Working on file 142
+loading files..
+load time: 11.898222376999911 (s)
+slices: 1458644:1468774
+x copy time: 0.5201773590006269 (s)
+the rest time: 0.00019610799972724635 (s)
+flooshing..
+floosh time: 0.2116545290000431 (s)
+
+Total time for this file: 12.418595844000265
+Total time: 5301.947498072002
+
+Working on file 143
+loading files..
+load time: 34.08707256300022 (s)
+slices: 1468774:1479013
+x copy time: 0.5896166299999095 (s)
+the rest time: 0.00027099799990537576 (s)
+flooshing..
+floosh time: 0.21964890300023399 (s)
+
+Total time for this file: 34.676960191000035
+Total time: 5336.624458263002
+
+Working on file 144
+loading files..
+load time: 48.22556255800009 (s)
+slices: 1479013:1489314
+x copy time: 0.6013388609999311 (s)
+the rest time: 0.00022320200059766648 (s)
+flooshing..
+floosh time: 0.29586988000028214 (s)
+
+Total time for this file: 48.82712462100062
+Total time: 5385.451582884003
+
+Working on file 145
+loading files..
+load time: 27.615053962000275 (s)
+slices: 1489314:1499519
+x copy time: 0.5326978430002782 (s)
+the rest time: 0.00019583099947340088 (s)
+flooshing..
+floosh time: 0.21374568299961538 (s)
+
+Total time for this file: 28.147947636000026
+Total time: 5413.599530520003
+
+Working on file 146
+loading files..
+load time: 23.388731037999605 (s)
+slices: 1499519:1509837
+x copy time: 0.6804256400000668 (s)
+the rest time: 0.0002674170000318554 (s)
+flooshing..
+floosh time: 0.23002332499982003 (s)
+
+Total time for this file: 24.069424094999704
+Total time: 5437.668954615003
+
+Working on file 147
+loading files..
+load time: 25.825141569000152 (s)
+slices: 1509837:1520044
+x copy time: 0.48844511799961765 (s)
+the rest time: 0.00028945599933649646 (s)
+flooshing..
+floosh time: 0.2019780520004133 (s)
+
+Total time for this file: 26.313876142999106
+Total time: 5463.982830758002
+
+Working on file 148
+loading files..
+load time: 16.74960441299936 (s)
+slices: 1520044:1530266
+x copy time: 0.5100051589997747 (s)
+the rest time: 0.0001916129995152005 (s)
+flooshing..
+floosh time: 0.2120516699997097 (s)
+
+Total time for this file: 17.25980118499865
+Total time: 5481.242631943001
+
+Working on file 149
+loading files..
+load time: 31.497629479000352 (s)
+slices: 1530266:1540406
+x copy time: 0.5375642150002022 (s)
+the rest time: 0.00022577500021725427 (s)
+flooshing..
+floosh time: 0.2230796730000293 (s)
+
+Total time for this file: 32.03541946900077
+Total time: 5513.278051412001
+
+Working on file 150
+loading files..
+load time: 10.369141980000677 (s)
+slices: 1540406:1550673
+x copy time: 0.6038733089999369 (s)
+the rest time: 0.00027708099969459 (s)
+flooshing..
+floosh time: 0.21959855299974151 (s)
+
+Total time for this file: 10.973292370000308
+Total time: 5524.251343782002
+
+Working on file 151
+loading files..
+load time: 25.760941678000563 (s)
+slices: 1550673:1560990
+x copy time: 0.5489394189999075 (s)
+the rest time: 0.0002995490003740997 (s)
+flooshing..
+floosh time: 0.2284168750002209 (s)
+
+Total time for this file: 26.310180646000845
+Total time: 5550.5615244280025
+
+Working on file 152
+loading files..
+load time: 20.663242609000008 (s)
+slices: 1560990:1571293
+x copy time: 0.6042779950003023 (s)
+the rest time: 0.0002654899999470217 (s)
+flooshing..
+floosh time: 0.22631139699933556 (s)
+
+Total time for this file: 21.267786094000257
+Total time: 5571.829310522003
+
+Working on file 153
+loading files..
+load time: 25.330686412999967 (s)
+slices: 1571293:1581485
+x copy time: 0.499546972000644 (s)
+the rest time: 0.00018764099968393566 (s)
+flooshing..
+floosh time: 0.2034405060003337 (s)
+
+Total time for this file: 25.830421026000295
+Total time: 5597.659731548003
+
+Working on file 154
+loading files..
+load time: 13.708590965999974 (s)
+slices: 1581485:1591716
+x copy time: 0.5855681369994272 (s)
+the rest time: 0.00020936299915774725 (s)
+flooshing..
+floosh time: 0.22864754900001572 (s)
+
+Total time for this file: 14.29436846599856
+Total time: 5611.954100014002
+
+Working on file 155
+loading files..
+load time: 27.76623321199986 (s)
+slices: 1591716:1602065
+x copy time: 0.5127339669998037 (s)
+the rest time: 0.00030439799957093783 (s)
+flooshing..
+floosh time: 0.21298780699999043 (s)
+
+Total time for this file: 28.279271576999236
+Total time: 5640.233371591001
+
+Working on file 156
+loading files..
+load time: 10.34225735200016 (s)
+slices: 1602065:1612278
+x copy time: 0.5134313430007751 (s)
+the rest time: 0.000285001000520424 (s)
+flooshing..
+floosh time: 0.2153973219992622 (s)
+
+Total time for this file: 10.855973696001456
+Total time: 5651.089345287002
+
+Working on file 157
+loading files..
+load time: 36.00471108800048 (s)
+slices: 1612278:1622480
+x copy time: 0.6577276480002183 (s)
+the rest time: 0.0002116209998348495 (s)
+flooshing..
+floosh time: 0.22743871199963905 (s)
+
+Total time for this file: 36.66265035700053
+Total time: 5687.751995644003
+
+Working on file 158
+loading files..
+load time: 15.913338225999723 (s)
+slices: 1622480:1632701
+x copy time: 0.5360887630004072 (s)
+the rest time: 0.00018847100000130013 (s)
+flooshing..
+floosh time: 0.22424989899991488 (s)
+
+Total time for this file: 16.449615460000132
+Total time: 5704.201611104003
+
+Working on file 159
+loading files..
+load time: 18.382681916000365 (s)
+slices: 1632701:1642908
+x copy time: 0.5101247100001274 (s)
+the rest time: 0.0002962179996757186 (s)
+flooshing..
+floosh time: 0.20867523600009008 (s)
+
+Total time for this file: 18.89310284400017
+Total time: 5723.094713948003
+
+Working on file 160
+loading files..
+load time: 20.74926774800042 (s)
+slices: 1642908:1653103
+x copy time: 0.6024356530006116 (s)
+the rest time: 0.00018807500055117998 (s)
+flooshing..
+floosh time: 0.26500757799931307 (s)
+
+Total time for this file: 21.351891476001583
+Total time: 5744.446605424005
+
+Working on file 161
+loading files..
+load time: 30.833053272000143 (s)
+slices: 1653103:1663422
+x copy time: 0.6352774299994053 (s)
+the rest time: 0.0002932999996119179 (s)
+flooshing..
+floosh time: 0.25424286399993434 (s)
+
+Total time for this file: 31.46862400199916
+Total time: 5775.915229426004
+
+Working on file 162
+loading files..
+load time: 10.317401221000182 (s)
+slices: 1663422:1673642
+x copy time: 0.5116943949997221 (s)
+the rest time: 0.00023050700019666692 (s)
+flooshing..
+floosh time: 0.21880106899970997 (s)
+
+Total time for this file: 10.8293261230001
+Total time: 5786.744555549004
+
+Working on file 163
+loading files..
+load time: 19.81042554600026 (s)
+slices: 1673642:1683785
+x copy time: 0.4919806950001657 (s)
+the rest time: 0.00029155700030969456 (s)
+flooshing..
+floosh time: 0.2078687519997402 (s)
+
+Total time for this file: 20.302697798000736
+Total time: 5807.047253347005
+
+Working on file 164
+loading files..
+load time: 9.054588274999332 (s)
+slices: 1683785:1694058
+x copy time: 0.5117270840000856 (s)
+the rest time: 0.00019279699972685194 (s)
+flooshing..
+floosh time: 0.21524001600027987 (s)
+
+Total time for this file: 9.566508155999145
+Total time: 5816.613761503004
+
+Working on file 165
+loading files..
+load time: 27.781298189000154 (s)
+slices: 1694058:1704451
+x copy time: 0.5664804139996704 (s)
+the rest time: 0.0005913330005569151 (s)
+flooshing..
+floosh time: 0.29869566900015343 (s)
+
+Total time for this file: 28.34836993600038
+Total time: 5844.962131439004
+
+Working on file 166
+loading files..
+load time: 13.586666383000193 (s)
+slices: 1704451:1714806
+x copy time: 0.5966353080002591 (s)
+the rest time: 0.00028355799986456987 (s)
+flooshing..
+floosh time: 0.2390730019997136 (s)
+
+Total time for this file: 14.183585249000316
+Total time: 5859.1457166880045
+
+Working on file 167
+loading files..
+load time: 29.13392448600007 (s)
+slices: 1714806:1724976
+x copy time: 0.5574152219996904 (s)
+the rest time: 0.00032598699999653036 (s)
+flooshing..
+floosh time: 0.23646996300067258 (s)
+
+Total time for this file: 29.691665694999756
+Total time: 5888.837382383004
+
+Working on file 168
+loading files..
+load time: 4.380150924999725 (s)
+slices: 1724976:1735231
+x copy time: 0.6113925009995 (s)
+the rest time: 0.00022372200055542635 (s)
+flooshing..
+floosh time: 0.23608887899990805 (s)
+
+Total time for this file: 4.991767147999781
+Total time: 5893.829149531004
+
+Working on file 169
+loading files..
+load time: 22.81622694700036 (s)
+slices: 1735231:1745519
+x copy time: 0.5895257900001525 (s)
+the rest time: 0.0002768759995888104 (s)
+flooshing..
+floosh time: 0.23282506200030184 (s)
+
+Total time for this file: 23.4060296130001
+Total time: 5917.235179144004
+
+Working on file 170
+loading files..
+load time: 9.263086101000226 (s)
+slices: 1745519:1755736
+x copy time: 0.5248716269998113 (s)
+the rest time: 0.00023950400009198347 (s)
+flooshing..
+floosh time: 0.2275836579992756 (s)
+
+Total time for this file: 9.78819723200013
+Total time: 5927.023376376004
+
+Working on file 171
+loading files..
+load time: 22.258301808000397 (s)
+slices: 1755736:1766015
+x copy time: 0.6941239819998373 (s)
+the rest time: 0.0004049239996675169 (s)
+flooshing..
+floosh time: 0.23638639699947817 (s)
+
+Total time for this file: 22.9528307139999
+Total time: 5949.976207090004
+
+Working on file 172
+loading files..
+load time: 9.914848299000369 (s)
+slices: 1766015:1776370
+x copy time: 0.5383695090004039 (s)
+the rest time: 0.0002167310003642342 (s)
+flooshing..
+floosh time: 0.2449609170007534 (s)
+
+Total time for this file: 10.453434539001137
+Total time: 5960.429641629005
+
+Working on file 173
+loading files..
+load time: 27.13963683200018 (s)
+slices: 1776370:1786564
+x copy time: 0.5445470260001457 (s)
+the rest time: 0.00023158200019679498 (s)
+flooshing..
+floosh time: 0.2357935179998094 (s)
+
+Total time for this file: 27.68441544000052
+Total time: 5988.114057069006
+
+Working on file 174
+loading files..
+load time: 10.878196147999915 (s)
+slices: 1786564:1796820
+x copy time: 0.5856287900005555 (s)
+the rest time: 0.00027279500045551686 (s)
+flooshing..
+floosh time: 0.2332327260000966 (s)
+
+Total time for this file: 11.464097733000926
+Total time: 5999.578154802007
+
+Working on file 175
+loading files..
+load time: 18.804001043000426 (s)
+slices: 1796820:1807031
+x copy time: 0.49961973000063153 (s)
+the rest time: 0.00032374600050388835 (s)
+flooshing..
+floosh time: 0.22827063299973815 (s)
+
+Total time for this file: 19.30394451900156
+Total time: 6018.882099321008
+
+Working on file 176
+loading files..
+load time: 7.853950516000623 (s)
+slices: 1807031:1817341
+x copy time: 0.6798198019996562 (s)
+the rest time: 0.00023274799968930893 (s)
+flooshing..
+floosh time: 0.26797811400047067 (s)
+
+Total time for this file: 8.534003065999968
+Total time: 6027.416102387008
+
+Working on file 177
+loading files..
+load time: 22.839062224000372 (s)
+slices: 1817341:1827477
+x copy time: 0.562044023999988 (s)
+the rest time: 0.00019173799955751747 (s)
+flooshing..
+floosh time: 0.2273036709993903 (s)
+
+Total time for this file: 23.401297985999918
+Total time: 6050.817400373008
+
+Working on file 178
+loading files..
+load time: 5.020181892999972 (s)
+slices: 1827477:1837729
+x copy time: 0.5596894070004055 (s)
+the rest time: 0.00026491100015846314 (s)
+flooshing..
+floosh time: 0.22468599900003028 (s)
+
+Total time for this file: 5.580136211000536
+Total time: 6056.397536584009
+
+Working on file 179
+loading files..
+load time: 17.56711039699985 (s)
+slices: 1837729:1848122
+x copy time: 0.5397462210003141 (s)
+the rest time: 0.00032261700016533723 (s)
+flooshing..
+floosh time: 0.22203493799952412 (s)
+
+Total time for this file: 18.10717923500033
+Total time: 6074.504715819009
+
+Working on file 180
+loading files..
+load time: 11.212055865000366 (s)
+slices: 1848122:1858508
+x copy time: 0.7010306860001947 (s)
+the rest time: 0.0005108089999339427 (s)
+flooshing..
+floosh time: 0.4074567509996996 (s)
+
+Total time for this file: 11.913597360000495
+Total time: 6086.41831317901
+
+Working on file 181
+loading files..
+load time: 21.195781592999992 (s)
+slices: 1858508:1868757
+x copy time: 0.7049816680000731 (s)
+the rest time: 0.00024322399985976517 (s)
+flooshing..
+floosh time: 0.2594978170000104 (s)
+
+Total time for this file: 21.901006484999925
+Total time: 6108.3193196640095
+
+Working on file 182
+loading files..
+load time: 8.342978734999633 (s)
+slices: 1868757:1879111
+x copy time: 0.5372158330001184 (s)
+the rest time: 0.00024383900017710403 (s)
+flooshing..
+floosh time: 0.23762993600030313 (s)
+
+Total time for this file: 8.880438406999929
+Total time: 6117.1997580710095
+
+Working on file 183
+loading files..
+load time: 20.527279029000056 (s)
+slices: 1879111:1889313
+x copy time: 0.5070483270001205 (s)
+the rest time: 0.0002836720004779636 (s)
+flooshing..
+floosh time: 0.2272071050001614 (s)
+
+Total time for this file: 21.034611028000654
+Total time: 6138.23436909901
+
+Working on file 184
+loading files..
+load time: 66.19276740399982 (s)
+slices: 1889313:1899517
+x copy time: 0.634752701999787 (s)
+the rest time: 0.00032815900067362236 (s)
+flooshing..
+floosh time: 0.25194415599980857 (s)
+
+Total time for this file: 66.82784826500028
+Total time: 6205.06221736401
+
+Working on file 185
+loading files..
+load time: 47.01409788700039 (s)
+slices: 1899517:1909764
+x copy time: 0.6481229679993703 (s)
+the rest time: 0.00042694100011431146 (s)
+flooshing..
+floosh time: 0.29740973800016945 (s)
+
+Total time for this file: 47.662647795999874
+Total time: 6252.72486516001
+
+Working on file 186
+loading files..
+load time: 45.38955152300059 (s)
+slices: 1909764:1920090
+x copy time: 0.4946493140005259 (s)
+the rest time: 0.00021230899983493146 (s)
+flooshing..
+floosh time: 0.22118913499980408 (s)
+
+Total time for this file: 45.88441314600095
+Total time: 6298.609278306011
+
+Working on file 187
+loading files..
+load time: 25.192262493999806 (s)
+slices: 1920090:1930396
+x copy time: 0.5729407020007784 (s)
+the rest time: 0.0003774759998123045 (s)
+flooshing..
+floosh time: 0.2506237199995667 (s)
+
+Total time for this file: 25.765580672000397
+Total time: 6324.374858978012
+
+Working on file 188
+loading files..
+load time: 70.50311245400007 (s)
+slices: 1930396:1940697
+x copy time: 0.6513665949996721 (s)
+the rest time: 0.00022204100059752818 (s)
+flooshing..
+floosh time: 0.24922172500009765 (s)
+
+Total time for this file: 71.15470109000034
+Total time: 6395.529560068012
+
+Working on file 189
+loading files..
+load time: 40.7456587530005 (s)
+slices: 1940697:1951002
+x copy time: 0.5326670059994285 (s)
+the rest time: 0.00018359900059294887 (s)
+flooshing..
+floosh time: 0.2386411429997679 (s)
+
+Total time for this file: 41.27850935800052
+Total time: 6436.8080694260125
+
+Working on file 190
+loading files..
+load time: 32.54042041299999 (s)
+slices: 1951002:1961225
+x copy time: 0.614989315999992 (s)
+the rest time: 0.0002616159999888623 (s)
+flooshing..
+floosh time: 0.2452411670001311 (s)
+
+Total time for this file: 33.15567134499997
+Total time: 6469.963740771012
+
+Working on file 191
+loading files..
+load time: 33.30658866900012 (s)
+slices: 1961225:1971544
+x copy time: 0.5398159850001321 (s)
+the rest time: 0.00028785700033040484 (s)
+flooshing..
+floosh time: 0.22750157800055604 (s)
+
+Total time for this file: 33.84669251100058
+Total time: 6503.810433282013
+
+Working on file 192
+loading files..
+load time: 54.382347607000156 (s)
+slices: 1971544:1981787
+x copy time: 0.5633238939999501 (s)
+the rest time: 0.00021788699996250216 (s)
+flooshing..
+floosh time: 0.2822080690002622 (s)
+
+Total time for this file: 54.94588938800007
+Total time: 6558.756322670013
+
+Working on file 193
+loading files..
+load time: 63.762659944000006 (s)
+slices: 1981787:1992086
+x copy time: 0.5650240630002372 (s)
+the rest time: 0.00023723199956293683 (s)
+flooshing..
+floosh time: 0.2440802179999082 (s)
+
+Total time for this file: 64.3279212389998
+Total time: 6623.084243909013
+
+Working on file 194
+loading files..
+load time: 62.081522096999834 (s)
+slices: 1992086:2002287
+x copy time: 0.5570779619993118 (s)
+the rest time: 0.00022783900021750014 (s)
+flooshing..
+floosh time: 0.2303414360003444 (s)
+
+Total time for this file: 62.63882789799936
+Total time: 6685.723071807012
+
+Working on file 195
+loading files..
+load time: 41.85489711199989 (s)
+slices: 2002287:2012544
+x copy time: 0.6670327599995289 (s)
+the rest time: 0.0003824499999609543 (s)
+flooshing..
+floosh time: 0.24420473399914044 (s)
+
+Total time for this file: 42.52231232199938
+Total time: 6728.245384129012
+
+Working on file 196
+loading files..
+load time: 45.603499245999956 (s)
+slices: 2012544:2022858
+x copy time: 0.5460918779999702 (s)
+the rest time: 0.00030658099967695307 (s)
+flooshing..
+floosh time: 0.24271093200059113 (s)
+
+Total time for this file: 46.1498977049996
+Total time: 6774.395281834011
+
+Working on file 197
+loading files..
+load time: 54.04467966499942 (s)
+slices: 2022858:2033076
+x copy time: 0.5322903099995528 (s)
+the rest time: 0.00018835799983207835 (s)
+flooshing..
+floosh time: 0.23582831000021542 (s)
+
+Total time for this file: 54.577158332998806
+Total time: 6828.97244016701
+
+Working on file 198
+loading files..
+load time: 77.08176193100007 (s)
+slices: 2033076:2043401
+x copy time: 0.673610933999953 (s)
+the rest time: 0.00022248799996305024 (s)
+flooshing..
+floosh time: 0.2738111159997061 (s)
+
+Total time for this file: 77.75559535299999
+Total time: 6906.72803552001
+
+Working on file 199
+loading files..
+load time: 101.00275583500024 (s)
+slices: 2043401:2053732
+x copy time: 0.619650016000378 (s)
+the rest time: 0.0003007600007549627 (s)
+flooshing..
+floosh time: 0.22978321099981258 (s)
+
+Total time for this file: 101.62270661100138
+Total time: 7008.350742131011
+
+Working on file 200
+loading files..
+load time: 43.86679089900008 (s)
+slices: 2053732:2064032
+x copy time: 0.5320576460007942 (s)
+the rest time: 0.000202174999685667 (s)
+flooshing..
+floosh time: 0.24096193300010782 (s)
+
+Total time for this file: 44.39905072000056
+Total time: 7052.749792851012
+
+Working on file 201
+loading files..
+load time: 36.112183542999446 (s)
+slices: 2064032:2074212
+x copy time: 0.5933224330001394 (s)
+the rest time: 0.00028156999997008825 (s)
+flooshing..
+floosh time: 0.25075712900070357 (s)
+
+Total time for this file: 36.705787545999556
+Total time: 7089.4555803970115
+
+Working on file 202
+loading files..
+load time: 42.40660943700004 (s)
+slices: 2074212:2084491
+x copy time: 0.5590244320001148 (s)
+the rest time: 0.000354408000021067 (s)
+flooshing..
+floosh time: 0.2467466450007123 (s)
+
+Total time for this file: 42.96598827700018
+Total time: 7132.421568674012
+
+Working on file 203
+loading files..
+load time: 31.625904755000192 (s)
+slices: 2084491:2094705
+x copy time: 0.6015228930000376 (s)
+the rest time: 0.00022059099956095451 (s)
+flooshing..
+floosh time: 0.2631324819994916 (s)
+
+Total time for this file: 32.22764823899979
+Total time: 7164.6492169130115
+
+Working on file 204
+loading files..
+load time: 37.11414725600025 (s)
+slices: 2094705:2104955
+x copy time: 0.5292096679995666 (s)
+the rest time: 0.0002008580004257965 (s)
+flooshing..
+floosh time: 0.2357798630000616 (s)
+
+Total time for this file: 37.643557782000244
+Total time: 7202.292774695012
+
+Working on file 205
+loading files..
+load time: 25.37387429299997 (s)
+slices: 2104955:2115271
+x copy time: 0.6249921099997664 (s)
+the rest time: 0.0003110070001639542 (s)
+flooshing..
+floosh time: 0.2639583500003937 (s)
+
+Total time for this file: 25.999177409999902
+Total time: 7228.291952105012
+
+Working on file 206
+loading files..
+load time: 37.73845023499962 (s)
+slices: 2115271:2125518
+x copy time: 0.5940356789997168 (s)
+the rest time: 0.00033625899959588423 (s)
+flooshing..
+floosh time: 0.2627887759999794 (s)
+
+Total time for this file: 38.33282217299893
+Total time: 7266.624774278011
+
+Working on file 207
+loading files..
+load time: 26.85357481199935 (s)
+slices: 2125518:2135766
+x copy time: 0.5347101970000949 (s)
+the rest time: 0.00033907800025190227 (s)
+flooshing..
+floosh time: 0.24813440399975661 (s)
+
+Total time for this file: 27.388624086999698
+Total time: 7294.01339836501
+
+Working on file 208
+loading files..
+load time: 48.238200520000646 (s)
+slices: 2135766:2145987
+x copy time: 0.5496081640003467 (s)
+the rest time: 0.00020469300034164917 (s)
+flooshing..
+floosh time: 0.23416060899944569 (s)
+
+Total time for this file: 48.788013377001334
+Total time: 7342.801411742012
+
+Working on file 209
+loading files..
+load time: 28.99834869699953 (s)
+slices: 2145987:2156227
+x copy time: 0.5374868340004468 (s)
+the rest time: 0.00023553300070489058 (s)
+flooshing..
+floosh time: 0.2530554079994545 (s)
+
+Total time for this file: 29.53607106400068
+Total time: 7372.337482806012
+
+Working on file 210
+loading files..
+load time: 47.875043507000555 (s)
+slices: 2156227:2166491
+x copy time: 0.5767353799992634 (s)
+the rest time: 0.0002366459993936587 (s)
+flooshing..
+floosh time: 0.24235638699974515 (s)
+
+Total time for this file: 48.45201553299921
+Total time: 7420.7894983390115
+
+Working on file 211
+loading files..
+load time: 34.97575216500081 (s)
+slices: 2166491:2176752
+x copy time: 0.5553404769998451 (s)
+the rest time: 0.00030822100052319 (s)
+flooshing..
+floosh time: 0.2578302679994522 (s)
+
+Total time for this file: 35.53140086300118
+Total time: 7456.320899202013
+
+Working on file 212
+loading files..
+load time: 48.81204849200003 (s)
+slices: 2176752:2187159
+x copy time: 0.5304746129995692 (s)
+the rest time: 0.0001965629999176599 (s)
+flooshing..
+floosh time: 0.2412330639999709 (s)
+
+Total time for this file: 49.34271966799952
+Total time: 7505.663618870012
+
+Working on file 213
+loading files..
+load time: 28.699548294000124 (s)
+slices: 2187159:2197319
+x copy time: 0.4967116799998621 (s)
+the rest time: 0.00023129799956222996 (s)
+flooshing..
+floosh time: 0.23797641000055592 (s)
+
+Total time for this file: 29.196491271999548
+Total time: 7534.860110142012
+
+Working on file 214
+loading files..
+load time: 38.82705767900006 (s)
+slices: 2197319:2207681
+x copy time: 0.5658075689998441 (s)
+the rest time: 0.0002814760000546812 (s)
+flooshing..
+floosh time: 0.24211171000024478 (s)
+
+Total time for this file: 39.39314672399996
+Total time: 7574.253256866012
+
+Working on file 215
+loading files..
+load time: 22.019270433999736 (s)
+slices: 2207681:2217857
+x copy time: 0.5084483489999911 (s)
+the rest time: 0.0003445330003160052 (s)
+flooshing..
+floosh time: 0.2381712209999023 (s)
+
+Total time for this file: 22.528063316000043
+Total time: 7596.781320182012
+
+Working on file 216
+loading files..
+load time: 43.923320863999834 (s)
+slices: 2217857:2228064
+x copy time: 0.5999673709993658 (s)
+the rest time: 0.00021856399962416617 (s)
+flooshing..
+floosh time: 0.2520858269999735 (s)
+
+Total time for this file: 44.523506798998824
+Total time: 7641.304826981011
+
+Working on file 217
+loading files..
+load time: 26.126678532999904 (s)
+slices: 2228064:2238468
+x copy time: 0.6575015620001068 (s)
+the rest time: 0.00024386800032516476 (s)
+flooshing..
+floosh time: 0.27199566300078004 (s)
+
+Total time for this file: 26.784423963000336
+Total time: 7668.089250944011
+
+Working on file 218
+loading files..
+load time: 43.1913260350002 (s)
+slices: 2238468:2248813
+x copy time: 0.535962668999673 (s)
+the rest time: 0.00029683899992960505 (s)
+flooshing..
+floosh time: 0.24759474199981923 (s)
+
+Total time for this file: 43.727585542999805
+Total time: 7711.816836487011
+
+Working on file 219
+loading files..
+load time: 33.10411699799988 (s)
+slices: 2248813:2259022
+x copy time: 0.6279721290002271 (s)
+the rest time: 0.00024570799996581627 (s)
+flooshing..
+floosh time: 0.2616585240002678 (s)
+
+Total time for this file: 33.732334835000074
+Total time: 7745.549171322011
+
+Working on file 220
+loading files..
+load time: 32.67026243199962 (s)
+slices: 2259022:2269295
+x copy time: 0.6086753780000436 (s)
+the rest time: 0.0002812769998854492 (s)
+flooshing..
+floosh time: 0.2563032269999894 (s)
+
+Total time for this file: 33.27921908699955
+Total time: 7778.82839040901
+
+Working on file 221
+loading files..
+load time: 21.489535768999303 (s)
+slices: 2269295:2279601
+x copy time: 0.5699510100002954 (s)
+the rest time: 0.0002883279994421173 (s)
+flooshing..
+floosh time: 0.25118553299944324 (s)
+
+Total time for this file: 22.05977510699904
+Total time: 7800.888165516009
+
+Working on file 222
+loading files..
+load time: 46.40942455000004 (s)
+slices: 2279601:2289918
+x copy time: 0.5117677650005135 (s)
+the rest time: 0.00026955100020131795 (s)
+flooshing..
+floosh time: 0.24982175800050754 (s)
+
+Total time for this file: 46.921461866000755
+Total time: 7847.80962738201
+
+Working on file 223
+loading files..
+load time: 20.594747279999865 (s)
+slices: 2289918:2300162
+x copy time: 0.6791718310005308 (s)
+the rest time: 0.00022415500006900402 (s)
+flooshing..
+floosh time: 0.2747300709997944 (s)
+
+Total time for this file: 21.274143266000465
+Total time: 7869.083770648011
+
+Working on file 224
+loading files..
+load time: 47.61417176800023 (s)
+slices: 2300162:2310475
+x copy time: 0.6430283530007728 (s)
+the rest time: 0.0002874470001188456 (s)
+flooshing..
+floosh time: 0.27251330000035523 (s)
+
+Total time for this file: 48.257487568001125
+Total time: 7917.341258216012
+
+Working on file 225
+loading files..
+load time: 35.05490859699967 (s)
+slices: 2310475:2320631
+x copy time: 0.5830707340001027 (s)
+the rest time: 0.0002350350005144719 (s)
+flooshing..
+floosh time: 0.26260602900038066 (s)
+
+Total time for this file: 35.638214366000284
+Total time: 7952.979472582012
+
+Working on file 226
+loading files..
+load time: 38.63130555799944 (s)
+slices: 2320631:2330829
+x copy time: 0.4988697050002884 (s)
+the rest time: 0.0003067029992962489 (s)
+flooshing..
+floosh time: 0.24324659500052803 (s)
+
+Total time for this file: 39.130481965999024
+Total time: 7992.109954548011
+
+Working on file 227
+loading files..
+load time: 32.86426839199976 (s)
+slices: 2330829:2341057
+x copy time: 0.6399237610003183 (s)
+the rest time: 0.00023228000009112293 (s)
+flooshing..
+floosh time: 0.268644900000254 (s)
+
+Total time for this file: 33.50442443300017
+Total time: 8025.614378981011
+
+Working on file 228
+loading files..
+load time: 46.977490439000576 (s)
+slices: 2341057:2351420
+x copy time: 0.5549207109997951 (s)
+the rest time: 0.0002313980003236793 (s)
+flooshing..
+floosh time: 0.2694720139998026 (s)
+
+Total time for this file: 47.532642548000695
+Total time: 8073.147021529012
+
+Working on file 229
+loading files..
+load time: 26.65245592699921 (s)
+slices: 2351420:2361620
+x copy time: 0.5211660109998775 (s)
+the rest time: 0.00023046100068313535 (s)
+flooshing..
+floosh time: 0.25364712000009604 (s)
+
+Total time for this file: 27.17385239899977
+Total time: 8100.320873928012
+
+Working on file 230
+loading files..
+load time: 36.46870890300033 (s)
+slices: 2361620:2371973
+x copy time: 0.6274952019994089 (s)
+the rest time: 0.0003925479995814385 (s)
+flooshing..
+floosh time: 0.2729339859997708 (s)
+
+Total time for this file: 37.096596652999324
+Total time: 8137.417470581011
+
+Working on file 231
+loading files..
+load time: 31.969150627999625 (s)
+slices: 2371973:2382307
+x copy time: 0.6153939859996171 (s)
+the rest time: 0.00029887100026826374 (s)
+flooshing..
+floosh time: 0.28897540900106833 (s)
+
+Total time for this file: 32.58484348499951
+Total time: 8170.0023140660105
+
+Working on file 232
+loading files..
+load time: 38.098044423999454 (s)
+slices: 2382307:2392509
+x copy time: 0.6800596799985215 (s)
+the rest time: 0.00024049999956332613 (s)
+flooshing..
+floosh time: 0.2826116739997815 (s)
+
+Total time for this file: 38.77834460399754
+Total time: 8208.780658670008
+
+Working on file 233
+loading files..
+load time: 21.094970877000378 (s)
+slices: 2392509:2402688
+x copy time: 0.6007196929986094 (s)
+the rest time: 0.000215243999264203 (s)
+flooshing..
+floosh time: 0.26889423899956455 (s)
+
+Total time for this file: 21.69590581399825
+Total time: 8230.476564484006
+
+Working on file 234
+loading files..
+load time: 36.4968406400003 (s)
+slices: 2402688:2412902
+x copy time: 0.514144173999739 (s)
+the rest time: 0.0002981790003104834 (s)
+flooshing..
+floosh time: 0.24650159799966787 (s)
+
+Total time for this file: 37.01128299300035
+Total time: 8267.487847477007
+
+Working on file 235
+loading files..
+load time: 33.81585736600027 (s)
+slices: 2412902:2423211
+x copy time: 0.5275887899988447 (s)
+the rest time: 0.00020480800048972014 (s)
+flooshing..
+floosh time: 0.2520741240005009 (s)
+
+Total time for this file: 34.34365096399961
+Total time: 8301.831498441006
+
+Working on file 236
+loading files..
+load time: 41.74711595199915 (s)
+slices: 2423211:2433406
+x copy time: 0.5666474939989712 (s)
+the rest time: 0.0002531569989514537 (s)
+flooshing..
+floosh time: 0.26529370099888183 (s)
+
+Total time for this file: 42.31401660299707
+Total time: 8344.145515044003
+
+Working on file 237
+loading files..
+load time: 27.417003339000075 (s)
+slices: 2433406:2443646
+x copy time: 0.5709195559993532 (s)
+the rest time: 0.000295715000902419 (s)
+flooshing..
+floosh time: 0.2678654880000977 (s)
+
+Total time for this file: 27.98821861000033
+Total time: 8372.133733654004
+
+Working on file 238
+loading files..
+load time: 40.38170204299968 (s)
+slices: 2443646:2453921
+x copy time: 0.5783367409985658 (s)
+the rest time: 0.00029795900081808213 (s)
+flooshing..
+floosh time: 0.26606460899893136 (s)
+
+Total time for this file: 40.96033674299906
+Total time: 8413.094070397003
+
+Working on file 239
+loading files..
+load time: 24.100479176999215 (s)
+slices: 2453921:2464233
+x copy time: 0.8513234839992947 (s)
+the rest time: 0.0002477910002198769 (s)
+flooshing..
+floosh time: 0.04785285899924929 (s)
+
+Total time for this file: 24.95205045199873
+Total time: 8438.046120849001
+
+Working on file 240
+loading files..
+load time: 46.430269651000344 (s)
+slices: 2464233:2474451
+x copy time: 0.5224994600011996 (s)
+the rest time: 0.00024422400019830093 (s)
+flooshing..
+floosh time: 0.2591766440000356 (s)
+
+Total time for this file: 46.95301333500174
+Total time: 8484.999134184003
+
+Working on file 241
+loading files..
+load time: 21.374457723999512 (s)
+slices: 2474451:2484745
+x copy time: 0.5255437819996587 (s)
+the rest time: 0.0002360479993512854 (s)
+flooshing..
+floosh time: 0.2522284450005827 (s)
+
+Total time for this file: 21.900237553998522
+Total time: 8506.899371738002
+
+Working on file 242
+loading files..
+load time: 35.53603489700072 (s)
+slices: 2484745:2495089
+x copy time: 0.5027167120006197 (s)
+the rest time: 0.00029225400066934526 (s)
+flooshing..
+floosh time: 0.252045717999863 (s)
+
+Total time for this file: 36.03904386300201
+Total time: 8542.938415601004
+
+Working on file 243
+loading files..
+load time: 28.929607885000223 (s)
+slices: 2495089:2505408
+x copy time: 0.5150102730003709 (s)
+the rest time: 0.0001883710010588402 (s)
+flooshing..
+floosh time: 0.3388229659994977 (s)
+
+Total time for this file: 29.444806529001653
+Total time: 8572.383222130005
+
+Working on file 244
+loading files..
+load time: 46.485246686999744 (s)
+slices: 2505408:2515685
+x copy time: 0.5892956030002097 (s)
+the rest time: 0.00031648799995309673 (s)
+flooshing..
+floosh time: 0.2718281580000621 (s)
+
+Total time for this file: 47.07485877799991
+Total time: 8619.458080908005
+
+Working on file 245
+loading files..
+load time: 25.635181841000303 (s)
+slices: 2515685:2525884
+x copy time: 0.5319106789993384 (s)
+the rest time: 0.0003636960009316681 (s)
+flooshing..
+floosh time: 0.26064157300061197 (s)
+
+Total time for this file: 26.167456216000573
+Total time: 8645.625537124006
+
+Working on file 246
+loading files..
+load time: 45.33798386300077 (s)
+slices: 2525884:2536113
+x copy time: 0.5236938109992479 (s)
+the rest time: 0.00020204000065859873 (s)
+flooshing..
+floosh time: 0.2604076650004572 (s)
+
+Total time for this file: 45.86187971400068
+Total time: 8691.487416838007
+
+Working on file 247
+loading files..
+load time: 20.25148018100117 (s)
+slices: 2536113:2546380
+x copy time: 0.4955335599988757 (s)
+the rest time: 0.00019973500093328767 (s)
+flooshing..
+floosh time: 0.24660613700143585 (s)
+
+Total time for this file: 20.74721347600098
+Total time: 8712.234630314008
+
+Working on file 248
+loading files..
+load time: 32.86324818200046 (s)
+slices: 2546380:2556555
+x copy time: 0.5146003310001106 (s)
+the rest time: 0.00025278099928982556 (s)
+flooshing..
+floosh time: 0.25087515500126756 (s)
+
+Total time for this file: 33.37810129399986
+Total time: 8745.612731608007
+
+Working on file 249
+loading files..
+load time: 21.859687457999826 (s)
+slices: 2556555:2566943
+x copy time: 0.6295603309990838 (s)
+the rest time: 0.0003047159989364445 (s)
+flooshing..
+floosh time: 0.26955879399974947 (s)
+
+Total time for this file: 22.489552504997846
+Total time: 8768.102284113005
+
+Working on file 250
+loading files..
+load time: 47.03997370900106 (s)
+slices: 2566943:2577145
+x copy time: 0.5937698139987333 (s)
+the rest time: 0.000349097999787773 (s)
+flooshing..
+floosh time: 0.26589138400049706 (s)
+
+Total time for this file: 47.63409262099958
+Total time: 8815.736376734005
+
+Working on file 251
+loading files..
+load time: 21.32555746900107 (s)
+slices: 2577145:2587470
+x copy time: 0.6622002700005396 (s)
+the rest time: 0.00022106600044935476 (s)
+flooshing..
+floosh time: 0.2667427019987372 (s)
+
+Total time for this file: 21.987978805002058
+Total time: 8837.724355539007
+
+Working on file 252
+loading files..
+load time: 46.496373428999505 (s)
+slices: 2587470:2597842
+x copy time: 0.5717753019998781 (s)
+the rest time: 0.0002551830002630595 (s)
+flooshing..
+floosh time: 0.2922126749999734 (s)
+
+Total time for this file: 47.068403913999646
+Total time: 8884.792759453007
+
+Working on file 253
+loading files..
+load time: 21.132244093001646 (s)
+slices: 2597842:2608106
+x copy time: 0.5898408369994286 (s)
+the rest time: 0.0002414640002825763 (s)
+flooshing..
+floosh time: 0.3244415389999631 (s)
+
+Total time for this file: 21.722326394001357
+Total time: 8906.515085847008
+
+Working on file 254
+loading files..
+load time: 38.04747324699929 (s)
+slices: 2608106:2618332
+x copy time: 0.5323331039999175 (s)
+the rest time: 0.0002899089995480608 (s)
+flooshing..
+floosh time: 0.2588366149993817 (s)
+
+Total time for this file: 38.580096259998754
+Total time: 8945.095182107007
+
+Working on file 255
+loading files..
+load time: 22.56242811499942 (s)
+slices: 2618332:2628604
+x copy time: 0.5027564839983825 (s)
+the rest time: 0.00018994700076291338 (s)
+flooshing..
+floosh time: 0.25291758200000913 (s)
+
+Total time for this file: 23.065374545998566
+Total time: 8968.160556653005
+
+Working on file 256
+loading files..
+load time: 36.31847423999898 (s)
+slices: 2628604:2638981
+x copy time: 0.5450263499988068 (s)
+the rest time: 0.0002417720006633317 (s)
+flooshing..
+floosh time: 0.2634791460004635 (s)
+
+Total time for this file: 36.86374236199845
+Total time: 9005.024299015004
+
+Working on file 257
+loading files..
+load time: 24.45633812699998 (s)
+slices: 2638981:2649265
+x copy time: 0.7458835840006941 (s)
+the rest time: 0.00023027600036584772 (s)
+flooshing..
+floosh time: 0.22071116599909146 (s)
+
+Total time for this file: 25.20245198700104
+Total time: 9030.226751002005
+
+Working on file 258
+loading files..
+load time: 37.6809684710006 (s)
+slices: 2649265:2659615
+x copy time: 0.5767398339994543 (s)
+the rest time: 0.00029964699933771044 (s)
+flooshing..
+floosh time: 0.27519094300077995 (s)
+
+Total time for this file: 38.25800795199939
+Total time: 9068.484758954004
+
+Working on file 259
+loading files..
+load time: 32.99040596299892 (s)
+slices: 2659615:2669891
+x copy time: 0.5719964020008774 (s)
+the rest time: 0.00021788500089314766 (s)
+flooshing..
+floosh time: 0.279794309000863 (s)
+
+Total time for this file: 33.56262025000069
+Total time: 9102.047379204005
+
+Working on file 260
+loading files..
+load time: 45.49020436799947 (s)
+slices: 2669891:2680252
+x copy time: 0.5455619679996744 (s)
+the rest time: 0.00022033599998394493 (s)
+flooshing..
+floosh time: 0.2689474490016437 (s)
+
+Total time for this file: 46.035986671999126
+Total time: 9148.083365876004
+
+Working on file 261
+loading files..
+load time: 21.273972088998562 (s)
+slices: 2680252:2690415
+x copy time: 0.4982593570002791 (s)
+the rest time: 0.0003511689992592437 (s)
+flooshing..
+floosh time: 0.3175683339995885 (s)
+
+Total time for this file: 21.7725826149981
+Total time: 9169.855948491002
+
+Working on file 262
+loading files..
+load time: 40.242361632999746 (s)
+slices: 2690415:2700567
+x copy time: 0.6809022320012446 (s)
+the rest time: 0.00022863800040795468 (s)
+flooshing..
+floosh time: 0.3012357840016193 (s)
+
+Total time for this file: 40.9234925030014
+Total time: 9210.779440994003
+
+Working on file 263
+loading files..
+load time: 27.277508044999195 (s)
+slices: 2700567:2710783
+x copy time: 0.639572424999642 (s)
+the rest time: 0.00024216000019805506 (s)
+flooshing..
+floosh time: 0.2772872360001202 (s)
+
+Total time for this file: 27.917322629999035
+Total time: 9238.696763624002
+
+Working on file 264
+loading files..
+load time: 38.24716575099956 (s)
+slices: 2710783:2721040
+x copy time: 0.5631845139996585 (s)
+the rest time: 0.0002392229998804396 (s)
+flooshing..
+floosh time: 0.2729097069986892 (s)
+
+Total time for this file: 38.810589487999096
+Total time: 9277.507353112002
+
+Working on file 265
+loading files..
+load time: 25.922132020999925 (s)
+slices: 2721040:2731324
+x copy time: 0.7101548339996953 (s)
+the rest time: 0.0003099169989582151 (s)
+flooshing..
+floosh time: 0.2823786749995634 (s)
+
+Total time for this file: 26.63259677199858
+Total time: 9304.139949884
+
+Working on file 266
+loading files..
+load time: 44.829952039001 (s)
+slices: 2731324:2741606
+x copy time: 0.5755311510001775 (s)
+the rest time: 0.0003375749984115828 (s)
+flooshing..
+floosh time: 0.2762888199995359 (s)
+
+Total time for this file: 45.40582076499959
+Total time: 9349.545770649
+
+Working on file 267
+loading files..
+load time: 30.74399413699939 (s)
+slices: 2741606:2751903
+x copy time: 0.559275677000187 (s)
+the rest time: 0.0002006310005526757 (s)
+flooshing..
+floosh time: 0.28480477899938705 (s)
+
+Total time for this file: 31.30347044500013
+Total time: 9380.849241094
+
+Working on file 268
+loading files..
+load time: 48.51224206900042 (s)
+slices: 2751903:2762154
+x copy time: 0.5641027270012273 (s)
+the rest time: 0.00021754900080850348 (s)
+flooshing..
+floosh time: 0.2748094079997827 (s)
+
+Total time for this file: 49.07656234500246
+Total time: 9429.925803439002
+
+Working on file 269
+loading files..
+load time: 21.680527325001094 (s)
+slices: 2762154:2772490
+x copy time: 0.5350693180007511 (s)
+the rest time: 0.0002918370009865612 (s)
+flooshing..
+floosh time: 0.2935023909994925 (s)
+
+Total time for this file: 22.215888480002832
+Total time: 9452.141691919005
+
+Working on file 270
+loading files..
+load time: 50.20776323899918 (s)
+slices: 2772490:2782786
+x copy time: 0.5965303339999082 (s)
+the rest time: 0.00030761200105189346 (s)
+flooshing..
+floosh time: 0.32642023299922585 (s)
+
+Total time for this file: 50.80460118500014
+Total time: 9502.946293104005
+
+Working on file 271
+loading files..
+load time: 38.819928681999954 (s)
+slices: 2782786:2793158
+x copy time: 0.5538707590003469 (s)
+the rest time: 0.00019002499902853742 (s)
+flooshing..
+floosh time: 0.25699261499903514 (s)
+
+Total time for this file: 39.37398946599933
+Total time: 9542.320282570005
+
+Working on file 272
+loading files..
+load time: 46.32078336599989 (s)
+slices: 2793158:2803526
+x copy time: 0.5531776690004335 (s)
+the rest time: 0.00024483799825247843 (s)
+flooshing..
+floosh time: 0.29450262200043653 (s)
+
+Total time for this file: 46.87420587299857
+Total time: 9589.194488443003
+
+Working on file 273
+loading files..
+load time: 33.612979337998695 (s)
+slices: 2803526:2813824
+x copy time: 0.6432729320004 (s)
+the rest time: 0.0002701310004340485 (s)
+flooshing..
+floosh time: 0.29208542100059276 (s)
+
+Total time for this file: 34.25652240099953
+Total time: 9623.451010844003
+
+Working on file 274
+loading files..
+load time: 41.807764283001234 (s)
+slices: 2813824:2824024
+x copy time: 0.6231100120003248 (s)
+the rest time: 0.0003611649990489241 (s)
+flooshing..
+floosh time: 0.2746568109996588 (s)
+
+Total time for this file: 42.43123546000061
+Total time: 9665.882246304003
+
+Working on file 275
+loading files..
+load time: 21.118237279000823 (s)
+slices: 2824024:2834293
+x copy time: 0.5097136349995708 (s)
+the rest time: 0.00022949699996388517 (s)
+flooshing..
+floosh time: 0.2622552020002331 (s)
+
+Total time for this file: 21.628180411000358
+Total time: 9687.510426715004
+
+Working on file 276
+loading files..
+load time: 55.821503802000734 (s)
+slices: 2834293:2844705
+x copy time: 0.6776253869993525 (s)
+the rest time: 0.0002864059988496592 (s)
+flooshing..
+floosh time: 0.2863993000009941 (s)
+
+Total time for this file: 56.499415594998936
+Total time: 9744.009842310003
+
+Working on file 277
+loading files..
+load time: 23.588676341998507 (s)
+slices: 2844705:2854951
+x copy time: 0.4824026580008649 (s)
+the rest time: 0.00023990500085346866 (s)
+flooshing..
+floosh time: 0.2569008210011816 (s)
+
+Total time for this file: 24.071318905000226
+Total time: 9768.081161215003
+
+Working on file 278
+loading files..
+load time: 53.210910956999214 (s)
+slices: 2854951:2865221
+x copy time: 0.6322672759997658 (s)
+the rest time: 0.00025117800032603554 (s)
+flooshing..
+floosh time: 0.278353949999655 (s)
+
+Total time for this file: 53.843429410999306
+Total time: 9821.924590626002
+
+Working on file 279
+loading files..
+load time: 33.03276974399887 (s)
+slices: 2865221:2875488
+x copy time: 0.5498767449989828 (s)
+the rest time: 0.0002058159989246633 (s)
+flooshing..
+floosh time: 0.28472579899971606 (s)
+
+Total time for this file: 33.58285230499678
+Total time: 9855.507442930999
+
+Working on file 280
+loading files..
+load time: 53.27037984200069 (s)
+slices: 2875488:2885761
+x copy time: 0.542093935999219 (s)
+the rest time: 0.00023750300169922411 (s)
+flooshing..
+floosh time: 0.267406867000318 (s)
+
+Total time for this file: 53.81271128100161
+Total time: 9909.320154212
+
+Working on file 281
+loading files..
+load time: 25.65142981200006 (s)
+slices: 2885761:2895981
+x copy time: 0.6455581549998897 (s)
+the rest time: 0.000411173999964376 (s)
+flooshing..
+floosh time: 0.3026169780005148 (s)
+
+Total time for this file: 26.297399140999914
+Total time: 9935.617553353
+
+Working on file 282
+loading files..
+load time: 27.364349180001227 (s)
+slices: 2895981:2906236
+x copy time: 0.49007989399979124 (s)
+the rest time: 0.00020505999964370858 (s)
+flooshing..
+floosh time: 0.25939956000001985 (s)
+
+Total time for this file: 27.854634134000662
+Total time: 9963.472187487001
+
+Working on file 283
+loading files..
+load time: 31.828868012000385 (s)
+slices: 2906236:2916507
+x copy time: 0.6474099989991373 (s)
+the rest time: 0.0002877429997170111 (s)
+flooshing..
+floosh time: 0.2984175759993377 (s)
+
+Total time for this file: 32.47656575399924
+Total time: 9995.948753241
+
+Working on file 284
+loading files..
+load time: 40.60921464000057 (s)
+slices: 2916507:2926780
+x copy time: 0.5540744900008576 (s)
+the rest time: 0.0002403939997748239 (s)
+flooshing..
+floosh time: 0.2843072720006603 (s)
+
+Total time for this file: 41.163529524001206
+Total time: 10037.112282765002
+
+Working on file 285
+loading files..
+load time: 32.794762672001525 (s)
+slices: 2926780:2937088
+x copy time: 0.5529688790011278 (s)
+the rest time: 0.0004147730014665285 (s)
+flooshing..
+floosh time: 0.31308372000057716 (s)
+
+Total time for this file: 33.34814632400412
+Total time: 10070.460429089006
+
+Working on file 286
+loading files..
+load time: 38.241096333000314 (s)
+slices: 2937088:2947268
+x copy time: 0.6061177920000773 (s)
+the rest time: 0.0003281680001236964 (s)
+flooshing..
+floosh time: 0.28043327199884516 (s)
+
+Total time for this file: 38.847542293000515
+Total time: 10109.307971382006
+
+Working on file 287
+loading files..
+load time: 23.188441737000176 (s)
+slices: 2947268:2957546
+x copy time: 0.5088909019996208 (s)
+the rest time: 0.00021604299945465755 (s)
+flooshing..
+floosh time: 0.26613461099987035 (s)
+
+Total time for this file: 23.69754868199925
+Total time: 10133.005520064005
+
+Working on file 288
+loading files..
+load time: 55.73743112000011 (s)
+slices: 2957546:2967822
+x copy time: 0.522998184998869 (s)
+the rest time: 0.00019637399964267388 (s)
+flooshing..
+floosh time: 0.26058031399952597 (s)
+
+Total time for this file: 56.26062567899862
+Total time: 10189.266145743004
+
+Working on file 289
+loading files..
+load time: 27.37234125699979 (s)
+slices: 2967822:2978140
+x copy time: 0.614439881999715 (s)
+the rest time: 0.00040104300023813266 (s)
+flooshing..
+floosh time: 0.2835547819995554 (s)
+
+Total time for this file: 27.987182181999742
+Total time: 10217.253327925004
+
+Working on file 290
+loading files..
+load time: 45.16355470400049 (s)
+slices: 2978140:2988450
+x copy time: 0.5235853920003137 (s)
+the rest time: 0.00028436999855330214 (s)
+flooshing..
+floosh time: 0.2714664670002094 (s)
+
+Total time for this file: 45.68742446599936
+Total time: 10262.940752391003
+
+Working on file 291
+loading files..
+load time: 34.09935886200037 (s)
+slices: 2988450:2998746
+x copy time: 0.5379361540017271 (s)
+the rest time: 0.00018586599981063046 (s)
+flooshing..
+floosh time: 0.2732584229997883 (s)
+
+Total time for this file: 34.63748088200191
+Total time: 10297.578233273005
+
+Working on file 292
+loading files..
+load time: 34.43437233500117 (s)
+slices: 2998746:3008968
+x copy time: 0.4927142489996186 (s)
+the rest time: 0.00019659699864860158 (s)
+flooshing..
+floosh time: 0.2677485889998934 (s)
+
+Total time for this file: 34.92728318099944
+Total time: 10332.505516454004
+
+Working on file 293
+loading files..
+load time: 21.681993328998942 (s)
+slices: 3008968:3019265
+x copy time: 0.5389128919996438 (s)
+the rest time: 0.0003402759994060034 (s)
+flooshing..
+floosh time: 0.3104566860001796 (s)
+
+Total time for this file: 22.221246496997992
+Total time: 10354.726762951002
+
+Working on file 294
+loading files..
+load time: 39.540138096999726 (s)
+slices: 3019265:3029477
+x copy time: 0.5739238780006417 (s)
+the rest time: 0.00020025599951623008 (s)
+flooshing..
+floosh time: 0.27787147799972445 (s)
+
+Total time for this file: 40.114262230999884
+Total time: 10394.841025182002
+
+Working on file 295
+loading files..
+load time: 33.24715537100019 (s)
+slices: 3029477:3039877
+x copy time: 0.5268056280001474 (s)
+the rest time: 0.00024070099971140735 (s)
+flooshing..
+floosh time: 0.28654957599974296 (s)
+
+Total time for this file: 33.77420170000005
+Total time: 10428.615226882002
+
+Working on file 296
+loading files..
+load time: 38.25285587000144 (s)
+slices: 3039877:3050091
+x copy time: 0.5500021200004994 (s)
+the rest time: 0.00023950300055730622 (s)
+flooshing..
+floosh time: 0.28536072300084925 (s)
+
+Total time for this file: 38.8030974930025
+Total time: 10467.418324375005
+
+Working on file 297
+loading files..
+load time: 28.250631752998743 (s)
+slices: 3050091:3060522
+x copy time: 0.5402908249998291 (s)
+the rest time: 0.00031852500069362577 (s)
+flooshing..
+floosh time: 0.28707425799984776 (s)
+
+Total time for this file: 28.791241102999265
+Total time: 10496.209565478004
+
+Working on file 298
+loading files..
+load time: 47.229171028000565 (s)
+slices: 3060522:3070700
+x copy time: 0.5642770079994079 (s)
+the rest time: 0.00019476799934636801 (s)
+flooshing..
+floosh time: 0.28820178599926294 (s)
+
+Total time for this file: 47.79364280399932
+Total time: 10544.003208282003
+
+Working on file 299
+loading files..
+load time: 28.65178708199892 (s)
+slices: 3070700:3080784
+x copy time: 0.6645924040003592 (s)
+the rest time: 0.00029545299912570044 (s)
+flooshing..
+floosh time: 0.33062522600084776 (s)
+
+Total time for this file: 29.316674938998403
+Total time: 10573.319883221002
+
+Working on file 300
+loading files..
+load time: 38.79112580800029 (s)
+slices: 3080784:3090999
+x copy time: 0.5372483429982822 (s)
+the rest time: 0.0003534009993018117 (s)
+flooshing..
+floosh time: 0.28032541800166655 (s)
+
+Total time for this file: 39.32872755199787
+Total time: 10612.648610773
+
+Working on file 301
+loading files..
+load time: 28.68979953300004 (s)
+slices: 3090999:3101338
+x copy time: 0.5361379889982345 (s)
+the rest time: 0.00019815699852188118 (s)
+flooshing..
+floosh time: 0.28166450900062046 (s)
+
+Total time for this file: 29.226135678996798
+Total time: 10641.874746451997
+
+Working on file 302
+loading files..
+load time: 32.77114466999956 (s)
+slices: 3101338:3111497
+x copy time: 0.5123383619993547 (s)
+the rest time: 0.00020430000040505547 (s)
+flooshing..
+floosh time: 0.2646389969995653 (s)
+
+Total time for this file: 33.28368733199932
+Total time: 10675.158433783996
+
+Working on file 303
+loading files..
+load time: 23.25191477199951 (s)
+slices: 3111497:3121798
+x copy time: 0.6109125560014945 (s)
+the rest time: 0.0002856169994629454 (s)
+flooshing..
+floosh time: 0.29901413599873194 (s)
+
+Total time for this file: 23.863112945000466
+Total time: 10699.021546728996
+
+Working on file 304
+loading files..
+load time: 34.53472730999965 (s)
+slices: 3121798:3132090
+x copy time: 0.5596409499994479 (s)
+the rest time: 0.0003605149995564716 (s)
+flooshing..
+floosh time: 0.32275144000050204 (s)
+
+Total time for this file: 35.09472877499866
+Total time: 10734.116275503995
+
+Working on file 305
+loading files..
+load time: 19.192725082000834 (s)
+slices: 3132090:3142242
+x copy time: 0.6338545130001876 (s)
+the rest time: 0.00039340200055448804 (s)
+flooshing..
+floosh time: 0.3851979109986132 (s)
+
+Total time for this file: 19.826972997001576
+Total time: 10753.943248500997
+
+Working on file 306
+loading files..
+load time: 31.88263537899911 (s)
+slices: 3142242:3152517
+x copy time: 0.8447112750000088 (s)
+the rest time: 0.00035167299938621 (s)
+flooshing..
+floosh time: 0.33510377099992184 (s)
+
+Total time for this file: 32.72769832699851
+Total time: 10786.670946827995
+
+Working on file 307
+loading files..
+load time: 19.491320934001124 (s)
+slices: 3152517:3162946
+x copy time: 0.654921117999038 (s)
+the rest time: 0.0002855950006050989 (s)
+flooshing..
+floosh time: 0.3227626110001438 (s)
+
+Total time for this file: 20.146527647000767
+Total time: 10806.817474474996
+
+Working on file 308
+loading files..
+load time: 33.197156028998506 (s)
+slices: 3162946:3173194
+x copy time: 0.5365044700010912 (s)
+the rest time: 0.00024315699920407496 (s)
+flooshing..
+floosh time: 0.2816861789997347 (s)
+
+Total time for this file: 33.7339036559988
+Total time: 10840.551378130995
+
+Working on file 309
+loading files..
+load time: 20.366950472998724 (s)
+slices: 3173194:3183552
+x copy time: 0.6551930289988377 (s)
+the rest time: 0.0002591619995655492 (s)
+flooshing..
+floosh time: 0.29548357400017267 (s)
+
+Total time for this file: 21.022402663997127
+Total time: 10861.573780794992
+
+Working on file 310
+loading files..
+load time: 26.0953318769989 (s)
+slices: 3183552:3193796
+x copy time: 0.6168595070012088 (s)
+the rest time: 0.00026204800087725744 (s)
+flooshing..
+floosh time: 0.29838120299973525 (s)
+
+Total time for this file: 26.712453432000984
+Total time: 10888.286234226993
+
+Working on file 311
+loading files..
+load time: 26.925669552998443 (s)
+slices: 3193796:3203907
+x copy time: 0.6445030710001447 (s)
+the rest time: 0.0003003210003953427 (s)
+flooshing..
+floosh time: 0.2973994929998298 (s)
+
+Total time for this file: 27.570472944998983
+Total time: 10915.856707171992
+
+Working on file 312
+loading files..
+load time: 36.19215629700011 (s)
+slices: 3203907:3214141
+x copy time: 0.7070735479992436 (s)
+the rest time: 0.0003141770012007328 (s)
+flooshing..
+floosh time: 0.29972875000021304 (s)
+
+Total time for this file: 36.899544022000555
+Total time: 10952.756251193992
+
+Working on file 313
+loading files..
+load time: 20.016923651999605 (s)
+slices: 3214141:3224353
+x copy time: 0.5256110090012953 (s)
+the rest time: 0.00026832500043383334 (s)
+flooshing..
+floosh time: 0.2825845199986361 (s)
+
+Total time for this file: 20.542802986001334
+Total time: 10973.299054179994
+
+Working on file 314
+loading files..
+load time: 47.34652300400012 (s)
+slices: 3224353:3234408
+x copy time: 0.6182994090013381 (s)
+the rest time: 0.0002739320007094648 (s)
+flooshing..
+floosh time: 0.3635307730000932 (s)
+
+Total time for this file: 47.965096345002166
+Total time: 11021.264150524996
+
+Working on file 315
+loading files..
+load time: 14.988283680999302 (s)
+slices: 3234408:3244834
+x copy time: 0.5949740020005265 (s)
+the rest time: 0.00027565000164031517 (s)
+flooshing..
+floosh time: 0.29456838199985214 (s)
+
+Total time for this file: 15.58353333300147
+Total time: 11036.847683857997
+
+Working on file 316
+loading files..
+load time: 37.33777337100037 (s)
+slices: 3244834:3255013
+x copy time: 0.7072213029987324 (s)
+the rest time: 0.00025209399973391555 (s)
+flooshing..
+floosh time: 0.30589183600022807 (s)
+
+Total time for this file: 38.04524676799883
+Total time: 11074.892930625996
+
+Working on file 317
+loading files..
+load time: 21.484828266000477 (s)
+slices: 3255013:3265197
+x copy time: 0.6034409220010275 (s)
+the rest time: 0.0002959220000775531 (s)
+flooshing..
+floosh time: 0.30279310399964743 (s)
+
+Total time for this file: 22.088565110001582
+Total time: 11096.981495735998
+
+Working on file 318
+loading files..
+load time: 36.40104425999925 (s)
+slices: 3265197:3275432
+x copy time: 0.6005689650010027 (s)
+the rest time: 0.00028318699878582265 (s)
+flooshing..
+floosh time: 0.3008391620005568 (s)
+
+Total time for this file: 37.00189641199904
+Total time: 11133.983392147997
+
+Working on file 319
+loading files..
+load time: 18.25201228500009 (s)
+slices: 3275432:3285766
+x copy time: 0.6121752929993818 (s)
+the rest time: 0.0004530949991021771 (s)
+flooshing..
+floosh time: 0.3051025580007263 (s)
+
+Total time for this file: 18.864640672998576
+Total time: 11152.848032820995
+
+Working on file 320
+loading files..
+load time: 26.568333528999574 (s)
+slices: 3285766:3295905
+x copy time: 0.5959184729999834 (s)
+the rest time: 0.00022639999951934442 (s)
+flooshing..
+floosh time: 0.30169280000154686 (s)
+
+Total time for this file: 27.164478401999077
+Total time: 11180.012511222994
+
+Working on file 321
+loading files..
+load time: 20.80422659800024 (s)
+slices: 3295905:3306103
+x copy time: 0.5929170069994143 (s)
+the rest time: 0.00022670699945592787 (s)
+flooshing..
+floosh time: 0.3293677239998942 (s)
+
+Total time for this file: 21.39737031199911
+Total time: 11201.409881534993
+
+Working on file 322
+loading files..
+load time: 26.091422399000294 (s)
+slices: 3306103:3316335
+x copy time: 0.6352570979997836 (s)
+the rest time: 0.00021627199930662755 (s)
+flooshing..
+floosh time: 0.29825624200020684 (s)
+
+Total time for this file: 26.726895768999384
+Total time: 11228.136777303993
+
+Working on file 323
+loading files..
+load time: 20.089979872000185 (s)
+slices: 3316335:3326603
+x copy time: 0.5829325180002343 (s)
+the rest time: 0.0005025629998272052 (s)
+flooshing..
+floosh time: 0.29585302700070315 (s)
+
+Total time for this file: 20.673414953000247
+Total time: 11248.810192256993
+
+Working on file 324
+loading files..
+load time: 27.06862986700071 (s)
+slices: 3326603:3336800
+x copy time: 0.6143775820000883 (s)
+the rest time: 0.00021730499975092243 (s)
+flooshing..
+floosh time: 0.30039466400012316 (s)
+
+Total time for this file: 27.68322475400055
+Total time: 11276.493417010994
+
+Working on file 325
+loading files..
+load time: 30.90176678500029 (s)
+slices: 3336800:3347149
+x copy time: 0.6502618880003865 (s)
+the rest time: 0.00022793700009060558 (s)
+flooshing..
+floosh time: 0.30131647599955613 (s)
+
+Total time for this file: 31.552256610000768
+Total time: 11308.045673620994
+
+Working on file 326
+loading files..
+load time: 29.663291601998935 (s)
+slices: 3347149:3357338
+x copy time: 0.5994701740000892 (s)
+the rest time: 0.0002142649991583312 (s)
+flooshing..
+floosh time: 0.3119087880004372 (s)
+
+Total time for this file: 30.262976040998183
+Total time: 11338.308649661993
+
+Working on file 327
+loading files..
+load time: 14.744970964999084 (s)
+slices: 3357338:3367753
+x copy time: 0.6761560689992621 (s)
+the rest time: 0.0004155589995207265 (s)
+flooshing..
+floosh time: 0.31811761500102875 (s)
+
+Total time for this file: 15.421542592997866
+Total time: 11353.73019225499
+
+Working on file 328
+loading files..
+load time: 36.21249450999858 (s)
+slices: 3367753:3378015
+x copy time: 0.6925155560002167 (s)
+the rest time: 0.0002152460001525469 (s)
+flooshing..
+floosh time: 0.32625364899831766 (s)
+
+Total time for this file: 36.90522531199895
+Total time: 11390.63541756699
+
+Working on file 329
+loading files..
+load time: 10.36810755499937 (s)
+slices: 3378015:3388285
+x copy time: 0.558290091001254 (s)
+the rest time: 0.00031728300018585287 (s)
+flooshing..
+floosh time: 0.29193600500002503 (s)
+
+Total time for this file: 10.92671492900081
+Total time: 11401.56213249599
+
+Working on file 330
+loading files..
+load time: 25.590103447999354 (s)
+slices: 3388285:3398549
+x copy time: 0.6694872059997579 (s)
+the rest time: 0.00020499799938988872 (s)
+flooshing..
+floosh time: 0.3170570520014735 (s)
+
+Total time for this file: 26.259795651998502
+Total time: 11427.821928147989
+
+Working on file 331
+loading files..
+load time: 12.48009666500002 (s)
+slices: 3398549:3408634
+x copy time: 0.5619974389992421 (s)
+the rest time: 0.0003212789997633081 (s)
+flooshing..
+floosh time: 0.2884101969993935 (s)
+
+Total time for this file: 13.042415382999025
+Total time: 11440.864343530988
+
+Working on file 332
+loading files..
+load time: 24.59286950999922 (s)
+slices: 3408634:3418873
+x copy time: 0.658282151000094 (s)
+the rest time: 0.0003505000004224712 (s)
+flooshing..
+floosh time: 0.31226886399963405 (s)
+
+Total time for this file: 25.251502160999735
+Total time: 11466.115845691987
+
+Working on file 333
+loading files..
+load time: 18.61844894600108 (s)
+slices: 3418873:3429105
+x copy time: 0.6094649380011106 (s)
+the rest time: 0.00023531999977421947 (s)
+flooshing..
+floosh time: 0.32494334500006516 (s)
+
+Total time for this file: 19.228149204001966
+Total time: 11485.34399489599
+
+Working on file 334
+loading files..
+load time: 22.92249840600016 (s)
+slices: 3429105:3439371
+x copy time: 0.6231055459993513 (s)
+the rest time: 0.00021427799947559834 (s)
+flooshing..
+floosh time: 0.3988940229992295 (s)
+
+Total time for this file: 23.545818229998986
+Total time: 11508.889813125988
+
+Working on file 335
+loading files..
+load time: 11.600735907000853 (s)
+slices: 3439371:3449613
+x copy time: 0.6582902760001161 (s)
+the rest time: 0.0002987509997183224 (s)
+flooshing..
+floosh time: 0.32901304599909054 (s)
+
+Total time for this file: 12.259324934000688
+Total time: 11521.14913805999
+
+Working on file 336
+loading files..
+load time: 18.047187999000016 (s)
+slices: 3449613:3459833
+x copy time: 0.617859990999932 (s)
+the rest time: 0.0002672869995876681 (s)
+flooshing..
+floosh time: 0.3171779730000708 (s)
+
+Total time for this file: 18.665315276999536
+Total time: 11539.814453336989
+
+Working on file 337
+loading files..
+load time: 18.52519113500057 (s)
+slices: 3459833:3470190
+x copy time: 0.6048627069994836 (s)
+the rest time: 0.0004538510002021212 (s)
+flooshing..
+floosh time: 0.39003115500054264 (s)
+
+Total time for this file: 19.130507693000254
+Total time: 11558.944961029989
+
+Working on file 338
+loading files..
+load time: 19.911803569999392 (s)
+slices: 3470190:3480444
+x copy time: 0.6475783650002995 (s)
+the rest time: 0.00025961899882531725 (s)
+flooshing..
+floosh time: 0.49141895399952773 (s)
+
+Total time for this file: 20.559641553998517
+Total time: 11579.504602583987
+
+Working on file 339
+loading files..
+load time: 16.617647224000393 (s)
+slices: 3480444:3490673
+x copy time: 0.8445107909992657 (s)
+the rest time: 0.0004147460003878223 (s)
+flooshing..
+floosh time: 0.3580232230015099 (s)
+
+Total time for this file: 17.462572761000047
+Total time: 11596.967175344987
+
+Working on file 340
+loading files..
+load time: 13.304932279999775 (s)
+slices: 3490673:3500848
+x copy time: 0.5513495929990313 (s)
+the rest time: 0.00023403700106428005 (s)
+flooshing..
+floosh time: 0.3131045579993952 (s)
+
+Total time for this file: 13.856515909999871
+Total time: 11610.823691254987
+
+Working on file 341
+loading files..
+load time: 21.023386230999677 (s)
+slices: 3500848:3511098
+x copy time: 0.6343268689997785 (s)
+the rest time: 0.00020360300004540477 (s)
+flooshing..
+floosh time: 0.34481155600042257 (s)
+
+Total time for this file: 21.6579167029995
+Total time: 11632.481607957987
+
+Working on file 342
+loading files..
+load time: 26.852020156000435 (s)
+slices: 3511098:3521402
+x copy time: 0.6810657269998046 (s)
+the rest time: 0.00036347999957797583 (s)
+flooshing..
+floosh time: 0.32762691999960225 (s)
+
+Total time for this file: 27.533449362999818
+Total time: 11660.015057320987
+
+Working on file 343
+loading files..
+load time: 50.13843168600033 (s)
+slices: 3521402:3531740
+x copy time: 0.6390324809999584 (s)
+the rest time: 0.00024563300030422397 (s)
+flooshing..
+floosh time: 0.35767269200005103 (s)
+
+Total time for this file: 50.77770980000059
+Total time: 11710.792767120987
+
+Working on file 344
+loading files..
+load time: 46.89540681300059 (s)
+slices: 3531740:3541932
+x copy time: 0.827658144000452 (s)
+the rest time: 0.000277584000286879 (s)
+flooshing..
+floosh time: 0.3231337990000611 (s)
+
+Total time for this file: 47.72334254100133
+Total time: 11758.516109661989
+
+Working on file 345
+loading files..
+load time: 30.78088617100002 (s)
+slices: 3541932:3552211
+x copy time: 0.5674883450010384 (s)
+the rest time: 0.0003522019997035386 (s)
+flooshing..
+floosh time: 0.31405380700016394 (s)
+
+Total time for this file: 31.348726718000762
+Total time: 11789.86483637999
+
+Working on file 346
+loading files..
+load time: 47.21819342999879 (s)
+slices: 3552211:3562437
+x copy time: 0.6316354179998598 (s)
+the rest time: 0.00020347300051071215 (s)
+flooshing..
+floosh time: 0.30085811900062254 (s)
+
+Total time for this file: 47.85003232099916
+Total time: 11837.714868700989
+
+Working on file 347
+loading files..
+load time: 21.86760442800005 (s)
+slices: 3562437:3572688
+x copy time: 0.6136622699996224 (s)
+the rest time: 0.0002424260001134826 (s)
+flooshing..
+floosh time: 0.34115819500038924 (s)
+
+Total time for this file: 22.481509123999786
+Total time: 11860.196377824988
+
+Working on file 348
+loading files..
+load time: 37.94772947199999 (s)
+slices: 3572688:3583009
+x copy time: 0.6052025259996299 (s)
+the rest time: 0.0002671229995030444 (s)
+flooshing..
+floosh time: 0.31113483399894903 (s)
+
+Total time for this file: 38.553199120999125
+Total time: 11898.749576945987
+
+Working on file 349
+loading files..
+load time: 24.142288111999733 (s)
+slices: 3583009:3593327
+x copy time: 0.8403140569989773 (s)
+the rest time: 0.00040621299922349863 (s)
+flooshing..
+floosh time: 0.16420364799887466 (s)
+
+Total time for this file: 24.983008381997934
+Total time: 11923.732585327985
+
+Working on file 350
+loading files..
+load time: 32.20329734199913 (s)
+slices: 3593327:3603599
+x copy time: 0.6374234519989841 (s)
+the rest time: 0.00029421300132526085 (s)
+flooshing..
+floosh time: 0.46305914700133144 (s)
+
+Total time for this file: 32.84101500699944
+Total time: 11956.573600334985
+
+Working on file 351
+loading files..
+load time: 19.383122786000968 (s)
+slices: 3603599:3613908
+x copy time: 0.6576629880000837 (s)
+the rest time: 0.00032159399961528834 (s)
+flooshing..
+floosh time: 0.3203081679985189 (s)
+
+Total time for this file: 20.041107368000667
+Total time: 11976.614707702985
+
+Working on file 352
+loading files..
+load time: 26.620247015000132 (s)
+slices: 3613908:3624208
+x copy time: 0.5314968020011293 (s)
+the rest time: 0.00022788000023865607 (s)
+flooshing..
+floosh time: 0.30191810200085456 (s)
+
+Total time for this file: 27.1519716970015
+Total time: 12003.766679399987
+
+Working on file 353
+loading files..
+load time: 20.76294812299966 (s)
+slices: 3624208:3634426
+x copy time: 0.57736621299955 (s)
+the rest time: 0.0002834939987224061 (s)
+flooshing..
+floosh time: 0.32266453900047054 (s)
+
+Total time for this file: 21.340597829997932
+Total time: 12025.107277229985
+
+Working on file 354
+loading files..
+load time: 27.179208300000028 (s)
+slices: 3634426:3644679
+x copy time: 0.614227269001276 (s)
+the rest time: 0.00031323599978350103 (s)
+flooshing..
+floosh time: 0.3299059219989431 (s)
+
+Total time for this file: 27.793748805001087
+Total time: 12052.901026034986
+
+Working on file 355
+loading files..
+load time: 19.48261307299981 (s)
+slices: 3644679:3654995
+x copy time: 0.7289591759999894 (s)
+the rest time: 0.0002746800000750227 (s)
+flooshing..
+floosh time: 0.3492953389995819 (s)
+
+Total time for this file: 20.211846928999876
+Total time: 12073.112872963986
+
+Working on file 356
+loading files..
+load time: 28.55608911499985 (s)
+slices: 3654995:3665340
+x copy time: 0.5484795210013544 (s)
+the rest time: 0.00021630399896821473 (s)
+flooshing..
+floosh time: 0.3080286620006518 (s)
+
+Total time for this file: 29.104784940000172
+Total time: 12102.217657903986
+
+Working on file 357
+loading files..
+load time: 32.61254531399936 (s)
+slices: 3665340:3675531
+x copy time: 0.5843944120006199 (s)
+the rest time: 0.0003084050003963057 (s)
+flooshing..
+floosh time: 0.3030199740005628 (s)
+
+Total time for this file: 33.19724813100038
+Total time: 12135.414906034986
+
+Working on file 358
+loading files..
+load time: 16.19168214400088 (s)
+slices: 3675531:3685997
+x copy time: 0.5850665259986272 (s)
+the rest time: 0.00029530499887187034 (s)
+flooshing..
+floosh time: 0.36925348400109215 (s)
+
+Total time for this file: 16.777043974998378
+Total time: 12152.191950009985
+
+Working on file 359
+loading files..
+load time: 13.727598800998749 (s)
+slices: 3685997:3696350
+x copy time: 0.5613252940001985 (s)
+the rest time: 0.0002639779995661229 (s)
+flooshing..
+floosh time: 0.31904151200069464 (s)
+
+Total time for this file: 14.289188072998513
+Total time: 12166.481138082983
+
+Working on file 360
+loading files..
+load time: 20.136431550999987 (s)
+slices: 3696350:3706610
+x copy time: 0.7210464630006754 (s)
+the rest time: 0.0003647539997473359 (s)
+flooshing..
+floosh time: 0.3231132399996568 (s)
+
+Total time for this file: 20.85784276800041
+Total time: 12187.338980850984
+
+Working on file 361
+loading files..
+load time: 7.539624680000998 (s)
+slices: 3706610:3716724
+x copy time: 0.6491718750003201 (s)
+the rest time: 0.00031585599936079234 (s)
+flooshing..
+floosh time: 0.32421416500073974 (s)
+
+Total time for this file: 8.189112411000679
+Total time: 12195.528093261984
+
+Working on file 362
+loading files..
+load time: 18.40143904300021 (s)
+slices: 3716724:3727052
+x copy time: 0.6537651130001905 (s)
+the rest time: 0.00034659099947020877 (s)
+flooshing..
+floosh time: 0.31567105100111803 (s)
+
+Total time for this file: 19.05555074699987
+Total time: 12214.583644008984
+
+Working on file 363
+loading files..
+load time: 6.480960838000101 (s)
+slices: 3727052:3737335
+x copy time: 0.8163139200005389 (s)
+the rest time: 0.0002772130010271212 (s)
+flooshing..
+floosh time: 0.3252407370000583 (s)
+
+Total time for this file: 7.297551971001667
+Total time: 12221.881195979986
+
+Working on file 364
+loading files..
+load time: 18.45509243199922 (s)
+slices: 3737335:3747717
+x copy time: 0.6285357389988349 (s)
+the rest time: 0.0002237370008515427 (s)
+flooshing..
+floosh time: 0.3296919420008635 (s)
+
+Total time for this file: 19.083851907998906
+Total time: 12240.965047887985
+
+Working on file 365
+loading files..
+load time: 5.8834727630001 (s)
+slices: 3747717:3758012
+x copy time: 0.5997035680011322 (s)
+the rest time: 0.0003980090004915837 (s)
+flooshing..
+floosh time: 0.3131909290004842 (s)
+
+Total time for this file: 6.483574340001724
+Total time: 12247.448622227987
+
+Working on file 366
+loading files..
+load time: 15.697272517998499 (s)
+slices: 3758012:3768324
+x copy time: 0.6235856219991547 (s)
+the rest time: 0.0003260650009906385 (s)
+flooshing..
+floosh time: 0.33852391300024465 (s)
+
+Total time for this file: 16.321184204998644
+Total time: 12263.769806432985
+
+Working on file 367
+loading files..
+load time: 5.01821935100088 (s)
+slices: 3768324:3778555
+x copy time: 0.5237269989993365 (s)
+the rest time: 0.0002341780000278959 (s)
+flooshing..
+floosh time: 0.3047330999997939 (s)
+
+Total time for this file: 5.5421805280002445
+Total time: 12269.311986960985
+
+Working on file 368
+loading files..
+load time: 12.28559873300037 (s)
+slices: 3778555:3788904
+x copy time: 0.6960299599995778 (s)
+the rest time: 0.00031731099988974165 (s)
+flooshing..
+floosh time: 0.33024883100006264 (s)
+
+Total time for this file: 12.981946003999838
+Total time: 12282.293932964985
+
+Working on file 369
+loading files..
+load time: 2.8946091270008765 (s)
+slices: 3788904:3799255
+x copy time: 0.6512927290004882 (s)
+the rest time: 0.0002788840010907734 (s)
+flooshing..
+floosh time: 0.3328450629996951 (s)
+
+Total time for this file: 3.5461807400024554
+Total time: 12285.840113704988
+
+Working on file 370
+loading files..
+load time: 14.351062215000638 (s)
+slices: 3799255:3809417
+x copy time: 0.517506444000901 (s)
+the rest time: 0.0003313229990453692 (s)
+flooshing..
+floosh time: 0.3376940119997016 (s)
+
+Total time for this file: 14.868899982000585
+Total time: 12300.709013686988
+
+Working on file 371
+loading files..
+load time: 17.006932010999662 (s)
+slices: 3809417:3819658
+x copy time: 0.6945548009989579 (s)
+the rest time: 0.00028485599978012033 (s)
+flooshing..
+floosh time: 0.38498079200144275 (s)
+
+Total time for this file: 17.7017716679984
+Total time: 12318.410785354987
+
+Working on file 372
+loading files..
+load time: 17.71041391700055 (s)
+slices: 3819658:3829904
+x copy time: 0.6181985839994013 (s)
+the rest time: 0.00028272300005482975 (s)
+flooshing..
+floosh time: 0.3118197029998555 (s)
+
+Total time for this file: 18.328895224000007
+Total time: 12336.739680578987
+
+Working on file 373
+loading files..
+load time: 16.693831619000775 (s)
+slices: 3829904:3840104
+x copy time: 0.5499263090005115 (s)
+the rest time: 0.00029116000041540246 (s)
+flooshing..
+floosh time: 0.32955925299938826 (s)
+
+Total time for this file: 17.244049088001702
+Total time: 12353.983729666988
+
+Working on file 374
+loading files..
+load time: 24.71434551799939 (s)
+slices: 3840104:3850206
+x copy time: 0.6497483759994793 (s)
+the rest time: 0.00019785900076385587 (s)
+flooshing..
+floosh time: 0.3088387940006214 (s)
+
+Total time for this file: 25.364291752999634
+Total time: 12379.348021419988
+
+Working on file 375
+loading files..
+load time: 14.390407779999805 (s)
+slices: 3850206:3860504
+x copy time: 0.695314029999281 (s)
+the rest time: 0.00041836799937300384 (s)
+flooshing..
+floosh time: 0.3781772649999766 (s)
+
+Total time for this file: 15.086140177998459
+Total time: 12394.434161597987
+
+Working on file 376
+loading files..
+load time: 18.23370398499901 (s)
+slices: 3860504:3870801
+x copy time: 0.6090345310003613 (s)
+the rest time: 0.0002872019995265873 (s)
+flooshing..
+floosh time: 0.3805108040014602 (s)
+
+Total time for this file: 18.8430257179989
+Total time: 12413.277187315985
+
+Working on file 377
+loading files..
+load time: 16.041045161999136 (s)
+slices: 3870801:3881052
+x copy time: 0.5724082619999535 (s)
+the rest time: 0.0002775940010906197 (s)
+flooshing..
+floosh time: 0.3254558599983284 (s)
+
+Total time for this file: 16.61373101800018
+Total time: 12429.890918333986
+
+Working on file 378
+loading files..
+load time: 19.4987234780001 (s)
+slices: 3881052:3891275
+x copy time: 0.6300702319986158 (s)
+the rest time: 0.0002691509998840047 (s)
+flooshing..
+floosh time: 0.30843751700012945 (s)
+
+Total time for this file: 20.1290628609986
+Total time: 12450.019981194984
+
+Working on file 379
+loading files..
+load time: 71.00133017199914 (s)
+slices: 3891275:3901442
+x copy time: 0.5851209850006853 (s)
+the rest time: 0.0002192880001530284 (s)
+flooshing..
+floosh time: 0.3384956890004105 (s)
+
+Total time for this file: 71.58667044499998
+Total time: 12521.606651639984
+
+Working on file 380
+loading files..
+load time: 22.52644500600036 (s)
+slices: 3901442:3911792
+x copy time: 0.565707719000784 (s)
+the rest time: 0.00030648100073449314 (s)
+flooshing..
+floosh time: 0.30946017099995515 (s)
+
+Total time for this file: 23.092459206001877
+Total time: 12544.699110845986
+
+Working on file 381
+loading files..
+load time: 22.320364412000345 (s)
+slices: 3911792:3922008
+x copy time: 0.6183327050002845 (s)
+the rest time: 0.00021693300004699267 (s)
+flooshing..
+floosh time: 0.3484086110001954 (s)
+
+Total time for this file: 22.938914050000676
+Total time: 12567.638024895987
+
+Working on file 382
+loading files..
+load time: 50.764205339999535 (s)
+slices: 3922008:3932228
+x copy time: 0.6128664179996122 (s)
+the rest time: 0.00040292700032296125 (s)
+flooshing..
+floosh time: 0.3172728370009281 (s)
+
+Total time for this file: 51.37747468499947
+Total time: 12619.015499580986
+
+Working on file 383
+loading files..
+load time: 25.66881874899991 (s)
+slices: 3932228:3942480
+x copy time: 0.7883295819992782 (s)
+the rest time: 0.00026045199956570286 (s)
+flooshing..
+floosh time: 0.47617150399855745 (s)
+
+Total time for this file: 26.457408782998755
+Total time: 12645.472908363985
+
+Working on file 384
+loading files..
+load time: 29.369803666000735 (s)
+slices: 3942480:3952743
+x copy time: 0.5690757510001276 (s)
+the rest time: 0.00027228999897488393 (s)
+flooshing..
+floosh time: 0.29407445100150653 (s)
+
+Total time for this file: 29.939151706999837
+Total time: 12675.412060070985
+
+Working on file 385
+loading files..
+load time: 19.866772854000374 (s)
+slices: 3952743:3962941
+x copy time: 0.6232093369999347 (s)
+the rest time: 0.00021293700046953745 (s)
+flooshing..
+floosh time: 0.327157993999208 (s)
+
+Total time for this file: 20.490195128000778
+Total time: 12695.902255198986
+
+Working on file 386
+loading files..
+load time: 34.491550727001595 (s)
+slices: 3962941:3973236
+x copy time: 0.676035974000115 (s)
+the rest time: 0.0003380739999556681 (s)
+flooshing..
+floosh time: 0.3767893920012284 (s)
+
+Total time for this file: 35.167924775001666
+Total time: 12731.070179973987
+
+Working on file 387
+loading files..
+load time: 20.37208586700035 (s)
+slices: 3973236:3983454
+x copy time: 0.5294089110011555 (s)
+the rest time: 0.00021570900025835726 (s)
+flooshing..
+floosh time: 0.3241912149987911 (s)
+
+Total time for this file: 20.901710487001765
+Total time: 12751.971890460989
+
+Working on file 388
+loading files..
+load time: 25.57657453000138 (s)
+slices: 3983454:3993755
+x copy time: 0.6659813440001017 (s)
+the rest time: 0.0003041060008399654 (s)
+flooshing..
+floosh time: 0.35203930600073363 (s)
+
+Total time for this file: 26.242859980002322
+Total time: 12778.214750440991
+
+Working on file 389
+loading files..
+load time: 9.19818345099884 (s)
+slices: 3993755:4003937
+x copy time: 0.5188191329998517 (s)
+the rest time: 0.00020313300046836957 (s)
+flooshing..
+floosh time: 0.29880265499923553 (s)
+
+Total time for this file: 9.71720571699916
+Total time: 12787.93195615799
+
+Working on file 390
+loading files..
+load time: 25.962604003001616 (s)
+slices: 4003937:4014184
+x copy time: 0.7209757550008362 (s)
+the rest time: 0.00037008799881732557 (s)
+flooshing..
+floosh time: 0.3391608880010608 (s)
+
+Total time for this file: 26.68394984600127
+Total time: 12814.615906003992
+
+Working on file 391
+loading files..
+load time: 12.116309753999303 (s)
+slices: 4014184:4024498
+x copy time: 0.5702537309989566 (s)
+the rest time: 0.00023863099886511918 (s)
+flooshing..
+floosh time: 0.31813205300022673 (s)
+
+Total time for this file: 12.686802115997125
+Total time: 12827.302708119989
+
+Working on file 392
+loading files..
+load time: 20.04399511000156 (s)
+slices: 4024498:4034712
+x copy time: 0.5503488660015137 (s)
+the rest time: 0.0002608539998618653 (s)
+flooshing..
+floosh time: 0.311665549999816 (s)
+
+Total time for this file: 20.594604830002936
+Total time: 12847.897312949992
+
+Working on file 393
+loading files..
+load time: 14.528016443000524 (s)
+slices: 4034712:4044975
+x copy time: 0.5321430280000641 (s)
+the rest time: 0.00018650200036063325 (s)
+flooshing..
+floosh time: 0.2895706270010123 (s)
+
+Total time for this file: 15.060345973000949
+Total time: 12862.957658922993
+
+Working on file 394
+loading files..
+load time: 21.115725044999635 (s)
+slices: 4044975:4055255
+x copy time: 0.5855505140007153 (s)
+the rest time: 0.00029646799885085784 (s)
+flooshing..
+floosh time: 0.305503483999928 (s)
+
+Total time for this file: 21.7015720269992
+Total time: 12884.659230949992
+
+Working on file 395
+loading files..
+load time: 10.396464998999363 (s)
+slices: 4055255:4065526
+x copy time: 0.632752432999041 (s)
+the rest time: 0.00031490200126427226 (s)
+flooshing..
+floosh time: 0.4193523940011801 (s)
+
+Total time for this file: 11.029532333999668
+Total time: 12895.688763283992
+
+Working on file 396
+loading files..
+load time: 16.24653262799984 (s)
+slices: 4065526:4075739
+x copy time: 0.6367852080002194 (s)
+the rest time: 0.00023356100064120255 (s)
+flooshing..
+floosh time: 0.3464181520012062 (s)
+
+Total time for this file: 16.8835513970007
+Total time: 12912.572314680992
+
+Working on file 397
+loading files..
+load time: 6.505561793001107 (s)
+slices: 4075739:4086003
+x copy time: 0.6310219919996598 (s)
+the rest time: 0.0003040139999939129 (s)
+flooshing..
+floosh time: 0.3320554459987761 (s)
+
+Total time for this file: 7.13688779900076
+Total time: 12919.709202479993
+
+Working on file 398
+loading files..
+load time: 19.481548292000298 (s)
+slices: 4086003:4096238
+x copy time: 0.713071479998689 (s)
+the rest time: 0.00030283799969765823 (s)
+flooshing..
+floosh time: 0.3504980420002539 (s)
+
+Total time for this file: 20.194922609998684
+Total time: 12939.904125089992
+
+Working on file 399
+loading files..
+load time: 5.420806460999302 (s)
+slices: 4096238:4106533
+x copy time: 0.9156348779997643 (s)
+the rest time: 0.0003838950015051523 (s)
+flooshing..
+floosh time: 0.5931512919996749 (s)
+
+Total time for this file: 6.336825234000571
+Total time: 12946.240950323992
+

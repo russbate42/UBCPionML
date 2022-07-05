@@ -1,0 +1,137 @@
+2022-06-09 07:41:29.262464: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2022-06-09 07:41:29.262522: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 9672 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 2080 Ti, pci bus id: 0000:88:00.0, compute capability: 7.5
+2022-06-09 07:41:31.138798: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+
+Training with values: 
+Batch size: 3000
+Learning rate: 0.001
+Epochs: 10
+Model: PFN_base
+Training on GPU: 4
+Training on 50000 events
+Eager or graph? -- EAGER execution
+Running in EAGER execution mode!
+
+Loading data..
+time to load data: 0.0032 (s)
+
+X size: (50000, 1389, 5)
+
+train -- val -- test
+35000 -- 7500 -- 7500
+
+time to fiddle with data:   0.00 (m)
+
+Loading models..
+Model: "PFN_base"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input (InputLayer)              [(None, 1389, 5)]    0                                            
+__________________________________________________________________________________________________
+t_dist_0 (TimeDistributed)      (None, 1389, 100)    600         input[0][0]                      
+__________________________________________________________________________________________________
+activation_0 (Activation)       (None, 1389, 100)    0           t_dist_0[0][0]                   
+__________________________________________________________________________________________________
+t_dist_1 (TimeDistributed)      (None, 1389, 100)    10100       activation_0[0][0]               
+__________________________________________________________________________________________________
+activation_1 (Activation)       (None, 1389, 100)    0           t_dist_1[0][0]                   
+__________________________________________________________________________________________________
+t_dist_2 (TimeDistributed)      (None, 1389, 128)    12928       activation_1[0][0]               
+__________________________________________________________________________________________________
+mask (Lambda)                   (None, 1389)         0           input[0][0]                      
+__________________________________________________________________________________________________
+activation_2 (Activation)       (None, 1389, 128)    0           t_dist_2[0][0]                   
+__________________________________________________________________________________________________
+sum (Dot)                       (None, 128)          0           mask[0][0]                       
+                                                                 activation_2[0][0]               
+__________________________________________________________________________________________________
+dense_0 (Dense)                 (None, 100)          12900       sum[0][0]                        
+__________________________________________________________________________________________________
+activation_3 (Activation)       (None, 100)          0           dense_0[0][0]                    
+__________________________________________________________________________________________________
+dense_1 (Dense)                 (None, 100)          10100       activation_3[0][0]               
+__________________________________________________________________________________________________
+activation_4 (Activation)       (None, 100)          0           dense_1[0][0]                    
+__________________________________________________________________________________________________
+dense_2 (Dense)                 (None, 100)          10100       activation_4[0][0]               
+__________________________________________________________________________________________________
+activation_5 (Activation)       (None, 100)          0           dense_2[0][0]                    
+__________________________________________________________________________________________________
+output (Dense)                  (None, 1)            101         activation_5[0][0]               
+__________________________________________________________________________________________________
+activation_6 (Activation)       (None, 1)            0           output[0][0]                     
+==================================================================================================
+Total params: 56,829
+Trainable params: 56,829
+Non-trainable params: 0
+__________________________________________________________________________________________________
+
+Training model..
+
+
+Training using generators...
+Batch size: 3000
+Epochs: 10
+steps_per_epoch: 12
+validation_steps: 3
+
+
+entering fit
+
+entered data generation function
+nbatches = 12
+slices: [(0, 3000), (3000, 6000), (6000, 9000), (9000, 12000), (12000, 15000), (15000, 18000), (18000, 21000), (21000, 24000), (24000, 27000), (27000, 30000), (30000, 33000), (33000, 35000)]
+
+entered for loop of epochs
+
+ -- training data -- 
+epoch number: 1
+entered for loop of batches
+batch: 1 -- indices: (0, 3000) -- shape: 3000
+batch: 2 -- indices: (3000, 6000) -- shape: 3000
+batch: 3 -- indices: (6000, 9000) -- shape: 3000
+batch: 4 -- indices: (9000, 12000) -- shape: 3000
+batch: 5 -- indices: (12000, 15000) -- shape: 3000
+batch: 6 -- indices: (15000, 18000) -- shape: 3000
+batch: 7 -- indices: (18000, 21000) -- shape: 3000
+batch: 8 -- indices: (21000, 24000) -- shape: 3000
+batch: 9 -- indices: (24000, 27000) -- shape: 3000
+batch: 10 -- indices: (27000, 30000) -- shape: 3000
+batch: 11 -- indices: (30000, 33000) -- shape: 3000
+last batch: 12 -- indices: (33000, 35000) -- shape: 2000
+
+entered for loop of epochs
+
+ -- training data -- 
+epoch number: 2
+
+entered data generation function
+nbatches = 3
+slices: [(0, 3000), (3000, 6000), (6000, 7500)]
+
+entered for loop of epochs
+
+ -- validation data -- 
+epoch number: 1
+entered for loop of batches
+batch: 1 -- indices: (0, 3000) -- shape: 3000
+entered for loop of batches
+batch: 1 -- indices: (0, 3000) -- shape: 3000
+batch: 2 -- indices: (3000, 6000) -- shape: 3000
+last batch: 3 -- indices: (6000, 7500) -- shape: 1500
+
+entered for loop of epochs
+
+ -- validation data -- 
+epoch number: 2
+entered for loop of batches
+batch: 1 -- indices: (0, 3000) -- shape: 3000
+12/12 - 5s - loss: 31.4188 - val_loss: 4.3342
+
+
+Time to train:     7.00 (s)
+                   0.12 (min)
+                   0.00 (hour)
+
+exiting early - before predictions are made.

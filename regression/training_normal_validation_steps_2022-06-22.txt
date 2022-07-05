@@ -1,0 +1,333 @@
+2022-06-22 08:53:37.005113: W tensorflow/core/common_runtime/gpu/gpu_bfc_allocator.cc:39] Overriding allow_growth setting because the TF_FORCE_GPU_ALLOW_GROWTH environment variable is set. Original config value was 0.
+2022-06-22 08:53:37.005317: I tensorflow/core/common_runtime/gpu/gpu_device.cc:1510] Created device /job:localhost/replica:0/task:0/device:GPU:0 with 9672 MB memory:  -> device: 0, name: NVIDIA GeForce RTX 2080 Ti, pci bus id: 0000:88:00.0, compute capability: 7.5
+2022-06-22 08:53:51.995333: I tensorflow/compiler/mlir/mlir_graph_optimization_pass.cc:185] None of the MLIR Optimization Passes are enabled (registered 2)
+
+Training with values: 
+Batch size: 3000
+Learning rate: 0.001
+Epochs: 10
+Model: PFN_base
+Training on GPU: 4
+Training on 50000 events
+Eager or graph? -- EAGER execution
+Running in EAGER execution mode!
+
+Loading data..
+time to load data: 0.0044 (s)
+
+X size: (50000, 887, 4)
+
+train -- val
+40000 -- 10000
+
+time to fiddle with data:   0.00 (m)
+
+Loading models..
+Model: "PFN_base"
+__________________________________________________________________________________________________
+Layer (type)                    Output Shape         Param #     Connected to                     
+==================================================================================================
+input (InputLayer)              [(None, 887, 4)]     0                                            
+__________________________________________________________________________________________________
+t_dist_0 (TimeDistributed)      (None, 887, 100)     500         input[0][0]                      
+__________________________________________________________________________________________________
+activation_0 (Activation)       (None, 887, 100)     0           t_dist_0[0][0]                   
+__________________________________________________________________________________________________
+t_dist_1 (TimeDistributed)      (None, 887, 100)     10100       activation_0[0][0]               
+__________________________________________________________________________________________________
+activation_1 (Activation)       (None, 887, 100)     0           t_dist_1[0][0]                   
+__________________________________________________________________________________________________
+t_dist_2 (TimeDistributed)      (None, 887, 128)     12928       activation_1[0][0]               
+__________________________________________________________________________________________________
+mask (Lambda)                   (None, 887)          0           input[0][0]                      
+__________________________________________________________________________________________________
+activation_2 (Activation)       (None, 887, 128)     0           t_dist_2[0][0]                   
+__________________________________________________________________________________________________
+sum (Dot)                       (None, 128)          0           mask[0][0]                       
+                                                                 activation_2[0][0]               
+__________________________________________________________________________________________________
+dense_0 (Dense)                 (None, 100)          12900       sum[0][0]                        
+__________________________________________________________________________________________________
+activation_3 (Activation)       (None, 100)          0           dense_0[0][0]                    
+__________________________________________________________________________________________________
+dense_1 (Dense)                 (None, 100)          10100       activation_3[0][0]               
+__________________________________________________________________________________________________
+activation_4 (Activation)       (None, 100)          0           dense_1[0][0]                    
+__________________________________________________________________________________________________
+dense_2 (Dense)                 (None, 100)          10100       activation_4[0][0]               
+__________________________________________________________________________________________________
+activation_5 (Activation)       (None, 100)          0           dense_2[0][0]                    
+__________________________________________________________________________________________________
+output (Dense)                  (None, 1)            101         activation_5[0][0]               
+__________________________________________________________________________________________________
+activation_6 (Activation)       (None, 1)            0           output[0][0]                     
+==================================================================================================
+Total params: 56,729
+Trainable params: 56,729
+Non-trainable params: 0
+__________________________________________________________________________________________________
+
+Training model..
+
+
+Training using generators...
+Number of events: 50000
+Batch size: 3000
+Epochs: 10
+Drop remainder = True
+steps_per_epoch: 13
+validation_steps: 3
+Split: 80/20
+
+
+entering fit
+slices: [(0, 3000), (3000, 6000), (6000, 9000), (9000, 12000), (12000, 15000), (15000, 18000), (18000, 21000), (21000, 24000), (24000, 27000), (27000, 30000), (30000, 33000), (33000, 36000), (36000, 39000)]
+Training epoch number: 0
+Shuffling..
+Done..
+Training batch number: 0
+Epoch 1/10
+Training batch number: 1
+Training batch number: 2
+Training batch number: 3
+Training batch number: 4
+Training batch number: 5
+Training batch number: 6
+Training batch number: 7
+Training batch number: 8
+Training batch number: 9
+Training batch number: 10
+Training batch number: 11
+Training batch number: 12
+Training epoch number: 1
+Shuffling..
+slices: [(0, 3000), (3000, 6000), (6000, 9000)]
+Validation epoch number: 0
+Shuffling..
+Done..
+Validation batch number: 0
+Done..
+Training batch number: 0
+Validation batch number: 1
+Validation batch number: 2
+Validation epoch number: 1
+Shuffling..
+Done..
+Validation batch number: 0
+13/13 - 4s - loss: 7.1074 - val_loss: 2.9186
+Epoch 2/10
+Training batch number: 1
+Training batch number: 2
+Training batch number: 3
+Training batch number: 4
+Training batch number: 5
+Training batch number: 6
+Training batch number: 7
+Training batch number: 8
+Training batch number: 9
+Training batch number: 10
+Training batch number: 11
+Training batch number: 12
+Training epoch number: 2
+Shuffling..
+Validation batch number: 1
+Validation batch number: 2
+Validation epoch number: 2
+Shuffling..
+Done..
+Validation batch number: 0
+Validation batch number: 1
+Done..
+Training batch number: 0
+13/13 - 2s - loss: 2.8704 - val_loss: 2.5217
+Epoch 3/10
+Training batch number: 1
+Training batch number: 2
+Training batch number: 3
+Training batch number: 4
+Training batch number: 5
+Training batch number: 6
+Training batch number: 7
+Training batch number: 8
+Training batch number: 9
+Training batch number: 10
+Training batch number: 11
+Training batch number: 12
+Training epoch number: 3
+Shuffling..
+Validation batch number: 2
+Validation epoch number: 3
+Shuffling..
+Done..
+Validation batch number: 0
+Validation batch number: 1
+Done..
+Training batch number: 0
+Validation batch number: 2
+13/13 - 6s - loss: 2.3460 - val_loss: 2.0639
+Epoch 4/10
+Training batch number: 1
+Training batch number: 2
+Training batch number: 3
+Training batch number: 4
+Training batch number: 5
+Training batch number: 6
+Training batch number: 7
+Training batch number: 8
+Training batch number: 9
+Training batch number: 10
+Training batch number: 11
+Training batch number: 12
+Training epoch number: 4
+Shuffling..
+Validation epoch number: 4
+Shuffling..
+Done..
+Validation batch number: 0
+Validation batch number: 1
+Validation batch number: 2
+Validation epoch number: 5
+Shuffling..
+Done..
+Validation batch number: 0
+13/13 - 9s - loss: 1.9810 - val_loss: 1.8005
+Epoch 5/10
+Done..
+Training batch number: 0
+Training batch number: 1
+Training batch number: 2
+Training batch number: 3
+Training batch number: 4
+Training batch number: 5
+Training batch number: 6
+Training batch number: 7
+Training batch number: 8
+Training batch number: 9
+Training batch number: 10
+Training batch number: 11
+Training batch number: 12
+Training epoch number: 5
+Shuffling..
+Validation batch number: 1
+Validation batch number: 2
+Validation epoch number: 6
+Shuffling..
+Done..
+Validation batch number: 0
+Validation batch number: 1
+13/13 - 8s - loss: 1.7050 - val_loss: 1.4990
+Epoch 6/10
+Done..
+Training batch number: 0
+Training batch number: 1
+Training batch number: 2
+Training batch number: 3
+Training batch number: 4
+Training batch number: 5
+Training batch number: 6
+Training batch number: 7
+Training batch number: 8
+Training batch number: 9
+Training batch number: 10
+Training batch number: 11
+Training batch number: 12
+Training epoch number: 6
+Shuffling..
+Validation batch number: 2
+Validation epoch number: 7
+Shuffling..
+Done..
+Validation batch number: 0
+Validation batch number: 1
+Validation batch number: 2
+13/13 - 14s - loss: 1.4040 - val_loss: 1.2488
+Epoch 7/10
+Done..
+Training batch number: 0
+Training batch number: 1
+Training batch number: 2
+Training batch number: 3
+Training batch number: 4
+Training batch number: 5
+Training batch number: 6
+Training batch number: 7
+Training batch number: 8
+Training batch number: 9
+Training batch number: 10
+Training batch number: 11
+Training batch number: 12
+Training epoch number: 7
+Shuffling..
+Validation epoch number: 8
+Shuffling..
+Done..
+Validation batch number: 0
+Validation batch number: 1
+Validation batch number: 2
+Validation epoch number: 9
+Shuffling..
+Done..
+Validation batch number: 0
+13/13 - 18s - loss: 1.1212 - val_loss: 0.9271
+WARNING:tensorflow:Your input ran out of data; interrupting training. Make sure that your dataset or generator can generate at least `steps_per_epoch * epochs` batches (in this case, 3 batches). You may need to use the repeat() function when building your dataset.
+Epoch 8/10
+Done..
+Training batch number: 0
+Training batch number: 1
+Training batch number: 2
+Training batch number: 3
+Training batch number: 4
+Training batch number: 5
+Training batch number: 6
+Training batch number: 7
+Training batch number: 8
+Training batch number: 9
+Training batch number: 10
+Training batch number: 11
+Training batch number: 12
+Training epoch number: 8
+Shuffling..
+Validation batch number: 1
+Validation batch number: 2
+13/13 - 11s - loss: 0.8325 - val_loss: 0.6665
+Epoch 9/10
+Done..
+Training batch number: 0
+Training batch number: 1
+Training batch number: 2
+Training batch number: 3
+Training batch number: 4
+Training batch number: 5
+Training batch number: 6
+Training batch number: 7
+Training batch number: 8
+Training batch number: 9
+Training batch number: 10
+Training batch number: 11
+Training batch number: 12
+Training epoch number: 9
+Shuffling..
+13/13 - 13s - loss: 0.6137
+Epoch 10/10
+Done..
+Training batch number: 0
+Training batch number: 1
+Training batch number: 2
+Training batch number: 3
+Training batch number: 4
+Training batch number: 5
+Training batch number: 6
+Training batch number: 7
+Training batch number: 8
+Training batch number: 9
+Training batch number: 10
+Training batch number: 11
+Training batch number: 12
+13/13 - 13s - loss: 0.4864
+
+
+Time to train:   111.60 (s)
+                   1.86 (min)
+                   0.03 (hour)
+
+exiting early - before predictions are made.

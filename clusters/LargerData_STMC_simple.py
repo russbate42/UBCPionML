@@ -23,9 +23,9 @@ from copy import deepcopy
 Nfile=1
 
 print()
-print('='*43)
-print('== Single Track Multiple Cluster Script ==')
-print('='*43)
+print('='*55)
+print('== Single Track Multiple Cluster Script for Baseline ==')
+print('='*55)
 print()
 print("Awkward version: "+str(ak.__version__))
 print("Uproot version: "+str(ur.__version__))
@@ -113,7 +113,6 @@ def find_index_1D(values, dictionary):
         idx_vec[i] = dictionary[values[i]]
     return idx_vec
 
-        
 #====================
 # Metadata ==========
 #====================
@@ -130,43 +129,6 @@ np_event_branches = ["nCluster", "eventNumber", "nTrack", "nTruthPart"]
 geo_branches = ["cell_geo_ID", "cell_geo_eta", "cell_geo_phi", "cell_geo_rPerp", "cell_geo_sampling"]
 
 
-#======================================
-# Track related meta-data
-#======================================
-trk_em_eta = ['trackEta_EMB2', 'trackEta_EME2']
-trk_em_phi = ['trackPhi_EMB2', 'trackPhi_EME2']
-
-trk_proj_eta = ['trackEta_EMB1', 'trackEta_EMB2', 'trackEta_EMB3',
-    'trackEta_EME1', 'trackEta_EME2', 'trackEta_EME3', 'trackEta_HEC0',
-    'trackEta_HEC1', 'trackEta_HEC2', 'trackEta_HEC3', 'trackEta_TileBar0',
-    'trackEta_TileBar1', 'trackEta_TileBar2', 'trackEta_TileGap1',
-    'trackEta_TileGap2', 'trackEta_TileGap3', 'trackEta_TileExt0',
-    'trackEta_TileExt1', 'trackEta_TileExt2']
-trk_proj_phi = ['trackPhi_EMB1', 'trackPhi_EMB2', 'trackPhi_EMB3',
-    'trackPhi_EME1', 'trackPhi_EME2', 'trackPhi_EME3', 'trackPhi_HEC0',
-    'trackPhi_HEC1', 'trackPhi_HEC2', 'trackPhi_HEC3', 'trackPhi_TileBar0',
-    'trackPhi_TileBar1', 'trackPhi_TileBar2', 'trackPhi_TileGap1',
-    'trackPhi_TileGap2', 'trackPhi_TileGap3', 'trackPhi_TileExt0',
-    'trackPhi_TileExt1', 'trackPhi_TileExt2']
-calo_numbers = [1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-eta_trk_dict = dict(zip(trk_proj_eta, calo_numbers))
-
-calo_layers = ['EMB1', 'EMB2', 'EMB3', 'EME1', 'EME2', 'EME3', 'HEC0', 'HEC1',
-    'HEC2', 'HEC3', 'TileBar0', 'TileBar1', 'TileBar2', 'TileGap1', 'TileGap2',
-    'TileGap3', 'TileExt0', 'TileExt1', 'TileExt2']
-calo_numbers2 = [1,2,3,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-calo_dict = dict(zip(calo_numbers2, calo_layers))
-
-fixed_z_numbers = [5,6,7,8,9,10,11]
-fixed_z_vals = [3790.03, 3983.68, 4195.84, 4461.25, 4869.50, 5424.50, 5905.00]
-z_calo_dict = dict(zip(fixed_z_numbers, fixed_z_vals))
-
-fixed_r_numbers = [1,2,3,12,13,14,15,16,17,18,19,20]
-fixed_r_vals = [1532.18, 1723.89, 1923.02, 2450.00, 2995.00, 3630.00, 3215.00,
-                3630.00, 2246.50, 2450.00, 2870.00, 3480.00]
-r_calo_dict = dict(zip(fixed_r_numbers, fixed_r_vals))
-
-
 #====================
 # File setup ========
 #====================
@@ -176,6 +138,7 @@ file_prefix = 'user.angerami.24559744.OutputStream._000'
 for i in range(1,Nfile+1):
     endstring = f'{i:03}'
     fileNames.append(file_prefix + endstring + '.root')
+
 
 #====================
 # Load Data Files ===
@@ -190,7 +153,11 @@ geo_dict = dict_from_tree(tree=CellGeo_tree, branches=None, np_branches=geo_bran
 cell_geo_ID = geo_dict['cell_geo_ID']
 cell_ID_dict = dict(zip(cell_geo_ID, np.arange(len(cell_geo_ID))))
 
+
+#===================================
 ## MEMORY MAPPED ARRAY ALLOCATION ##
+#===================================
+
 X_large = np.lib.format.open_memmap('/data/atlas/rbate/X_large.npy', mode='w+', dtype=np.float64,
                        shape=(2500000,1500,6), fortran_order=False, version=None)
 Y_large = np.lib.format.open_memmap('/data/atlas/rbate/Y_large.npy', mode='w+', dtype=np.float64,
@@ -198,8 +165,9 @@ Y_large = np.lib.format.open_memmap('/data/atlas/rbate/Y_large.npy', mode='w+', 
 Eta_large = np.empty(2500000)
 
 
+#========================
 # Pre-Loop Definitions ##
-#======================================
+#========================
 k = 1 # tally used to keep track of file number
 tot_nEvts = 0 # used for keeping track of total number of events
 max_nPoints = 0 # used for keeping track of the largest 'point cloud'
@@ -209,8 +177,9 @@ events_prefix = '/fast_scratch_1/atlas_images/v01-45/pipm/'
 num_zero_tracks = 0
 
 
+#===================
 ## Main File Loop ##
-#======================================
+#===================
 for currFile in fileNames:
     
     # Check for file, a few are missing
@@ -382,7 +351,7 @@ for currFile in fileNames:
                 X_new[i,low:high,0] = cluster_cell_E
                 # Normalize to average cluster centers
                 X_new[i,low:high,1] = cluster_cell_Eta - eta_ctr
-                X_new[i,low:high,2] = cluster_cell_Phi - phi_ctr
+                X_new[i,low:high,2] = cluster_cell_Phi - eta_ctr
                 X_new[i,low:high,3] = cluster_cell_rPerp
                 X_new[i,low:high,5] = cluster_cell_sampling
 
@@ -531,14 +500,3 @@ t1 = t.time()
 print()
 print('Time to copy new and delete old: '+str(t1-t0)+' (s)')
 print()
-
-# t0 = t.time()
-# np.savez('/data/rbate/XY_STMC_allFiles', X, Y)
-# t1 = t.time()
-# print()
-# print('Time to save file: '+str(t1-t0)+' (s)')
-# print()
-        
-    
-
-

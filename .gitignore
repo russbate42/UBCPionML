@@ -41,11 +41,15 @@ clusters/Plots/
 segmentation/Plots/
 segmentation/Model_Building.ipynb
 segmentation/results/*.npz
+segmentation/results/*.npy
 segmentation/Models/
 
 # REGRESSION
 regression/Regression_Plots/
 regression/results/*.npz
+regression/results/*.npy
+regression/results/pubnote22/
+regression/results/pubnote22_full/
 regression/models/
 regression/training_output/
 

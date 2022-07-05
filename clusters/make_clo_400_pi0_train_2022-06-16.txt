@@ -1,0 +1,2020 @@
+
+=====================================
+== Larger Data Cluster Only Script ==
+=====================================
+
+== Generating data for PubNote 2022 ==
+
+Awkward version: 1.5.1
+Uproot version: 4.1.8
+Numpy version: 1.21.4
+Working on 400 files
+Creating training data for pi0
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000011.root - 1/400
+
+time for this file: 0.9556332541474452 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000012.root - 2/400
+
+time for this file: 0.962613177811727 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000013.root - 3/400
+
+time for this file: 0.9948795392954101 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000014.root - 4/400
+
+time for this file: 0.9601608251376699 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000015.root - 5/400
+
+time for this file: 0.9563993645211061 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000016.root - 6/400
+
+time for this file: 0.9538315192485849 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000017.root - 7/400
+
+time for this file: 0.9381647040136158 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000018.root - 8/400
+
+time for this file: 0.9659299472346902 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000019.root - 9/400
+
+time for this file: 0.9564187208656222 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000020.root - 10/400
+
+time for this file: 0.9860498953765879 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000021.root - 11/400
+
+time for this file: 0.9706610881723463 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000022.root - 12/400
+
+time for this file: 0.9481304289307445 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000023.root - 13/400
+
+time for this file: 1.0131696326192468 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000024.root - 14/400
+
+time for this file: 0.9504973617071907 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000025.root - 15/400
+
+time for this file: 1.0084900667425245 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000026.root - 16/400
+
+time for this file: 0.9541376890459409 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000027.root - 17/400
+
+time for this file: 0.9796197979866217 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000028.root - 18/400
+
+time for this file: 0.9800791373631607 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000029.root - 19/400
+
+time for this file: 1.0032933454650144 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000030.root - 20/400
+
+time for this file: 0.9570242800439398 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000031.root - 21/400
+
+time for this file: 0.9788825567811728 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000032.root - 22/400
+
+time for this file: 1.0285344924467306 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000033.root - 23/400
+
+time for this file: 1.0832425642758607 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000034.root - 24/400
+
+time for this file: 1.1643895095059027 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000035.root - 25/400
+
+time for this file: 1.2143945830253264 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000036.root - 26/400
+
+time for this file: 1.2221175083269675 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000037.root - 27/400
+
+time for this file: 1.2044194664185246 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000038.root - 28/400
+
+time for this file: 1.2950242426556846 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000039.root - 29/400
+
+time for this file: 1.2058370046317577 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000040.root - 30/400
+
+time for this file: 1.2548267346341162 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000041.root - 31/400
+
+time for this file: 1.2580408546297501 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000042.root - 32/400
+
+time for this file: 1.2687622642455 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000043.root - 33/400
+
+time for this file: 1.266293920064345 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000044.root - 34/400
+
+time for this file: 1.2378689375861238 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000045.root - 35/400
+
+time for this file: 1.2704470355063677 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000046.root - 36/400
+
+time for this file: 1.2242042776973296 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000047.root - 37/400
+
+time for this file: 1.2445198471657932 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000048.root - 38/400
+
+time for this file: 1.2455545091380675 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000049.root - 39/400
+
+time for this file: 1.294533437381809 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000050.root - 40/400
+
+time for this file: 1.2688797023457785 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000051.root - 41/400
+
+time for this file: 1.2175524635085215 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000052.root - 42/400
+
+time for this file: 1.3194886066795637 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000053.root - 43/400
+
+time for this file: 1.2194410481179754 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000054.root - 44/400
+
+time for this file: 1.2980755554356922 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000055.root - 45/400
+
+time for this file: 1.2842554287053645 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000056.root - 46/400
+
+time for this file: 1.2692748451139777 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000057.root - 47/400
+
+time for this file: 1.250768999600162 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000058.root - 48/400
+
+time for this file: 1.3541489506606013 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000059.root - 49/400
+
+time for this file: 1.1693088222295045 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000060.root - 50/400
+
+time for this file: 1.070250196568668 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000061.root - 51/400
+
+time for this file: 1.2716970379153887 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000062.root - 52/400
+
+time for this file: 1.2832072072507192 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000063.root - 53/400
+
+time for this file: 1.31818213830702 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000064.root - 54/400
+
+time for this file: 1.2835913904787353 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000065.root - 55/400
+
+time for this file: 1.2755562300328165 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000066.root - 56/400
+
+time for this file: 1.2666093696684888 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000067.root - 57/400
+
+time for this file: 1.3098954542695234 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000068.root - 58/400
+
+time for this file: 1.3120356574033698 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000069.root - 59/400
+
+time for this file: 1.3122706114780158 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000070.root - 60/400
+
+time for this file: 1.3033220869333795 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000071.root - 61/400
+
+time for this file: 1.2731453178450465 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000072.root - 62/400
+
+time for this file: 1.3142108689527958 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000073.root - 63/400
+
+time for this file: 1.279091555128495 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000074.root - 64/400
+
+time for this file: 1.3930548621652028 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000075.root - 65/400
+
+time for this file: 1.3705259238214542 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000076.root - 66/400
+
+time for this file: 1.279709846821303 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000077.root - 67/400
+
+time for this file: 1.3069287795107811 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000078.root - 68/400
+
+time for this file: 1.3140559633107236 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000079.root - 69/400
+
+time for this file: 1.2480728696566075 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000080.root - 70/400
+
+time for this file: 1.3185708105408898 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000081.root - 71/400
+
+time for this file: 1.2543710409197957 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000082.root - 72/400
+
+time for this file: 1.038574780477211 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000083.root - 73/400
+
+time for this file: 0.9995257308551421 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000084.root - 74/400
+
+time for this file: 1.029557898407802 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000085.root - 75/400
+
+time for this file: 1.0857253871237238 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000086.root - 76/400
+
+time for this file: 1.0647256729813914 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000087.root - 77/400
+
+time for this file: 1.2147905134751151 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000088.root - 78/400
+
+time for this file: 1.0135330767836421 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000089.root - 79/400
+
+time for this file: 1.0402123210641245 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000090.root - 80/400
+
+time for this file: 1.1501347919460385 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000091.root - 81/400
+
+time for this file: 1.0578598156726609 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000092.root - 82/400
+
+time for this file: 1.193097244699796 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000093.root - 83/400
+
+time for this file: 1.0680367180922379 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000094.root - 84/400
+
+time for this file: 1.1069246845164646 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000095.root - 85/400
+
+time for this file: 1.0742456243683896 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000096.root - 86/400
+
+time for this file: 1.037877554167062 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000097.root - 87/400
+
+time for this file: 1.0776187862890463 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000098.root - 88/400
+
+time for this file: 1.0651061140776923 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000099.root - 89/400
+
+time for this file: 1.125560879148543 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000100.root - 90/400
+
+time for this file: 1.0883714351492624 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000101.root - 91/400
+
+time for this file: 1.043549920292571 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000102.root - 92/400
+
+time for this file: 1.112274522287771 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000103.root - 93/400
+
+time for this file: 1.0896301671552162 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000104.root - 94/400
+
+time for this file: 1.0688932301631817 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000105.root - 95/400
+
+time for this file: 1.0789730429959794 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000106.root - 96/400
+
+time for this file: 1.0651813590123007 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000107.root - 97/400
+
+time for this file: 1.1859801062382758 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000108.root - 98/400
+
+time for this file: 1.0874068216110269 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000109.root - 99/400
+
+time for this file: 1.2131212090918173 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000110.root - 100/400
+
+time for this file: 1.1434792790096253 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000111.root - 101/400
+
+time for this file: 1.1135637138038874 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000112.root - 102/400
+
+time for this file: 1.0467970841253798 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000113.root - 103/400
+
+time for this file: 1.1088540757230172 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000114.root - 104/400
+
+time for this file: 1.1100597598900397 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000115.root - 105/400
+
+time for this file: 1.0974938452088585 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000116.root - 106/400
+
+time for this file: 1.1083161094381164 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000117.root - 107/400
+
+time for this file: 1.1419812328958263 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000118.root - 108/400
+
+time for this file: 1.0884591569037487 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000119.root - 109/400
+
+time for this file: 1.0877952146188667 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000120.root - 110/400
+
+time for this file: 1.1002094812691212 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000121.root - 111/400
+
+time for this file: 1.0770808712113649 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000122.root - 112/400
+
+time for this file: 1.0783515565252553 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000123.root - 113/400
+
+time for this file: 1.0869061685167254 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000124.root - 114/400
+
+time for this file: 1.1244568276684732 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000125.root - 115/400
+
+time for this file: 1.1088125256511072 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000126.root - 116/400
+
+time for this file: 1.1061447599437089 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000127.root - 117/400
+
+time for this file: 1.178577213656778 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000128.root - 118/400
+
+time for this file: 1.1189915482265254 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000129.root - 119/400
+
+time for this file: 1.1304171978496016 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000130.root - 120/400
+
+time for this file: 1.0564164685395856 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000131.root - 121/400
+
+time for this file: 1.10659200962012 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000132.root - 122/400
+
+time for this file: 1.173254101521646 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000133.root - 123/400
+
+time for this file: 1.1064310341763 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000134.root - 124/400
+
+time for this file: 1.08052828181535 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000135.root - 125/400
+
+time for this file: 1.05918449924017 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000136.root - 126/400
+
+time for this file: 1.1499903615253666 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000137.root - 127/400
+
+time for this file: 1.0585560604464264 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000138.root - 128/400
+
+time for this file: 1.0825306717927257 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000139.root - 129/400
+
+time for this file: 1.0663895491510629 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000140.root - 130/400
+
+time for this file: 1.0518510560505092 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000141.root - 131/400
+
+time for this file: 1.1676902891291927 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000142.root - 132/400
+
+time for this file: 1.128377378731966 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000143.root - 133/400
+
+time for this file: 1.1070221588946878 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000144.root - 134/400
+
+time for this file: 1.0747352707665414 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000145.root - 135/400
+
+time for this file: 1.042755732188622 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000146.root - 136/400
+
+time for this file: 1.0571786747469256 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000147.root - 137/400
+
+time for this file: 1.0382342366346469 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000148.root - 138/400
+
+time for this file: 1.1149557929330816 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000149.root - 139/400
+
+time for this file: 1.026650149639075 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000150.root - 140/400
+
+time for this file: 1.11284454750518 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000151.root - 141/400
+
+time for this file: 1.0805485071924825 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000152.root - 142/400
+
+time for this file: 1.0591619771594802 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000153.root - 143/400
+
+time for this file: 1.0562590187725922 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000154.root - 144/400
+
+time for this file: 1.044288989668712 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000155.root - 145/400
+
+time for this file: 1.0450380708711842 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000156.root - 146/400
+
+time for this file: 1.0474453749600798 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000157.root - 147/400
+
+time for this file: 1.0881386396475137 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000158.root - 148/400
+
+time for this file: 1.1099928645882755 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000159.root - 149/400
+
+time for this file: 1.0751357237342745 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000160.root - 150/400
+
+time for this file: 1.084840927257513 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000161.root - 151/400
+
+time for this file: 1.007871481652061 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000162.root - 152/400
+
+time for this file: 1.0206623997849722 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000163.root - 153/400
+
+time for this file: 1.115883059349532 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000164.root - 154/400
+
+time for this file: 1.0877555571806927 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000165.root - 155/400
+
+time for this file: 1.05993517995812 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000166.root - 156/400
+
+time for this file: 1.0633307002019137 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000167.root - 157/400
+
+time for this file: 1.047901217235873 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000168.root - 158/400
+
+time for this file: 1.0204231861357889 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000169.root - 159/400
+
+time for this file: 1.029072246250386 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000170.root - 160/400
+
+time for this file: 1.1239151604628812 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000171.root - 161/400
+
+time for this file: 1.0284779397925983 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000172.root - 162/400
+
+time for this file: 1.0318989674405505 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000173.root - 163/400
+
+time for this file: 1.0835862615145744 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000174.root - 164/400
+
+time for this file: 1.0539992209523916 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000175.root - 165/400
+
+time for this file: 1.014401341493552 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000176.root - 166/400
+
+time for this file: 1.015528007938216 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000177.root - 167/400
+
+time for this file: 1.029333278397098 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000178.root - 168/400
+
+time for this file: 1.0563501573478182 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000179.root - 169/400
+
+time for this file: 1.023034701636061 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000180.root - 170/400
+
+time for this file: 1.1057193644344807 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000181.root - 171/400
+
+time for this file: 1.053558321778352 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000182.root - 172/400
+
+time for this file: 1.0407663193996997 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000183.root - 173/400
+
+time for this file: 1.0734410162549466 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000184.root - 174/400
+
+time for this file: 1.0751652031671255 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000185.root - 175/400
+
+time for this file: 1.0202035340635727 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000186.root - 176/400
+
+time for this file: 1.0767368914559483 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000187.root - 177/400
+
+time for this file: 1.0755177054243783 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000188.root - 178/400
+
+time for this file: 1.099696214357391 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000189.root - 179/400
+
+time for this file: 1.1328217117426296 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000190.root - 180/400
+
+time for this file: 1.1133510172211876 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000191.root - 181/400
+
+time for this file: 1.09225841119575 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000192.root - 182/400
+
+time for this file: 1.1587338167708368 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000193.root - 183/400
+
+time for this file: 1.1126455324081084 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000194.root - 184/400
+
+time for this file: 1.0338581072321782 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000195.root - 185/400
+
+time for this file: 1.0191385076381265 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000196.root - 186/400
+
+time for this file: 1.0382762109550336 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000197.root - 187/400
+
+time for this file: 1.0824297375821819 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000198.root - 188/400
+
+time for this file: 1.0787833778498073 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000199.root - 189/400
+
+time for this file: 1.0301417282782495 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000200.root - 190/400
+
+time for this file: 1.0896559490046154 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000201.root - 191/400
+
+time for this file: 1.0179125145543366 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000202.root - 192/400
+
+time for this file: 1.028766159635658 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000203.root - 193/400
+
+time for this file: 1.0327602031019827 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000204.root - 194/400
+
+time for this file: 1.070844260432447 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000205.root - 195/400
+
+time for this file: 0.9987124044448137 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000206.root - 196/400
+
+time for this file: 1.0067021316848694 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000207.root - 197/400
+
+time for this file: 1.098129770082111 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000208.root - 198/400
+
+time for this file: 1.027441226085648 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000209.root - 199/400
+
+time for this file: 1.0459722516903034 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000210.root - 200/400
+
+time for this file: 1.0137617236624161 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000211.root - 201/400
+
+time for this file: 0.9911707801589121 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000212.root - 202/400
+
+time for this file: 1.1293600854619095 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000213.root - 203/400
+
+time for this file: 1.0231624425699313 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000214.root - 204/400
+
+time for this file: 1.0539930350147189 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000215.root - 205/400
+
+time for this file: 0.9926225145813078 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000216.root - 206/400
+
+time for this file: 1.0568375357271482 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000217.root - 207/400
+
+time for this file: 1.0808435322561611 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000218.root - 208/400
+
+time for this file: 1.0456335097085685 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000219.root - 209/400
+
+time for this file: 1.1072872455697507 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000220.root - 210/400
+
+time for this file: 1.0203379962593317 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000221.root - 211/400
+
+time for this file: 1.0439527191376934 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000222.root - 212/400
+
+time for this file: 1.0001287343601386 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000223.root - 213/400
+
+time for this file: 1.0030394583785285 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000224.root - 214/400
+
+time for this file: 1.0871020240553966 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000225.root - 215/400
+
+time for this file: 0.9858813951102395 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000226.root - 216/400
+
+time for this file: 1.0962675518045824 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000227.root - 217/400
+
+time for this file: 1.1489785668129722 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000228.root - 218/400
+
+time for this file: 1.069275935506448 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000229.root - 219/400
+
+time for this file: 1.1293926362724354 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000230.root - 220/400
+
+time for this file: 1.008055050469314 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000231.root - 221/400
+
+time for this file: 1.0172345764469355 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000232.root - 222/400
+
+time for this file: 1.0475998983718455 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000233.root - 223/400
+
+time for this file: 1.0319235254389545 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000234.root - 224/400
+
+time for this file: 1.0335872638815393 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000235.root - 225/400
+
+time for this file: 1.0197842134007564 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000236.root - 226/400
+
+time for this file: 1.0233468059605608 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000237.root - 227/400
+
+time for this file: 0.9945030795720716 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000238.root - 228/400
+
+time for this file: 1.1556182120150575 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000239.root - 229/400
+
+time for this file: 1.0367557192376504 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000240.root - 230/400
+
+time for this file: 1.091802401126673 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000241.root - 231/400
+
+time for this file: 1.015983847140645 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000242.root - 232/400
+
+time for this file: 1.0215262619157632 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000243.root - 233/400
+
+time for this file: 1.0331804362125694 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000244.root - 234/400
+
+time for this file: 1.0437869915583482 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000245.root - 235/400
+
+time for this file: 1.0388462258813282 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000246.root - 236/400
+
+time for this file: 1.0485988602973522 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000247.root - 237/400
+
+time for this file: 1.0144910353546341 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000248.root - 238/400
+
+time for this file: 1.0137793831992894 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000249.root - 239/400
+
+time for this file: 1.0291415236890316 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000250.root - 240/400
+
+time for this file: 1.0419876892274866 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000251.root - 241/400
+
+time for this file: 0.9970938245144984 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000252.root - 242/400
+
+time for this file: 0.9981934702023864 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000253.root - 243/400
+
+time for this file: 1.025987174703429 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000254.root - 244/400
+
+time for this file: 1.0194607701773444 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000255.root - 245/400
+
+time for this file: 1.010300380193318 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000256.root - 246/400
+
+time for this file: 1.0403760246311624 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000257.root - 247/400
+
+time for this file: 1.0962635669546823 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000258.root - 248/400
+
+time for this file: 1.0033657850852857 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000259.root - 249/400
+
+time for this file: 1.0605220933444799 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000260.root - 250/400
+
+time for this file: 1.091011283453554 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000261.root - 251/400
+
+time for this file: 1.0103994668461382 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000262.root - 252/400
+
+time for this file: 1.0101929332750539 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000263.root - 253/400
+
+time for this file: 1.007558931146438 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000264.root - 254/400
+
+time for this file: 1.1000545867563536 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000265.root - 255/400
+
+time for this file: 1.1193267349153757 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000266.root - 256/400
+
+time for this file: 1.0884181006035456 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000267.root - 257/400
+
+time for this file: 1.0756270890279362 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000268.root - 258/400
+
+time for this file: 1.0855238844795774 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000269.root - 259/400
+
+time for this file: 1.075876684083293 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000270.root - 260/400
+
+time for this file: 1.1324084172025324 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000271.root - 261/400
+
+time for this file: 1.3952107621046403 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000272.root - 262/400
+
+time for this file: 1.1758750058400134 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000273.root - 263/400
+
+time for this file: 1.186585887009278 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000274.root - 264/400
+
+time for this file: 1.250296385694916 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000275.root - 265/400
+
+time for this file: 1.1406798865646124 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000276.root - 266/400
+
+time for this file: 1.099934931534032 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000277.root - 267/400
+
+time for this file: 1.1781716611701996 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000278.root - 268/400
+
+time for this file: 1.0697097907308488 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000279.root - 269/400
+
+time for this file: 1.0386000851014008 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000280.root - 270/400
+
+time for this file: 1.0895423130132258 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000281.root - 271/400
+
+time for this file: 1.198811912893628 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000282.root - 272/400
+
+time for this file: 1.215602260051916 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000283.root - 273/400
+
+time for this file: 1.123492605254675 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000284.root - 274/400
+
+time for this file: 1.036773788385714 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000285.root - 275/400
+
+time for this file: 1.0930139812175184 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000286.root - 276/400
+
+time for this file: 1.0724393100477756 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000287.root - 277/400
+
+time for this file: 1.0303813131370891 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000288.root - 278/400
+
+time for this file: 1.0338141249337545 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000289.root - 279/400
+
+time for this file: 1.0292137393883118 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000290.root - 280/400
+
+time for this file: 1.0977791116417697 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000291.root - 281/400
+
+time for this file: 1.0396419988169023 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000292.root - 282/400
+
+time for this file: 1.0242172886307042 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000293.root - 283/400
+
+time for this file: 1.0414556053777535 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000294.root - 284/400
+
+time for this file: 1.0315434378261368 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000295.root - 285/400
+
+time for this file: 1.0592482348748793 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000296.root - 286/400
+
+time for this file: 1.068500029280161 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000297.root - 287/400
+
+time for this file: 1.1081340472058703 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000298.root - 288/400
+
+time for this file: 1.0658997932448984 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000299.root - 289/400
+
+time for this file: 1.0248631195009996 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000300.root - 290/400
+
+time for this file: 1.0800764976534993 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000301.root - 291/400
+
+time for this file: 1.0204404018819333 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000302.root - 292/400
+
+time for this file: 1.039898059129094 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000303.root - 293/400
+
+time for this file: 1.0507522551342845 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000304.root - 294/400
+
+time for this file: 1.0535998122145733 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000305.root - 295/400
+
+time for this file: 1.098741093914335 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000306.root - 296/400
+
+time for this file: 1.028913460345939 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000307.root - 297/400
+
+time for this file: 1.0162888852103302 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000308.root - 298/400
+
+time for this file: 1.1329577793522427 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000309.root - 299/400
+
+time for this file: 1.033747841619576 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000310.root - 300/400
+
+time for this file: 1.0418618567443143 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000311.root - 301/400
+
+time for this file: 1.026854809311529 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000312.root - 302/400
+
+time for this file: 1.0560240945002686 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000313.root - 303/400
+
+time for this file: 1.2596601848180096 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000314.root - 304/400
+
+time for this file: 1.0277726298974206 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000315.root - 305/400
+
+time for this file: 0.9978005826318016 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000316.root - 306/400
+
+time for this file: 1.0797449902320901 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000317.root - 307/400
+
+time for this file: 1.0202807237549374 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000318.root - 308/400
+
+time for this file: 1.0327807424745212 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000319.root - 309/400
+
+time for this file: 1.0963055165329327 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000320.root - 310/400
+
+time for this file: 1.1150097540114075 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000321.root - 311/400
+
+time for this file: 1.02060125892361 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000322.root - 312/400
+
+time for this file: 1.062609841534868 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000323.root - 313/400
+
+time for this file: 1.0342122569524994 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000324.root - 314/400
+
+time for this file: 1.1149773146025836 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000325.root - 315/400
+
+time for this file: 1.0023983603964248 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000326.root - 316/400
+
+time for this file: 0.977278620749712 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000327.root - 317/400
+
+time for this file: 1.0408184524935982 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000328.root - 318/400
+
+time for this file: 0.9899222680212308 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000329.root - 319/400
+
+time for this file: 1.026619382435456 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000330.root - 320/400
+
+time for this file: 1.0605008400510996 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000331.root - 321/400
+
+time for this file: 1.0714132166157166 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000332.root - 322/400
+
+time for this file: 1.0890313448539624 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000333.root - 323/400
+
+time for this file: 1.106799110211432 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000334.root - 324/400
+
+time for this file: 1.068186436779797 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000335.root - 325/400
+
+time for this file: 1.0601802584094306 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000336.root - 326/400
+
+time for this file: 0.9956773512375852 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000337.root - 327/400
+
+time for this file: 1.0111166049571088 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000338.root - 328/400
+
+time for this file: 1.0188364192222557 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000339.root - 329/400
+
+time for this file: 1.0247309957630932 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000340.root - 330/400
+
+time for this file: 0.995306713366881 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000341.root - 331/400
+
+time for this file: 1.004348226217553 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000342.root - 332/400
+
+time for this file: 1.0301790338630477 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000343.root - 333/400
+
+time for this file: 1.016027861305823 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000344.root - 334/400
+
+time for this file: 1.01981596116287 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000345.root - 335/400
+
+time for this file: 1.0063364940695465 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000346.root - 336/400
+
+time for this file: 0.9838645875453949 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000347.root - 337/400
+
+time for this file: 1.0138240342959761 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000348.root - 338/400
+
+time for this file: 1.0035905107390135 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000349.root - 339/400
+
+time for this file: 0.9832689472008497 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000350.root - 340/400
+
+time for this file: 1.027313347812742 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000351.root - 341/400
+
+time for this file: 0.9806850777938962 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000352.root - 342/400
+
+time for this file: 1.01805415074341 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000353.root - 343/400
+
+time for this file: 1.0110063840479901 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000354.root - 344/400
+
+time for this file: 0.9960367484794309 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000355.root - 345/400
+
+time for this file: 0.9966143826177964 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000356.root - 346/400
+
+time for this file: 1.0179610410394768 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000357.root - 347/400
+
+time for this file: 1.0752028266278406 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000358.root - 348/400
+
+time for this file: 1.010773164484029 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000359.root - 349/400
+
+time for this file: 1.0355831454508007 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000360.root - 350/400
+
+time for this file: 1.0047240685361127 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000361.root - 351/400
+
+time for this file: 1.0000106521571677 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000362.root - 352/400
+
+time for this file: 1.0321756003890186 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000363.root - 353/400
+
+time for this file: 1.023851834811891 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000364.root - 354/400
+
+time for this file: 0.9829780019354075 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000365.root - 355/400
+
+time for this file: 1.0145184812446435 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000366.root - 356/400
+
+time for this file: 1.0412594021763653 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000367.root - 357/400
+
+time for this file: 1.0187841083854436 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000368.root - 358/400
+
+time for this file: 1.0302940985032667 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000369.root - 359/400
+
+time for this file: 0.9677258357250442 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000371.root - 360/400
+
+time for this file: 0.9971622481631736 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000372.root - 361/400
+
+time for this file: 0.9849038041196764 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000373.root - 362/400
+
+time for this file: 1.0128653157968075 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000374.root - 363/400
+
+time for this file: 1.0355616737312328 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000375.root - 364/400
+
+time for this file: 0.998815045459196 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000376.root - 365/400
+
+time for this file: 1.0181673387996852 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000377.root - 366/400
+
+time for this file: 1.0508998619858176 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000378.root - 367/400
+
+time for this file: 1.064006068231538 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000379.root - 368/400
+
+time for this file: 0.9708778177077572 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000380.root - 369/400
+
+time for this file: 1.0767790959992756 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000381.root - 370/400
+
+time for this file: 1.054265904178222 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000382.root - 371/400
+
+time for this file: 1.065734022265921 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000383.root - 372/400
+
+time for this file: 1.0762381134244303 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000384.root - 373/400
+
+time for this file: 1.0135530493222178 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000385.root - 374/400
+
+time for this file: 1.0391378758009524 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000386.root - 375/400
+
+time for this file: 0.9732962433559199 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000387.root - 376/400
+
+time for this file: 1.000602810891966 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000388.root - 377/400
+
+time for this file: 1.0032236053453139 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000389.root - 378/400
+
+time for this file: 0.9997775417442123 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000390.root - 379/400
+
+time for this file: 1.0127905612811445 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000391.root - 380/400
+
+time for this file: 1.0217199467588216 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000392.root - 381/400
+
+time for this file: 1.0274039992441735 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000393.root - 382/400
+
+time for this file: 1.0030079864431172 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000394.root - 383/400
+
+time for this file: 0.9982979532486449 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000395.root - 384/400
+
+time for this file: 1.008904488477856 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000396.root - 385/400
+
+time for this file: 0.9754896034176151 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000397.root - 386/400
+
+time for this file: 0.995808048096175 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000398.root - 387/400
+
+time for this file: 1.0363807740155608 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000399.root - 388/400
+
+time for this file: 1.001253423312058 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000400.root - 389/400
+
+time for this file: 1.031828167863811 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000401.root - 390/400
+
+time for this file: 1.0214213906476894 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000402.root - 391/400
+
+time for this file: 1.098523743264377 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000403.root - 392/400
+
+time for this file: 1.048840232969572 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000404.root - 393/400
+
+time for this file: 1.0516597562314323 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000405.root - 394/400
+
+time for this file: 1.0122530550851176 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000406.root - 395/400
+
+time for this file: 1.0425798632514973 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000407.root - 396/400
+
+time for this file: 1.0364428128271053 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000408.root - 397/400
+
+time for this file: 1.0344951815437526 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000409.root - 398/400
+
+time for this file: 0.9973148645522694 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000410.root - 399/400
+
+time for this file: 0.9758245665424814 (m)
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pi0/user.angerami.24559740.OutputStream._000411.root - 400/400
+
+time for this file: 1.1371896266316375 (m)
+
+
+nClusters: 7882736
+Point cloud size: 887
+total time: 7.1956195470377695 (h)
+
+Copying elements ..
+time to copy: 14.838512296431388 (m)
+

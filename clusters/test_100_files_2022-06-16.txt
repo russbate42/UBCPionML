@@ -1,0 +1,1416 @@
+
+===========================================
+== Single Track Multiple Cluster Script ==
+===========================================
+
+== Generating data for PubNote 2022 ==
+
+Awkward version: 1.5.1
+Uproot version: 4.1.8
+Numpy version: 1.21.4
+Working on 100 files
+Creating test data.
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000403.root - 1/100
+Array dimension: (10274, 1241, 6)
+Number of null track projection: 2
+Time to create dicts and select events: 59.02263832092285
+Time to find dimensions and make new array: 2.734262704849243
+Time to construct index array: 5.095605850219727
+Time to populate elements: 63.001022815704346
+Time to copy to memory map: 17.40456795692444
+Time for this file: 147.2580976486206
+Total events: 10274
+Current size: (10274, 1241, 6)
+Total time: 147.2580976486206
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000404.root - 2/100
+Array dimension: (10223, 1126, 6)
+Number of null track projection: 5
+Time to create dicts and select events: 57.930296182632446
+Time to find dimensions and make new array: 2.606227159500122
+Time to construct index array: 5.24651575088501
+Time to populate elements: 63.78842234611511
+Time to copy to memory map: 15.679405450820923
+Time for this file: 145.2508668899536
+Total events: 20497
+Current size: (20497, 1241, 6)
+Total time: 292.5089645385742
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000405.root - 3/100
+Array dimension: (10327, 1093, 6)
+Number of null track projection: 6
+Time to create dicts and select events: 58.691898345947266
+Time to find dimensions and make new array: 2.740385055541992
+Time to construct index array: 5.365473985671997
+Time to populate elements: 67.50027751922607
+Time to copy to memory map: 17.75712823867798
+Time for this file: 152.0551631450653
+Total events: 30824
+Current size: (30824, 1241, 6)
+Total time: 444.5641276836395
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000406.root - 4/100
+Array dimension: (10291, 1342, 6)
+Number of null track projection: 8
+Time to create dicts and select events: 57.61691379547119
+Time to find dimensions and make new array: 2.6943836212158203
+Time to construct index array: 5.224411249160767
+Time to populate elements: 66.35614657402039
+Time to copy to memory map: 20.112123250961304
+Time for this file: 152.00397849082947
+Total events: 41115
+Current size: (41115, 1342, 6)
+Total time: 596.568106174469
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000407.root - 5/100
+Array dimension: (10263, 1228, 6)
+Number of null track projection: 9
+Time to create dicts and select events: 58.810791015625
+Time to find dimensions and make new array: 2.669151544570923
+Time to construct index array: 5.2459938526153564
+Time to populate elements: 64.6305365562439
+Time to copy to memory map: 19.36588740348816
+Time for this file: 150.72236037254333
+Total events: 51378
+Current size: (51378, 1342, 6)
+Total time: 747.2904665470123
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000408.root - 6/100
+Array dimension: (10437, 1185, 6)
+Number of null track projection: 14
+Time to create dicts and select events: 59.24657678604126
+Time to find dimensions and make new array: 2.684288501739502
+Time to construct index array: 5.354925155639648
+Time to populate elements: 65.1003782749176
+Time to copy to memory map: 18.717226028442383
+Time for this file: 151.1033947467804
+Total events: 61815
+Current size: (61815, 1342, 6)
+Total time: 898.3938612937927
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000409.root - 7/100
+Array dimension: (10424, 1208, 6)
+Number of null track projection: 15
+Time to create dicts and select events: 58.87633466720581
+Time to find dimensions and make new array: 2.6806042194366455
+Time to construct index array: 6.01116418838501
+Time to populate elements: 69.2431800365448
+Time to copy to memory map: 17.270871877670288
+Time for this file: 154.08215498924255
+Total events: 72239
+Current size: (72239, 1342, 6)
+Total time: 1052.4760162830353
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000410.root - 8/100
+Array dimension: (10276, 1185, 6)
+Number of null track projection: 19
+Time to create dicts and select events: 64.61230134963989
+Time to find dimensions and make new array: 2.9346370697021484
+Time to construct index array: 5.448249816894531
+Time to populate elements: 71.46226596832275
+Time to copy to memory map: 107.75236892700195
+Time for this file: 252.20982313156128
+Total events: 82515
+Current size: (82515, 1342, 6)
+Total time: 1304.6858394145966
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000411.root - 9/100
+Array dimension: (10239, 1103, 6)
+Number of null track projection: 23
+Time to create dicts and select events: 64.43046307563782
+Time to find dimensions and make new array: 3.1849617958068848
+Time to construct index array: 6.030774831771851
+Time to populate elements: 72.18514895439148
+Time to copy to memory map: 53.226892948150635
+Time for this file: 199.05824160575867
+Total events: 92754
+Current size: (92754, 1342, 6)
+Total time: 1503.7440810203552
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000412.root - 10/100
+Array dimension: (10321, 1327, 6)
+Number of null track projection: 24
+Time to create dicts and select events: 67.65502977371216
+Time to find dimensions and make new array: 3.8298304080963135
+Time to construct index array: 7.153606653213501
+Time to populate elements: 84.71071243286133
+Time to copy to memory map: 88.78945231437683
+Time for this file: 252.13863158226013
+Total events: 103075
+Current size: (103075, 1342, 6)
+Total time: 1755.8827126026154
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000413.root - 11/100
+Array dimension: (10282, 1159, 6)
+Number of null track projection: 27
+Time to create dicts and select events: 72.62253212928772
+Time to find dimensions and make new array: 4.234887599945068
+Time to construct index array: 7.341654062271118
+Time to populate elements: 76.79191756248474
+Time to copy to memory map: 58.01139545440674
+Time for this file: 219.00238680839539
+Total events: 113357
+Current size: (113357, 1342, 6)
+Total time: 1974.8850994110107
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000414.root - 12/100
+Array dimension: (10261, 1281, 6)
+Number of null track projection: 29
+Time to create dicts and select events: 73.38365411758423
+Time to find dimensions and make new array: 4.563831329345703
+Time to construct index array: 6.9909892082214355
+Time to populate elements: 76.4069459438324
+Time to copy to memory map: 69.70555090904236
+Time for this file: 231.05097150802612
+Total events: 123618
+Current size: (123618, 1342, 6)
+Total time: 2205.936070919037
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000415.root - 13/100
+Array dimension: (10272, 1175, 6)
+Number of null track projection: 32
+Time to create dicts and select events: 70.62089991569519
+Time to find dimensions and make new array: 3.6730895042419434
+Time to construct index array: 6.370129108428955
+Time to populate elements: 81.29939985275269
+Time to copy to memory map: 52.959064245224
+Time for this file: 214.92258262634277
+Total events: 133890
+Current size: (133890, 1342, 6)
+Total time: 2420.8586535453796
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000416.root - 14/100
+Array dimension: (10408, 1153, 6)
+Number of null track projection: 35
+Time to create dicts and select events: 75.355797290802
+Time to find dimensions and make new array: 4.225315570831299
+Time to construct index array: 6.820620059967041
+Time to populate elements: 73.17726516723633
+Time to copy to memory map: 46.775360107421875
+Time for this file: 206.35435819625854
+Total events: 144298
+Current size: (144298, 1342, 6)
+Total time: 2627.213011741638
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000417.root - 15/100
+Array dimension: (10332, 1134, 6)
+Number of null track projection: 38
+Time to create dicts and select events: 73.72763347625732
+Time to find dimensions and make new array: 4.676140785217285
+Time to construct index array: 7.03133487701416
+Time to populate elements: 76.02607560157776
+Time to copy to memory map: 46.014023303985596
+Time for this file: 207.47520804405212
+Total events: 154630
+Current size: (154630, 1342, 6)
+Total time: 2834.6882197856903
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000418.root - 16/100
+Array dimension: (10274, 1118, 6)
+Number of null track projection: 42
+Time to create dicts and select events: 76.51921248435974
+Time to find dimensions and make new array: 3.846660614013672
+Time to construct index array: 8.382606983184814
+Time to populate elements: 87.25353503227234
+Time to copy to memory map: 62.48648524284363
+Time for this file: 238.4885003566742
+Total events: 164904
+Current size: (164904, 1342, 6)
+Total time: 3073.1767201423645
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000419.root - 17/100
+Array dimension: (10193, 1234, 6)
+Number of null track projection: 43
+Time to create dicts and select events: 72.1721544265747
+Time to find dimensions and make new array: 3.949444532394409
+Time to construct index array: 6.814438581466675
+Time to populate elements: 87.05519938468933
+Time to copy to memory map: 45.86793851852417
+Time for this file: 215.8591754436493
+Total events: 175097
+Current size: (175097, 1342, 6)
+Total time: 3289.035895586014
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000420.root - 18/100
+Array dimension: (10240, 1227, 6)
+Number of null track projection: 46
+Time to create dicts and select events: 76.64673328399658
+Time to find dimensions and make new array: 3.773052215576172
+Time to construct index array: 7.04391622543335
+Time to populate elements: 87.95710897445679
+Time to copy to memory map: 48.66527342796326
+Time for this file: 224.08608412742615
+Total events: 185337
+Current size: (185337, 1342, 6)
+Total time: 3513.12197971344
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000421.root - 19/100
+Array dimension: (10298, 1214, 6)
+Number of null track projection: 48
+Time to create dicts and select events: 67.2193694114685
+Time to find dimensions and make new array: 3.2401528358459473
+Time to construct index array: 5.710888147354126
+Time to populate elements: 91.37051129341125
+Time to copy to memory map: 45.43414068222046
+Time for this file: 212.9750623703003
+Total events: 195635
+Current size: (195635, 1342, 6)
+Total time: 3726.0970420837402
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000422.root - 20/100
+Array dimension: (10299, 1226, 6)
+Number of null track projection: 51
+Time to create dicts and select events: 78.45179438591003
+Time to find dimensions and make new array: 3.1976816654205322
+Time to construct index array: 7.196776390075684
+Time to populate elements: 91.47466492652893
+Time to copy to memory map: 58.16217279434204
+Time for this file: 238.48309016227722
+Total events: 205934
+Current size: (205934, 1342, 6)
+Total time: 3964.5801322460175
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000423.root - 21/100
+Array dimension: (10282, 1287, 6)
+Number of null track projection: 53
+Time to create dicts and select events: 74.67748427391052
+Time to find dimensions and make new array: 3.4064548015594482
+Time to construct index array: 6.801502227783203
+Time to populate elements: 88.57966589927673
+Time to copy to memory map: 38.97097563743591
+Time for this file: 212.43608283996582
+Total events: 216216
+Current size: (216216, 1342, 6)
+Total time: 4177.016215085983
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000424.root - 22/100
+Array dimension: (10352, 1180, 6)
+Number of null track projection: 55
+Time to create dicts and select events: 73.46081471443176
+Time to find dimensions and make new array: 4.3108251094818115
+Time to construct index array: 7.329924821853638
+Time to populate elements: 92.30325770378113
+Time to copy to memory map: 43.17465829849243
+Time for this file: 220.57948064804077
+Total events: 226568
+Current size: (226568, 1342, 6)
+Total time: 4397.595695734024
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000425.root - 23/100
+Array dimension: (10306, 1240, 6)
+Number of null track projection: 56
+Time to create dicts and select events: 79.11048722267151
+Time to find dimensions and make new array: 4.216879606246948
+Time to construct index array: 7.476805925369263
+Time to populate elements: 93.15380048751831
+Time to copy to memory map: 12.2008376121521
+Time for this file: 196.15881085395813
+Total events: 236874
+Current size: (236874, 1342, 6)
+Total time: 4593.754506587982
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000426.root - 24/100
+Array dimension: (10168, 1104, 6)
+Number of null track projection: 58
+Time to create dicts and select events: 76.2982349395752
+Time to find dimensions and make new array: 3.822742462158203
+Time to construct index array: 6.860578775405884
+Time to populate elements: 85.98747682571411
+Time to copy to memory map: 40.908342599868774
+Time for this file: 213.87737560272217
+Total events: 247042
+Current size: (247042, 1342, 6)
+Total time: 4807.631882190704
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000427.root - 25/100
+Array dimension: (10375, 1085, 6)
+Number of null track projection: 59
+Time to create dicts and select events: 68.63548469543457
+Time to find dimensions and make new array: 2.8928284645080566
+Time to construct index array: 5.558896780014038
+Time to populate elements: 70.19817328453064
+Time to copy to memory map: 33.03521394729614
+Time for this file: 180.32059717178345
+Total events: 257417
+Current size: (257417, 1342, 6)
+Total time: 4987.952479362488
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000428.root - 26/100
+Array dimension: (10218, 1168, 6)
+Number of null track projection: 64
+Time to create dicts and select events: 73.05455827713013
+Time to find dimensions and make new array: 4.4131810665130615
+Time to construct index array: 6.6197190284729
+Time to populate elements: 75.10614943504333
+Time to copy to memory map: 71.97920250892639
+Time for this file: 231.17281031608582
+Total events: 267635
+Current size: (267635, 1342, 6)
+Total time: 5219.125289678574
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000429.root - 27/100
+Array dimension: (10310, 1254, 6)
+Number of null track projection: 65
+Time to create dicts and select events: 74.1125898361206
+Time to find dimensions and make new array: 3.8498599529266357
+Time to construct index array: 6.672173261642456
+Time to populate elements: 80.39849662780762
+Time to copy to memory map: 101.34520101547241
+Time for this file: 266.3783206939697
+Total events: 277945
+Current size: (277945, 1342, 6)
+Total time: 5485.503610372543
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000430.root - 28/100
+Array dimension: (10329, 1171, 6)
+Number of null track projection: 66
+Time to create dicts and select events: 65.24087619781494
+Time to find dimensions and make new array: 2.9924073219299316
+Time to construct index array: 5.9866862297058105
+Time to populate elements: 72.16664958000183
+Time to copy to memory map: 94.96186423301697
+Time for this file: 241.34848356246948
+Total events: 288274
+Current size: (288274, 1342, 6)
+Total time: 5726.852093935013
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000431.root - 29/100
+Array dimension: (10291, 1278, 6)
+Number of null track projection: 67
+Time to create dicts and select events: 64.21792531013489
+Time to find dimensions and make new array: 3.2016468048095703
+Time to construct index array: 5.861686706542969
+Time to populate elements: 73.747882604599
+Time to copy to memory map: 105.20709013938904
+Time for this file: 252.23623156547546
+Total events: 298565
+Current size: (298565, 1342, 6)
+Total time: 5979.088325500488
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000432.root - 30/100
+Array dimension: (10272, 1034, 6)
+Number of null track projection: 70
+Time to create dicts and select events: 65.10550928115845
+Time to find dimensions and make new array: 3.1853280067443848
+Time to construct index array: 6.179797649383545
+Time to populate elements: 72.89353346824646
+Time to copy to memory map: 84.61528873443604
+Time for this file: 231.97945713996887
+Total events: 308837
+Current size: (308837, 1342, 6)
+Total time: 6211.067782640457
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000433.root - 31/100
+Array dimension: (10242, 1143, 6)
+Number of null track projection: 72
+Time to create dicts and select events: 66.54652833938599
+Time to find dimensions and make new array: 2.915034294128418
+Time to construct index array: 6.314728736877441
+Time to populate elements: 76.7635886669159
+Time to copy to memory map: 66.92030692100525
+Time for this file: 219.460186958313
+Total events: 319079
+Current size: (319079, 1342, 6)
+Total time: 6430.52796959877
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000434.root - 32/100
+Array dimension: (10115, 1195, 6)
+Number of null track projection: 72
+Time to create dicts and select events: 62.58060884475708
+Time to find dimensions and make new array: 3.3504273891448975
+Time to construct index array: 5.820311069488525
+Time to populate elements: 73.84849166870117
+Time to copy to memory map: 82.5723385810852
+Time for this file: 228.17217755317688
+Total events: 329194
+Current size: (329194, 1342, 6)
+Total time: 6658.700147151947
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000435.root - 33/100
+Array dimension: (10318, 1275, 6)
+Number of null track projection: 73
+Time to create dicts and select events: 67.00938773155212
+Time to find dimensions and make new array: 3.4260189533233643
+Time to construct index array: 6.387691974639893
+Time to populate elements: 74.88655972480774
+Time to copy to memory map: 46.20420527458191
+Time for this file: 197.91386365890503
+Total events: 339512
+Current size: (339512, 1342, 6)
+Total time: 6856.614010810852
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000436.root - 34/100
+Array dimension: (10198, 1233, 6)
+Number of null track projection: 75
+Time to create dicts and select events: 66.5478515625
+Time to find dimensions and make new array: 3.4452075958251953
+Time to construct index array: 6.444681406021118
+Time to populate elements: 76.06466150283813
+Time to copy to memory map: 49.001017808914185
+Time for this file: 201.50341987609863
+Total events: 349710
+Current size: (349710, 1342, 6)
+Total time: 7058.117430686951
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000437.root - 35/100
+Array dimension: (10211, 1090, 6)
+Number of null track projection: 78
+Time to create dicts and select events: 63.699036836624146
+Time to find dimensions and make new array: 3.6084351539611816
+Time to construct index array: 6.518656492233276
+Time to populate elements: 75.40087485313416
+Time to copy to memory map: 49.42856311798096
+Time for this file: 198.65556645393372
+Total events: 359921
+Current size: (359921, 1342, 6)
+Total time: 7256.772997140884
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000438.root - 36/100
+Array dimension: (10390, 1173, 6)
+Number of null track projection: 79
+Time to create dicts and select events: 63.550124168395996
+Time to find dimensions and make new array: 3.634733200073242
+Time to construct index array: 6.332425594329834
+Time to populate elements: 76.92954277992249
+Time to copy to memory map: 58.45677089691162
+Time for this file: 208.90359663963318
+Total events: 370311
+Current size: (370311, 1342, 6)
+Total time: 7465.676593780518
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000439.root - 37/100
+Array dimension: (10302, 1160, 6)
+Number of null track projection: 79
+Time to create dicts and select events: 67.19494104385376
+Time to find dimensions and make new array: 3.0668833255767822
+Time to construct index array: 6.565855979919434
+Time to populate elements: 77.20237755775452
+Time to copy to memory map: 64.56800842285156
+Time for this file: 218.59806632995605
+Total events: 380613
+Current size: (380613, 1342, 6)
+Total time: 7684.274660110474
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000440.root - 38/100
+Array dimension: (10165, 1273, 6)
+Number of null track projection: 82
+Time to create dicts and select events: 63.00420117378235
+Time to find dimensions and make new array: 3.130634307861328
+Time to construct index array: 6.195079565048218
+Time to populate elements: 75.1839964389801
+Time to copy to memory map: 70.4156699180603
+Time for this file: 217.9295814037323
+Total events: 390778
+Current size: (390778, 1342, 6)
+Total time: 7902.204241514206
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000441.root - 39/100
+Array dimension: (10374, 1160, 6)
+Number of null track projection: 84
+Time to create dicts and select events: 66.89093208312988
+Time to find dimensions and make new array: 3.435194969177246
+Time to construct index array: 6.053440093994141
+Time to populate elements: 73.40043258666992
+Time to copy to memory map: 55.967989921569824
+Time for this file: 205.74798965454102
+Total events: 401152
+Current size: (401152, 1342, 6)
+Total time: 8107.952231168747
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000442.root - 40/100
+Array dimension: (10339, 1084, 6)
+Number of null track projection: 85
+Time to create dicts and select events: 66.2607786655426
+Time to find dimensions and make new array: 3.1387178897857666
+Time to construct index array: 5.969105005264282
+Time to populate elements: 75.02779746055603
+Time to copy to memory map: 36.774189710617065
+Time for this file: 187.17058873176575
+Total events: 411491
+Current size: (411491, 1342, 6)
+Total time: 8295.122819900513
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000443.root - 41/100
+Array dimension: (10319, 1055, 6)
+Number of null track projection: 86
+Time to create dicts and select events: 65.31930780410767
+Time to find dimensions and make new array: 3.1424286365509033
+Time to construct index array: 6.095120668411255
+Time to populate elements: 73.29866766929626
+Time to copy to memory map: 45.623279094696045
+Time for this file: 193.47880387306213
+Total events: 421810
+Current size: (421810, 1342, 6)
+Total time: 8488.601623773575
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000444.root - 42/100
+Array dimension: (10359, 1212, 6)
+Number of null track projection: 88
+Time to create dicts and select events: 62.93562197685242
+Time to find dimensions and make new array: 3.1175315380096436
+Time to construct index array: 6.587717771530151
+Time to populate elements: 73.89704942703247
+Time to copy to memory map: 42.29976487159729
+Time for this file: 188.83768558502197
+Total events: 432169
+Current size: (432169, 1342, 6)
+Total time: 8677.439309358597
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000445.root - 43/100
+Array dimension: (10247, 1193, 6)
+Number of null track projection: 94
+Time to create dicts and select events: 65.57853388786316
+Time to find dimensions and make new array: 2.9911909103393555
+Time to construct index array: 6.281694412231445
+Time to populate elements: 73.43949556350708
+Time to copy to memory map: 52.37057876586914
+Time for this file: 200.66149353981018
+Total events: 442416
+Current size: (442416, 1342, 6)
+Total time: 8878.100802898407
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000446.root - 44/100
+Array dimension: (10090, 1168, 6)
+Number of null track projection: 96
+Time to create dicts and select events: 62.49961519241333
+Time to find dimensions and make new array: 2.7906861305236816
+Time to construct index array: 6.4125142097473145
+Time to populate elements: 69.70931220054626
+Time to copy to memory map: 44.318278074264526
+Time for this file: 185.73040580749512
+Total events: 452506
+Current size: (452506, 1342, 6)
+Total time: 9063.831208705902
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000447.root - 45/100
+Array dimension: (10205, 1238, 6)
+Number of null track projection: 97
+Time to create dicts and select events: 62.0334906578064
+Time to find dimensions and make new array: 3.0310819149017334
+Time to construct index array: 6.103489398956299
+Time to populate elements: 71.00027108192444
+Time to copy to memory map: 49.19520020484924
+Time for this file: 191.3635332584381
+Total events: 462711
+Current size: (462711, 1342, 6)
+Total time: 9255.19474196434
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000448.root - 46/100
+Array dimension: (10224, 1150, 6)
+Number of null track projection: 99
+Time to create dicts and select events: 62.957184076309204
+Time to find dimensions and make new array: 2.888866662979126
+Time to construct index array: 5.905690431594849
+Time to populate elements: 71.00207376480103
+Time to copy to memory map: 47.3329644203186
+Time for this file: 190.0867793560028
+Total events: 472935
+Current size: (472935, 1342, 6)
+Total time: 9445.281521320343
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000449.root - 47/100
+Array dimension: (10210, 1151, 6)
+Number of null track projection: 100
+Time to create dicts and select events: 62.4749014377594
+Time to find dimensions and make new array: 3.4090428352355957
+Time to construct index array: 5.73181414604187
+Time to populate elements: 69.7085645198822
+Time to copy to memory map: 41.54257774353027
+Time for this file: 182.86690068244934
+Total events: 483145
+Current size: (483145, 1342, 6)
+Total time: 9628.148422002792
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000450.root - 48/100
+Array dimension: (10207, 1181, 6)
+Number of null track projection: 100
+Time to create dicts and select events: 62.115705490112305
+Time to find dimensions and make new array: 2.8950955867767334
+Time to construct index array: 5.879210710525513
+Time to populate elements: 70.52964925765991
+Time to copy to memory map: 58.62237191200256
+Time for this file: 200.04203295707703
+Total events: 493352
+Current size: (493352, 1342, 6)
+Total time: 9828.19045495987
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000451.root - 49/100
+Array dimension: (10274, 1282, 6)
+Number of null track projection: 102
+Time to create dicts and select events: 62.9049711227417
+Time to find dimensions and make new array: 2.8854997158050537
+Time to construct index array: 5.684366464614868
+Time to populate elements: 70.61384558677673
+Time to copy to memory map: 50.18907690048218
+Time for this file: 192.27775979042053
+Total events: 503626
+Current size: (503626, 1342, 6)
+Total time: 10020.46821475029
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000452.root - 50/100
+Array dimension: (10308, 1217, 6)
+Number of null track projection: 104
+Time to create dicts and select events: 60.26126146316528
+Time to find dimensions and make new array: 2.7395718097686768
+Time to construct index array: 5.876557111740112
+Time to populate elements: 71.2328450679779
+Time to copy to memory map: 45.62350392341614
+Time for this file: 185.73373937606812
+Total events: 513934
+Current size: (513934, 1342, 6)
+Total time: 10206.201954126358
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000453.root - 51/100
+Array dimension: (10269, 1308, 6)
+Number of null track projection: 108
+Time to create dicts and select events: 62.86135292053223
+Time to find dimensions and make new array: 2.795973062515259
+Time to construct index array: 5.793851375579834
+Time to populate elements: 71.06646680831909
+Time to copy to memory map: 60.99807786941528
+Time for this file: 203.5157220363617
+Total events: 524203
+Current size: (524203, 1342, 6)
+Total time: 10409.71767616272
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000454.root - 52/100
+Array dimension: (10180, 1163, 6)
+Number of null track projection: 108
+Time to create dicts and select events: 62.619877338409424
+Time to find dimensions and make new array: 3.0619823932647705
+Time to construct index array: 5.858973264694214
+Time to populate elements: 70.4104368686676
+Time to copy to memory map: 41.131020069122314
+Time for this file: 183.08228993415833
+Total events: 534383
+Current size: (534383, 1342, 6)
+Total time: 10592.799966096878
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000455.root - 53/100
+Array dimension: (10295, 1106, 6)
+Number of null track projection: 110
+Time to create dicts and select events: 61.53803110122681
+Time to find dimensions and make new array: 3.028823137283325
+Time to construct index array: 6.604904413223267
+Time to populate elements: 71.90213441848755
+Time to copy to memory map: 53.39606952667236
+Time for this file: 196.4699625968933
+Total events: 544678
+Current size: (544678, 1342, 6)
+Total time: 10789.269928693771
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000456.root - 54/100
+Array dimension: (10296, 1331, 6)
+Number of null track projection: 112
+Time to create dicts and select events: 63.30508518218994
+Time to find dimensions and make new array: 2.9283745288848877
+Time to construct index array: 6.075013160705566
+Time to populate elements: 71.84147810935974
+Time to copy to memory map: 47.231682777404785
+Time for this file: 191.38163375854492
+Total events: 554974
+Current size: (554974, 1342, 6)
+Total time: 10980.651562452316
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000457.root - 55/100
+Array dimension: (10241, 1229, 6)
+Number of null track projection: 116
+Time to create dicts and select events: 62.803349018096924
+Time to find dimensions and make new array: 3.063728094100952
+Time to construct index array: 5.770342111587524
+Time to populate elements: 73.26924180984497
+Time to copy to memory map: 50.527865171432495
+Time for this file: 195.43452620506287
+Total events: 565215
+Current size: (565215, 1342, 6)
+Total time: 11176.08608865738
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000458.root - 56/100
+Array dimension: (10268, 1235, 6)
+Number of null track projection: 118
+Time to create dicts and select events: 63.38668417930603
+Time to find dimensions and make new array: 2.9976863861083984
+Time to construct index array: 5.548143625259399
+Time to populate elements: 70.98068904876709
+Time to copy to memory map: 62.42903923988342
+Time for this file: 205.34224247932434
+Total events: 575483
+Current size: (575483, 1342, 6)
+Total time: 11381.428331136703
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000459.root - 57/100
+Array dimension: (10367, 1161, 6)
+Number of null track projection: 121
+Time to create dicts and select events: 63.6103994846344
+Time to find dimensions and make new array: 3.094588279724121
+Time to construct index array: 5.867250680923462
+Time to populate elements: 74.1276524066925
+Time to copy to memory map: 52.044909715652466
+Time for this file: 198.74480056762695
+Total events: 585850
+Current size: (585850, 1342, 6)
+Total time: 11580.17313170433
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000460.root - 58/100
+Array dimension: (10382, 1198, 6)
+Number of null track projection: 124
+Time to create dicts and select events: 65.15711283683777
+Time to find dimensions and make new array: 3.069854736328125
+Time to construct index array: 5.664625644683838
+Time to populate elements: 74.5546863079071
+Time to copy to memory map: 61.21517324447632
+Time for this file: 209.66145277023315
+Total events: 596232
+Current size: (596232, 1342, 6)
+Total time: 11789.834584474564
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000461.root - 59/100
+Array dimension: (10303, 1101, 6)
+Number of null track projection: 126
+Time to create dicts and select events: 64.7840142250061
+Time to find dimensions and make new array: 3.0336880683898926
+Time to construct index array: 6.199467182159424
+Time to populate elements: 75.92693567276001
+Time to copy to memory map: 46.134849548339844
+Time for this file: 196.07895469665527
+Total events: 606535
+Current size: (606535, 1342, 6)
+Total time: 11985.913539171219
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000462.root - 60/100
+Array dimension: (10238, 1122, 6)
+Number of null track projection: 126
+Time to create dicts and select events: 65.14060735702515
+Time to find dimensions and make new array: 3.4985508918762207
+Time to construct index array: 6.416030168533325
+Time to populate elements: 74.0751850605011
+Time to copy to memory map: 36.06663632392883
+Time for this file: 185.19700980186462
+Total events: 616773
+Current size: (616773, 1342, 6)
+Total time: 12171.110548973083
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000463.root - 61/100
+Array dimension: (10277, 1165, 6)
+Number of null track projection: 129
+Time to create dicts and select events: 64.66834998130798
+Time to find dimensions and make new array: 2.914835214614868
+Time to construct index array: 5.596939563751221
+Time to populate elements: 70.82595872879028
+Time to copy to memory map: 43.67176628112793
+Time for this file: 187.67784976959229
+Total events: 627050
+Current size: (627050, 1342, 6)
+Total time: 12358.788398742676
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000464.root - 62/100
+Array dimension: (10220, 1155, 6)
+Number of null track projection: 129
+Time to create dicts and select events: 64.89527678489685
+Time to find dimensions and make new array: 2.9376420974731445
+Time to construct index array: 5.9053122997283936
+Time to populate elements: 71.150723695755
+Time to copy to memory map: 51.819467067718506
+Time for this file: 196.7084219455719
+Total events: 637270
+Current size: (637270, 1342, 6)
+Total time: 12555.496820688248
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000465.root - 63/100
+Array dimension: (10338, 1162, 6)
+Number of null track projection: 129
+Time to create dicts and select events: 63.601980447769165
+Time to find dimensions and make new array: 2.925678253173828
+Time to construct index array: 6.033222913742065
+Time to populate elements: 70.43613386154175
+Time to copy to memory map: 55.609565019607544
+Time for this file: 198.60658049583435
+Total events: 647608
+Current size: (647608, 1342, 6)
+Total time: 12754.103401184082
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000466.root - 64/100
+Array dimension: (10185, 1225, 6)
+Number of null track projection: 133
+Time to create dicts and select events: 61.21059250831604
+Time to find dimensions and make new array: 2.789538621902466
+Time to construct index array: 5.852384805679321
+Time to populate elements: 68.9327003955841
+Time to copy to memory map: 53.7199547290802
+Time for this file: 192.50517106056213
+Total events: 657793
+Current size: (657793, 1342, 6)
+Total time: 12946.608572244644
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000467.root - 65/100
+Array dimension: (10309, 1192, 6)
+Number of null track projection: 135
+Time to create dicts and select events: 62.272830963134766
+Time to find dimensions and make new array: 2.9845833778381348
+Time to construct index array: 6.677091836929321
+Time to populate elements: 69.92060136795044
+Time to copy to memory map: 54.97711777687073
+Time for this file: 196.8322253227234
+Total events: 668102
+Current size: (668102, 1342, 6)
+Total time: 13143.440797567368
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000468.root - 66/100
+Array dimension: (10252, 1274, 6)
+Number of null track projection: 136
+Time to create dicts and select events: 62.1990532875061
+Time to find dimensions and make new array: 3.490546703338623
+Time to construct index array: 5.821282625198364
+Time to populate elements: 69.74837255477905
+Time to copy to memory map: 45.47306180000305
+Time for this file: 186.7323169708252
+Total events: 678354
+Current size: (678354, 1342, 6)
+Total time: 13330.173114538193
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000469.root - 67/100
+Array dimension: (10274, 1242, 6)
+Number of null track projection: 138
+Time to create dicts and select events: 63.94323945045471
+Time to find dimensions and make new array: 2.9919629096984863
+Time to construct index array: 5.801268815994263
+Time to populate elements: 68.6712691783905
+Time to copy to memory map: 64.66683435440063
+Time for this file: 206.0745747089386
+Total events: 688628
+Current size: (688628, 1342, 6)
+Total time: 13536.247689247131
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000470.root - 68/100
+Array dimension: (10233, 1263, 6)
+Number of null track projection: 141
+Time to create dicts and select events: 61.036362409591675
+Time to find dimensions and make new array: 3.0881521701812744
+Time to construct index array: 5.689934253692627
+Time to populate elements: 69.88442540168762
+Time to copy to memory map: 52.31383967399597
+Time for this file: 192.01271390914917
+Total events: 698861
+Current size: (698861, 1342, 6)
+Total time: 13728.26040315628
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000471.root - 69/100
+Array dimension: (10229, 1241, 6)
+Number of null track projection: 147
+Time to create dicts and select events: 62.67331337928772
+Time to find dimensions and make new array: 3.0928468704223633
+Time to construct index array: 6.030574321746826
+Time to populate elements: 69.06723022460938
+Time to copy to memory map: 53.79708290100098
+Time for this file: 194.66104769706726
+Total events: 709090
+Current size: (709090, 1342, 6)
+Total time: 13922.921450853348
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000472.root - 70/100
+Array dimension: (10253, 1143, 6)
+Number of null track projection: 150
+Time to create dicts and select events: 60.17077016830444
+Time to find dimensions and make new array: 2.946134090423584
+Time to construct index array: 5.5993757247924805
+Time to populate elements: 71.02806997299194
+Time to copy to memory map: 45.832916259765625
+Time for this file: 185.57726621627808
+Total events: 719343
+Current size: (719343, 1342, 6)
+Total time: 14108.498717069626
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000473.root - 71/100
+Array dimension: (10373, 1148, 6)
+Number of null track projection: 153
+Time to create dicts and select events: 63.829795122146606
+Time to find dimensions and make new array: 3.1566004753112793
+Time to construct index array: 5.67920446395874
+Time to populate elements: 70.17929530143738
+Time to copy to memory map: 63.787280321121216
+Time for this file: 206.63217568397522
+Total events: 729716
+Current size: (729716, 1342, 6)
+Total time: 14315.130892753601
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000474.root - 72/100
+Array dimension: (10180, 1154, 6)
+Number of null track projection: 156
+Time to create dicts and select events: 61.80145597457886
+Time to find dimensions and make new array: 3.063807725906372
+Time to construct index array: 5.984843969345093
+Time to populate elements: 69.33419585227966
+Time to copy to memory map: 52.86156892776489
+Time for this file: 193.04587244987488
+Total events: 739896
+Current size: (739896, 1342, 6)
+Total time: 14508.176765203476
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000475.root - 73/100
+Array dimension: (10308, 1121, 6)
+Number of null track projection: 158
+Time to create dicts and select events: 62.95240068435669
+Time to find dimensions and make new array: 3.0991640090942383
+Time to construct index array: 6.0557701587677
+Time to populate elements: 72.07495737075806
+Time to copy to memory map: 50.40991020202637
+Time for this file: 194.59220242500305
+Total events: 750204
+Current size: (750204, 1342, 6)
+Total time: 14702.768967628479
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000476.root - 74/100
+Array dimension: (10356, 1156, 6)
+Number of null track projection: 159
+Time to create dicts and select events: 61.15482807159424
+Time to find dimensions and make new array: 3.1867082118988037
+Time to construct index array: 6.091303110122681
+Time to populate elements: 68.61443066596985
+Time to copy to memory map: 53.137409925460815
+Time for this file: 192.1846799850464
+Total events: 760560
+Current size: (760560, 1342, 6)
+Total time: 14894.953647613525
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000477.root - 75/100
+Array dimension: (10245, 1284, 6)
+Number of null track projection: 162
+Time to create dicts and select events: 60.38564491271973
+Time to find dimensions and make new array: 2.709740400314331
+Time to construct index array: 5.293910980224609
+Time to populate elements: 70.78818368911743
+Time to copy to memory map: 63.10908031463623
+Time for this file: 202.28656029701233
+Total events: 770805
+Current size: (770805, 1342, 6)
+Total time: 15097.240207910538
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000478.root - 76/100
+Array dimension: (10205, 1122, 6)
+Number of null track projection: 164
+Time to create dicts and select events: 63.4639527797699
+Time to find dimensions and make new array: 2.9212331771850586
+Time to construct index array: 5.515507459640503
+Time to populate elements: 67.78936004638672
+Time to copy to memory map: 52.997649908065796
+Time for this file: 192.68770337104797
+Total events: 781010
+Current size: (781010, 1342, 6)
+Total time: 15289.927911281586
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000479.root - 77/100
+Array dimension: (10261, 1223, 6)
+Number of null track projection: 164
+Time to create dicts and select events: 61.600093841552734
+Time to find dimensions and make new array: 2.795389175415039
+Time to construct index array: 5.846297979354858
+Time to populate elements: 67.29411602020264
+Time to copy to memory map: 62.08611464500427
+Time for this file: 199.62201166152954
+Total events: 791271
+Current size: (791271, 1342, 6)
+Total time: 15489.549922943115
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000480.root - 78/100
+Array dimension: (10183, 1121, 6)
+Number of null track projection: 166
+Time to create dicts and select events: 58.48357844352722
+Time to find dimensions and make new array: 2.792250871658325
+Time to construct index array: 5.2329394817352295
+Time to populate elements: 66.84098410606384
+Time to copy to memory map: 46.5708487033844
+Time for this file: 179.92060160636902
+Total events: 801454
+Current size: (801454, 1342, 6)
+Total time: 15669.470524549484
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000481.root - 79/100
+Array dimension: (10218, 1170, 6)
+Number of null track projection: 170
+Time to create dicts and select events: 59.447582483291626
+Time to find dimensions and make new array: 2.942066192626953
+Time to construct index array: 5.8959972858428955
+Time to populate elements: 66.63827300071716
+Time to copy to memory map: 53.51017236709595
+Time for this file: 188.43409132957458
+Total events: 811672
+Current size: (811672, 1342, 6)
+Total time: 15857.904615879059
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000482.root - 80/100
+Array dimension: (10327, 1257, 6)
+Number of null track projection: 175
+Time to create dicts and select events: 60.140511989593506
+Time to find dimensions and make new array: 3.4102768898010254
+Time to construct index array: 5.466169357299805
+Time to populate elements: 70.07129955291748
+Time to copy to memory map: 58.01401400566101
+Time for this file: 197.10227179527283
+Total events: 821999
+Current size: (821999, 1342, 6)
+Total time: 16055.006887674332
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000483.root - 81/100
+Array dimension: (10238, 1328, 6)
+Number of null track projection: 178
+Time to create dicts and select events: 60.40038466453552
+Time to find dimensions and make new array: 2.9579319953918457
+Time to construct index array: 5.415023326873779
+Time to populate elements: 69.74024152755737
+Time to copy to memory map: 68.9833972454071
+Time for this file: 207.49697875976562
+Total events: 832237
+Current size: (832237, 1342, 6)
+Total time: 16262.503866434097
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000484.root - 82/100
+Array dimension: (10303, 1160, 6)
+Number of null track projection: 179
+Time to create dicts and select events: 63.709635496139526
+Time to find dimensions and make new array: 2.7998154163360596
+Time to construct index array: 5.639110326766968
+Time to populate elements: 71.24980878829956
+Time to copy to memory map: 53.66283345222473
+Time for this file: 197.06120347976685
+Total events: 842540
+Current size: (842540, 1342, 6)
+Total time: 16459.565069913864
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000485.root - 83/100
+Array dimension: (10210, 1194, 6)
+Number of null track projection: 182
+Time to create dicts and select events: 62.051079750061035
+Time to find dimensions and make new array: 2.912714958190918
+Time to construct index array: 5.684722185134888
+Time to populate elements: 72.75609922409058
+Time to copy to memory map: 34.7620575428009
+Time for this file: 178.16667366027832
+Total events: 852750
+Current size: (852750, 1342, 6)
+Total time: 16637.731743574142
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000486.root - 84/100
+Array dimension: (10207, 1185, 6)
+Number of null track projection: 185
+Time to create dicts and select events: 69.6645941734314
+Time to find dimensions and make new array: 3.5610885620117188
+Time to construct index array: 6.295148849487305
+Time to populate elements: 70.65222525596619
+Time to copy to memory map: 37.29164457321167
+Time for this file: 187.46470141410828
+Total events: 862957
+Current size: (862957, 1342, 6)
+Total time: 16825.19644498825
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000487.root - 85/100
+Array dimension: (10285, 1101, 6)
+Number of null track projection: 188
+Time to create dicts and select events: 63.423816204071045
+Time to find dimensions and make new array: 2.779987335205078
+Time to construct index array: 5.824963808059692
+Time to populate elements: 74.0562629699707
+Time to copy to memory map: 53.13557457923889
+Time for this file: 199.2206048965454
+Total events: 873242
+Current size: (873242, 1342, 6)
+Total time: 17024.417049884796
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000488.root - 86/100
+Array dimension: (10210, 1108, 6)
+Number of null track projection: 193
+Time to create dicts and select events: 67.27372574806213
+Time to find dimensions and make new array: 3.2886903285980225
+Time to construct index array: 9.026975154876709
+Time to populate elements: 69.01608753204346
+Time to copy to memory map: 35.22921133041382
+Time for this file: 183.83469009399414
+Total events: 883452
+Current size: (883452, 1342, 6)
+Total time: 17208.25173997879
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000489.root - 87/100
+Array dimension: (10156, 1089, 6)
+Number of null track projection: 199
+Time to create dicts and select events: 65.63049626350403
+Time to find dimensions and make new array: 3.058922529220581
+Time to construct index array: 5.593943357467651
+Time to populate elements: 71.9453296661377
+Time to copy to memory map: 32.18694758415222
+Time for this file: 178.41563940048218
+Total events: 893608
+Current size: (893608, 1342, 6)
+Total time: 17386.667379379272
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000490.root - 88/100
+Array dimension: (10332, 1201, 6)
+Number of null track projection: 200
+Time to create dicts and select events: 71.0061297416687
+Time to find dimensions and make new array: 2.9880638122558594
+Time to construct index array: 5.663128614425659
+Time to populate elements: 71.56451201438904
+Time to copy to memory map: 35.691142082214355
+Time for this file: 186.9129762649536
+Total events: 903940
+Current size: (903940, 1342, 6)
+Total time: 17573.580355644226
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000491.root - 89/100
+Array dimension: (10365, 1579, 6)
+Number of null track projection: 205
+Time to create dicts and select events: 71.05837750434875
+Time to find dimensions and make new array: 3.035310745239258
+Time to construct index array: 5.549120664596558
+Time to populate elements: 68.91956281661987
+Time to copy to memory map: 52.700467348098755
+Time for this file: 201.2628390789032
+Total events: 914305
+Current size: (914305, 1579, 6)
+Total time: 17774.84319472313
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000492.root - 90/100
+Array dimension: (10260, 1098, 6)
+Number of null track projection: 205
+Time to create dicts and select events: 72.6546778678894
+Time to find dimensions and make new array: 3.5747570991516113
+Time to construct index array: 6.5825865268707275
+Time to populate elements: 87.86153221130371
+Time to copy to memory map: 26.893566608428955
+Time for this file: 197.5671203136444
+Total events: 924565
+Current size: (924565, 1579, 6)
+Total time: 17972.410315036774
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000493.root - 91/100
+Array dimension: (10360, 1284, 6)
+Number of null track projection: 209
+Time to create dicts and select events: 72.36382293701172
+Time to find dimensions and make new array: 3.3473451137542725
+Time to construct index array: 6.982506513595581
+Time to populate elements: 81.44438338279724
+Time to copy to memory map: 122.8090648651123
+Time for this file: 286.9471228122711
+Total events: 934925
+Current size: (934925, 1579, 6)
+Total time: 18259.357437849045
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000494.root - 92/100
+Array dimension: (10318, 1168, 6)
+Number of null track projection: 209
+Time to create dicts and select events: 66.5992500782013
+Time to find dimensions and make new array: 2.908536911010742
+Time to construct index array: 5.694286584854126
+Time to populate elements: 79.51746487617493
+Time to copy to memory map: 79.9635820388794
+Time for this file: 234.68312048912048
+Total events: 945243
+Current size: (945243, 1579, 6)
+Total time: 18494.040558338165
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000495.root - 93/100
+Array dimension: (10312, 1062, 6)
+Number of null track projection: 210
+Time to create dicts and select events: 62.311872482299805
+Time to find dimensions and make new array: 2.8035993576049805
+Time to construct index array: 5.503642797470093
+Time to populate elements: 68.87112498283386
+Time to copy to memory map: 85.2549090385437
+Time for this file: 224.74514865875244
+Total events: 955555
+Current size: (955555, 1579, 6)
+Total time: 18718.785706996918
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000496.root - 94/100
+Array dimension: (10292, 1263, 6)
+Number of null track projection: 213
+Time to create dicts and select events: 62.8004469871521
+Time to find dimensions and make new array: 2.8704140186309814
+Time to construct index array: 5.9667439460754395
+Time to populate elements: 69.05469417572021
+Time to copy to memory map: 77.85433721542358
+Time for this file: 218.54663634300232
+Total events: 965847
+Current size: (965847, 1579, 6)
+Total time: 18937.33234333992
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000497.root - 95/100
+Array dimension: (10386, 1262, 6)
+Number of null track projection: 214
+Time to create dicts and select events: 63.448901653289795
+Time to find dimensions and make new array: 3.2967898845672607
+Time to construct index array: 6.0946924686431885
+Time to populate elements: 70.82857394218445
+Time to copy to memory map: 80.85524654388428
+Time for this file: 224.52420449256897
+Total events: 976233
+Current size: (976233, 1579, 6)
+Total time: 19161.85654783249
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000498.root - 96/100
+Array dimension: (10237, 1123, 6)
+Number of null track projection: 214
+Time to create dicts and select events: 60.73674511909485
+Time to find dimensions and make new array: 3.6260242462158203
+Time to construct index array: 5.743188142776489
+Time to populate elements: 68.4506528377533
+Time to copy to memory map: 76.08059573173523
+Time for this file: 214.63720607757568
+Total events: 986470
+Current size: (986470, 1579, 6)
+Total time: 19376.493753910065
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000499.root - 97/100
+Array dimension: (10251, 1190, 6)
+Number of null track projection: 217
+Time to create dicts and select events: 61.790996074676514
+Time to find dimensions and make new array: 2.7742953300476074
+Time to construct index array: 5.717062950134277
+Time to populate elements: 67.06730937957764
+Time to copy to memory map: 63.5792191028595
+Time for this file: 200.92888283729553
+Total events: 996721
+Current size: (996721, 1579, 6)
+Total time: 19577.42263674736
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000500.root - 98/100
+Array dimension: (8227, 1098, 6)
+Number of null track projection: 217
+Time to create dicts and select events: 49.9885413646698
+Time to find dimensions and make new array: 2.384035587310791
+Time to construct index array: 4.257923126220703
+Time to populate elements: 54.859256982803345
+Time to copy to memory map: 50.35917401313782
+Time for this file: 161.84893107414246
+Total events: 1004948
+Current size: (1004948, 1579, 6)
+Total time: 19739.271567821503
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000501.root - 99/100
+Array dimension: (10205, 1128, 6)
+Number of null track projection: 219
+Time to create dicts and select events: 60.90580987930298
+Time to find dimensions and make new array: 2.73213529586792
+Time to construct index array: 5.508498430252075
+Time to populate elements: 67.68307542800903
+Time to copy to memory map: 64.9084825515747
+Time for this file: 201.7380015850067
+Total events: 1015153
+Current size: (1015153, 1579, 6)
+Total time: 19941.00956940651
+
+
+Working on File: /fast_scratch_1/atlas_images/v01-45/pipm/user.angerami.24559744.OutputStream._000502.root - 100/100
+Array dimension: (10243, 1340, 6)
+Number of null track projection: 221
+Time to create dicts and select events: 67.00679659843445
+Time to find dimensions and make new array: 2.859877824783325
+rm: cannot remove '/fast_scratch_1/atlas/staged/Y_large2.npy': No such file or directory
+Time to construct index array: 5.565878868103027
+Time to populate elements: 68.2518196105957
+Time to copy to memory map: 75.02126502990723
+Time for this file: 218.70563793182373
+Total events: 1025396
+Current size: (1025396, 1579, 6)
+Total time: 20159.715207338333
+
+
+Time to copy new and delete old: 159.46801209449768 (s)
+

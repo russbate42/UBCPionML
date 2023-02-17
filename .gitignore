@@ -33,7 +33,7 @@ regression_u/data
 
 ## NOTEBOOKS ##
 # CLUSTERS
-# clusters/Benchmarking_Testing.ipynb
+clusters/Benchmarking_Testing.ipynb
 clusters/Regression_Plots/
 clusters/Plots/
 
@@ -48,6 +48,7 @@ segmentation/Models/
 regression/Regression_Plots/
 regression/results/*.npz
 regression/results/*.npy
+regression/results/*.pkl
 regression/results/pubnote22/
 regression/results/pubnote22_full/
 regression/models/

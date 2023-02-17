@@ -257,13 +257,13 @@ def gen_helper(batch_size, X, Y, drop_remainder=True):
 def data_gen(batch_size, X, Y, epochs, shuffle_per=1, drop_remainder=True):
     
     slices  = gen_helper(batch_size, X, Y, drop_remainder=drop_remainder)
+    indices = np.arange(X.shape[0], dtype=int)
     
     for i in range(epochs):
         
         if shuffle_per == None:
             pass        
         elif i % shuffle_per == 0:
-            indices = np.arange(X.shape[0], dtype=int)
             np.random.shuffle(indices)
         
         for (k,l) in slices:
@@ -436,44 +436,6 @@ val_num = NEVENTS - train_num
 print('train -- val')
 print('{} -- {}'.format(train_num, val_num)); print()
 
-# train_num, val_num, test_num = dsu.tvt_num(X, tvt=(70,15,15))
-# print('train -- val -- test')
-# print('{} -- {} -- {}'.format(train_num, val_num, test_num)); print()
-
-## Datasets ##
-#===========##
-# t0 = cput()
-# data = tf.data.Dataset.from_tensor_slices((X, Y))
-# # normalized data is shuffled already
-# # data.shuffle(buffer_size = 10000)
-
-# data_train = data.skip(val_num+test_num)
-# data_test = data.take(val_num+test_num)
-# data_val = data_test.skip(test_num)
-# data_test = data_test.take(test_num)
-
-# data_train = data_train.batch(batch_size=BATCH_SIZE, drop_remainder=True)
-# data_val = data_val.batch(batch_size=BATCH_SIZE, drop_remainder=True)
-# data_test = data_test.batch(batch_size=BATCH_SIZE, drop_remainder=True)
-# t1 = cput()
-
-# ## Mem-maps ##
-# #===========##
-# # Split
-# t0 = cput()
-
-# X_train = X[:train_num,:,:]
-# Y_train = Y[:train_num].reshape((train_num,1))
-
-# X_val = X[train_num:train_num+val_num,:,:]
-# Y_val = Y[train_num:train_num+val_num].reshape((val_num,1))
-
-# X_test = X[train_num+val_num:,:,:]
-# Y_test = Y[train_num+val_num:]
-# E_test = E[train_num+val_num:]
-# t1 = cput()
-
-
 # Split
 t0 = cput()
 X_train = X[:train_num,:,:]
@@ -513,6 +475,39 @@ else:
 model.compile(loss='mse', optimizer=keras.optimizers.Adam(
     learning_rate=LEARNING_RATE))
 model.summary()
+
+
+#===================================#
+##========== Callbacks ============##
+#===================================#
+# need this here for the defined callbacks
+infostring = '{}_{}--LR_{:.0e}--BS_{}--EP_{}--EV_{}--{}{}'.format(MODEL,
+                datafiles, LEARNING_RATE, BATCH_SIZE, EPOCHS, NEVENTS, DATE,
+                extra_info)
+checkpoint_filepath = 'models/model_checkpoint_'+infostring
+checkpoint_callback_verbose=1
+early_stopping_verbose=1
+
+model_checkpoint_callback = tf.keras.callbacks.ModelCheckpoint(
+    filepath=checkpoint_filepath,
+    save_weights_only=True,
+    monitor='val_loss',
+    mode='min',
+    verbose=checkpoint_callback_verbose,
+    save_best_only=True
+)
+
+early_stopping_callback = tf.keras.callbacks.EarlyStopping(
+    monitor='val_loss',
+    min_delta=0.0005,
+    patience=5,
+    verbose=early_stopping_verbose,
+    mode='min',
+    baseline=None,
+    restore_best_weights=False
+)
+
+callbacks = [model_checkpoint_callback, early_stopping_callback]
 
 
 #=====================================#
@@ -558,7 +553,8 @@ if GENERATOR == True:
                         steps_per_epoch=steps_per_epoch,
                         validation_steps=val_steps-1,
                         max_queue_size=max_queue,
-                        verbose=verbose
+                        verbose=verbose,
+                        callbacks=callbacks
                         )
     
 ## Mem-maps ##
@@ -569,18 +565,10 @@ else:
                       batch_size=BATCH_SIZE,
                       validation_data=(X_val, Y_val),
                       epochs=EPOCHS,
-                      verbose=verbose
+                      verbose=verbose,
+                      callbacks=callbacks
                       )
 t1 = cput()
-
-# datasets
-# t0 = cput()
-# history = model.fit(data_train,
-#                   validation_data=data_val,
-#                   epochs=EPOCHS,
-#                   verbose=1
-#                   )
-# t1 = cput()
 
 print()
 print()
@@ -594,7 +582,8 @@ print()
 #======================================
 if evaluate_model:
     ''' This needs work, well the function that makes the data generators
-    needs to work with a single input '''
+    needs to work with a single input. Possibly, we call the evaluate
+    script from within!? '''
 
     print('making predictions..');print()
     t0 = cput()
@@ -607,9 +596,7 @@ if evaluate_model:
 ##==================##
 ## Save Information ##
 ##==================##
-infostring = '{}_{}--LR_{:.0e}--BS_{}--EP_{}--EV_{}--{}{}'.format(MODEL,
-                datafiles, LEARNING_RATE, BATCH_SIZE, EPOCHS, NEVENTS, DATE,
-                extra_info)
+
 if SAVE_RESULTS == True:
     print('saving results..');print()
     with open('results/history_'+infostring+'.pickle', 'wb')\
